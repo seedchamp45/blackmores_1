@@ -1,0 +1,381 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 17, 2017, 11:47:08 PM
+    Author     : 000
+ background: url(../images/bg_test.jpg) no-repeat center center fixed; 
+*/
+
+
+.body { 
+   
+    /*
+      background: url(../images/bg_home.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+  height: 100%;
+  background-color: #060;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  */
+  
+ 
+    background-image: url("../images/bg_home.jpg") ;
+
+
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+}
+
+
+.body2 { 
+
+    background-color: #ccc;
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+}
+
+/*text*/ 
+.txt_menu{
+
+    text-align: left;
+    color: #ffffff;
+    
+} 
+
+ 
+
+.navbar-default .navbar-nav > li > a {
+  font-family: helvethaica_x_bd;
+  color: #fff;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #333;
+  background-color: transparent;
+}
+/*
+input { 
+    display: block;
+    width: 545px;
+    height: 45px;
+    padding: 6px 12px;
+    border-width: 0px;
+    background: rgba(238, 238, 238, 0) url(../images/send/input_email.png);
+}*/
+
+no_block{
+    display: inline-block;
+   
+}
+            
+s_20{
+     width: 245px;
+}
+
+@media (min-width: 768px){
+    
+    .menu_top_text{
+       font-family: helvethaica_x_bd;
+       margin-top: 2.9em;
+       text-align: left; 
+        font-size: 0.6em;
+    } 
+    
+    .menu_top_right{
+        margin-right: 50px;
+    }
+    .navbar2 {
+         background-image: url("../images/menu_768.png");
+        background-size: cover;
+        border-radius: 0px;
+        height: 120px;
+        top: 20px;
+        align-content: left;
+        display: block;
+    }
+    
+    .conter2 {
+         top:100px;
+         height: 180px;
+    }
+    .navbar-default{
+        
+    }
+}
+
+
+@media (min-width: 992px){
+    
+   .menu_top_text{
+      font-family: helvethaica_x_bd;
+      margin-top: 50px;
+      margin-left: 5px;
+      text-align: left;    
+      font-size: 1em;
+    } 
+    
+    .menu_top_right{
+        
+     margin-right: 80px;
+    }
+    
+    .navbar2 {
+        background-image: url("../images/menu.png");
+        background-size: cover;
+        border-radius: 0px;
+        height: 150px;
+        top: 20px;
+        align-content: left;
+        display: block;
+        
+    }
+    
+    .conter2 {
+         top:100px;
+         height: 270px;
+    }
+    
+    
+    .navbar-default{
+        
+    }
+    
+    /*home*/
+    .home_body{
+        margin-top: -190px;
+        margin-left: 40px
+    }
+    
+    .home_image_right{
+        margin-top: 80px;
+        
+        text-align: center; 
+        vertical-align: middle; 
+    }
+    
+    .txt_menu2{
+        left: 90px;
+        top: -40px;
+    }
+}
+
+@media (min-width: 1200px){
+    .menu_top_text{
+      font-family: helvethaica_x_bd;
+      margin-top: 90px;
+      margin-left: 20px;
+      text-align: left;    
+      font-size: 1.4em;
+    } 
+   
+    .menu_top_right{
+        
+     margin-right: 180px;
+    }
+    
+    .navbar2 {
+        background-image: url("../images/menu.png");
+        background-size: cover;
+        border-radius: 0px;
+        height: 230px;
+        top: 20px;
+        align-content: left;
+        display: block;
+        
+    }
+    
+    .conter2 {
+         top:100px;
+         height: 270px;
+    }
+    
+    
+    .navbar-default{
+        
+    }
+    
+    /*home*/
+    .home_body{
+        margin-top: -100px;
+        margin-left: 40px
+    }
+    
+    .home_image_right{
+        margin-top: 200px;
+    }
+}
+
+/*send page*/
+
+.btn_img_send_age {
+    margin-left: 10px;
+    margin-top: 28px;
+}
+
+
+
+ .title_send{
+      font-family: "helvethaica_x";
+      color: #1677bc;
+      text-align: left;    
+      font-size: 1.4em;
+  } 
+  
+
+.title_send2{
+      font-family: "helvethaica_x";
+      color: #1677bc;
+      text-align: left;    
+      font-size: 1em;
+  }   
+    
+    
+.btn-default1 {
+    color: #333;
+    background-color: #fff;
+    background-image: url("../images/send/button_ok.png");
+    border-color: #ccc;
+    width: 180px;
+    height: 48px;
+  }
+  .btn-default1:focus,
+  .btn-default1.focus {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #8c8c8c;
+  }
+  .btn-default1:hover {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+  }
+  .btn-default1:active,
+  .btn-default1.active,
+  .open > .dropdown-toggle.btn-default1 {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+  }
+  .btn-default1:active:hover,
+  .btn-default1.active:hover,
+  .open > .dropdown-toggle.btn-default1:hover,
+  .btn-default1:active:focus,
+  .btn-default1.active:focus,
+  .open > .dropdown-toggle.btn-default1:focus,
+  .btn-default1:active.focus,
+  .btn-default1.active.focus,
+  .open > .dropdown-toggle.btn-default1.focus {
+    color: #333;
+    background-color: #d4d4d4;
+    border-color: #8c8c8c;
+  }
+  .btn-default1:active,
+  .btn-default1.active,
+  .open > .dropdown-toggle.btn-default1 {
+    background-image: none;
+  }
+  .btn-default1.disabled:hover,
+  .btn-default1[disabled]:hover,
+  fieldset[disabled] .btn-default1:hover,
+  .btn-default1.disabled:focus,
+  .btn-default1[disabled]:focus,
+  fieldset[disabled] .btn-default1:focus,
+  .btn-default1.disabled.focus,
+  .btn-default1[disabled].focus,
+  fieldset[disabled] .btn-default1.focus {
+    background-color: #fff;
+    border-color: #ccc;
+  }
+  .btn-default1 .badge {
+    color: #fff;
+    background-color: #333;
+  }
+  input:focus {}
+  
+  
+  .btn-facebook {
+    color: #333;
+    background-color: #fff;
+    background-image: url("../images/activity/bu_facebook.png");
+    border-color: #ccc;
+    width: 180px;
+    height: 32px;
+     margin-left:30px;
+  }
+  .btn-facebook:focus,
+  .btn-facebook.focus {
+    color: #333;
+     background-image: url("../images/activity/bu_facebook.png");
+    border-color: #8c8c8c;
+     margin-left:30px;
+  }
+  .btn-facebook:hover {
+    color: #333;
+   background-image: url("../images/activity/bu_facebook.png");
+    border-color: #adadad;
+  }
+  .btn-facebook:active,
+  .btn-facebook.active,
+  .open > .dropdown-toggle.btn-facebook {
+    color: #333;
+   background-image: url("../images/activity/bu_facebook.png");
+    border-color: #adadad;
+  }
+  .btn-facebook:active:hover,
+  .btn-facebook.active:hover,
+  .open > .dropdown-toggle.btn-facebook:hover,
+  .btn-facebook:active:focus,
+  .btn-facebook.active:focus,
+  .open > .dropdown-toggle.btn-facebook:focus,
+  .btn-facebook:active.focus,
+  .btn-facebook.active.focus,
+  .open > .dropdown-toggle.btn-facebook.focus {
+    color: #333;
+   background-image: url("../images/activity/bu_facebook.png");
+    border-color: #8c8c8c;
+  }
+  .btn-facebook:active,
+  .btn-facebook.active,
+  .open > .dropdown-toggle.btn-facebook {
+    background-image: none;
+  }
+  .btn-facebook.disabled:hover,
+  .btn-facebook[disabled]:hover,
+  fieldset[disabled] .btn-facebook:hover,
+  .btn-facebook.disabled:focus,
+  .btn-facebook[disabled]:focus,
+  fieldset[disabled] .btn-facebook:focus,
+  .btn-facebook.disabled.focus,
+  .btn-facebook[disabled].focus,
+  fieldset[disabled] .btn-facebook.focus {
+    background-color: #fff;
+    border-color: #ccc;
+  }
+  .btn-facebook .badge {
+    color: #fff;
+    background-color: #333;
+  }

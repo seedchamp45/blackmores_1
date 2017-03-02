@@ -1,0 +1,88 @@
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>jQuery UI Tabs - Content via Ajax</title>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+
+
+<script>
+
+function check(){
+	var st="";
+/*
+	switch(link){
+		case "index":
+			st+="index2.html";
+	        break;
+	        
+	    case "rule":
+	    	st+="rule.html";
+	        break;
+	        
+	    case "activity":
+	    	st+="activity.html";
+	        break;
+	        
+	    case "send_work":
+	    	st+="send_work.html";
+	        break;
+	        
+	    case "show_case":
+	    	st+="show_case.html";
+	        break;
+
+	    case "show_case":
+	    	st+="winner.html";
+	        break;     
+	}*/
+alert(" "+st);
+	
+$('#tar').load('index2.html target');  // here 'test.html' is a page and 'target' id a id of 'test.html'
+}
+  </script>
+
+
+<link rel="stylesheet" href="css/bootstrap.css">
+
+
+	</head>
+	<body>
+	
+	<div class="container">
+	
+ 		 <div class="row">
+ 		
+			<!-- <div class="col-md-2"><a href="#"  onclick="check('index');">หน้าแรก</a></div>
+			<div class="col-md-2"><a  href="#" onclick="check('rule');" >กติกาและของรางวัล</a></div>
+			<div class="col-md-2"><a  href="#" onclick="check('activity');">กิจกรรม</a></div>
+			<div class="col-md-2"><a  href="#" onclick="check('send_work');">ส่งผลงาน</a></div>
+			 <div class="col-md-2"><a href="#" onclick="check('show_case');">Showcase</a></div>
+			<div class="col-md-2"><a  href="#" onclick="check('winner');">ประกาศรายชื่อ</a></div> -->
+				
+			<div class="col-md-2"><a href="#"  onclick="check();">หน้าแรก</a></div>
+			<div class="col-md-2"><a  href="#" onclick="check();" >กติกาและของรางวัล</a></div>
+			<div class="col-md-2"><a  href="#" onclick="check();">กิจกรรม</a></div>
+			<div class="col-md-2"><a  href="#" onclick="check();">ส่งผลงาน</a></div>
+			 <div class="col-md-2"><a href="#" onclick="check();">Showcase</a></div>
+			<div class="col-md-2"><a  href="#" onclick="check();">ประกาศรายชื่อ</a></div>	
+				
+		</div>
+		
+		 <div class="row">
+			 <div class="col-md-12">
+				<div id="tar">xxx
+				</div>
+			</div>
+		</div>
+		
+	</div>
+
+	
+	
+	
+
+	</body>
+	</html>

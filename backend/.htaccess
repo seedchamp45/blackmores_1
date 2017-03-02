@@ -1,0 +1,10 @@
+RewriteEngine on
+
+RewriteRule profile-([0-9]+)-(.*)\.html$ profile.php?id=$1&name=$2.php [L]
+RewriteRule user_posts-([0-9]+)-(.*)\.html$ user_posts.php?id=$1&name=$2.php [L]
+RewriteRule user_likes-([0-9]+)-(.*)\.html$ user_likes.php?id=$1&name=$2.php [L]
+RewriteRule cat-([0-9]+)-(.*)\.html$ cat.php?cid=$1&name=$2.php [L]
+RewriteRule post-([0-9]+)-(.*)\.html$ post.php?id=$1&name=$2.php [L]
+RewriteRule rss_cat-([0-9]+)\.html$ rss_cat.php?id=$1 [L]
+RewriteRule ^(.*)\.html$ $1.php [L]
+

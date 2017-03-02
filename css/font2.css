@@ -1,0 +1,67 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 18, 2017, 1:47:55 AM
+    Author     : axe
+    type : font-face
+
+*/
+@font-face {
+    font-family: helvethaica_x_bd_it;
+    src: url(../fonts/DB Helvethaica X Bd It v3.2.ttf);
+}
+
+@font-face {
+    font-family: helvethaica_x_bd_v3_2;
+    src: url(../fonts/DB Helvethaica X Bd v3.2.ttf);
+}
+
+@font-face {
+    font-family: helvethaica_x_bd;
+    src: url(../fonts/DB Helvethaica X Bd.ttf);
+}
+
+
+@font-face {
+    font-family: helvethaica_x_blk_c_it_v3_2;
+    src: url(../fonts/DB Helvethaica X Blk Cond It v3.2.ttf);
+}
+
+@font-face {
+    font-family: helvethaica_x_blk_it_v3_2;
+    src: url(../fonts/DB Helvethaica X Blk It v3.2.ttf);
+}
+
+@font-face {
+    font-family: helvethaica_x_blk_v3_2;
+    src: url(../fonts/DB Helvethaica X Blk v3.2.ttf);
+}
+
+@font-face {
+    font-family: helvethaica_x_blk;
+    src: url(../fonts/DB Helvethaica X Blk.ttf);
+}
+
+@font-face {
+    font-family: helvethaica_x_med_it_v_3_2;
+    src: url(../fonts/DB Helvethaica X Med It v3.2.ttf);
+}
+
+@font-face {
+    font-family: helvethaica_x_med_v_3_2;
+    src: url(../fonts/DB Helvethaica X Med v3.2.ttf);
+}
+
+@font-face {
+    font-family: helvethaica_x;
+    src: url(../fonts/DB Helvethaica X.ttf);
+}
+
+@font-face {
+    font-family: gotham_book;
+    src: url(../fonts/Gotham-Book.otf);
+}
+
