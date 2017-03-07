@@ -3,7 +3,7 @@
 
 body{margin:0; background: url(../images/bg.jpg) repeat #f2f0f1; font-family: Arial, "Helvetica", sans-serif; font-size:12px;}
 
-a:link, a:visited,a:active {text-decoration: none; color:#3b5998;}
+a:link, a:visited,a:active {text-decoration: none; color:#fff;}
 
 a:hover{text-decoration:none; color:#1874CD;}
 
@@ -16,7 +16,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p{line-height:17px; font-weight:normal; margin: 0; padding: 0;}
 
-header {height:92px; background-color:#faf7f7; border-bottom:1px solid #cfcaca;}
+header {height:92px; background-color:#fff; border-bottom:1px solid #cfcaca;}
 
 .top-bar{height:50px; overflow:hidden; border-bottom:1px solid #cfcaca;}
 
@@ -96,7 +96,7 @@ header {height:92px; background-color:#faf7f7; border-bottom:1px solid #cfcaca;}
 
 /* Menu */
 
-#second-bar{padding:0; background-color:#c7182a; -webkit-box-shadow: 1px 1px 4px rgba(36, 50, 50, 0.3); -moz-box-shadow:1px 1px 4px rgba(36, 50, 50, 0.3); box-shadow:1px 1px 4px rgba(36, 50, 50, 0.3);}
+#second-bar{padding:0; background-image:url('../images/menu_1024.png'); background-color: #cccccc; -webkit-box-shadow: 1px 1px 4px rgba(36, 50, 50, 0.3); -moz-box-shadow:1px 1px 4px rgba(36, 50, 50, 0.3); box-shadow:1px 1px 4px rgba(36, 50, 50, 0.3);}
 #menu-bar{ width:95%; height:42px; display:block; border-left:1px solid #920b19; padding:0; margin: 0 auto;}
 #menu{ width:700px; height:42px; display:block; padding:0; float:left;} 
 #menu > ul {list-style:inside none; padding:0; margin:0;} 

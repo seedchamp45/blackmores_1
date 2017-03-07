@@ -102,8 +102,8 @@ html {
     -webkit-font-smoothing: antialiased !important;
 }
 body {
-    color:#767676;
-    background:#F1F2F2;
+    color:#fff;
+    background:#fff;
     font-family:'Open Sans',sans-serif;
     padding:0px !important;
     margin:0px !important;
@@ -169,6 +169,14 @@ h1 i, h2 i, h3 i, h4 i, h5 i, h6 i {
 .h3 {
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+div.myButton input {
+    background:url(/images/send/bu_upload.png.PNG) no-repeat;
+    cursor:pointer;
+    width: 200px;
+    height: 100px;
+    border: none;
 }
 
 h3.degrees {
@@ -298,7 +306,7 @@ ul.sidebar-menu {
     transition:all 0.3s ease;
 }
 ul.sidebar-menu li ul.sub li {
-    background:#F0F0F0;
+    background:#fff;
     margin-bottom:0;
     margin-left:0;
     margin-right:0;
@@ -362,7 +370,7 @@ ul.sidebar-menu li ul.sub li a {
     -o-transition:all 0.3s ease;
     -ms-transition:all 0.3s ease;
     transition:all 0.3s ease;
-    color:#738699;
+    color:#fff;
 }
 
 ul.sidebar-menu li ul.sub li a:hover,ul.sidebar-menu li ul.sub li.active a {
@@ -407,7 +415,7 @@ ul.sidebar-menu li a {
 }
 
 ul.sidebar-menu li a.active,ul.sidebar-menu li a:focus {
-	background-color: #eee;
+	background-color: #fff;
     font-weight: bold;
 	-webkit-transition:all 0.3s ease;
     -moz-transition:all 0.3s ease;

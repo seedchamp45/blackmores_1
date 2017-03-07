@@ -14,7 +14,7 @@ button:hover, button:active, button:focus{background: #f3f3f3;outline: none;}
 
 .thumbnail .caption {
     padding: 0px;
-    background-color: black;
+    background-color: #515252;
     color: #fff;
     size: 10px;
 }
@@ -39,11 +39,11 @@ button:hover, button:active, button:focus{background: #f3f3f3;outline: none;}
     text-align: center;
     display: inline;
 }
-
+/*
 .vote_gallery{
     text-align: right;
      display: inline;
-}
+}*/
 
 .title_gallery{
     display: inline;
@@ -115,7 +115,7 @@ button:hover, button:active, button:focus{background: #f3f3f3;outline: none;}
     
   
   .margin_left_5{
-       margin-left: 2px;
+       margin-left: 0.5em;
   }
   .margin_right_5{
        margin-right: 2px;
@@ -200,6 +200,10 @@ button:hover, button:active, button:focus{background: #f3f3f3;outline: none;}
     margin-left: auto;
 }
 
+.img_inline{
+    display: inline;
+}
+
 .hero {
   background-color: #2ba6cb;
   padding: 0 90px;
@@ -248,10 +252,10 @@ button:hover, button:active, button:focus{background: #f3f3f3;outline: none;}
     padding: 5px 5px 0 5px;
 }
 .panel.with-nav-tabs .nav-tabs{
-	border-bottom: none;
+  border-bottom: none;
 }
 .panel.with-nav-tabs .nav-justified{
-	margin-bottom: -1px;
+  margin-bottom: -1px;
 }
 /********************************************************************/
 /*** PANEL DEFAULT ***/
@@ -266,16 +270,16 @@ button:hover, button:active, button:focus{background: #f3f3f3;outline: none;}
 .with-nav-tabs.panel-default .nav-tabs > li > a:hover,
 .with-nav-tabs.panel-default .nav-tabs > li > a:focus {
     color: #777;
-	background-color: #ddd;
-	border-color: transparent;
+  background-color: #ddd;
+  border-color: transparent;
 }
 .with-nav-tabs.panel-default .nav-tabs > li.active > a,
 .with-nav-tabs.panel-default .nav-tabs > li.active > a:hover,
 .with-nav-tabs.panel-default .nav-tabs > li.active > a:focus {
-	color: #555;
-	background-color: #fff;
-	border-color: #ddd;
-	border-bottom-color: transparent;
+  color: #555;
+  background-color: #fff;
+  border-color: #ddd;
+  border-bottom-color: transparent;
 }
 .with-nav-tabs.panel-default .nav-tabs > li.dropdown .dropdown-menu {
     background-color: #f5f5f5;
@@ -296,20 +300,6 @@ button:hover, button:active, button:focus{background: #f3f3f3;outline: none;}
 }
 
 
-.bg_winner{
-    /*background-image: url("images/winner/bg_winner.png");*/
-        background: url(images/winner/bg_winner2.png) ; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  
-   background-size:     cover;                     
-    background-repeat:   no-repeat;
-      min-width: 100%;
-    min-height: 100%;
-    width: 100%;
-   height: 700px;
-}
 
 
 .panel {
@@ -319,7 +309,7 @@ button:hover, button:active, button:focus{background: #f3f3f3;outline: none;}
     -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
     box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
 }
-
+/*
 .full_bg{
     position: fixed;
     top: 0;
@@ -333,7 +323,7 @@ button:hover, button:active, button:focus{background: #f3f3f3;outline: none;}
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-}
+}*/
 
 .panel {
     margin-bottom: 20px;
@@ -425,6 +415,123 @@ button:hover, button:active, button:focus{background: #f3f3f3;outline: none;}
   padding:10px 20px;
   margin:0;
 }
+.with-nav-tabs.panel-default .nav-tabs > .open > a, .with-nav-tabs.panel-default .nav-tabs > .open > a:hover, .with-nav-tabs.panel-default .nav-tabs > .open > a:focus, .with-nav-tabs.panel-default .nav-tabs > li > a:hover, .with-nav-tabs.panel-default .nav-tabs > li > a:focus {
+    color: #000;
+    background-color: rgba(0, 0, 0, 0);
+    border-color: transparent;
+}
+
+.thumbnail_gallery{
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.block_txt_gallery{                                                  
+    padding-left: 2px;
+    padding-right: 5px;
+}
+
+
+
+
+
+.txt_bu_gallery{
+    font-family: "db_helvethaica_x";
+    color: white;
+    font-weight: bold;  
+    font-size: 2em;
+}
+
+.txt_menu_age_8_gallery{
+    font-family: "db_helvethaica_x";
+    color: orange;
+    font-weight: bold;  
+    font-size: 1.8em;
+    text-shadow: 1px 1px #000;
+}
+
+.txt_menu_age_more_8_gallery{
+    font-family: "db_helvethaica_x";
+    color: #058093;
+    font-weight: bold;  
+    font-size: 1.8em;
+    text-shadow: 1px 1px #fff;
+}
+
+.text_title_gallery{
+    margin-top: 5em;
+    font-family: "db_helvethaica_x";
+    color: #414042;
+    font-weight: bold;  
+    font-size: 1.5em;
+    display: inline;
+}
+
+.text_title_warn_gallery{
+    font-family: "db_helvethaica_x";
+    color: #1677BC;
+    font-weight: bold;  
+    font-size: 1.5em;
+    display: inline;
+}
+
+.text_title_gallery_pop_value{
+    font-family: "db_helvethaica_x";
+    color: #000;
+    font-weight: bold;  
+    font-size: 1.5em;
+    display: inline;
+}
+
+.text_title_gallery_pop{
+     font-family: "db_helvethaica_x";
+    color: #1677BC;
+    font-weight: bold;  
+    font-size: 1.7em;
+    display: inline;
+}
+
+
+
+.vote_gallery{
+    display: inline;
+    margin-left: 0.4em;
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+abbr[title2] {
+    color: #1677BC;
+}
+.panel-heading {
+    padding: 10px 15px;
+    border-bottom: 0px solid transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.bg_winner{
+    background-image: url("images/gallery/bg_winner.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  
+   background-size:     cover;                     
+    background-repeat:   no-repeat;
+      min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+}
+
+.panel-body {
+    padding: 30px;
+}
+
 
 </style>
 
@@ -441,36 +548,49 @@ button:hover, button:active, button:focus{background: #f3f3f3;outline: none;}
                 <img src="images/gallery/showcase.png" class="img-responsive center-block">
             </div>
         </div>
-        <div class="row">
-                <div class="center-block">
-                 
-                </div>
-        </div>
         
-        <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1"></div>
-            <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10">
-                <div class="panel with-nav-tabs panel-default">
-                        <div class="panel-heading ">
+        <div class="row bg_winner">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+              
+                <div class="panel with-nav-tabs panel-default ">
+                        <div class="no_border panel-heading ">
                             
                             <ul class="nav nav-tabs ul-center center-block">
-                                <li class="icon_yellow_winner"><a href="#tab1default1" data-toggle="tab"><h5>อายุไม่เกิน 8 ปี</h5> </a></li>
-                                <li class="icon_blue_winner"><a href="#tab2default" data-toggle="tab"><h5>อายุระหว่าง 8-12 ปี </h5></a></li>
+                                <li class="icon_yellow_winner">
+                                    <a href="#tab1default1" data-toggle="tab" class="menu-link ">
+                                        <div class="txt_menu_age_8_gallery">อายุไม่เกิน 8 ปี</div> 
+                                    </a>
+                                </li>
+                                <li class="icon_blue_winner">
+                                    <a href="#tab2default" data-toggle="tab" class="menu-link">
+                                        <div class="txt_menu_age_more_8_gallery">อายุระหว่าง 8-12 ปี </div>
+                                    </a>
+                                </li>
                             </ul>
                         </div>
+                        <div class="row ">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <div class="text_title_gallery"><br><br><p class="text-center">  กด Vote ผลงานที่ถูกใจ  
+                                  <abbr title2="" >กดโหวตได้ผลงานละ 1 ครั้ง</abbr>
+                                   สามารถโหวตกี่ผลงานก็ได้ 
+                                  </p>
+                                </div> 
+                            </div>
+                        </div>
+                    
+                    
                         <div class="panel-body">
                             <div class="tab-content">
-                                <div id="results" >
-                                       <!--ดึงค่าออกมา   --> 
-                                </div>           
-                                </div>
+                              <div id="results" >
+                                       <!--ดึงค่าออกมา -->
+                                </div>       
                                 
                             </div>
                         </div>
                      </div>
                
             </div>
-             <div class="col-xs-12  col-sm-12 col-md-1 col-lg-1"></div>
+          
         </div>
 
 
@@ -528,14 +648,35 @@ button:hover, button:active, button:focus{background: #f3f3f3;outline: none;}
 
                             <div style="height:3em;border:0px solid #000">  
                                 <div class="row ">
-                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-left title_txt_gallery"><h4>ชื่อ - นามสกุล</h4></div>
-                                   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center title_txt_gallery dashed_line2"><h4>ด.ช.วิตามิน แคลเซียม</div></h4>
-                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-left title_txt_gallery"><h4>อายุ <div class="dashed_line"> 5  </div>ปี</h4></div>
-                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-left title_txt_gallery"><h4>ฮีโรที่ส่งเข้าประกวด</h4></div>
-                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center title_txt_gallery dashed_line2"><h4>Captian Fish</h4></div>
-                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-left title_txt_gallery"><h4>คะแนนที่โหวต <img src="images/gallery/star.png" class="img-responsive inline"></h4></div> 
-                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center title_txt_gallery dashed_line2"><h4>73</h4></div>
-                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 row_h_1"> <button type="submit" class="btn btn-default1  center-block ">โหวต</button></div>
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-left title_txt_gallery">
+                                        <div class="text_title_gallery_pop">ชื่อ - นามสกุล</div>
+                                    </div>
+                                   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center title_txt_gallery dashed_line2">
+                                         <div class="text_title_gallery_pop_value">ด.ช.วิตามิน แคลเซียม</div>
+                                   </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-left title_txt_gallery">
+                                        <br>
+                                        <div class="text_title_gallery_pop"> อายุ </div>
+                                        <div class="text_title_gallery_pop_value dashed_line"> 5  </div>
+                                        <div class="text_title_gallery_pop">ปี</div>   
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-left title_txt_gallery">
+                                         <br>
+                                        <div class="text_title_gallery_pop">ฮีโรที่ส่งเข้าประกวด</div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center title_txt_gallery dashed_line2">
+                                             <div class="text_title_gallery_pop_value">Captian Fish</div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-left title_txt_gallery">
+                                         <br>
+                                        <div class="text_title_gallery_pop">คะแนนที่โหวต </div>
+                                        <img src="images/gallery/star.png" class="img-responsive inline">
+                                    </div> 
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center title_txt_gallery dashed_line2">
+                                         <div class="text_title_gallery_pop_value">73</div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 row_h_1"> 
+                                        <button type="submit" class="btn btn-default1  center-block txt_bu_gallery" data-toggle="modal" data-target=".bs-example-modal-lg" >โหวต</button></div>
                                 </div>
                             </div>
                         </div>
@@ -547,19 +688,6 @@ button:hover, button:active, button:focus{background: #f3f3f3;outline: none;}
     </div>
 
 <button id="load_more_button"><img src="images/gallery/ajax-loader.gif"  class="animation_image" style="float:left;"> Load More</button> <!-- load button -->
-<!--
-    <div align="wrapper">
-        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 ">xxxxx</div>
-        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 ">
-            <ui id="results">
 
-                
-            </ui>
-            <div align="center">
-                <button id="load_more_button"><img src="images/gallery/ajax-loader.gif"  class="animation_image" style="float:left;"> Load More</button> <!-- load button -->
-           <!-- </div>
-        </div>
-         <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 "></div>
-    </div>-->
   </body>
 </html>

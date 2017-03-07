@@ -8,14 +8,14 @@ error_reporting(E_ALL^E_NOTICE);
 if($squ = $mysqli->query("SELECT * FROM settings WHERE id='1'")){
 
     $settings = mysqli_fetch_array($squ);
-	
-	$FbPage = $settings['fbpage'];
+  
+  $FbPage = $settings['fbpage'];
 
     $squ->close();
-	
+  
 }else{
     
-	 printf("Error: %s\n", $mysqli->error);
+   printf("Error: %s\n", $mysqli->error);
 }
 
 //Ads
@@ -23,14 +23,14 @@ if($squ = $mysqli->query("SELECT * FROM settings WHERE id='1'")){
 if($AdsSql = $mysqli->query("SELECT * FROM siteads WHERE id='1'")){
 
     $AdsRow = mysqli_fetch_array($AdsSql);
-	
-	$Ad1 = $AdsRow['ad1'];
-	$Ad2 = $AdsRow['ad2'];
+  
+  $Ad1 = $AdsRow['ad1'];
+  $Ad2 = $AdsRow['ad2'];
 
     $AdsSql->close();
 
 }else{
-	
+  
      printf("Error: %s\n", $mysqli->error);
 }
 
@@ -41,39 +41,39 @@ $urlTitle = parse_url($_SERVER['REQUEST_URI']);
 
 $pageName = $urlTitle['path'];
 if($pageName == '/aboutus.html'){
-	$pageTitle = 'About Us | ';
+  $pageTitle = 'About Us | ';
 } else if($pageName ==  '/contactus.html'){
-	$pageTitle = 'Contact Us | ';
+  $pageTitle = 'Contact Us | ';
 } else if($pageName ==  '/privacy.html'){
-	$pageTitle = 'Privacy Policy | ';
+  $pageTitle = 'Privacy Policy | ';
 } else if($pageName ==  '/tos.html'){
-	$pageTitle = 'Terms of Use | ';
+  $pageTitle = 'Terms of Use | ';
 } else if($pageName ==  '/dmca.html'){
-	$pageTitle = 'DMCA Policy | ';	
+  $pageTitle = 'DMCA Policy | ';  
 } else if($pageName ==  '/feeds.html'){
-	$pageTitle = 'RSS Feeds | ';
+  $pageTitle = 'RSS Feeds | ';
 } else if($pageName ==  '/likes.html'){
-	$pageTitle = 'Likes | ';
+  $pageTitle = 'Likes | ';
 } else if($pageName ==  '/popular.html'){
-	$pageTitle = 'Popular | ';
+  $pageTitle = 'Popular | ';
 } else if($pageName ==  '/submit_new.html'){
-	$pageTitle = 'Submit a New Post | ';					
+  $pageTitle = 'Submit a New Post | ';          
 } else {
-	$pageTitle = '';
+  $pageTitle = '';
 }
 
 
 if(!isset($_SESSION['username'])){
-	//Do Nothing
+  //Do Nothing
 }else{
-	
+  
 $Uname = $_SESSION['username'];
 
 if($UserSql = $mysqli->query("SELECT * FROM users WHERE username='$Uname'")){
 
     $UserRow = mysqli_fetch_array($UserSql);
 
-	$Uid = $UserRow['id'];
+  $Uid = $UserRow['id'];
 
     $UserSql->close();
 }else{
@@ -83,9 +83,9 @@ if($UserSql = $mysqli->query("SELECT * FROM users WHERE username='$Uname'")){
 }
 
 //Tot Site Views
-	$SiteHits = $settings['site_hits'];
-	$SiteHits = $SiteHits + 1;
-	$mysqli->query("UPDATE settings SET site_hits='$SiteHits' WHERE id='1'") or die(mysqli_error());
+  $SiteHits = $settings['site_hits'];
+  $SiteHits = $SiteHits + 1;
+  $mysqli->query("UPDATE settings SET site_hits='$SiteHits' WHERE id='1'") or die(mysqli_error());
 
 ?>
 <!doctype html>
@@ -112,11 +112,11 @@ if($UserSql = $mysqli->query("SELECT * FROM users WHERE username='$Uname'")){
 <script src="js/jquery.ui.totop.min.js" type="text/javascript"></script>
 <script src="js/jquery.colorbox-min.js"></script>
 <script>
-			$(document).ready(function(){
-				//Examples of how to assign the ColorBox event to elements
-				$(".login-box").colorbox();
-				$().UItoTop({ easingType: 'easeOutQuart' });
-			})
+      $(document).ready(function(){
+        //Examples of how to assign the ColorBox event to elements
+        $(".login-box").colorbox();
+        $().UItoTop({ easingType: 'easeOutQuart' });
+      })
 
 $(function() {
 $("#contain").on("click",".like",function()
@@ -157,83 +157,58 @@ return false;
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 <header>
-<div class="top-bar">
 
-<div class="logo-box"><a href="index.php"><img src="images/logo.png" width="210" height="49" alt="<?php echo $settings['name'];?>"></a></div><!--logo-box-->
-
-</div><!--top-bar-->
 <div id="second-bar">
 <div id="menu-bar">
 <nav id="menu">
 <ul>
-<!--    <li class="hhas-sub"><a href="#"><img src="templates/<?php echo $settings['template'];?>/images/menu_button.png" width="27" height="24"></a>
-    <ul class="clm_0">
-    <li class="li-space">&nbsp;</li>
-      	 <li class="Small-Title"><span>About Us</span></li>
-         <li class="m-link"><a href="aboutus.html"><span>About Us</span></a></li>
-         <li class="m-link"><a href="privacy.html"><span>Privacy Policy</span></a></li>
-         <li class="m-link"><a href="tos.html"><span>Terms of Use</span></a></li>
-         <li class="m-link"><a href="dmca.html"><span>DMCA Policy</span></a></li>
-         <li class="m-link"><a href="contactus.html"><span>Contact Us</span></a></li>
-     <li class="li-space">&nbsp;</li>
-      	 <li class="Small-Title"><span>Connect With Us</span></li>
-          <li class="socail-icons"><a href="<?php echo $settings['fbpage'];?>" target="_blank"><img src="templates/<?php echo $settings['template'];?>/images/fb.png" width="32" height="32" alt="facebook"></a></li>
-         <li class="socail-icons"><a href="<?php echo $settings['twitter'];?>" target="_blank"><img src="templates/<?php echo $settings['template'];?>/images/twitter.png" width="32" height="32" alt="Twitter"></a></li>
-       
-         <li class="socail-icons"><a href="<?php echo $settings['pinterest'];?>" target="_blank"><img src="templates/<?php echo $settings['template'];?>/images/pinterest.png" width="32" height="32" alt="Pinterest"></a></li>
-	  <!--<li class="socail-icons"><a href="<?php echo $settings['google_plus'];?>" target="_blank"><img src="templates/<?php echo $settings['template'];?>/images/google_plus.png" width="32" height="32" alt="Google+"></a></li>
-         <li class="socail-icons"><a href="feeds.html"><img src="templates/<?php echo $settings['template'];?>/images/rss.png" width="32" height="32" alt="RSS"></a></li>-->
 
-   	
-   <li class="no-sub"><a href="index.html"><span>หน้าหลัก</span></a></li>
-<!--    <li class="has-sub"><a href='#'><span>Categories</span></a>
+   <li class="no-sub"><a href="index.html"><span>Everything</span></a></li>
+   <li class="has-sub"><a href='#'><span>Categories</span></a>
       <ul class="clm_1">
          <li class="li-space">&nbsp;</li>
-      	 <li class="Small-Title"><span>Brows by Categories</span></li>
+         <li class="Small-Title"><span>Brows by Categories</span></li>
          <?php
 if($mCategories = $mysqli->query("SELECT * FROM categories ORDER BY cname ASC")){
 
     while ($mcRow = mysqli_fetch_array($mCategories)){
-		$mUrl = $mcRow['cname'];
-		$mUrl = preg_replace("![^a-z0-9]+!i", "-", $mUrl);
-		$mUrl = strtolower($mUrl);
-		
+    $mUrl = $mcRow['cname'];
+    $mUrl = preg_replace("![^a-z0-9]+!i", "-", $mUrl);
+    $mUrl = strtolower($mUrl);
+    
 ?>  
-      	 <li class="m-link"><a href='cat-<?php echo $mcRow['id'];?>-<?php echo $mUrl;?>.html'><span><?php echo $mcRow['cname'];?></span></a></li>
+         <li class="m-link"><a href='cat-<?php echo $mcRow['id'];?>-<?php echo $mUrl;?>.html'><span><?php echo $mcRow['cname'];?></span></a></li>
 <?php     
-	}
+  }
 $mCategories->close();
 }else{
      printf("Error: %s\n", $mysqli->error);
 }
 ?>                     
       </ul>
-       </li> -->
-
-  	<li class="no-sub"><a href='likes.html'><span>กติกาและของรางวัล</span></a></li>
-    <li class="no-sub"><a href='submit_new.html'><span>ส่งผลงาน</span></a></li>
-    <li class="no-sub"><a href='index.html'><span>SHOWCASE</span></a></li>
-    <li class="no-sub"><a href='#'><span>ประกาศผู้โชคดี</span></a>
-<!--       <ul class="clm_3">
+       </li>
+    <li class="no-sub"><a href='likes.html'><span>Likes</span></a></li>
+       <li class="has-sub"><a href='#'><span>Search</span></a>
+      <ul class="clm_3">
          <li class="li-space">&nbsp;</li>
-     	<div class="sbox">
+      <div class="sbox">
 <form name="search" id="search" method="get" action="search.php">
 <input type="text" tabindex="1" class="input" id="term" name="term" placeholder="Enter Keyword(s)" />
 
 <input type="submit" tabindex="2" id="submit" class="btns" value="Search" />
-</form> -->
+</form>
 </div><!--sbox-->  
       </ul>
        </li>
-<!--     <li class="no-sub"><a href='submit_new.html'><span>Submit New</span></a></li> -->
+    <li class="no-sub"><a href='submit_new.html'><span>Submit New</span></a></li>
 </ul>
 </nav>
 
 <nav id="menu-user">
 <ul>
    <?php if(!isset($_SESSION['username'])){?>
- <!--   <li class="rno-sub"><a class="login-box" href="login.html"><span>Login</span></a></li> -->
-   <li class="no-sub"><a href='register.html'><span>ร่วมกิจกรรม</span></a></li>
+   <li class="rno-sub"><a class="login-box" href="login.html"><span>Login</span></a></li>
+   <li class="no-sub"><a href='register.html'><span>Register</span></a></li>
    <?php }else{ ?>
    <li class="rhas-sub"><a href="#"><span><?php echo $Uname;?></span></a>
    <ul class="clm_2">
