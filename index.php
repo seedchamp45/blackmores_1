@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../favicon.ico">
 
-    <title>Static Top Navbar Example for Bootstrap</title>
+    <title>test</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
