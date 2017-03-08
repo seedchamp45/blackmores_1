@@ -364,7 +364,7 @@ button:hover, button:active, button:focus{background: #f3f3f3;outline: none;}
 }
 
 .icon_blue_winner {
-   background: url(images/winner/bar_blue.png);
+   background: url(images/gallery/bar_blue.png);
    min-width: 20%;
     min-height: 20%;
     -webkit-background-size: cover;
