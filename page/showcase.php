@@ -536,10 +536,6 @@ abbr[title2] {
 </style>
 
 
-
-
-
-
 </head>
 <body>
     <div class="container">
@@ -624,8 +620,14 @@ abbr[title2] {
                     //hide loading image
                     $('.animation_image').hide(); //hide loading image once data is received
             });
+            
+            
     }
+    
 </script>
+
+
+
 
 <!-- Button trigger modal -->
 
@@ -641,7 +643,7 @@ abbr[title2] {
                     <div class="row">
 
                         <div class="col-xs-12 col-md-7 col-lg-7 vcenter">
-                            <img src="images/gallery/image_pop_detail.jpg" class="img-responsive center-block" style="height: 500px; width: 100%; display: block;"/>
+                            <img src="images/gallery/image_pop_detail.jpg" class="img-responsive center-block image_value" style="height: 500px; width: 100%; display: block;"/>
                             
                         </div>
                         <div class="col-xs-12 col-md-5 col-lg-4 vcenter">
@@ -652,12 +654,12 @@ abbr[title2] {
                                         <div class="text_title_gallery_pop">ชื่อ - นามสกุล</div>
                                     </div>
                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center title_txt_gallery dashed_line2">
-                                         <div class="text_title_gallery_pop_value">ด.ช.วิตามิน แคลเซียม</div>
+                                         <div class="text_title_gallery_pop_value name_value">ด.ช.วิตามิน แคลเซียม</div>
                                    </div>
                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-left title_txt_gallery">
                                         <br>
                                         <div class="text_title_gallery_pop"> อายุ </div>
-                                        <div class="text_title_gallery_pop_value dashed_line"> 5  </div>
+                                        <div class="text_title_gallery_pop_value dashed_line age_value"> 5  </div>
                                         <div class="text_title_gallery_pop">ปี</div>   
                                     </div>
                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-left title_txt_gallery">
@@ -665,7 +667,7 @@ abbr[title2] {
                                         <div class="text_title_gallery_pop">ฮีโรที่ส่งเข้าประกวด</div>
                                     </div>
                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center title_txt_gallery dashed_line2">
-                                             <div class="text_title_gallery_pop_value">Captian Fish</div>
+                                             <div class="text_title_gallery_pop_value title_value">Captian Fish</div>
                                     </div>
                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-left title_txt_gallery">
                                          <br>
@@ -673,7 +675,7 @@ abbr[title2] {
                                         <img src="images/gallery/star.png" class="img-responsive inline">
                                     </div> 
                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center title_txt_gallery dashed_line2">
-                                         <div class="text_title_gallery_pop_value">73</div>
+                                         <div class="text_title_gallery_pop_value vote_value">73</div>
                                     </div>
                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 row_h_1"> 
                                         <button type="submit" class="btn btn-default1  center-block txt_bu_gallery" data-toggle="modal" data-target=".bs-example-modal-lg" >โหวต</button></div>
@@ -686,8 +688,8 @@ abbr[title2] {
 
         </div>
     </div>
-
-<button id="load_more_button"><img src="images/gallery/ajax-loader.gif"  class="animation_image" style="float:left;"> Load More</button> <!-- load button -->
-
+   <input type="text" class="form-control txt_input" id="name_pic" name= "name_pic" >
+        <button id="load_more_button"><img src="images/gallery/ajax-loader.gif"  class="animation_image" style="float:left;"> Load More</button> <!-- load button -->
+ 
   </body>
 </html>
