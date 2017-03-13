@@ -115,11 +115,7 @@
                 font-weight: normal;
             }
             
-            .r_body1{
-                color: #000;
-                font-size:1.8em;
-                font-weight: normal;
-            }
+            
             
             .r_body_inline{
                 color: #000;
@@ -143,10 +139,51 @@
                 height: 5em;
                 width: 80%;
             }
-            .heg_txt{
-               height: 7em;
+            
+            
+            @media (min-width: 768px){
+               .heg_txt{
+                 height: 4em;
+                }
+                .r_body1{
+                    color: #000;
+                    font-size: 1em;
+                    font-weight: normal;
+                }
+            }
+
+             @media (min-width: 992px){
+               .heg_txt{
+                 height: 3.5em;
+                }
+                .r_body1{
+                    color: #000;
+                    font-size: 1.5em;
+                    font-weight: normal;
+                }
             }
             
+             @media (min-width: 992px){
+               .heg_txt{
+                 height: 4.2em;
+                }
+                .r_body1{
+                    color: #000;
+                    font-size: 1.6em;
+                    font-weight: normal;
+                }
+            }
+            @media (min-width: 1200px){
+                 .heg_txt{
+                    height: 5.3em;
+                } 
+                
+                .r_body1{
+                    color: #000;
+                    font-size: 1.8em;
+                    font-weight: normal;
+                }
+            }
             .c_h{
                 position: relative;
                 top: 50%;
@@ -155,6 +192,64 @@
             .modal-header {
                 padding: 15px;
                  border-bottom: 0px solid #e5e5e5;
+            }
+            
+            .with-nav-tabs.panel-default .nav-tabs > li.active > a, .with-nav-tabs.panel-default .nav-tabs > li.active > a:hover, .with-nav-tabs.panel-default .nav-tabs > li.active > a:focus {
+                color: #555;
+                background-color: rgba(255, 255, 255, 0);
+                 border-color: rgba(255, 255, 255, 0); 
+                border-bottom-color: transparent;
+            }
+
+            .nav-tabs.centered > li, .nav-pills.centered > li {
+                float:inherit;
+                display:inline-block;
+                display:inline; /* ie7 fix */
+                 zoom:1; /* hasLayout ie7 trigger */
+            }
+
+            .nav-tabs, .nav-pills {
+                text-align:center;
+            }
+
+            .ul-center{
+              margin:0;
+              padding:0;
+              clear:both;
+              text-align:center;
+            }
+            .ul-center li{
+              display:inline-block;
+              padding:10px 20px;
+              margin:0;
+            }
+            .with-nav-tabs.panel-default .nav-tabs > .open > a, .with-nav-tabs.panel-default .nav-tabs > .open > a:hover, .with-nav-tabs.panel-default .nav-tabs > .open > a:focus, .with-nav-tabs.panel-default .nav-tabs > li > a:hover, .with-nav-tabs.panel-default .nav-tabs > li > a:focus {
+                color: #000;
+                background-color: rgba(0, 0, 0, 0);
+                border-color: transparent;
+            }
+            
+            .panel.with-nav-tabs .panel-heading{
+                padding: 5px 5px 0 5px;
+               }
+            .panel-default>.panel-heading {
+                color: #333;
+                background-color: rgba(245, 245, 245, 0);
+                border-color: #ddd;
+            }
+
+
+
+
+            .panel-body {
+                padding: 30px;
+            }
+            ul.nav-tabs {
+              text-align: center;
+            }
+            ul.nav-tabs li {
+              float: none;
+              display: inline-block;
             }
         </style>
     </head>
@@ -167,15 +262,22 @@
             </div>
              <div class="row bg_winner">
                 
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
-                     <div class="panel with-nav-tabs panel-default center-block">
-                         <div class="panel-heading ">
-
-                                 <ul class="nav nav-tabs ul-center center-block">
-                                     <li class="icon_yellow_winner"><a href="#tab1default" data-toggle="tab"><div class="txt_menu_winner">ประเภทอายุไม่เกิน 8 ปี</div> </a></li>
-                                     <li class="icon_blue_winner"><a href="#tab2default" data-toggle="tab"><div class="txt_menu_winner">ประเภทอายุ 8-12 ปี </div></a></li>
-                                    
-                                 </ul>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+                    <div class="panel with-nav-tabs panel-default center-block">
+                        <div class="no_border panel-heading ">
+                                <ul class="nav nav-tabs" >
+                                    <!--  <ul class="nav nav-tabs ul-center center-block">-->
+                                    <li >
+                                        <a href="#tab1default" data-toggle="tab" class="menu-link h_b">
+                                            <img src="images/gallery/bar_yellow.png" class="img-responsive">
+                                        </a>
+                                    </li>
+                                    <li  style="left: -38;">
+                                        <a href="#tab2default" data-toggle="tab" class="menu-link h_b">
+                                          <img src="images/gallery/bar_blue.png" class="img-responsive">
+                                        </a>
+                                    </li>
+                                </ul>
                          </div>
                          <div class="panel-body">
                              <div class="tab-content">
@@ -263,7 +365,7 @@
                                                                  </div>
                                                                 <br>
                                                                 <div class="row">
-                                                                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 ">
+                                                                    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 ">
                                                                         <div>
                                                                             <div class="txt_r r_title text-center">ลักษณะ</div>
                                                                             <div class="txt_r r_body text-center">ฮีโร่สาวผิวสุขภาพดี ขาวกระจ่างใสมีออร่า สวยสะกดทุกสายตา</div>
@@ -282,7 +384,7 @@
                                                                     <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1 ">
                                                                          <div class="ruler_center center-block"></div>
                                                                     </div>
-                                                                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 ">
+                                                                    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 ">
                                                                         <div class="txt_r r_title text-center">อาวุธประจำกาย</div>
                                                                         <div class="txt_r r_body text-center"> โล่วิเศษ ช่วยป้องกันไข้หวัด<br>
                                                                          เกราะคอลลาเจน ช่วยคุ้มกันพลังความกระจ่าง</div>
@@ -504,9 +606,9 @@
                                          <br><br>
                                         <div class="row">
                                             
-                                            <div class="col-xs-12 col-sm-12 col-md-10 col-lg-12 ">
+                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
                                                 <div class="row">
-                                                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-5 ">
+                                                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 ">
                                                         <div class="row">
                                                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
                                                                 <ul>
@@ -523,128 +625,129 @@
                                                             
                                                         </div>
                                                     </div>
-                                                    
-                                                    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-7 ">
-                                                            <div id ="detail_1" class = "detail_1   text-center heg_txt">
-                                                                <div class="txt_r r_title_inline text-uppercase">C Bright Power</div>
-                                                                <dl class="dl-horizontal">
-                                                                    <dt class="txt_r r_body1 text-center yellow heg_txt">
-                                                                        <div class="c_h">ลักษณะ</div>
-                                                                    </dt>
-                                                                    <dd class="txt_r r_body1 text-center heg_txt">
-                                                                        <div class="c_h">ฮีโร่สาวผิวสุขภาพดี ขาวกระจ่างใสมีออร่า<br> สวยสะกด</div>
-                                                                    </dd>
-                                                                    <dt class="txt_r r_body1 text-center yellow heg_txt">
-                                                                        <div class="c_h">ความสามารถพิเศษ</div>
-                                                                    </dt>
-                                                                    <dd class="txt_r r_body1 text-center heg_txt">
-                                                                        <div class="c_h">มีภูมิคุ้มกันพิเศษป้องกัน ไข้หวัดในทุกสภา</div>
-                                                                    </dd>
-                                                                    <dt class="txt_r r_body1 text-center yellow heg_txt">
-                                                                        <div class="c_h">อาวุธประจำกาย</div>
-                                                                    </dt>
-                                                                    <dd class="txt_r r_body1 text-center heg_txt">
-                                                                        <div class="c_h">-โล่วิเศษ ช่วยป้องกันไข้หวัด<br>- เกราะคอลลาเจน ช่วยคุ้มกัน พลังความกระจ่างใสของผิว</div>
-                                                                    </dd>
-                                                                 </dl>
+                                                    <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 ">
+                                                         <div class="bg_select_8_12">
+                                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+                                                                <div id ="detail_1" class = "detail_1   text-center heg_txt">
+                                                                    <div class="txt_r r_title_inline text-uppercase">C Bright Power</div>
+                                                                    <dl class="dl-horizontal">
+                                                                        <dt class="txt_r r_body1 text-center yellow heg_txt">
+                                                                            <div class="c_h">ลักษณะ</div>
+                                                                        </dt>
+                                                                        <dd class="txt_r r_body1 text-center heg_txt">
+                                                                            <div class="c_h">ฮีโร่สาวผิวสุขภาพดี ขาวกระจ่างใสมีออร่า<br> สวยสะกด</div>
+                                                                        </dd>
+                                                                        <dt class="txt_r r_body1 text-center yellow heg_txt">
+                                                                            <div class="c_h">ความสามารถพิเศษ</div>
+                                                                        </dt>
+                                                                        <dd class="txt_r r_body1 text-center heg_txt">
+                                                                            <div class="c_h">มีภูมิคุ้มกันพิเศษป้องกัน ไข้หวัดในทุกสภา</div>
+                                                                        </dd>
+                                                                        <dt class="txt_r r_body1 text-center yellow heg_txt">
+                                                                            <div class="c_h">อาวุธประจำกาย</div>
+                                                                        </dt>
+                                                                        <dd class="txt_r r_body1 text-center heg_txt">
+                                                                            <div class="c_h">-โล่วิเศษ ช่วยป้องกันไข้หวัด<br>- เกราะคอลลาเจน ช่วยคุ้มกัน พลังความกระจ่างใสของผิว</div>
+                                                                        </dd>
+                                                                     </dl>
+                                                                </div>
+                                                                <div  id ="detail_2" class = "detail_2   text-center heg_txt">
+                                                                    <div class="txt_r r_title_inline text-uppercase">Captain Fish</div>
+                                                                    <dl class="dl-horizontal">
+                                                                        <dt class="txt_r r_body1 text-center yellow heg_txt">
+                                                                            <div class="c_h">ลักษณะ</div>
+                                                                        </dt>
+                                                                        <dd class="txt_r r_body1 text-center heg_txt">
+                                                                            <div class="c_h">ฮีโร่หนุ่มหล่อเจ้าแห่งท้องทะเล รูปร่างปราดเปรียว<br> คล่องแคล่ว ว่องไว</div>
+                                                                        </dd>
+                                                                        <dt class="txt_r r_body1 text-center yellow heg_txt">
+                                                                            <div class="c_h">ความสามารถพิเศษ</div>
+                                                                        </dt>
+                                                                        <dd class="txt_r r_body1 text-center heg_txt">
+                                                                            <div class="c_h">เป็นคนสมองดี คิดอะไรได้รวดเร็ว <br>เฉลียวฉลาด วางแผนเก่ง <br>แก้ปัญหาเฉพาะหน้าได้ดี</div>
+                                                                        </dd>
+                                                                        <dt class="txt_r r_body1 text-center yellow heg_txt">
+                                                                            <div class="c_h">อาวุธประจำกาย</div>
+                                                                        </dt>
+                                                                        <dd class="txt_r r_body1 text-center heg_txt">
+                                                                            <div class="c_h">พลังคลื่นปลาทะเล</div>
+                                                                        </dd>
+                                                                     </dl>
+                                                                </div>
+
+                                                                <div id ="detail_3" class = "detail_3   text-center heg_txt">
+                                                                    <div class="txt_r r_title_inline text-uppercase">Power 9</div>
+
+                                                                    <dl class="dl-horizontal">
+                                                                        <dt class="txt_r r_body1 text-center yellow heg_txt">
+                                                                            <div class="c_h">ลักษณะ</div>
+                                                                        </dt>
+                                                                        <dd class="txt_r r_body1 text-center heg_txt">
+                                                                            <div class="c_h">ฮีโร่คุณแม่ยังสาว ร่างกายแข็งแกร่งทุกสัดส่วน <br>อ่อนโยน จิตใจดี รักความยุติธรรม<br> ชอบช่วยเหลือผู้อื่น โดยเฉพาะเด็กๆ</div>
+                                                                        </dd>
+                                                                        <dt class="txt_r r_body1 text-center yellow heg_txt">
+                                                                            <div class="c_h">ความสามารถพิเศษ</div>
+                                                                        </dt>
+                                                                        <dd class="txt_r r_body1 text-center heg_txt">
+                                                                            <div class="c_h">ทำกิจกรรมหลายอย่างพร้อมกันได้<br>อย่างรวดเร็ว</div>
+                                                                        </dd>
+                                                                        <dt class="txt_r r_body1 text-center yellow heg_txt">
+                                                                            <div class="c_h">อาวุธประจำกาย</div>
+                                                                        </dt>
+                                                                        <dd class="txt_r r_body1 text-center heg_txt">
+                                                                            <div class="c_h">ขวดนม เพิ่มพลังให้คนรอบข้าง</div>
+                                                                        </dd>
+                                                                     </dl>
+                                                                </div>
+
+                                                              <div id ="detail_4" class = "detail_4   text-center heg_txt">
+                                                                    <div class="txt_r r_title_inline text-uppercase">Multi Action</div>
+                                                                    <dl class="dl-horizontal">
+                                                                        <dt class="txt_r r_body1 text-center yellow heg_txt">
+                                                                            <div class="c_h">ลักษณะ</div>
+                                                                        </dt>
+                                                                        <dd class="txt_r r_body1 text-center heg_txt">
+                                                                            <div class="c_h">ฮีโร่คู่รักจอมพลัง มีความแข็งแรงเป็นเลิศ</div>
+                                                                        </dd>
+                                                                        <dt class="txt_r r_body1 text-center yellow heg_txt">
+                                                                            <div class="c_h">ความสามารถพิเศษ</div>
+                                                                        </dt>
+                                                                        <dd class="txt_r r_body1 text-center heg_txt">
+                                                                            <div class="c_h">คู่รักสุดฟิต รักการออกกำลังกายเป็นชีวิตจิตใจ มีพละกำลังมหาศาล ยกของหนักได้อย่างง่ายดาย</div>
+                                                                        </dd>
+                                                                        <dt class="txt_r r_body1 text-center yellow heg_txt">
+                                                                            <div class="c_h">อาวุธประจำกาย</div>
+                                                                        </dt>
+                                                                        <dd class="txt_r r_body1 text-center heg_txt">
+                                                                            <div class="c_h">เข็มขัดวิเศษ สามารถปรับเพิ่มพลังได้ตามที่ต้องการ</div>
+                                                                        </dd>
+                                                                     </dl>
+                                                                </div>
+                                                                <div id ="detail_5" class = "detail_5   text-center heg_txt">
+                                                                    <div class="txt_r r_title_inline text-uppercase">Koala Kid</div>
+                                                                    <dl class="dl-horizontal">
+                                                                        <dt class="txt_r r_body1 text-center yellow heg_txt">
+                                                                            <div class="c_h">ลักษณะ</div>
+                                                                        </dt>
+                                                                        <dd class="txt_r r_body1 text-center heg_txt">
+                                                                            <div class="c_h">ฮีโร่เด็กน้อย ตัวเล็กแต่ใจใหญ่ มีนิสัยร่าเริง ซุกซุน กระฉับกระเฉง</div>
+                                                                        </dd>
+                                                                        <dt class="txt_r r_body1 text-center yellow heg_txt">
+                                                                            <div class="c_h">ความสามารถพิเศษ</div>
+                                                                        </dt>
+                                                                        <dd class="txt_r r_body1 text-center heg_txt">
+                                                                            <div class="c_h">ฉลาดหลักแหลม วิ่งเร็วเหมือนสายฟ้า และมีพลังกระโดดสูง</div>
+                                                                        </dd>
+                                                                        <dt class="txt_r r_body1 text-center yellow heg_txt">
+                                                                            <div class="c_h">อาวุธประจำกาย</div>
+                                                                        </dt>
+                                                                        <dd class="txt_r r_body1 text-center heg_txt">
+                                                                            <div class="c_h">ปืนวิเศษ สามารถยิงพลัง</div>
+                                                                        </dd>
+                                                                     </dl>
+                                                                </div>
                                                             </div>
-                                                            <div  id ="detail_2" class = "detail_2   text-center heg_txt">
-                                                                <div class="txt_r r_title_inline text-uppercase">Captain Fish</div>
-                                                                <dl class="dl-horizontal">
-                                                                    <dt class="txt_r r_body1 text-center yellow heg_txt">
-                                                                        <div class="c_h">ลักษณะ</div>
-                                                                    </dt>
-                                                                    <dd class="txt_r r_body1 text-center heg_txt">
-                                                                        <div class="c_h">ฮีโร่หนุ่มหล่อเจ้าแห่งท้องทะเล รูปร่างปราดเปรียว<br> คล่องแคล่ว ว่องไว</div>
-                                                                    </dd>
-                                                                    <dt class="txt_r r_body1 text-center yellow heg_txt">
-                                                                        <div class="c_h">ความสามารถพิเศษ</div>
-                                                                    </dt>
-                                                                    <dd class="txt_r r_body1 text-center heg_txt">
-                                                                        <div class="c_h">เป็นคนสมองดี คิดอะไรได้รวดเร็ว <br>เฉลียวฉลาด วางแผนเก่ง <br>แก้ปัญหาเฉพาะหน้าได้ดี</div>
-                                                                    </dd>
-                                                                    <dt class="txt_r r_body1 text-center yellow heg_txt">
-                                                                        <div class="c_h">อาวุธประจำกาย</div>
-                                                                    </dt>
-                                                                    <dd class="txt_r r_body1 text-center heg_txt">
-                                                                        <div class="c_h">พลังคลื่นปลาทะเล</div>
-                                                                    </dd>
-                                                                 </dl>
-                                                            </div>
-                                                                        
-                                                            <div id ="detail_3" class = "detail_3   text-center heg_txt">
-                                                                <div class="txt_r r_title_inline text-uppercase">Power 9</div>
-                                                              
-                                                                <dl class="dl-horizontal">
-                                                                    <dt class="txt_r r_body1 text-center yellow heg_txt">
-                                                                        <div class="c_h">ลักษณะ</div>
-                                                                    </dt>
-                                                                    <dd class="txt_r r_body1 text-center heg_txt">
-                                                                        <div class="c_h">ฮีโร่คุณแม่ยังสาว ร่างกายแข็งแกร่งทุกสัดส่วน <br>อ่อนโยน จิตใจดี รักความยุติธรรม<br> ชอบช่วยเหลือผู้อื่น โดยเฉพาะเด็กๆ</div>
-                                                                    </dd>
-                                                                    <dt class="txt_r r_body1 text-center yellow heg_txt">
-                                                                        <div class="c_h">ความสามารถพิเศษ</div>
-                                                                    </dt>
-                                                                    <dd class="txt_r r_body1 text-center heg_txt">
-                                                                        <div class="c_h">ทำกิจกรรมหลายอย่างพร้อมกันได้<br>อย่างรวดเร็ว</div>
-                                                                    </dd>
-                                                                    <dt class="txt_r r_body1 text-center yellow heg_txt">
-                                                                        <div class="c_h">อาวุธประจำกาย</div>
-                                                                    </dt>
-                                                                    <dd class="txt_r r_body1 text-center heg_txt">
-                                                                        <div class="c_h">ขวดนม เพิ่มพลังให้คนรอบข้าง</div>
-                                                                    </dd>
-                                                                 </dl>
-                                                            </div>
-                                                        
-                                                          <div id ="detail_4" class = "detail_4   text-center heg_txt">
-                                                                <div class="txt_r r_title_inline text-uppercase">Multi Action</div>
-                                                                <dl class="dl-horizontal">
-                                                                    <dt class="txt_r r_body1 text-center yellow heg_txt">
-                                                                        <div class="c_h">ลักษณะ</div>
-                                                                    </dt>
-                                                                    <dd class="txt_r r_body1 text-center heg_txt">
-                                                                        <div class="c_h">ฮีโร่คู่รักจอมพลัง มีความแข็งแรงเป็นเลิศ</div>
-                                                                    </dd>
-                                                                    <dt class="txt_r r_body1 text-center yellow heg_txt">
-                                                                        <div class="c_h">ความสามารถพิเศษ</div>
-                                                                    </dt>
-                                                                    <dd class="txt_r r_body1 text-center heg_txt">
-                                                                        <div class="c_h">คู่รักสุดฟิต รักการออกกำลังกายเป็นชีวิตจิตใจ มีพละกำลังมหาศาล ยกของหนักได้อย่างง่ายดาย</div>
-                                                                    </dd>
-                                                                    <dt class="txt_r r_body1 text-center yellow heg_txt">
-                                                                        <div class="c_h">อาวุธประจำกาย</div>
-                                                                    </dt>
-                                                                    <dd class="txt_r r_body1 text-center heg_txt">
-                                                                        <div class="c_h">เข็มขัดวิเศษ สามารถปรับเพิ่มพลังได้ตามที่ต้องการ</div>
-                                                                    </dd>
-                                                                 </dl>
-                                                            </div>
-                                                            <div id ="detail_5" class = "detail_5   text-center heg_txt">
-                                                                <div class="txt_r r_title_inline text-uppercase">Koala Kid</div>
-                                                                <dl class="dl-horizontal">
-                                                                    <dt class="txt_r r_body1 text-center yellow heg_txt">
-                                                                        <div class="c_h">ลักษณะ</div>
-                                                                    </dt>
-                                                                    <dd class="txt_r r_body1 text-center heg_txt">
-                                                                        <div class="c_h">ฮีโร่เด็กน้อย ตัวเล็กแต่ใจใหญ่ มีนิสัยร่าเริง ซุกซุน กระฉับกระเฉง</div>
-                                                                    </dd>
-                                                                    <dt class="txt_r r_body1 text-center yellow heg_txt">
-                                                                        <div class="c_h">ความสามารถพิเศษ</div>
-                                                                    </dt>
-                                                                    <dd class="txt_r r_body1 text-center heg_txt">
-                                                                        <div class="c_h">ฉลาดหลักแหลม วิ่งเร็วเหมือนสายฟ้า และมีพลังกระโดดสูง</div>
-                                                                    </dd>
-                                                                    <dt class="txt_r r_body1 text-center yellow heg_txt">
-                                                                        <div class="c_h">อาวุธประจำกาย</div>
-                                                                    </dt>
-                                                                    <dd class="txt_r r_body1 text-center heg_txt">
-                                                                        <div class="c_h">ปืนวิเศษ สามารถยิงพลัง</div>
-                                                                    </dd>
-                                                                 </dl>
-                                                            </div>
-                                                     </div>
-                                                    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 "></div>
+                                                        </div>
                                                 </div>
                                             </div>     
                                         </div>
@@ -657,7 +760,7 @@
                 </div>             
             </div>
         </div>       
-            
+    </div>        
             
             
       
