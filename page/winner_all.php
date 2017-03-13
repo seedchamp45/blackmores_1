@@ -420,6 +420,11 @@
     background-color: rgba(255, 255, 255, 0);
     border-color: rgba(221, 221, 221, 0);
 }
+.nav-tabs > li {
+    float: none;
+    margin-bottom: -1px;
+    border: 0;
+}
   </style>
 </head>
 <body>
@@ -433,7 +438,7 @@
                 <div class="panel-heading ">
 
                         <ul class="nav nav-tabs ul-center center-block">
-                            <li class="icon_yellow_winner"><a href="#tab1default1" data-toggle="tab"><div class="txt_menu_winner">ประเภทอายุไม่เกิน 8 ปี</div> </a></li>
+                            <li class="icon_yellow_winner"><a href="#tab1default" data-toggle="tab"><div class="txt_menu_winner">ประเภทอายุไม่เกิน 8 ปี</div> </a></li>
                             <li class="icon_blue_winner"><a href="#tab2default" data-toggle="tab"><div class="txt_menu_winner">ประเภทอายุ 8-12 ปี </div></a></li>
                             <li class="icon_green_winner"><a href="#tab3default" data-toggle="tab"><div class="txt_menu_winner">รายชื่อผู้ชนะ Popular Vote </div></a></li>
                              <li class="icon_purple_winner"><a href="#tab4default" data-toggle="tab"><div class="txt_menu_winner">ผู้โชคดีจากการโหวต</div></a></li>
