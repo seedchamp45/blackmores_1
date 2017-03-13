@@ -50,7 +50,7 @@
             }
             
             function clickShow(id){
-                var arr =["Blackmores Microsite_Button-01.png","Blackmores Microsite_Button-02","Blackmores Microsite_Button-03","Blackmores Microsite_Button-04","Blackmores Microsite_Button-05"];
+                var arr =["Blackmores Microsite_Button-01.png","Blackmores Microsite_Button-02.png","Blackmores Microsite_Button-03.png","Blackmores Microsite_Button-04.png","Blackmores Microsite_Button-05.png"];
                 for(i=1 ;i<6 ;i++){
                     $("#detail_"+i).hide();
                     $("#img_bu_"+i).attr('src', 'images/helo/'+"unclick/"+arr[i-1]);
@@ -78,7 +78,7 @@
                   min-width: 100%;
                 min-height: 100%;
                 width: 100%;
-               height: 100%;
+               height: 1114px;
             }
 
 
@@ -150,6 +150,10 @@
                     font-size: 1em;
                     font-weight: normal;
                 }
+                .bg_winner{
+                  height: 1600px;
+                   
+                   }
             }
 
              @media (min-width: 992px){
@@ -236,6 +240,11 @@
                 color: #333;
                 background-color: rgba(245, 245, 245, 0);
                 border-color: #ddd;
+            }
+
+            .iden
+            {
+              padding-left: 50px;
             }
 
 
@@ -366,8 +375,8 @@
                                                                 <br>
                                                                 <div class="row">
                                                                     <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 ">
-                                                                        <div>
-                                                                            <div class="txt_r r_title text-center">ลักษณะ</div>
+                                                                        <div class = "iden">
+                                                                            <div class="txt_r r_title text-center" >ลักษณะ</div>
                                                                             <div class="txt_r r_body text-center">ฮีโร่สาวผิวสุขภาพดี ขาวกระจ่างใสมีออร่า สวยสะกดทุกสายตา</div>
                                                                         </div>
 
@@ -411,7 +420,7 @@
                                                                 <br>
                                                                 <div class="row">
                                                                     <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 ">
-                                                                        <div>
+                                                                        <div class = "iden">
                                                                             <div class="txt_r r_title text-center">ลักษณะ</div>
                                                                             <div class="txt_r r_body text-center">ฮีโร่หนุ่มหล่อเจ้าแห่งท้องทะเล รูปร่างปราดเปรียว คล่องแคล่ว ว่องไว</div>
                                                                         </div>
@@ -455,7 +464,7 @@
                                                                 <br>
                                                                 <div class="row">
                                                                     <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 ">
-                                                                        <div>
+                                                                        <div class = "iden">
                                                                             <div class="txt_r r_title text-center">ลักษณะ</div>
                                                                             <div class="txt_r r_body text-center">ฮีโร่คู่รักจอมพลัง มีความแข็งแรงเป็นเลิศ</div>
                                                                         </div>
@@ -499,7 +508,7 @@
                                                                 <br>
                                                                 <div class="row">
                                                                     <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 ">
-                                                                        <div>
+                                                                        <div class = "iden">
                                                                             <div class="txt_r r_title text-center">ลักษณะ</div>
                                                                             <div class="txt_r r_body text-center">ฮีโร่คุณแม่ยังสาว ร่างกายแข็งแกร่งทุกสัดส่วน อ่อนโยน จิตใจดี รักความยุติธรรม ชอบช่วยเหลือผู้อื่น โดยเฉพาะเด็กๆ</div>
                                                                         </div>
@@ -543,7 +552,7 @@
                                                                 <br>
                                                                 <div class="row">
                                                                     <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 ">
-                                                                        <div>
+                                                                        <div class = "iden">
                                                                             <div class="txt_r r_title text-center">ลักษณะ</div>
                                                                             <div class="txt_r r_body text-center">ฮีโร่เด็กน้อย ตัวเล็กแต่ใจใหญ่ มีนิสัยร่าเริง ซุกซุน กระฉับกระเฉง</div>
                                                                         </div>
