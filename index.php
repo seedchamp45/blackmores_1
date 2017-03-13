@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../favicon.ico">
 
-    <title> </title>
+    <title>Blackmore Our Strong Family</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">

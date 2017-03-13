@@ -1,12 +1,15 @@
 <script>
 $(function(){
     $(".select_image").click(function(){
+
        // $("#name_pic").val("2");
-        load_data_image(this.value);
+      load_data_image(this.value);
+        //vote_data_image(this.value);
      });
      
     function load_data_image(id_image){
         //ajax
+
         $.ajax( 
         { 
             url:'page/load_data_image.php',
@@ -19,12 +22,16 @@ $(function(){
         //ดึงค่าสำเร็จ
         function calback(result){
            // ใส่ค่า
+
+    
             $(".name_value").html(result.username);
             $(".age_value").html(result.age);
-            $(".vote_value").html("55");
-            $(".title_value").html("result.name");
+            $(".vote_value").html(result.vote);
+            $(".title_value").html(result.name);
+            $(".image_id_value").val(result.id);
+            //alert($(".image_id_value").html(result.id););
+           
             $(".image_value").attr("src","page/upload/"+result.image);
-            
              //โชว์ popup
             $($(".select_image").attr("data-target")).modal("show");
             
@@ -34,8 +41,34 @@ $(function(){
             alert("error");                          
         }
     }
+
+    $(".image_id_value").click(function(){
+      vote_data_image(this.value);
+        //vote_data_image(this.value);
+    });
+
+    function vote_data_image(id_image){
+        //ajax
+
+        $.ajax( 
+        { 
+            url:'http://blackmoresmystrongfamily.com/page/facebook_V_login/member_vote.php',
+            data:{'image_id': id_image},
+            type:'POST',
+            success:function(){
+
+            }
+        });
+       
+    }
+
+
+
     
 });
+
+
+
 
 </script>
 
@@ -43,8 +76,8 @@ $(function(){
 <?php
 
 $servername = "localhost";
-$username = "root";
-$password = "";
+$username = "rootBlackmores";
+$password = "Champpseedd45";
 $dbname = "blackmores";
 
 // Create connection
@@ -61,7 +94,7 @@ else
 } 
 
 
-$sql = "SELECT * FROM image_upload";
+$sql = "SELECT * FROM image_upload where age < 8";
 $result = mysqli_query($conn,$sql);
 $row=mysqli_num_rows($result);
 // $rowdata = mysql_fetch_array($result)
@@ -75,6 +108,7 @@ while($rowdata = mysqli_fetch_assoc($result)){ //fetch values
     $pic = $rowdata['image'];
 
     $username = $rowdata['username'];
+    $vote = $rowdata['vote'];
 
     $age = $rowdata['age'];
     $image_id = $rowdata['image_id'];
@@ -95,7 +129,7 @@ while($rowdata = mysqli_fetch_assoc($result)){ //fetch values
                            <div class="txt_gallery_detail">'. $age .' ปี</div> 
                        </div>
                         <div class="col-xs-12 col-sm-4 col-md-4  col-lg-4 text-right block_txt_gallery">
-                            <div class="txt_gallery_detail inline"><img src="images/gallery/star_0.png" class="img-responsive img_inline" > <div class="vote_gallery" >75 โหวต</div> </div> 
+                            <div class="txt_gallery_detail inline" value="'. $rowdata['image_id'].'"><img src="images/gallery/star_0.png" class="img-responsive img_inline"> <div class="vote_gallery">' .$vote .' โหวต</div> </div> 
                        </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-right">
                          <br>
@@ -106,7 +140,7 @@ while($rowdata = mysqli_fetch_assoc($result)){ //fetch values
 
             <div class="center-block text-center row_h_1">
                 
-                    <button type="submit" id="select_image" class="btn btn-default1  center-block txt_bu_gallery select_image"  data-target=".bs-example-modal-lg" value="'. $rowdata['image_id'].'">โหวตเลย1</button>
+                    <button type="submit" id="select_image" class="btn btn-default1  center-block txt_bu_gallery select_image"  data-target=".bs-example-modal-lg" value="'. $rowdata['image_id'].'">โหวตเลย</button>
                </div>
         </div>
        </div>';

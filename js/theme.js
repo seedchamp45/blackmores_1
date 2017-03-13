@@ -5,9 +5,8 @@
  */
  $(document).ready(function(){
     $(".txt_menu").click(function(){
-       // alert($(this).attr("title")+$(this).text());
-      
        
+      // alert("click"+$(this).text());
       var link_txt;
        
        switch($(this).text()){

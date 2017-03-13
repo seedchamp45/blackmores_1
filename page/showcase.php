@@ -1,3 +1,21 @@
+<?php
+
+include_once("facebook_V_login/facebook_config.php");
+if(!isset($_SESSION['fb_access_token'])) : 
+  $helper = $fb->getRedirectLoginHelper();
+  $permissions = ['email'];
+  $redirect = 'http://blackmoresmystrongfamily.com/page/facebook_V_login/fb-callback.php';
+  $loginUrl = $helper->getLoginUrl($redirect,$permissions);
+
+  $class = 'hidden';
+  $classlogin = 'show';
+  // echo '<a href="' . htmlspecialchars($loginUrl) . '">Log in with Facebook!</a>';
+else :
+  
+  $classlogin = 'hidden';
+  $class = 'show'; 
+endif;
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -26,6 +44,13 @@ button:hover, button:active, button:focus{background: #f3f3f3;outline: none;}
 .txt_box_gallery{
     top:100%;
         
+}
+
+.hidden{
+    visibility="hidden";
+}
+.show{
+    visibility="visible";
 }
 
 .name_gallery{
@@ -550,16 +575,21 @@ abbr[title2] {
               
                 <div class="panel with-nav-tabs panel-default ">
                         <div class="no_border panel-heading ">
-                            
+                            <div id = "loginFacebook" align="center" class = "<?php echo $classlogin; ?>">
+                                <a class="btn btn-primary " href="<?=htmlspecialchars($loginUrl);?>"><i class="fa fa-facebook" aria-hidden="true"></i> Login With Facebook </a>
+                            </div>
+                            <div class="<?php echo $class; ?>">
+                             <p align="center"><a class="btn btn-primary" href="page/facebook_v_login/logout.php"><i class="fa fa-facebook" aria-hidden="true"></i> Logout Facebook </a></p>
+                             </div>
                             <ul class="nav nav-tabs ul-center center-block">
                                 <li class="icon_yellow_winner">
                                     <a href="#tab1default1" data-toggle="tab" class="menu-link ">
-                                        <div class="txt_menu_age_8_gallery">อายุไม่เกิน 8 ปี</div> 
+                                        <div class="txt_menu_age_8_gallery" id="ageEight">อายุไม่เกิน 8 ป๊</div> 
                                     </a>
                                 </li>
                                 <li class="icon_blue_winner">
                                     <a href="#tab2default" data-toggle="tab" class="menu-link">
-                                        <div class="txt_menu_age_more_8_gallery">อายุระหว่าง 8-12 ปี </div>
+                                        <div class="txt_menu_age_more_8_gallery" id="ageMoreEight">อายุระหว่าง 8-12 ปี </div>
                                     </a>
                                 </li>
                             </ul>
@@ -576,7 +606,7 @@ abbr[title2] {
                     
                     
                         <div class="panel-body">
-                            <div class="tab-content">
+                            <div class="tab-content prepareadd" id = "addDiv">
                               <div id="results" >
                                        <!--ดึงค่าออกมา -->
                                 </div>       
@@ -596,9 +626,24 @@ abbr[title2] {
     var track_page = 1; //track user click as page number, righ now page number 1
     load_contents(track_page); //load content
 
-    $("#load_more_button").click(function (e) { //user clicks on button
-            track_page++; //page number increment everytime user clicks load button
+
+
+    $("#ageEight").click(function (e) { 
+        $('#results').remove();
+        $("#addDiv").append('<div id = "results"></div>');
+
             load_contents(track_page); //load content
+
+    //user clicks on button
+            //track_page++; //page number increment everytime user clicks load button
+            //load_contents(track_page); //load content
+    });
+
+    $("#ageMoreEight").click(function (e) { 
+        $('#results').remove();
+        $("#addDiv").append('<div id = "results"></div>');
+
+            load_contents_age(track_page); //load content
     });
 
     //Ajax load function
@@ -606,6 +651,28 @@ abbr[title2] {
             $('.animation_image').show(); //show loading image
 
             $.post( 'page/fetch_data_pages.php', {'page': track_page}, function(data){
+
+                    if(data.trim().length == 0){
+                            //display text and disable load button if nothing to load
+                            $("#load_more_button").text("You have reached end of the record!").prop("disabled", true);
+                    }
+
+                    $("#results").append(data); //append data into #results element
+
+                    //scroll page to button element
+                    $("html, body").animate({scrollTop: $("#load_more_button").offset().top}, 800);
+
+                    //hide loading image
+                    $('.animation_image').hide(); //hide loading image once data is received
+            });
+            
+            
+    }
+
+    function load_contents_age(track_page){
+            $('.animation_image').show(); //show loading image
+
+            $.post( 'page/fetch_data_pages_2.php', {'page': track_page}, function(data){
 
                     if(data.trim().length == 0){
                             //display text and disable load button if nothing to load
@@ -678,7 +745,9 @@ abbr[title2] {
                                          <div class="text_title_gallery_pop_value vote_value">73</div>
                                     </div>
                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 row_h_1"> 
-                                        <button type="submit" class="btn btn-default1  center-block txt_bu_gallery" data-toggle="modal" data-target=".bs-example-modal-lg" >โหวต</button></div>
+                                        
+                                        <button type="submit" name="image_id_value " class="btn btn-default1  center-block txt_bu_gallery submit_vote image_id_value <?php echo $class; ?>" data-toggle="modal" data-target=".bs-example-modal-lg">โหวต</button></div>
+                                        
                                 </div>
                             </div>
                         </div>
@@ -689,7 +758,7 @@ abbr[title2] {
         </div>
     </div>
    <input type="text" class="form-control txt_input" id="name_pic" name= "name_pic" >
-        <button id="load_more_button"><img src="images/gallery/ajax-loader.gif"  class="animation_image" style="float:left;"> Load More</button> <!-- load button -->
+<!--         <button id="load_more_button"><img src="images/gallery/ajax-loader.gif"  class="animation_image" style="float:left;"> Load More</button> -->
  
   </body>
 </html>
