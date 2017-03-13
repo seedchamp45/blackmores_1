@@ -20,16 +20,33 @@
                 $("#img_bu_1").attr('src', 'images/helo/click/Blackmores Microsite_Button-01.png');
                 
                 $('#boutique').boutique({
-                            container_width: 450,
-                            front_img_width: 140,
                             autoplay: false
                     });
             });
+            
+            function move_callback(anchor, instance, framenumber){
+                var res = anchor.split("_");
+                var i1 = res[1]-1;    
+            }
 
-            // Use the Boutique callback to trigger the content switch
+			// Link-click callback function:
+            function link_callback(anchor, instance){
+                
+                var cars = ["C BRIGHT.png", "CAPTAIN FISH.png","MULTI.png","POWER 9.png","KOALA KID.png"];
+                var name = ["C Bright Power","Captain Fish","Multi Action","Power 9","Koala Kid"];
+                var res = anchor.split("_");
+                var i1 = res[1]-1;
+                 $($('#img_src_1').attr("data-target")).modal("show");
+                    
+                $("#alert_pic").attr("src","images/helo/"+cars[i1]);
+                $(".name_hero").html(name[i1]);
+               
+             }
+           
             function pre_move_callback(anchor){
-                    $('.content').hide();
-                    $(anchor).show();
+                var res = anchor.split("_");
+                   $('.content').hide();
+                $(res[0]+res[1]).show();
             }
             
             function clickShow(id){
@@ -180,33 +197,53 @@
                                                        <!-- The Boutique HTML: -->
                                                        <ul id="boutique">
                                                                <li>
-                                                                       <a href="#content1">
-                                                                           <img src="images/helo/C BRIGHT.png"  class="img-responsive" width="485" height="600">
+                                                                       <a href="#content_1">
+                                                                           <img src="images/helo/C BRIGHT.png"  id="img_src_1" class="img-responsive" width="485" height="600" data-target="#myModal">
                                                                        </a>
                                                                </li>
                                                                <li>
-                                                                       <a href="#content2">
-                                                                               <img src="images/helo/CAPTAIN FISH.png"  class="img-responsive" width="485" height="600">
+                                                                       <a href="#content_2">
+                                                                               <img src="images/helo/CAPTAIN FISH.png"  id="img_src_2" class="img-responsive" width="485" height="600" data-target="#myModal">
                                                                        </a>
                                                                </li>
                                                                 <li>
-                                                                       <a href="#content3">
-                                                                           <img src="images/helo/MULTI.png" class="img-responsive" width="485" height="600">
+                                                                       <a href="#content_3">
+                                                                           <img src="images/helo/MULTI.png" id="img_src_3" class="img-responsive" width="485" height="600" data-target="#myModal">
                                                                        </a>
                                                                </li>
                                                                <li>
-                                                                       <a href="#content4">
-                                                                               <img src="images/helo/POWER 9.png"  class="img-responsive" width="485" height="600">
+                                                                       <a href="#content_4">
+                                                                               <img src="images/helo/POWER 9.png" id="img_src_4" class="img-responsive" width="485" height="600" data-target="#myModal">
                                                                        </a>
                                                                </li>
                                                                <li>
-                                                                       <a href="#content5">
-                                                                               <img src="images/helo/KOALA KID.png"  class="img-responsive" width="485" height="600">
+                                                                       <a href="#content_5">
+                                                                               <img src="images/helo/KOALA KID.png" id="img_src_5" class="img-responsive" width="485" height="600" data-target="#myModal">
                                                                        </a>
                                                                </li>
                                                        </ul>
                                                     </div>
-
+                                                     
+                                                    
+                                                    <!--1-->
+                                                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                                          <div class="modal-dialog" role="document">
+                                                            <div class="modal-content">
+                                                              <div class="modal-header">
+                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                                <h4 class="modal-title" id="myModalLabel"><div class="txt_r r_title_helo text-center text-uppercase name_hero">Captain Fish</div></h4>
+                                                              </div>
+                                                              <div class="modal-body">
+                                                                  <img id ="alert_pic" src="images/helo/C BRIGHT.png"  class="img-responsive center-block" >
+                                                              </div>
+                                                            
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                    <!--1-->
+                                                    
+                                                    
+                                                    
                                                     <div class="row">
 
                                                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-1 "></div>
