@@ -49,6 +49,22 @@
         <script src="js/jquery.boutique.min.js"></script>
                 
         <style>
+            .bg_winner{
+                /*background-image: url("images/winner/bg_winner.png");*/
+                    background: url(images/gallery/bg_winner.png) ; 
+              -webkit-background-size: cover;
+              -moz-background-size: cover;
+              -o-background-size: cover;
+
+               background-size:     cover;                     
+                background-repeat:   no-repeat;
+                  min-width: 100%;
+                min-height: 100%;
+                width: 100%;
+               height: 100%;
+            }
+
+
             .txt_r{
                font-family: "db_helvethaica_x";
           
@@ -122,11 +138,15 @@
         </style>
     </head>
     <body>
-        
         <div class="container">
-            <div class="row bg_winner">
-                 <div class="col-xs-12 col-sm-12 col-md-1 col-lg-2 "> </div>
-                 <div class="col-xs-12 col-sm-12 col-md-10 col-lg-8 ">
+            <div class="row ">
+                <div class="col-xs-12  col-sm-12 col-md-12 col-lg-12">
+                    <img src="images/helo/select_hello_title.png" class="img-responsive center-block">
+                </div>
+            </div>
+             <div class="row bg_winner">
+                
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
                      <div class="panel with-nav-tabs panel-default center-block">
                          <div class="panel-heading ">
 
@@ -147,7 +167,7 @@
                                         <div class="row">
 
                                            
-                                            <div class="col-xs-10 col-sm-10 col-md-10 col-lg-12 ">
+                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
 
                                                 <div class = "text-center">
                                                     <div class="txt_r r_body_inline text-center">อายุน้อยกว่า 8 ปี : ระบายสีฮีโร่ตามจินตนาการ</div>
@@ -232,7 +252,7 @@
                                                                 <div class="row">
                                                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
 
-                                                                        <a href="download/C BRIGHT.pdf" target="_blank"><button type="submit" class="btn btn-default1  center-block txt_bu_gallery" data-toggle="modal" data-target=".bs-example-modal-lg" >ดาวน์โหลด</button></a>
+                                                                        <a href="download/C BRIGHT.pdf"  download><button type="submit" class="btn btn-default1  center-block txt_bu_gallery" data-toggle="modal" data-target=".bs-example-modal-lg" >ดาวน์โหลด</button></a>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -276,7 +296,7 @@
                                                                 <div class="row">
                                                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
 
-                                                                        <a href="download/CAPTAIN FISH.pdf" target="_blank"> <button type="submit" class="btn btn-default1  center-block txt_bu_gallery" data-toggle="modal" data-target=".bs-example-modal-lg" >ดาวน์โหลด</button></a>
+                                                                        <a href="download/CAPTAIN FISH.pdf" download> <button type="submit" class="btn btn-default1  center-block txt_bu_gallery" data-toggle="modal" data-target=".bs-example-modal-lg" >ดาวน์โหลด</button></a>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -320,7 +340,7 @@
                                                                 <div class="row">
                                                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
 
-                                                                        <a href="download/MULTI.pdf" target="_blank"><button type="submit" class="btn btn-default1  center-block txt_bu_gallery" data-toggle="modal" data-target=".bs-example-modal-lg" >ดาวน์โหลด</button></a>
+                                                                        <a href="download/MULTI.pdf" download><button type="submit" class="btn btn-default1  center-block txt_bu_gallery" data-toggle="modal" data-target=".bs-example-modal-lg" >ดาวน์โหลด</button></a>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -364,7 +384,7 @@
                                                                 <div class="row">
                                                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
 
-                                                                        <a href="download/POWER 9.pdf" target="_blank"><button type="submit" class="btn btn-default1  center-block txt_bu_gallery" data-toggle="modal" data-target=".bs-example-modal-lg" >ดาวน์โหลด</button></a>
+                                                                        <a href="download/POWER 9.pdf" download><button type="submit" class="btn btn-default1  center-block txt_bu_gallery" data-toggle="modal" data-target=".bs-example-modal-lg" >ดาวน์โหลด</button></a>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -408,7 +428,7 @@
                                                                 <div class="row">
                                                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
 
-                                                                        <a href="download/KOALA KID.pdf" target="_blank"><button type="submit" class="btn btn-default1  center-block txt_bu_gallery" data-toggle="modal" data-target=".bs-example-modal-lg" >ดาวน์โหลด</button></a>
+                                                                        <a href="download/KOALA KID.pdf" download><button type="submit" class="btn btn-default1  center-block txt_bu_gallery" data-toggle="modal" data-target=".bs-example-modal-lg" >ดาวน์โหลด</button></a>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -593,11 +613,9 @@
                         </div>
                             
                     </div>
-                </div>    
-                 <div class="col-xs-12 col-sm-12 col-md-1 col-lg-2 "> </div>         
+                </div>             
             </div>
-        </div>  
-            
+        </div>       
             
             
             
