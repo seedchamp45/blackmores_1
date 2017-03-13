@@ -17,6 +17,8 @@
                 $("#detail_3").hide();
                 $("#detail_4").hide();
                 $("#detail_5").hide();
+                $("#img_bu_1").attr('src', 'images/helo/click/Blackmores Microsite_Button-01.png');
+                
                 $('#boutique').boutique({
                             container_width: 450,
                             front_img_width: 140,
@@ -31,11 +33,13 @@
             }
             
             function clickShow(id){
+                var arr =["Blackmores Microsite_Button-01.png","Blackmores Microsite_Button-02","Blackmores Microsite_Button-03","Blackmores Microsite_Button-04","Blackmores Microsite_Button-05"];
                 for(i=1 ;i<6 ;i++){
                     $("#detail_"+i).hide();
+                    $("#img_bu_"+i).attr('src', 'images/helo/'+"unclick/"+arr[i-1]);
                 }
                 $("#detail_"+id).show();
-                
+                 $("#img_bu_"+id).attr('src', 'images/helo/'+"click/"+arr[id-1]);
             }
         </script>
         <!-- The Boutique CSS: -->
@@ -446,11 +450,11 @@
                                                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
                                                                 <ul>
                                                                     <li><img src="images/helo/bu_selectHello2.png" class="img-responsive"><br></li>
-                                                                    <li><a href="#" onclick="clickShow(1)"> <img src="images/helo/unclick/Blackmores Microsite_Button-02.png" class="img-responsive" ></a></li>
-                                                                    <li><a href="#" onclick="clickShow(2)"><img src="images/helo/unclick/Blackmores Microsite_Button-04.png" class="img-responsive"></a></li>
-                                                                    <li><a href="#" onclick="clickShow(3)"><img src="images/helo/unclick/Blackmores Microsite_Button-06.png" class="img-responsive"></a></li>
-                                                                    <li><a href="#" onclick="clickShow(4)"><img src="images/helo/unclick/Blackmores Microsite_Button-08.png" class="img-responsive"></a></li>
-                                                                    <li><a href="#" onclick="clickShow(5)"><img src="images/helo/unclick/Blackmores Microsite_Button-10.png" class="img-responsive"></a></li>
+                                                                    <li><a href="#" onclick="clickShow(1)"> <img id="img_bu_1" src="images/helo/unclick/Blackmores Microsite_Button-01.png" class="img-responsive" ></a></li>
+                                                                    <li><a href="#" onclick="clickShow(2)"><img id="img_bu_2"src="images/helo/unclick/Blackmores Microsite_Button-02.png" class="img-responsive"></a></li>
+                                                                    <li><a href="#" onclick="clickShow(3)"><img id="img_bu_3"src="images/helo/unclick/Blackmores Microsite_Button-03.png" class="img-responsive"></a></li>
+                                                                    <li><a href="#" onclick="clickShow(4)"><img id="img_bu_4" src="images/helo/unclick/Blackmores Microsite_Button-04.png" class="img-responsive"></a></li>
+                                                                    <li><a href="#" onclick="clickShow(5)"><img id="img_bu_5" src="images/helo/unclick/Blackmores Microsite_Button-5.png" class="img-responsive"></a></li>
                                                                   </ul>
 
                                                             </div>
