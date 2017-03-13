@@ -152,6 +152,10 @@
                 top: 50%;
                 transform: translateY(-50%);
             }
+            .modal-header {
+                padding: 15px;
+                 border-bottom: 0px solid #e5e5e5;
+            }
         </style>
     </head>
     <body>
