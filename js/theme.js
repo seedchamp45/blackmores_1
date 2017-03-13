@@ -22,7 +22,7 @@
                  link_txt ="page/send_work.php";
                break;
                
-            case "SHOWCASE":
+            case "โหวตภาพประกวด":
                 link_txt ="page/showcase.php";
                break;
              
@@ -33,6 +33,10 @@
             case "ร่วมกิจกรรม":
                 link_txt ="page/activity.php";
                 break;
+                
+            case "เลือกฮีโร่":
+                link_txt ="page/select_helo.php";
+                break;    
        }
          $("#content").load(link_txt);
 
