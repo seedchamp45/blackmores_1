@@ -241,29 +241,8 @@ button:hover, button:active, button:focus{background: #f3f3f3;outline: none;}
      zoom:1; /* hasLayout ie7 trigger */
 }
 
-.icon_yellow_winner {
-   background: url(images/winner/bar_Yellow.png);
-   min-width: 20%;
-    min-height: 20%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-  
-}
 
-.icon_blue_winner {
-   background: url(images/winner/bar_blue.png);
-   min-width: 20%;
-    min-height: 20%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-  
-}
+
 
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
     color: #555;
@@ -376,28 +355,32 @@ button:hover, button:active, button:focus{background: #f3f3f3;outline: none;}
     background-size: 100% 100%;
   
 }
-.icon_yellow_winner {
-   background: url(images/winner/bar_Yellow.png);
-   min-width: 20%;
-    min-height: 20%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-  
-}
+
 
 .icon_blue_winner {
    background: url(images/gallery/bar_blue.png);
-   min-width: 20%;
-    min-height: 20%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-  
+    width: 355px;
+   height: 145px;
+}
+
+.icon_yellow_winner {
+   background: url(images/winner/bar_yellow.png);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 370px;
+    height: 145px;
+}
+
+.h_b{
+    height: 145px;
 }
 
 .icon_purple_winner {
@@ -421,7 +404,7 @@ button:hover, button:active, button:focus{background: #f3f3f3;outline: none;}
 .nav-tabs.centered > li, .nav-pills.centered > li {
     float:inherit;
     display:inline-block;
-    *display:inline; /* ie7 fix */
+    display:inline; /* ie7 fix */
      zoom:1; /* hasLayout ie7 trigger */
 }
 
@@ -556,7 +539,19 @@ abbr[title2] {
 .panel-body {
     padding: 30px;
 }
+ul.nav-tabs {
+  text-align: center;
+}
+ul.nav-tabs li {
+  float: none;
+  display: inline-block;
+}
 
+.c_h{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
 
 </style>
 
@@ -567,6 +562,12 @@ abbr[title2] {
         <div class="row">
             <div class="col-xs-12  col-sm-12 col-md-12 col-lg-12">
                 <img src="images/gallery/showcase.png" class="img-responsive center-block">
+                <div id = "loginFacebook" align="center" class = "<?php echo $classlogin; ?>">
+                                <a class="btn btn-primary " href="<?=htmlspecialchars($loginUrl);?>"><i class="fa fa-facebook" aria-hidden="true"></i> Login With Facebook </a>
+                            </div>
+                            <div class="<?php echo $class; ?>">
+                             <p align="center"><a class="btn btn-primary" href="page/facebook_v_login/logout.php"><i class="fa fa-facebook" aria-hidden="true"></i> Logout Facebook </a></p>
+                             </div>
             </div>
         </div>
         
@@ -575,21 +576,17 @@ abbr[title2] {
               
                 <div class="panel with-nav-tabs panel-default ">
                         <div class="no_border panel-heading ">
-                            <div id = "loginFacebook" align="center" class = "<?php echo $classlogin; ?>">
-                                <a class="btn btn-primary " href="<?=htmlspecialchars($loginUrl);?>"><i class="fa fa-facebook" aria-hidden="true"></i> Login With Facebook </a>
-                            </div>
-                            <div class="<?php echo $class; ?>">
-                             <p align="center"><a class="btn btn-primary" href="page/facebook_v_login/logout.php"><i class="fa fa-facebook" aria-hidden="true"></i> Logout Facebook </a></p>
-                             </div>
-                            <ul class="nav nav-tabs ul-center center-block">
-                                <li class="icon_yellow_winner">
-                                    <a href="#tab1default1" data-toggle="tab" class="menu-link ">
-                                        <div class="txt_menu_age_8_gallery" id="ageEight">อายุไม่เกิน 8 ป๊</div> 
+                            
+                            <ul class="nav nav-tabs" >
+                                <!--  <ul class="nav nav-tabs ul-center center-block">-->
+                                <li >
+                                    <a href="#tab1default1" data-toggle="tab" class="menu-link h_b">
+                                        <img src="images/gallery/bar_yellow.png" class="img-responsive">
                                     </a>
                                 </li>
-                                <li class="icon_blue_winner">
-                                    <a href="#tab2default" data-toggle="tab" class="menu-link">
-                                        <div class="txt_menu_age_more_8_gallery" id="ageMoreEight">อายุระหว่าง 8-12 ปี </div>
+                                <li  style="left: -38;">
+                                    <a href="#tab2default" data-toggle="tab" class="menu-link h_b">
+                                      <img src="images/gallery/bar_blue.png" class="img-responsive">
                                     </a>
                                 </li>
                             </ul>
