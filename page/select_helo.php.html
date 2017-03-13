@@ -1,0 +1,66 @@
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+			// Calling Boutique on your HTML element when the document is ready:
+			$(document).ready(function(){
+				$('#boutique').boutique({
+					container_width: 450,
+					front_img_width: 140,
+					autoplay: true
+				});
+			});
+
+			// Use the Boutique callback to trigger the content switch
+			function pre_move_callback(anchor){
+				$('.content').hide();
+				$(anchor).show();
+			}
+        </script>
+        <!-- The Boutique CSS: -->
+		<link rel="stylesheet" href="css/boutique.css">
+
+		<!-- The Boutique plugin: -->
+		<script src="js/jquery.boutique.min.js"></script>
+    </head>
+    <body>
+        <a href="instructions.html">Back to instructions</a>
+		<br><br>
+		In this example each frame loads a specific content element underneath.<br>
+		The pre_move_callback function is used to trigger this event.
+		<br><br>
+
+		<!-- The Boutique HTML: -->
+		<ul id="boutique">
+			<li>
+				<a href="#content1">
+					<img src="demo_files/images/image4.jpg" alt="Frame 1" width="280" height="400">
+				</a>
+			</li>
+			<li>
+				<a href="#content2">
+					<img src="demo_files/images/image5.jpg" alt="Frame 2" width="280" height="400">
+				</a>
+			</li>
+		</ul>
+		<!-- End of the Boutique HTML -->
+
+		<div id="content1" class="content">
+			<h3>Content 1</h3>
+			Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nulla vitae elit libero, a pharetra augue. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+			<br><br>
+			Etiam porta sem malesuada magna mollis euismod. Sed posuere consectetur est at lobortis. Donec sed odio dui. Maecenas faucibus mollis interdum. Nullam quis risus eget urna mollis ornare vel eu leo.
+		</div>
+		<div id="content2" class="content" style="display:none">
+			<h3>Content 2</h3>
+			Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vestibulum id ligula porta felis euismod semper. Cras mattis consectetur purus sit amet fermentum. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+			<br><br>
+			Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec ullamcorper nulla non metus auctor fringilla. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+			<br><br>
+			Curabitur blandit tempus porttitor. Vestibulum id ligula porta felis euismod semper. Cras mattis consectetur purus sit amet fermentum. Etiam porta sem malesuada magna mollis euismod. Etiam porta sem malesuada magna mollis euismod.
+		</div>
+    </body>
+</html>
