@@ -234,31 +234,31 @@ ul.nav-tabs li {
        <div class="bg_winner">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
                 <div class="panel with-nav-tabs panel-default">
-                    <div class="no_border panel-heading ">
-                            <ul class="nav nav-tabs">
-                                <li style="right:  -78">
+                    <div class="no_border panel-heading" style="width: 100%; height: 100px;">
+                            <ul class="nav nav-tabs" style="width: 100%; height: 100px;">
+                                <li style="right:  -78; width: 18%;">
                                     <a href="#tab1default" data-toggle="tab" class="menu-link h_b">
-                                         <img src="images/winner/bar_new_01.png" class="img-responsive"> 
+                                         <img src="images/winner/bar_new_01.png" class="img-responsive" style="width: 100%;"> 
                                     </a>
                                  </li>
-                                <li style="right:  -39.5">
+                                <li style="right:  -39.5; width: 18%;">
                                     <a href="#tab2default" data-toggle="tab" class="menu-link h_b">
-                                         <img src="images/winner/bar_new_02.png" class="img-responsive"> 
+                                         <img src="images/winner/bar_new_02.png" class="img-responsive" style="width: 100%;"> 
                                     </a>
                                 </li>
-                                <li style="">
+                                <li style="width: 18%;">
                                     <a href="#tab3default" data-toggle="tab" class="menu-link h_b">
-                                        <img src="images/winner/bar_new_03.png" class="img-responsive"> 
+                                        <img src="images/winner/bar_new_03.png" class="img-responsive" style="width: 100%;"> 
                                     </a>
                                 </li>
-                                 <li style="left: -39;">
+                                 <li style="left: -39; width: 18%;">
                                      <a href="#tab4default" data-toggle="tab" class="menu-link h_b">
-                                       <img src="images/winner/bar_new_04.png" class="img-responsive"> 
+                                       <img src="images/winner/bar_new_04.png" class="img-responsive" style="width: 100%;"> 
                                      </a>
                                  </li>
-                                  <li style="left: -79;">
+                                  <li style="left: -79; width: 18%;">
                                      <a href="#tab5default" data-toggle="tab" class="menu-link h_b">
-                                       <img src="images/winner/bar_new_05.png" class="img-responsive"> 
+                                       <img src="images/winner/bar_new_05.png" class="img-responsive" style="width: 100%;"> 
                                      </a>
                                  </li>
                             </ul>

@@ -58,6 +58,17 @@ and open the template in the editor.
     
 }
 
+.navbar-nav
+{
+  padding-left: 2px;
+}
+
+.sendwork
+{
+  opacity: 0;
+}
+
+
 /*text*/ 
 .txt_menu{
 
@@ -66,7 +77,11 @@ and open the template in the editor.
     
 } 
 
- 
+.navbar-left
+{
+  width: 42%;
+  padding-left: 5px;
+}
 
 .navbar-default .navbar-nav > li > a {
   font-family: helvethaica_x_bd;
@@ -100,30 +115,35 @@ s_20{
     
     .menu_top_text{
        font-family: helvethaica_x_bd;
-       margin-top: 2.9em;
+       margin-top: 4.5em;
+       margin-left: -20px;
        text-align: left; 
         font-size: 0.6em;
     } 
     
     .menu_top_right{
-        margin-right: 50px;
+        margin-right: 40px;
     }
     .navbar2 {
-         background-image: url("../images/menu_768.png");
+         background-image: url("../images/navbar.png") ;
         background-size: cover;
+        background-repeat: no-repeat;
         border-radius: 0px;
         height: 120px;
         top: 20px;
+        right: 20px;
         align-content: left;
         display: block;
+        width: 100%;
     }
     
     .conter2 {
          top:100px;
          height: 180px;
     }
-    .navbar-default{
-        
+   .navbar-default {
+      background-color: rgba(248, 248, 248, 0);
+      border-color: rgba(231, 231, 231, 0);
     }
 }
 
@@ -132,25 +152,30 @@ s_20{
     
    .menu_top_text{
       font-family: helvethaica_x_bd;
-      margin-top: 50px;
-      margin-left: 5px;
+      margin-top: 4.7em;
+      margin-left: -70px;
       text-align: left;    
-      font-size: 1em;
+      font-size: 0.9em;
     } 
     
     .menu_top_right{
         
-     margin-right: 80px;
+     margin-right: 53px;
     }
     
     .navbar2 {
-        background-image: url("../images/menu.png");
-        background-size: cover;
+        background-image: url("../images/navbar.png");
+        background-image-size: 80% 150px;
+        background-repeat: no-repeat;
         border-radius: 0px;
         height: 150px;
         top: 20px;
-        align-content: left;
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+        
         display: block;
+        
         
     }
     
@@ -181,31 +206,38 @@ s_20{
         left: 90px;
         top: -40px;
     }
+
+    .navbar-default {
+      background-color: rgba(248, 248, 248, 0);
+      border-color: rgba(231, 231, 231, 0);
+    }
 }
 
 @media (min-width: 1200px){
     .menu_top_text{
       font-family: helvethaica_x_bd;
-      margin-top: 90px;
-      margin-left: 20px;
+      margin-top: 100px;
+      margin-left: -90px;
       text-align: left;    
-      font-size: 1.4em;
+      font-size: 1.1em;
     } 
    
     .menu_top_right{
         
-     margin-right: 180px;
+     margin-right: 70px;
     }
     
     .navbar2 {
-        background-image: url("../images/menu.png");
-        background-size: cover;
+        background-image: url("../images/navbar.png");
+        background-image-size: 100% 230px;
+        background-size: 100% 230px;
         border-radius: 0px;
         height: 230px;
         top: 20px;
         align-content: left;
         display: block;
         
+
     }
     
     .conter2 {
@@ -227,7 +259,14 @@ s_20{
     .home_image_right{
         margin-top: 200px;
     }
+
+    .navbar-default {
+      background-color: rgba(248, 248, 248, 0);
+      border-color: rgba(231, 231, 231, 0);
+    }
 }
+
+
 
 /*send page*/
 

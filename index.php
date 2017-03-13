@@ -11,7 +11,8 @@
     <title>Blackmore Our Strong Family</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!--<link href="css/bootstrap.css" rel="stylesheet">-->
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
@@ -197,7 +198,7 @@
                   <ul class="nav navbar-nav navbar-right menu_top_right">
                     <li><a href="#" class="txt_menu">โหวตภาพประกวด</a></li>
                     <li><a href="#" class="txt_menu">ประกาศผู้โชคดี</a></li>
-                    <li><a href="#" class="txt_menu">ส่งผลงาน</a></li>
+                    <li><a href="#" class="txt_menu sendwork">ส่งผลงานนะ</a></li>
                   </ul>
                 </div><!--/.nav-collapse -->
               </div>

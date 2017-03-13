@@ -17,7 +17,7 @@
                 link_txt ="page/rule.php";
                break;
             
-             case "ส่งผลงาน":
+             case "ส่งผลงานนะ":
                  link_txt ="page/send_work.php";
                break;
                
