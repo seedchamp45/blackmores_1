@@ -197,7 +197,7 @@
                                                             <div id="content1" class="content">
                                                                  <div class="row">
                                                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
-                                                                       <div class="txt_r r_title_helo text-center">C Bright Power</div>
+                                                                       <div class="txt_r r_title_helo text-center text-uppercase">C Bright Power</div>
                                                                     </div>
                                                                  </div>
                                                                 <br>
@@ -242,7 +242,7 @@
                                                             <div id="content2" class="content" style="display:none">
                                                                  <div class="row">
                                                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
-                                                                       <div class="txt_r r_title_helo text-center">Captain Fish</div>
+                                                                       <div class="txt_r r_title_helo text-center text-uppercase">Captain Fish</div>
                                                                     </div>
                                                                  </div>
                                                                 <br>
@@ -286,7 +286,7 @@
                                                             <div id="content3" class="content" style="display:none">
                                                                  <div class="row">
                                                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
-                                                                       <div class="txt_r r_title_helo text-center">Multi Action</div>
+                                                                       <div class="txt_r r_title_helo text-center text-uppercase">Multi Action</div>
                                                                     </div>
                                                                  </div>
                                                                 <br>
@@ -330,7 +330,7 @@
                                                             <div id="content4" class="content" style="display:none">
                                                                  <div class="row">
                                                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
-                                                                       <div class="txt_r r_title_helo text-center">Power 9</div>
+                                                                       <div class="txt_r r_title_helo text-center text-uppercase">Power 9</div>
                                                                     </div>
                                                                  </div>
                                                                 <br>
@@ -374,7 +374,7 @@
                                                             <div id="content5" class="content" style="display:none">
                                                                  <div class="row">
                                                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
-                                                                       <div class="txt_r r_title_helo text-center">Koala Kid</div>
+                                                                       <div class="txt_r r_title_helo text-center text-uppercase">Koala Kid</div>
                                                                     </div>
                                                                  </div>
                                                                 <br>
@@ -465,7 +465,7 @@
                                                     
                                                     <div class="col-xs-12 col-sm-12 col-md-8 col-lg-7 ">
                                                             <div id ="detail_1" class = "detail_1   text-center heg_txt">
-                                                                <div class="txt_r r_title_inline">C Bright Power2</div>
+                                                                <div class="txt_r r_title_inline text-uppercase">C Bright Power</div>
                                                                 <dl class="dl-horizontal">
                                                                     <dt class="txt_r r_body1 text-center yellow heg_txt">
                                                                         <div class="c_h">ลักษณะ</div>
@@ -488,7 +488,7 @@
                                                                  </dl>
                                                             </div>
                                                             <div  id ="detail_2" class = "detail_2   text-center heg_txt">
-                                                                <div class="txt_r r_title_inline">Captain Fish</div>
+                                                                <div class="txt_r r_title_inline text-uppercase">Captain Fish</div>
                                                                 <dl class="dl-horizontal">
                                                                     <dt class="txt_r r_body1 text-center yellow heg_txt">
                                                                         <div class="c_h">ลักษณะ</div>
@@ -512,7 +512,7 @@
                                                             </div>
                                                                         
                                                             <div id ="detail_3" class = "detail_3   text-center heg_txt">
-                                                                <div class="txt_r r_title_inline">Power 9</div>
+                                                                <div class="txt_r r_title_inline text-uppercase">Power 9</div>
                                                               
                                                                 <dl class="dl-horizontal">
                                                                     <dt class="txt_r r_body1 text-center yellow heg_txt">
@@ -537,7 +537,7 @@
                                                             </div>
                                                         
                                                           <div id ="detail_4" class = "detail_4   text-center heg_txt">
-                                                                <div class="txt_r r_title_inline">Multi Action</div>
+                                                                <div class="txt_r r_title_inline text-uppercase">Multi Action</div>
                                                                 <dl class="dl-horizontal">
                                                                     <dt class="txt_r r_body1 text-center yellow heg_txt">
                                                                         <div class="c_h">ลักษณะ</div>
@@ -560,7 +560,7 @@
                                                                  </dl>
                                                             </div>
                                                             <div id ="detail_5" class = "detail_5   text-center heg_txt">
-                                                                <div class="txt_r r_title_inline">Koala Kid</div>
+                                                                <div class="txt_r r_title_inline text-uppercase">Koala Kid</div>
                                                                 <dl class="dl-horizontal">
                                                                     <dt class="txt_r r_body1 text-center yellow heg_txt">
                                                                         <div class="c_h">ลักษณะ</div>
