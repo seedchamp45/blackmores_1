@@ -20,7 +20,8 @@
                 $("#img_bu_1").attr('src', 'images/helo/click/Blackmores Microsite_Button-01.png');
                 
                 $('#boutique').boutique({
-                            autoplay: false
+                    container_height: 600,
+                        autoplay: false
                     });
             });
             
@@ -326,30 +327,30 @@
                                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
 
                                                        <!-- The Boutique HTML: -->
-                                                       <ul id="boutique" class="hero-check">
+                                                       <ul id="boutique" class="hero-check" style="height: 300px">
                                                                <li>
                                                                        <a href="#content_1">
-                                                                           <img src="images/helo/C BRIGHT.png"  id="img_src_1" class="img-responsive" width="485" height="600" data-target="#myModal">
+                                                                           <img src="images/helo/C BRIGHT.png"  id="img_src_1" class="img-responsive" width="485" height="400" data-target="#myModal">
                                                                        </a>
                                                                </li>
                                                                <li>
                                                                        <a href="#content_2">
-                                                                               <img src="images/helo/CAPTAIN FISH.png"  id="img_src_2" class="img-responsive" width="485" height="600" data-target="#myModal">
+                                                                               <img src="images/helo/CAPTAIN FISH.png"  id="img_src_2" class="img-responsive" width="485" height="400" data-target="#myModal">
                                                                        </a>
                                                                </li>
                                                                 <li>
                                                                        <a href="#content_3">
-                                                                           <img src="images/helo/MULTI.png" id="img_src_3" class="img-responsive" width="485" height="600" data-target="#myModal">
+                                                                           <img src="images/helo/MULTI.png" id="img_src_3" class="img-responsive" width="485" height="400" data-target="#myModal">
                                                                        </a>
                                                                </li>
                                                                <li>
                                                                        <a href="#content_4">
-                                                                               <img src="images/helo/POWER 9.png" id="img_src_4" class="img-responsive" width="485" height="600" data-target="#myModal">
+                                                                               <img src="images/helo/POWER 9.png" id="img_src_4" class="img-responsive" width="485" height="400" data-target="#myModal">
                                                                        </a>
                                                                </li>
                                                                <li>
                                                                        <a href="#content_5">
-                                                                               <img src="images/helo/KOALA KID.png" id="img_src_5" class="img-responsive" width="485" height="600" data-target="#myModal">
+                                                                               <img src="images/helo/KOALA KID.png" id="img_src_5" class="img-responsive" width="485" height="400" data-target="#myModal">
                                                                        </a>
                                                                </li>
                                                        </ul>
@@ -380,7 +381,6 @@
                                                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-1 "></div>
                                                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 ">
                                                         <!-- End of the Boutique HTML -->
-                                                           <br>
                                                            <!--helo 1-->
                                                             <div id="content1" class="content">
                                                                  <div class="row">
