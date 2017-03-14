@@ -55,21 +55,21 @@
 
             .background-main-rule
             {
-            background: url(images/newBackground.png) no-repeat center top local; 
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-            margin-top: -300px;
-            width: 100%;
+                background: url(images/newBackground.png) no-repeat center top local; 
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+                margin-top: -300px;
+                width: 100%;
 
             }
 
          .scrollview-text {
             width: 95%;
             height: 1050px;
-            overflow: scroll;
-            
+           // overflow: scroll;
+             overflow:auto;
         }
            
           
