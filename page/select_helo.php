@@ -99,7 +99,7 @@
             
             .r_title{
                 color: #1677BC;
-                font-size: 2em;
+                font-size: 2.5em;
                 font-weight: bold;  
             }
             
@@ -112,7 +112,7 @@
             
             .r_body{
                 color: #000;
-                font-size:1.5em;
+                font-size: 2em;
                 font-weight: normal;
             }
             
@@ -120,7 +120,7 @@
             
             .r_body_inline{
                 color: #000;
-                font-size:1.5em;
+                font-size:2.2em;
                display: inline;
             }
             .ruler_center{
@@ -151,10 +151,33 @@
                     font-size: 1em;
                     font-weight: normal;
                 }
+                
+                .r_title1{
+                    color: #F99F00;
+                    font-size: 1em;
+                    font-weight: normal;
+                }
+                
                 .bg_winner{
                   height: 1600px;
                    
-                   }
+                 }
+                   
+                .bg_select_8_12{
+                    background: url(images/helo/bg_select_8_12.png) no-repeat center top local; 
+                   -webkit-background-size: cover;
+                   -moz-background-size: cover;
+                   -o-background-size: cover;
+                   background-size: 100% 100%;
+
+                   width: 100%;  
+                   height:20%;
+                }
+                
+                 .heg1_txt{
+                    margin-top: 30px;
+
+                } 
             }
 
              @media (min-width: 992px){
@@ -172,10 +195,29 @@
                .heg_txt{
                  height: 4.2em;
                 }
+                 .heg1_txt{
+                    margin-top: 50px;
+                } 
+                
+                .r_title1{
+                     color: #F99F00;
+                    font-size: 1.6em;
+                    font-weight: normal;
+                }
                 .r_body1{
                     color: #000;
                     font-size: 1.6em;
                     font-weight: normal;
+                }
+                .bg_select_8_12{
+                    background: url(images/helo/bg_select_8_12.png) no-repeat center top local; 
+                   -webkit-background-size: cover;
+                   -moz-background-size: cover;
+                   -o-background-size: cover;
+                   background-size: 100% 100%;
+
+                   width: 100%;  
+                   height:30%;
                 }
             }
             @media (min-width: 1200px){
@@ -183,10 +225,32 @@
                     height: 5.3em;
                 } 
                 
+                .heg1_txt{
+                    margin-top: 50px;
+
+                } 
+                
+                .r_title1{
+                     color: #F99F00;
+                    font-size: 2em;
+                    font-weight: normal;
+                }
+                
                 .r_body1{
                     color: #000;
-                    font-size: 1.8em;
+                    font-size: 2em;
                     font-weight: normal;
+                }
+                
+                .bg_select_8_12{
+                    background: url(images/helo/bg_select_8_12.png) no-repeat center top local; 
+                   -webkit-background-size: cover;
+                   -moz-background-size: cover;
+                   -o-background-size: cover;
+                   background-size: 100% 100%;
+
+                   width: 100%;  
+                   height:40%;
                 }
             }
             .c_h{
@@ -248,7 +312,7 @@
               padding-left: 50px;
             }
 
-                      .background-main-rule
+             .background-main-rule
             {
             background: url(images/newBackground.png) no-repeat center top local; 
             -webkit-background-size: cover;
@@ -275,11 +339,15 @@
             .hero-check {
               width: 80%;
             }
+            
+            
+            .bu_download{
+            }
+            
         </style>
     </head>
     <body>
         <div class="background-main-rule">
-        <br><br><br><br><br><br><br><br><br><br><br><br>
         <div class="container">
             <div class="row ">
                 <div class="col-xs-12  col-sm-12 col-md-12 col-lg-12">
@@ -330,27 +398,27 @@
                                                        <ul id="boutique" class="hero-check" style="height: 300px">
                                                                <li>
                                                                        <a href="#content_1">
-                                                                           <img src="images/helo/C BRIGHT.png"  id="img_src_1" class="img-responsive" width="485" height="400" data-target="#myModal">
+                                                                           <img src="images/helo/C BRIGHT.png"  id="img_src_1" class="img-responsive" width="485" height="450" data-target="#myModal">
                                                                        </a>
                                                                </li>
                                                                <li>
                                                                        <a href="#content_2">
-                                                                               <img src="images/helo/CAPTAIN FISH.png"  id="img_src_2" class="img-responsive" width="485" height="400" data-target="#myModal">
+                                                                               <img src="images/helo/CAPTAIN FISH.png"  id="img_src_2" class="img-responsive" width="485" height="450" data-target="#myModal">
                                                                        </a>
                                                                </li>
                                                                 <li>
                                                                        <a href="#content_3">
-                                                                           <img src="images/helo/MULTI.png" id="img_src_3" class="img-responsive" width="485" height="400" data-target="#myModal">
+                                                                           <img src="images/helo/MULTI.png" id="img_src_3" class="img-responsive" width="485" height="450" data-target="#myModal">
                                                                        </a>
                                                                </li>
                                                                <li>
                                                                        <a href="#content_4">
-                                                                               <img src="images/helo/POWER 9.png" id="img_src_4" class="img-responsive" width="485" height="400" data-target="#myModal">
+                                                                               <img src="images/helo/POWER 9.png" id="img_src_4" class="img-responsive" width="485" height="450" data-target="#myModal">
                                                                        </a>
                                                                </li>
                                                                <li>
                                                                        <a href="#content_5">
-                                                                               <img src="images/helo/KOALA KID.png" id="img_src_5" class="img-responsive" width="485" height="400" data-target="#myModal">
+                                                                               <img src="images/helo/KOALA KID.png" id="img_src_5" class="img-responsive" width="485" height="450" data-target="#myModal">
                                                                        </a>
                                                                </li>
                                                        </ul>
@@ -420,7 +488,7 @@
                                                                 <div class="row">
                                                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
 
-                                                                        <a href="download/C BRIGHT.pdf"  download><button type="submit" class="btn btn-default1  center-block txt_bu_gallery" data-toggle="modal" data-target=".bs-example-modal-lg" >ดาวน์โหลด</button></a>
+                                                                        <a href="download/C BRIGHT.pdf"  download><img src="images/helo/bu_download.png" class="bu_download img-responsive center-block"></a>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -464,7 +532,7 @@
                                                                 <div class="row">
                                                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
 
-                                                                        <a href="download/CAPTAIN FISH.pdf" download> <button type="submit" class="btn btn-default1  center-block txt_bu_gallery" data-toggle="modal" data-target=".bs-example-modal-lg" >ดาวน์โหลด</button></a>
+                                                                        <a href="download/CAPTAIN FISH.pdf" download> <img src="images/helo/bu_download.png" class="bu_download img-responsive center-block"></a>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -508,7 +576,7 @@
                                                                 <div class="row">
                                                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
 
-                                                                        <a href="download/MULTI.pdf" download><button type="submit" class="btn btn-default1  center-block txt_bu_gallery" data-toggle="modal" data-target=".bs-example-modal-lg" >ดาวน์โหลด</button></a>
+                                                                        <a href="download/MULTI.pdf" download><img src="images/helo/bu_download.png" class="bu_download img-responsive center-block"></a>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -552,7 +620,7 @@
                                                                 <div class="row">
                                                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
 
-                                                                        <a href="download/POWER 9.pdf" download><button type="submit" class="btn btn-default1  center-block txt_bu_gallery" data-toggle="modal" data-target=".bs-example-modal-lg" >ดาวน์โหลด</button></a>
+                                                                        <a href="download/POWER 9.pdf" download><img src="images/helo/bu_download.png" class="bu_download img-responsive center-block"></a>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -596,7 +664,7 @@
                                                                 <div class="row">
                                                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
 
-                                                                        <a href="download/KOALA KID.pdf" download><button type="submit" class="btn btn-default1  center-block txt_bu_gallery" data-toggle="modal" data-target=".bs-example-modal-lg" >ดาวน์โหลด</button></a>
+                                                                        <a href="download/KOALA KID.pdf" download><img src="images/helo/bu_download.png" class="bu_download img-responsive center-block"></a>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -653,22 +721,22 @@
                                                     <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 ">
                                                          <div class="bg_select_8_12">
                                                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
-                                                                <div id ="detail_1" class = "detail_1   text-center heg_txt">
+                                                                <div id ="detail_1" class = "detail_1 text-center heg1_txt">
                                                                     <div class="txt_r r_title_inline text-uppercase"><img class="center-block select_hero img-responsive" src="images/helo/txt_C Bright Power.png"></div>
                                                                     <dl class="dl-horizontal">
-                                                                        <dt class="txt_r r_body1 text-center yellow heg_txt">
+                                                                        <dt class="txt_r r_title1 text-center yellow heg_txt">
                                                                             <div class="c_h">ลักษณะ</div>
                                                                         </dt>
                                                                         <dd class="txt_r r_body1 text-center heg_txt">
                                                                             <div class="c_h">ฮีโร่สาวผิวสุขภาพดี ขาวกระจ่างใสมีออร่า<br> สวยสะกด</div>
                                                                         </dd>
-                                                                        <dt class="txt_r r_body1 text-center yellow heg_txt">
+                                                                        <dt class="txt_r r_title1 text-center yellow heg_txt">
                                                                             <div class="c_h">ความสามารถพิเศษ</div>
                                                                         </dt>
                                                                         <dd class="txt_r r_body1 text-center heg_txt">
                                                                             <div class="c_h">มีภูมิคุ้มกันพิเศษป้องกัน ไข้หวัดในทุกสภา</div>
                                                                         </dd>
-                                                                        <dt class="txt_r r_body1 text-center yellow heg_txt">
+                                                                        <dt class="txt_r r_title1 text-center yellow heg_txt">
                                                                             <div class="c_h">อาวุธประจำกาย</div>
                                                                         </dt>
                                                                         <dd class="txt_r r_body1 text-center heg_txt">
@@ -676,22 +744,22 @@
                                                                         </dd>
                                                                      </dl>
                                                                 </div>
-                                                                <div  id ="detail_2" class = "detail_2   text-center heg_txt">
+                                                                <div  id ="detail_2" class = "detail_2   text-center heg1_txt">
                                                                     <div class="txt_r r_title_inline text-uppercase"><img class="center-block select_hero img-responsive" src="images/helo/txt_Captain Fish.png"></div>
                                                                     <dl class="dl-horizontal">
-                                                                        <dt class="txt_r r_body1 text-center yellow heg_txt">
+                                                                        <dt class="txt_r r_title1 text-center yellow heg_txt">
                                                                             <div class="c_h">ลักษณะ</div>
                                                                         </dt>
                                                                         <dd class="txt_r r_body1 text-center heg_txt">
                                                                             <div class="c_h">ฮีโร่หนุ่มหล่อเจ้าแห่งท้องทะเล รูปร่างปราดเปรียว<br> คล่องแคล่ว ว่องไว</div>
                                                                         </dd>
-                                                                        <dt class="txt_r r_body1 text-center yellow heg_txt">
+                                                                        <dt class="txt_r r_title1 text-center yellow heg_txt">
                                                                             <div class="c_h">ความสามารถพิเศษ</div>
                                                                         </dt>
                                                                         <dd class="txt_r r_body1 text-center heg_txt">
                                                                             <div class="c_h">เป็นคนสมองดี คิดอะไรได้รวดเร็ว <br>เฉลียวฉลาด วางแผนเก่ง <br>แก้ปัญหาเฉพาะหน้าได้ดี</div>
                                                                         </dd>
-                                                                        <dt class="txt_r r_body1 text-center yellow heg_txt">
+                                                                        <dt class="txt_r r_title1 text-center yellow heg_txt">
                                                                             <div class="c_h">อาวุธประจำกาย</div>
                                                                         </dt>
                                                                         <dd class="txt_r r_body1 text-center heg_txt">
@@ -700,23 +768,23 @@
                                                                      </dl>
                                                                 </div>
 
-                                                                <div id ="detail_3" class = "detail_3   text-center heg_txt">
+                                                                <div id ="detail_3" class = "detail_3   text-center heg1_txt">
                                                                     <div class="txt_r r_title_inline text-uppercase"><img class="center-block select_hero img-responsive" src="images/helo/txt_Power 9.png"></div>
 
                                                                     <dl class="dl-horizontal">
-                                                                        <dt class="txt_r r_body1 text-center yellow heg_txt">
+                                                                        <dt class="txt_r r_title1 text-center yellow heg_txt">
                                                                             <div class="c_h">ลักษณะ</div>
                                                                         </dt>
                                                                         <dd class="txt_r r_body1 text-center heg_txt">
                                                                             <div class="c_h">ฮีโร่คุณแม่ยังสาว ร่างกายแข็งแกร่งทุกสัดส่วน <br>อ่อนโยน จิตใจดี รักความยุติธรรม<br> ชอบช่วยเหลือผู้อื่น โดยเฉพาะเด็กๆ</div>
                                                                         </dd>
-                                                                        <dt class="txt_r r_body1 text-center yellow heg_txt">
+                                                                        <dt class="txt_r r_title1 text-center yellow heg_txt">
                                                                             <div class="c_h">ความสามารถพิเศษ</div>
                                                                         </dt>
                                                                         <dd class="txt_r r_body1 text-center heg_txt">
                                                                             <div class="c_h">ทำกิจกรรมหลายอย่างพร้อมกันได้<br>อย่างรวดเร็ว</div>
                                                                         </dd>
-                                                                        <dt class="txt_r r_body1 text-center yellow heg_txt">
+                                                                        <dt class="txt_r r_title1 text-center yellow heg_txt">
                                                                             <div class="c_h">อาวุธประจำกาย</div>
                                                                         </dt>
                                                                         <dd class="txt_r r_body1 text-center heg_txt">
@@ -725,22 +793,22 @@
                                                                      </dl>
                                                                 </div>
 
-                                                              <div id ="detail_4" class = "detail_4   text-center heg_txt">
+                                                              <div id ="detail_4" class = "detail_4   text-center heg1_txt">
                                                                     <div class="txt_r r_title_inline text-uppercase"><img class="center-block select_hero img-responsive" src="images/helo/txt_Multi Action.png"></div>
                                                                     <dl class="dl-horizontal">
-                                                                        <dt class="txt_r r_body1 text-center yellow heg_txt">
+                                                                        <dt class="txt_r r_title1 text-center yellow heg_txt">
                                                                             <div class="c_h">ลักษณะ</div>
                                                                         </dt>
                                                                         <dd class="txt_r r_body1 text-center heg_txt">
                                                                             <div class="c_h">ฮีโร่คู่รักจอมพลัง มีความแข็งแรงเป็นเลิศ</div>
                                                                         </dd>
-                                                                        <dt class="txt_r r_body1 text-center yellow heg_txt">
+                                                                        <dt class="txt_r r_title1 text-center yellow heg_txt">
                                                                             <div class="c_h">ความสามารถพิเศษ</div>
                                                                         </dt>
                                                                         <dd class="txt_r r_body1 text-center heg_txt">
                                                                             <div class="c_h">คู่รักสุดฟิต รักการออกกำลังกายเป็นชีวิตจิตใจ มีพละกำลังมหาศาล ยกของหนักได้อย่างง่ายดาย</div>
                                                                         </dd>
-                                                                        <dt class="txt_r r_body1 text-center yellow heg_txt">
+                                                                        <dt class="txt_r r_title1 text-center yellow heg_txt">
                                                                             <div class="c_h">อาวุธประจำกาย</div>
                                                                         </dt>
                                                                         <dd class="txt_r r_body1 text-center heg_txt">
@@ -748,22 +816,22 @@
                                                                         </dd>
                                                                      </dl>
                                                                 </div>
-                                                                <div id ="detail_5" class = "detail_5   text-center heg_txt">
+                                                                <div id ="detail_5" class = "detail_5   text-center heg1_txt">
                                                                     <div class="txt_r r_title_inline text-uppercase"><img class="center-block select_hero img-responsive" src="images/helo/txt_Koala Kid.png"></div>
                                                                     <dl class="dl-horizontal">
-                                                                        <dt class="txt_r r_body1 text-center yellow heg_txt">
+                                                                        <dt class="txt_r r_title1 text-center yellow heg_txt">
                                                                             <div class="c_h">ลักษณะ</div>
                                                                         </dt>
                                                                         <dd class="txt_r r_body1 text-center heg_txt">
-                                                                            <div class="c_h">ฮีโร่เด็กน้อย ตัวเล็กแต่ใจใหญ่ มีนิสัยร่าเริง ซุกซุน กระฉับกระเฉง</div>
+                                                                            <div class="c_h">ฮีโร่เด็กน้อย ตัวเล็กแต่ใจใหญ่ มีนิสัยร่าเริง<br> ซุกซุน กระฉับกระเฉง</div>
                                                                         </dd>
-                                                                        <dt class="txt_r r_body1 text-center yellow heg_txt">
+                                                                        <dt class="txt_r r_title1 text-center yellow heg_txt">
                                                                             <div class="c_h">ความสามารถพิเศษ</div>
                                                                         </dt>
                                                                         <dd class="txt_r r_body1 text-center heg_txt">
                                                                             <div class="c_h">ฉลาดหลักแหลม วิ่งเร็วเหมือนสายฟ้า และมีพลังกระโดดสูง</div>
                                                                         </dd>
-                                                                        <dt class="txt_r r_body1 text-center yellow heg_txt">
+                                                                        <dt class="txt_r r_title1 text-center yellow heg_txt">
                                                                             <div class="c_h">อาวุธประจำกาย</div>
                                                                         </dt>
                                                                         <dd class="txt_r r_body1 text-center heg_txt">
