@@ -68,7 +68,7 @@
          .scrollview-text {
             width: 95%;
             height: 1050px;
-            overflow: scroll;
+            overflow: auto;
             
         }
            
