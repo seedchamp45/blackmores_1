@@ -78,7 +78,6 @@
                 
             }
             .bg_footer2{
-                //background-color: #000;
                 width: 100%;
                 height:  10em;
                 background: url(images/main/m_footer2.png) no-repeat center top local; 
@@ -90,7 +89,6 @@
             
             .bu_footer{
                 width: 80%;
-               // height:  100%;
                 background: url(images/main/m_b_footer.png) no-repeat center top local; 
                 -webkit-background-size: cover;
                 -moz-background-size: cover;
@@ -217,7 +215,7 @@
                  <img src="./images/home_body_left.png" class=" img-responsive center-block"/>
               </div>
            </div>
-            <!--#include virtual="/page/index.html" -->
+          
          </div>
       
         <div class="footer navbar-fixed-bottom " >
