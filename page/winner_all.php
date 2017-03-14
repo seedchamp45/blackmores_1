@@ -300,32 +300,32 @@
                                
                                 <div class="txt_body_winner_title text-center">รางวัลประเภทอายุน้อยกว่า 8 ปี</div><br><br><br>
                                 <div class="txt_body_winner text-center"> รางวัลทุนการศึกษารางวัลละ 3,000 บาท  <br>พร้อมผลิตภัณฑ์เสริมอาหาร Blackmores <br>มูลค่ารางวัลละ 10,000 บาท สำหรับผู้ปกครอง 5 รางวัล <br>รวมมูลค่าทั้งสิ้น 65,000 บาท</div><br><br><br><br>
-                                <div class="txt_body_winner_big text-center">"ประกาศรายชื่อผู้โชคดีวันที่ 28 เมษายน 2560"</div>
+                                <div class="txt_body_winner_big text-center">"ประกาศรายชื่อผู้โชคดีวันที่ 17 พฤษภาคม 2560"</div>
                             </div>
                             <div class="tab-pane fade" id="tab2default">  
                                 <br><br>
                                 <div class="txt_body_winner_title text-center">รางวัลประเภทอายุ 8 – 12 ปี</div><br><br><br>
                                 <div class="txt_body_winner text-center">รางวัลทุนการศึกษารางวัลละ 5,000 บาท  <br>พร้อมผลิตภัณฑ์เสริมอาหาร Blackmores<br> มูลค่ารางวัลละ 10,000 บาทสำหรับผู้ปกครอง 5 รางวัล <br>รวมมูลค่าทั้งสิ้น 75,000 บาท</div><br><br><br><br>
-                                <div class="txt_body_winner_big text-center">"ประกาศรายชื่อผู้โชคดีวันที่ 28 เมษายน 2560"</div>
+                                <div class="txt_body_winner_big text-center">"ประกาศรายชื่อผู้โชคดีวันที่ 17 พฤษภาคม 2560"</div>
                             </div>
                             <div class="tab-pane fade" id="tab4default">  
                                 <br><br>
                                 <div class="txt_body_winner_title text-center">รางวัลผลงาน Popular Vote</div><br><br><br>
                                 <div class="txt_body_winner text-center"> รางวัลผลิตภัณฑ์เสริมอาหาร Blackmores <br>มูลค่ารางวัลละ 3,000 บาท 10 รางวัล <br>รวมมูลค่าทั้งสิ้น 30,000 บาท</div><br><br><br><br>
-                                <div class="txt_body_winner_big text-center">"ประกาศรายชื่อผู้โชคดีวันที่ 28 เมษายน 2560"</div>
+                                <div class="txt_body_winner_big text-center">"ประกาศรายชื่อผู้โชคดีวันที่ 17 พฤษภาคม 2560"</div>
                             </div>
                             <div class="tab-pane fade" id="tab5default">
                                  <br><br>
                                  <div class="txt_body_winner_title text-center">รางวัลผู้ที่เข้าร่วมโหวต</div><br><br><br>
                                 <div class="txt_body_winner text-center"> รางวัลผลิตภัณฑ์เสริมอาหาร Blackmores <br>มูลค่ารางวัลละ 2,000 บาท 10 รางวัล <br>รวมมูลค่าทั้งสิ้น 20,000 บาท</div><br><br><br><br>
-                                <div class="txt_body_winner_big text-center">"ประกาศรายชื่อผู้โชคดีวันที่ 28 เมษายน 2560"</div>
+                                <div class="txt_body_winner_big text-center">"ประกาศรายชื่อผู้โชคดีวันที่ 17 พฤษภาคม 2560"</div>
                                     
                             </div>
                             <div class="tab-pane fade" id="tab3default"> 
                                 <br><br>
                                 <div class="txt_body_winner_title text-center">รางวัลผู้เข้าไปเวิร์คช็อป</div><br><br><br>
                                 <div class="txt_body_winner text-center"></div><br><br><br><br>
-                                <div class="txt_body_winner_big text-center">"ประกาศรายชื่อผู้โชคดีวันที่ 28 เมษายน 2560"</div>
+                                <div class="txt_body_winner_big text-center">"ประกาศรายชื่อผู้โชคดีวันที่ 17 พฤษภาคม 2560"</div>
                                     
                             </div>
                         </div>
