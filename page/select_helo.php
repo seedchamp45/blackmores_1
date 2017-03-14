@@ -37,7 +37,7 @@
                 var res = anchor.split("_");
                 var i1 = res[1]-1;
                  $($('#img_src_1').attr("data-target")).modal("show");
-                    
+                 $("#select_hero").attr("src","images/helo/txt_"+name[i1]+".png");
                 $("#alert_pic").attr("src","images/helo/"+cars[i1]);
                 $(".name_hero").html(name[i1]);
                
@@ -362,7 +362,7 @@
                                                             <div class="modal-content">
                                                               <div class="modal-header">
                                                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                                <h4 class="modal-title" id="myModalLabel"><div class="txt_r r_title_helo text-center text-uppercase name_hero">Captain Fish</div></h4>
+                                                                <h4 class="modal-title" id="myModalLabel"><img id ="select_hero" class="img-responsive center-block" src="images/helo/txt_c bright power.png"></h4>
                                                               </div>
                                                               <div class="modal-body">
                                                                   <img id ="alert_pic" src="images/helo/C BRIGHT.png"  class="img-responsive center-block" >
@@ -385,7 +385,7 @@
                                                             <div id="content1" class="content">
                                                                  <div class="row">
                                                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
-                                                                       <div class="txt_r r_title_helo text-center text-uppercase">C Bright Power</div>
+                                                                       <div class="txt_r r_title_helo text-center text-uppercase"><img class="center-block select_hero img-responsive" src="images/helo/txt_C Bright Power.png"></div>
                                                                     </div>
                                                                  </div>
                                                                 <br>
@@ -430,7 +430,7 @@
                                                             <div id="content2" class="content" style="display:none">
                                                                  <div class="row">
                                                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
-                                                                       <div class="txt_r r_title_helo text-center text-uppercase">Captain Fish</div>
+                                                                       <div class="txt_r r_title_helo text-center text-uppercase"><img class="center-block select_hero img-responsive" src="images/helo/txt_Captain Fish.png"></div>
                                                                     </div>
                                                                  </div>
                                                                 <br>
@@ -474,7 +474,7 @@
                                                             <div id="content3" class="content" style="display:none">
                                                                  <div class="row">
                                                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
-                                                                       <div class="txt_r r_title_helo text-center text-uppercase">Multi Action</div>
+                                                                       <div class="txt_r r_title_helo text-center text-uppercase"><img class="center-block select_hero img-responsive" src="images/helo/txt_Multi Action.png"></div>
                                                                     </div>
                                                                  </div>
                                                                 <br>
@@ -518,7 +518,7 @@
                                                             <div id="content4" class="content" style="display:none">
                                                                  <div class="row">
                                                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
-                                                                       <div class="txt_r r_title_helo text-center text-uppercase">Power 9</div>
+                                                                       <div class="txt_r r_title_helo text-center text-uppercase"><img class="center-block select_hero img-responsive" src="images/helo/txt_Power 9.png"></div>
                                                                     </div>
                                                                  </div>
                                                                 <br>
@@ -562,7 +562,7 @@
                                                             <div id="content5" class="content" style="display:none">
                                                                  <div class="row">
                                                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
-                                                                       <div class="txt_r r_title_helo text-center text-uppercase">Koala Kid</div>
+                                                                       <div class="txt_r r_title_helo text-center text-uppercase"><img class="center-block select_hero img-responsive" src="images/helo/txt_Koala Kid.png"></div>
                                                                     </div>
                                                                  </div>
                                                                 <br>
@@ -654,7 +654,7 @@
                                                          <div class="bg_select_8_12">
                                                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
                                                                 <div id ="detail_1" class = "detail_1   text-center heg_txt">
-                                                                    <div class="txt_r r_title_inline text-uppercase">C Bright Power</div>
+                                                                    <div class="txt_r r_title_inline text-uppercase"><img class="center-block select_hero img-responsive" src="images/helo/txt_C Bright Power.png"></div>
                                                                     <dl class="dl-horizontal">
                                                                         <dt class="txt_r r_body1 text-center yellow heg_txt">
                                                                             <div class="c_h">ลักษณะ</div>
@@ -677,7 +677,7 @@
                                                                      </dl>
                                                                 </div>
                                                                 <div  id ="detail_2" class = "detail_2   text-center heg_txt">
-                                                                    <div class="txt_r r_title_inline text-uppercase">Captain Fish</div>
+                                                                    <div class="txt_r r_title_inline text-uppercase"><img class="center-block select_hero img-responsive" src="images/helo/txt_Captain Fish.png"></div>
                                                                     <dl class="dl-horizontal">
                                                                         <dt class="txt_r r_body1 text-center yellow heg_txt">
                                                                             <div class="c_h">ลักษณะ</div>
@@ -701,7 +701,7 @@
                                                                 </div>
 
                                                                 <div id ="detail_3" class = "detail_3   text-center heg_txt">
-                                                                    <div class="txt_r r_title_inline text-uppercase">Power 9</div>
+                                                                    <div class="txt_r r_title_inline text-uppercase"><img class="center-block select_hero img-responsive" src="images/helo/txt_Power 9.png"></div>
 
                                                                     <dl class="dl-horizontal">
                                                                         <dt class="txt_r r_body1 text-center yellow heg_txt">
@@ -726,7 +726,7 @@
                                                                 </div>
 
                                                               <div id ="detail_4" class = "detail_4   text-center heg_txt">
-                                                                    <div class="txt_r r_title_inline text-uppercase">Multi Action</div>
+                                                                    <div class="txt_r r_title_inline text-uppercase"><img class="center-block select_hero img-responsive" src="images/helo/txt_Multi Action.png"></div>
                                                                     <dl class="dl-horizontal">
                                                                         <dt class="txt_r r_body1 text-center yellow heg_txt">
                                                                             <div class="c_h">ลักษณะ</div>
@@ -749,7 +749,7 @@
                                                                      </dl>
                                                                 </div>
                                                                 <div id ="detail_5" class = "detail_5   text-center heg_txt">
-                                                                    <div class="txt_r r_title_inline text-uppercase">Koala Kid</div>
+                                                                    <div class="txt_r r_title_inline text-uppercase"><img class="center-block select_hero img-responsive" src="images/helo/txt_Koala Kid.png"></div>
                                                                     <dl class="dl-horizontal">
                                                                         <dt class="txt_r r_body1 text-center yellow heg_txt">
                                                                             <div class="c_h">ลักษณะ</div>
