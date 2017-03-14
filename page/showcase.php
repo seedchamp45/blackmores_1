@@ -525,15 +525,12 @@ abbr[title2] {
 
 .bg_winner{
     background-image: url("images/gallery/bg_winner.png");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  
-   background-size:     cover;                     
-    background-repeat:   no-repeat;
-      min-width: 100%;
-    min-height: 100%;
-    width: 100%;
+   background-repeat: no-repeat;
+                background-size: 100% 100%;
+                background-position: center top;
+                margin-right: -15%;
+                margin-left: -18%;
+                margin-top: 3%;
 }
 
 .panel-body {
@@ -555,13 +552,13 @@ ul.nav-tabs li {
 
                       .background-main-rule
             {
-            background: url(images/newBackground.png) no-repeat center top local; 
+            background: url(images/newBackground.png) no-repeat left top local; 
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
             background-size: cover;
             margin-top: -300px;
-            width: 100%;
+             background-size: 100% 2200px;
 
             }
 
@@ -590,25 +587,25 @@ ul.nav-tabs li {
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
               
                 <div class="panel with-nav-tabs panel-default ">
-                        <div class="no_border panel-heading ">
+                        <div class="no_border panel-heading" style="text-align: center;">
                             
-                            <ul class="nav nav-tabs" >
+                            <ul class="nav nav-tabs"  style = "display:inline-table;"  >
                                 <!--  <ul class="nav nav-tabs ul-center center-block">-->
-                                <li  style=" width: 40%; right:  -78;">
+                                <li  style=" float: left; margin: auto; display:inline-table;">
                                     <a href="#tab1default1" id="ageEight" data-toggle="tab" class="menu-link h_b">
-                                        <img src="images/gallery/bar_yellow.png" class="img-responsive" style=" width: 90%; right:  -78;">
+                                        <img src="images/gallery/bar_yellow.png" class="img-responsive" style="width: 300px; margin-top: -50px;">
                                     </a>
                                 </li>
-                                <li  style="width: 40%;">
+                                <li  style="float: right; margin: auto; display:inline-table;">
                                     <a href="#tab2default"  id="ageMoreEight" data-toggle="tab" class="menu-link h_b">
-                                      <img src="images/gallery/bar_blue.png" class="img-responsive" style="width: 90%;">
+                                      <img src="images/gallery/bar_blue.png" class="img-responsive" style="width: 300px; margin-top: -50px; margin-left: -37px;">
                                     </a>
                                 </li>
                             </ul>
                         </div>
                         <div class="row ">
                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                <div class="text_title_gallery"><br><br><p class="text-center">  กด Vote ผลงานที่ถูกใจ  
+                                <div class="text_title_gallery"><p class="text-center">  กด Vote ผลงานที่ถูกใจ  
                                   <abbr title2="" >กดโหวตได้ผลงานละ 1 ครั้ง</abbr>
                                    สามารถโหวตกี่ผลงานก็ได้ 
                                   </p>
@@ -618,7 +615,7 @@ ul.nav-tabs li {
                     
                     
                         <div class="panel-body">
-                            <div class="tab-content prepareadd" id = "addDiv">
+                            <div class="tab-content prepareadd" id = "addDiv" style="margin-left: 20px;">
                               <div id="results" >
                                        <!--ดึงค่าออกมา -->
                                 </div>       
@@ -633,7 +630,7 @@ ul.nav-tabs li {
 
 
     </div>
-
+   <img src="images/footer.png" style="width: 100%; height: 400px background-repeat: no-repeat; margin-bottom: -100px" />
 <script type="text/javascript">
     var track_page = 1; //track user click as page number, righ now page number 1
     load_contents(track_page); //load content
@@ -769,10 +766,11 @@ ul.nav-tabs li {
 
         </div>
     </div>
-   <input type="text" class="form-control txt_input" id="name_pic" name= "name_pic" >
+<!--    <input type="text" class="form-control txt_input" id="name_pic" name= "name_pic" s> -->
+
    </div>
 <!--         <button id="load_more_button"><img src="images/gallery/ajax-loader.gif"  class="animation_image" style="float:left;"> Load More</button> -->
 <br><br>
-  <img src="images/footer.png" style="width: 100%; height: 400px" />
+  
   </body>
 </html>

@@ -78,24 +78,24 @@
                 
             }
             .bg_footer2{
-                //background-color: #000;
+         /*       background-color: #000;*/
                 width: 100%;
-                height:  10em;
-                background: url(images/main/m_footer2.png) no-repeat center top local; 
+                height:  180px;
+                background: url(images/main/m_footer.png) no-repeat center top local; 
                 -webkit-background-size: cover;
                 -moz-background-size: cover;
                 -o-background-size: cover;
                 background-size: cover;
+                background-repeat: no-repeat;
             }
             
             .bu_footer{
                 width: 80%;
-               // height:  100%;
+                height:  100%;
+
                 background: url(images/main/m_b_footer.png) no-repeat center top local; 
-                -webkit-background-size: cover;
-                -moz-background-size: cover;
-                -o-background-size: cover;
-                background-size: cover;
+                padding-top: 10%;
+         
             }
             
             .panel-primary > .panel-heading {
@@ -164,8 +164,48 @@
                 /* position: relative; */
                 /* overflow: auto; */
             }
+            #toggle {
+              height: 40%;
+  width: 80%;
+  background: #eee;
 
-            body { 
+}
+
+.modal.fade .modal-dialog {
+  transform: translate3d(0, 100vh, 0);
+}
+
+.modal.in .modal-dialog {
+  transform: translate3d(0, 0, 0);
+}
+
+    .modal-dialog {
+       margin-top: 20%;
+        width: 70%;
+        height: 80%;
+    }
+
+    .modal-body
+    {
+      height: 400px;
+    }
+
+
+.bu_footer:before {
+   width: 100%
+}
+
+.bu_footer:after {
+   width: 0%;
+}
+
+#toggle.short{
+
+   width : 80%;
+   height: 0%;
+}
+
+            .main-body { 
    
     /*
       background: url(../images/bg_home.jpg) no-repeat center center fixed; 
@@ -184,16 +224,12 @@
  
     background-image: url("images/bg_home2.png") ;
 
-
+    background-image-size: 100% 100%;
     background-repeat: no-repeat;
-    background-position: right top;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-    
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background-position: left top;
+    background-attachment: scroll;
+    background-size: 100% 90%;
+   
     
 }
     </style>
@@ -208,6 +244,7 @@
   </head>
 <!--<body class="r_bg">-->
   <body >
+        <div class="main-body">
         <div class="container conter2" style="  margin: auto;
     width: 80%;
     padding: 10px;">
@@ -240,21 +277,59 @@
               </div>
             </nav>
         </div>
+
         <div id="content">
             <div class="row home_body">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-1 ">
 
                 </div>
                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 col-lg-offset-1">
-                <img src="./images/m_t_1.png" class="home_image_right img-responsive center-block pic-show"/>
+                <img src="./images/m_t_1.png" class="home_image_right img-responsive center-block pic-show-left" style="
+                    margin-top: 100px;"/>
                </div>
 
                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 col-lg-offset-1">
-                 <img src="./images/home_body_left.png" class=" img-responsive center-block"/>
+                 <img src="./images/home_body_left.png" class=" img-responsive center-block pic-show-right" style="
+                    margin-top: 0px;"/>
               </div>
            </div>
+
+           
          
          </div>
+         <div id = "add-foot">
+           
+         <div class="bg_footer2" id = "clear-foot" >
+              <div style=" background: url(images/bu_toggle_up.png) no-repeat center ; margin-left: 40%; margin-right: 40%; margin-top: 20px; width: 20%; height: 100px;">
+              <button type="button" style="opacity: 0; width: 100%; height: 100px;" data-toggle="modal" data-target="#myModal">Open Modallllllllll</button>
+              </div>
+          </div>
+         </div>
+          </div>
+      
+<!-- comment -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="height: 0px;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          
+        </div>
+        <div class="modal-footer" style="height: 0px;">
+
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  </div>
+
+
+
  
     <script src="js/ie10-viewport-bug-workaround.js"></script>
 

@@ -45,9 +45,11 @@
             .bg_block{
                 background-image: url("images/rule/r_block_bg.png") ;
                 background-repeat: no-repeat;
-                background-size: 100% 1200px;
-            
+                background-size: 100% 100%;
                 background-position: center top;
+                margin-right: 15%;
+                margin-left: 15%;
+                margin-top: 3%;
 
              
 
@@ -55,20 +57,22 @@
 
             .background-main-rule
             {
-            background: url(images/newBackground.png) no-repeat center top local; 
+            background: url(images/newBackground.png) no-repeat left top local; 
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
             background-size: cover;
             margin-top: -300px;
-            width: 100%;
+    
+             background-size: 100% 2200px;
 
             }
 
          .scrollview-text {
-            width: 95%;
+            margin-left: -25%;
+            margin-right: -25%;
             height: 1050px;
-            overflow: auto;
+            overflow: scroll;
             
         }
            
@@ -82,9 +86,9 @@
         <div class="col-xs-1 col-sm-3 col-md-3 col-lg-3 "></div>
         <div class="col-xs-10 col-sm-6 col-md-6 col-lg-6 ">
             
-             <br>
+             <br><br><br><br><br>
             <img src="images/rule/r_title.png" class="img-responsive center-block">
-            <br>
+            <br><br>
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <div class="scrollview-text">
                 <div class="txt_r r_title">ระยะเวลาการร่วมสนุก</div>

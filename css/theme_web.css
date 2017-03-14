@@ -10,38 +10,6 @@ and open the template in the editor.
 */
 
 
-body { 
-   
-    /*
-      background: url(../images/bg_home.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  
-  height: 100%;
-  background-color: #060;
-  color: #fff;
-  text-align: center;
-  text-shadow: 0 1px 3px rgba(0,0,0,.5);
-  */
-  
- 
-    background-image: url("../images/bg_home2.png") ;
-
-
-    background-repeat: no-repeat;
-    background-position: right top;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-    
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    
-}
-
 
 .body2 { 
 
@@ -231,21 +199,30 @@ s_20{
       float: right;
     }
 
-    .pic-show
+    .pic-show-left
     {
-      
-    margin-left: 0px;
+
+    margin-left: 50px;
     margin-right: 0px;
-    margin-top: 180px;
+    margin-top: -50px;
+
+    }
+
+    .pic-show-right
+    {
+
+    margin-left: -250px;
+
+    margin-top: 100px;
 
     }
     
     .navbar2 {
         background-image: url("../images/navbar.png");
-        background-image-size: 100% 16.95%;
+        background-image-size: 100% 17.2%;
    
         border-radius: 0px;
-        height: 230px;
+        height: 235px;
         top: 0px;
         align-content: left;
         display: block;

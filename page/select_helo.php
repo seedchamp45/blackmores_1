@@ -70,16 +70,12 @@
             .bg_winner{
                 /*background-image: url("images/winner/bg_winner.png");*/
                     background: url(images/gallery/bg_winner.png) ; 
-              -webkit-background-size: cover;
-              -moz-background-size: cover;
-              -o-background-size: cover;
-
-               background-size:     cover;                     
-                background-repeat:   no-repeat;
-                  min-width: 100%;
-                min-height: 100%;
-                width: 100%;
-               height: 1114px;
+        background-repeat: no-repeat;
+                background-size: 100% 100%;
+                background-position: center top;
+                margin-right: -15%;
+                margin-left: -15%;
+                margin-top: 3%;
             }
 
 
@@ -120,7 +116,7 @@
             
             .r_body_inline{
                 color: #000;
-                font-size:2.2em;
+                font-size:3.2em;
                display: inline;
             }
             .ruler_center{
@@ -321,6 +317,7 @@
             background-size: cover;
             margin-top: -300px;
             width: 100%;
+            height: 2200px;
 
             }
 
@@ -351,24 +348,24 @@
         <div class="container">
             <div class="row ">
                 <div class="col-xs-12  col-sm-12 col-md-12 col-lg-12">
-                    <img src="images/helo/select_hello_title.png" class="img-responsive center-block">
+                    <img src="images/helo/select_hello_title.png" class="img-responsive center-block" style="margin-top: 40px;">
                 </div>
             </div>
              <div class="row bg_winner">
                 
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
                     <div class="panel with-nav-tabs panel-default center-block">
-                        <div class="no_border panel-heading ">
-                                <ul class="nav nav-tabs" >
+                        <div class="no_border panel-heading " style="text-align: center;">
+                                <ul class="nav nav-tabs"  style = "display:inline-table;" >
                                     <!--  <ul class="nav nav-tabs ul-center center-block">-->
-                                    <li style=" width: 40%; right:  -78;" >
+                                    <li style=" float: left; margin: auto; display:inline-table;"  >
                                         <a href="#tab1default" data-toggle="tab" class="menu-link h_b">
-                                            <img src="images/gallery/bar_yellow.png" class="img-responsive" style="width: 90%; right:  -78;">
+                                            <img src="images/gallery/bar_yellow.png" class="img-responsive" style="width: 300px; margin-top: -50px;">
                                         </a>
                                     </li>
-                                    <li  style="width: 40%;">
+                                    <li  style="float: right; margin: auto; display:inline-table;">
                                         <a href="#tab2default" data-toggle="tab" class="menu-link h_b">
-                                          <img src="images/gallery/bar_blue.png" class="img-responsive" style=" width: 90%;">
+                                          <img src="images/gallery/bar_blue.png" class="img-responsive" style="width: 300px; margin-top: -50px; margin-left: -37px;">
                                         </a>
                                     </li>
                                 </ul>
@@ -690,7 +687,7 @@
 
                                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
                                                 <div class = "text-center">
-                                                    <div class="txt_r r_body_inline text-center">อายุระหว่าง</div><div class="txt_r r_title_inline text-center"> 8-12 </div><div class="txt_r r_body_inline text-center">ปี :วาดภาพฮีโร่จามโจทย์ด้วยความคิดสร้างสรรค์</div>
+                                                    <div class="txt_r r_body_inline text-center">อายุระหว่าง 8-12</div><div class="txt_r r_title_inline text-center"></div><div class="txt_r r_body_inline text-center">ปี  : วาดภาพฮีโร่จามโจทย์ด้วยความคิดสร้างสรรค์</div>
                                                 </div>
                                                 
                                                 
@@ -854,9 +851,10 @@
             </div>
         </div>       
     </div> 
+        <img src="images/footer.png" style="width: 100%; height: 400px" />
     </div>       
     <br>  <br>  <br> 
-    <img src="images/footer.png" style="width: 100%; height: 400px" />
+
       
     </body>
 </html>
