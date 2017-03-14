@@ -49,13 +49,13 @@
             -o-background-size: cover;
             background-size: cover;
         }*/
-        body { 
+/*        body { 
             background: url(images/rule/r_bg.png) no-repeat center top local; 
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
             background-size: cover;
-         }
+         }*/
          
          .bottom0.panel-group  {
              margin-bottom: 0;
@@ -164,6 +164,17 @@
                 /* position: relative; */
                 /* overflow: auto; */
             }
+
+            
+
+            .background-main
+            {
+                  background: url(images/bg_home2.png) no-repeat center top local; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            }
     </style>
     
       <!-- The Boutique CSS: -->
@@ -176,6 +187,7 @@
   </head>
 <!--<body class="r_bg">-->
   <body >
+        <div class="background-main">
         <div class="container conter2">
             <!-- Static navbar -->
             <nav class="navbar navbar-default navbar2" role="navigation">
@@ -390,6 +402,6 @@
    
     <!-- IE10 viewport hack for Surface/des    <script src="js/bootstrap.min.js"></script>ktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
-
+    </div>
 
 </body></html>

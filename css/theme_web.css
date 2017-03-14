@@ -119,6 +119,7 @@ s_20{
        margin-left: -20px;
        text-align: left; 
         font-size: 0.6em;
+        font-weight: bold;
     } 
     
     .menu_top_right{
@@ -156,6 +157,7 @@ s_20{
       margin-left: -70px;
       text-align: left;    
       font-size: 0.9em;
+      font-weight: bold;
     } 
     
     .menu_top_right{
@@ -220,6 +222,7 @@ s_20{
       margin-left: -90px;
       text-align: left;    
       font-size: 1.1em;
+      font-weight: bold;
     } 
    
     .menu_top_right{

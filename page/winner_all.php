@@ -201,6 +201,7 @@
             font-weight: bold;  
             font-size: 2em;
         }
+        
         .txt_body_winner_title{
             font-family: "db_helvethaica_x";
             color: #FCF344;
@@ -236,11 +237,24 @@
             top: 50%;
             transform: translateY(-50%);
         }
+
+
+                      .background-main-rule
+            {
+            background: url(images/newBackground.png) no-repeat center top local; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            margin-top: -300px;
+            width: 100%;
+
+            }
   </style>
 </head>
 <body>
-
- 
+<div class="background-main-rule">
+ <br><br><br><br><br><br><br><br><br><br><br><br>
  <div class="container">
     <div class="row">
             <div class="col-xs-12  col-sm-12 col-md-12 col-lg-12">
@@ -283,15 +297,15 @@
                     <div class="panel-body">
                         <div class="tab-content">
                             <div class="tab-pane fade in active" id="tab1default">
-                                <br><br>
+                               
                                 <div class="txt_body_winner_title text-center">รางวัลประเภทอายุน้อยกว่า 8 ปี</div><br><br><br>
-                                <div class="txt_body_winner text-center"> รางวัลทุนการศึกษารางวัลละ 3,000 บาท  <br>พร้อมผลิตภัณฑ์เสริมอาหาร Blackmores <br>มูลค่ารางวัลละ 10,000 บาท 5 รางวัล <br>รวมมูลค่าทั้งสิ้น 65,000 บาท</div><br><br><br><br>
+                                <div class="txt_body_winner text-center"> รางวัลทุนการศึกษารางวัลละ 3,000 บาท  <br>พร้อมผลิตภัณฑ์เสริมอาหาร Blackmores <br>มูลค่ารางวัลละ 10,000 บาท สำหรับผู้ปกครอง 5 รางวัล <br>รวมมูลค่าทั้งสิ้น 65,000 บาท</div><br><br><br><br>
                                 <div class="txt_body_winner_big text-center">"ประกาศรายชื่อผู้โชคดีวันที่ 28 เมษายน 2560"</div>
                             </div>
                             <div class="tab-pane fade" id="tab2default">  
                                 <br><br>
                                 <div class="txt_body_winner_title text-center">รางวัลประเภทอายุ 8 – 12 ปี</div><br><br><br>
-                                <div class="txt_body_winner text-center"> รางวัลทุนการศึกษารางวัลละ 5,000 บาท  <br>พร้อมผลิตภัณฑ์เสริมอาหาร Blackmores<br> มูลค่ารางวัลละ 10,000 บาท 5 รางวัล <br>รวมมูลค่าทั้งสิ้น 75,000 บาท</div><br><br><br><br>
+                                <div class="txt_body_winner text-center">รางวัลทุนการศึกษารางวัลละ 5,000 บาท  <br>พร้อมผลิตภัณฑ์เสริมอาหาร Blackmores<br> มูลค่ารางวัลละ 10,000 บาทสำหรับผู้ปกครอง 5 รางวัล <br>รวมมูลค่าทั้งสิ้น 75,000 บาท</div><br><br><br><br>
                                 <div class="txt_body_winner_big text-center">"ประกาศรายชื่อผู้โชคดีวันที่ 28 เมษายน 2560"</div>
                             </div>
                             <div class="tab-pane fade" id="tab4default">  
@@ -321,102 +335,10 @@
        </div>
    </div>
  </div>
-            <!--</div>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-1 col-lg-2 "> </div>
-   </div>
- </div>
- <!--<div class="container">
-    <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 bg_winner">
-            
-          <ul class="nav nav-tabs">
-                <li role="presentation" class="icon_yellow_winner"><a href="#">Home</a></li>
-                <li role="presentation" class="icon_blue_winner" ><a href="#">Profile</a></li>
-                <li role="presentation" class="icon_green_winner"><a href="#">Messages</a></li>
-                  <li role="presentation" class="icon_purple_winner"><a href="#">Messages</a></li>
-              </ul>
-             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 ">
-              
-                    <div class="panel with-nav-tabs panel-default">
-                        <div class="panel-heading ">
-                            
-                                <ul class="nav nav-tabs ul-center center-block">
-                                    <li class="icon_yellow_winner"><a href="#tab1default1" data-toggle="tab"><h5>Default 1</h5> </a></li>
-                                    <li class="icon_blue_winner"><a href="#tab2default" data-toggle="tab"><h5>Default 2 </h5></a></li>
-                                    <li class="icon_green_winner"><a href="#tab3default" data-toggle="tab"><h5>Default 3 </h5></a></li>
-                                     <li class="icon_purple_winner"><a href="#tab4default" data-toggle="tab"><h5>Default 4</h5></a></li>
-                                </ul>
-                        </div>
-                        <div class="panel-body">
-                            <div class="tab-content">
-                                <div class="tab-pane fade in active" id="tab1default">Default 111<br><br><br><br><br></div>
-                                <div class="tab-pane fade" id="tab2default">Default 2</div>
-                                <div class="tab-pane fade" id="tab3default">Default 3</div>
-                                <div class="tab-pane fade" id="tab4default">Default 4</div>
-                                <div class="tab-pane fade" id="tab5default">Default 5</div>
-                            </div>
-                        </div>
-                     </div>
-                -->
-            <!--</div>
-        </div>
-      
-       <!--
-        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 "><button>ประเภทอายุไม่เกิน 8 ปี</button></div>
-        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3"><button>ประเภทอายุไม่เกิน 8-12 ปี</button></div>
-        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3"><button>รายชื่อผู้ชนะ Popular Vote</button></div>
-        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3"><button>ผู้โชคดีจากการโหวต</button></div>
-           <!-- <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 ">แแแ</div>
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 ">
-                <div class="bg_winner">
-                    <div class="panel with-nav-tabs panel-default">
-                        <div class="panel-heading">
-                                <ul class="nav nav-tabs">
-                                    <li class="icon_green_winner"><a href="#tab1default1" data-toggle="tab">Default 1 </a></li>
-                                    <li><a href="#tab2default" data-toggle="tab">Default 2</a></li>
-                                    <li><a href="#tab3default" data-toggle="tab">Default 3</a></li>
-                                     <li><a href="#tab4default" data-toggle="tab">Default 4</a></li>
-                                </ul>
-                        </div>
-                        <div class="panel-body">
-                            <div class="tab-content">
-                                <div class="tab-pane fade in active" id="tab1default">Default 111<br><br><br><br><br></div>
-                                <div class="tab-pane fade" id="tab2default">Default 2</div>
-                                <div class="tab-pane fade" id="tab3default">Default 3</div>
-                                <div class="tab-pane fade" id="tab4default">Default 4</div>
-                                <div class="tab-pane fade" id="tab5default">Default 5</div>
-                            </div>
-                        </div>
-                     </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 ">แแ</div>
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 bg_winner" >
-                <div class="panel with-nav-tabs panel-default">
-                    <div class="panel-heading">
-                            <ul class="nav nav-tabs">
-                                <li class="active"><a href="#tab1default" data-toggle="tab">Default 1 </a></li>
-                                <li><a href="#tab2default" data-toggle="tab">Default 2</a></li>
-                                <li><a href="#tab3default" data-toggle="tab">Default 3</a></li>
-                                 <li><a href="#tab4default" data-toggle="tab">Default 4</a></li>
-                            </ul>
-                    </div>
-                    <div class="panel-body">
-                        <div class="tab-content">
-                            <div class="tab-pane fade in active" id="tab1default">Default 111<br><br><br><br><br></div>
-                            <div class="tab-pane fade" id="tab2default">Default 2</div>
-                            <div class="tab-pane fade" id="tab3default">Default 3</div>
-                            <div class="tab-pane fade" id="tab4default">Default 4</div>
-                            <div class="tab-pane fade" id="tab5default">Default 5</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-</div>-->
-<!--</div>-->
+
 <br/>
+ <img src="images/footer.png" style="width: 100%; height: 400px" />
+</div>
 
 </body>
 </html>

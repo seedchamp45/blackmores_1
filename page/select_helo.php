@@ -247,7 +247,17 @@
               padding-left: 50px;
             }
 
+                      .background-main-rule
+            {
+            background: url(images/newBackground.png) no-repeat center top local; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            margin-top: -300px;
+            width: 100%;
 
+            }
 
 
             .panel-body {
@@ -260,9 +270,15 @@
               float: none;
               display: inline-block;
             }
+
+            .hero-check {
+              width: 80%;
+            }
         </style>
     </head>
     <body>
+        <div class="background-main-rule">
+        <br><br><br><br><br><br><br><br><br><br><br><br>
         <div class="container">
             <div class="row ">
                 <div class="col-xs-12  col-sm-12 col-md-12 col-lg-12">
@@ -276,14 +292,14 @@
                         <div class="no_border panel-heading ">
                                 <ul class="nav nav-tabs" >
                                     <!--  <ul class="nav nav-tabs ul-center center-block">-->
-                                    <li >
+                                    <li style=" width: 40%; right:  -78;" >
                                         <a href="#tab1default" data-toggle="tab" class="menu-link h_b">
-                                            <img src="images/gallery/bar_yellow.png" class="img-responsive">
+                                            <img src="images/gallery/bar_yellow.png" class="img-responsive" style="width: 90%; right:  -78;">
                                         </a>
                                     </li>
-                                    <li  style="left: -38;">
+                                    <li  style="width: 40%;">
                                         <a href="#tab2default" data-toggle="tab" class="menu-link h_b">
-                                          <img src="images/gallery/bar_blue.png" class="img-responsive">
+                                          <img src="images/gallery/bar_blue.png" class="img-responsive" style=" width: 90%;">
                                         </a>
                                     </li>
                                 </ul>
@@ -310,7 +326,7 @@
                                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
 
                                                        <!-- The Boutique HTML: -->
-                                                       <ul id="boutique">
+                                                       <ul id="boutique" class="hero-check">
                                                                <li>
                                                                        <a href="#content_1">
                                                                            <img src="images/helo/C BRIGHT.png"  id="img_src_1" class="img-responsive" width="485" height="600" data-target="#myModal">
@@ -769,9 +785,10 @@
                 </div>             
             </div>
         </div>       
-    </div>        
-            
-            
+    </div> 
+    </div>       
+    <br>  <br>  <br> 
+    <img src="images/footer.png" style="width: 100%; height: 400px" />
       
     </body>
 </html>

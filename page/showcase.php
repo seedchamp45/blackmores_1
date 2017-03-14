@@ -553,11 +553,26 @@ ul.nav-tabs li {
     transform: translateY(-50%);
 }
 
+                      .background-main-rule
+            {
+            background: url(images/newBackground.png) no-repeat center top local; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            margin-top: -300px;
+            width: 100%;
+
+            }
+
 </style>
 
 
 </head>
 <body>
+<div class="background-main-rule">
+
+<br><br><br><br><br><br><br><br><br><br><br><br>
     <div class="container">
         <div class="row">
             <div class="col-xs-12  col-sm-12 col-md-12 col-lg-12">
@@ -579,14 +594,14 @@ ul.nav-tabs li {
                             
                             <ul class="nav nav-tabs" >
                                 <!--  <ul class="nav nav-tabs ul-center center-block">-->
-                                <li >
-                                    <a href="#tab1default1" data-toggle="tab" class="menu-link h_b">
-                                        <img src="images/gallery/bar_yellow.png" class="img-responsive">
+                                <li  style=" width: 40%; right:  -78;">
+                                    <a href="#tab1default1" id="ageEight" data-toggle="tab" class="menu-link h_b">
+                                        <img src="images/gallery/bar_yellow.png" class="img-responsive" style=" width: 90%; right:  -78;">
                                     </a>
                                 </li>
-                                <li  style="left: -38;">
-                                    <a href="#tab2default" data-toggle="tab" class="menu-link h_b">
-                                      <img src="images/gallery/bar_blue.png" class="img-responsive">
+                                <li  style="width: 40%;">
+                                    <a href="#tab2default"  id="ageMoreEight" data-toggle="tab" class="menu-link h_b">
+                                      <img src="images/gallery/bar_blue.png" class="img-responsive" style="width: 90%;">
                                     </a>
                                 </li>
                             </ul>
@@ -755,7 +770,9 @@ ul.nav-tabs li {
         </div>
     </div>
    <input type="text" class="form-control txt_input" id="name_pic" name= "name_pic" >
+   </div>
 <!--         <button id="load_more_button"><img src="images/gallery/ajax-loader.gif"  class="animation_image" style="float:left;"> Load More</button> -->
- 
+<br><br>
+  <img src="images/footer.png" style="width: 100%; height: 400px" />
   </body>
 </html>

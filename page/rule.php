@@ -45,23 +45,48 @@
             .bg_block{
                 background-image: url("images/rule/r_block_bg.png") ;
                 background-repeat: no-repeat;
-                background-size: 100% 100%;
+                background-size: 100% 1200px;
+            
                 background-position: center top;
 
+             
+
             }
+
+            .background-main-rule
+            {
+            background: url(images/newBackground.png) no-repeat center top local; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            margin-top: -300px;
+            width: 100%;
+
+            }
+
+         .scrollview-text {
+            width: 95%;
+            height: 1050px;
+            overflow: scroll;
+            
+        }
            
           
         </style>
     </head>
     <body>
+    <div class="background-main-rule">
+    <br><br><br><br><br><br><br><br><br><br><br><br>
     <div class="row bg_block">
         <div class="col-xs-1 col-sm-3 col-md-3 col-lg-3 "></div>
         <div class="col-xs-10 col-sm-6 col-md-6 col-lg-6 ">
             
-             <br><br><br><br>
+             <br>
             <img src="images/rule/r_title.png" class="img-responsive center-block">
-            <br/><br/>
+            <br>
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="scrollview-text">
                 <div class="txt_r r_title">ระยะเวลาการร่วมสนุก</div>
                 <ol class="ol_left">
                     <li>
@@ -72,8 +97,6 @@
                         <div class="txt_r r_body">ปิดรับผลงานทั้งหมดในวันที่ 24 เมษายน 2560 เวลา 24.00 น.</div>
                     </li>
                 </ol>
-                
-                
               
                 <br/><br/>
                 <div class="txt_r r_title">การประกาศรางวัล</div>
@@ -224,12 +247,19 @@
                         </div>
                     </li>
                  </ol>
-                <br><br><br><br><br><br><br><br>
-            </div>
+                 </div>
+
+                    <br><br><br><br><br><br><br><br>
+            
         </div>
-        <div class="col-xs-1 col-sm-3 col-md-3 col-lg-3 "></div>
+         <br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br><br>
+        <div class="col-xs-1 col-sm-3 col-md-3 col-lg-3"></div>
         
         <br><br><br><br><br><br><br><br>
     </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+    <img src="images/footer.png" style="width: 100%; height: 400px" />
+
 </body>
 </html>
