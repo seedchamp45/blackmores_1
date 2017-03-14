@@ -10,7 +10,7 @@ and open the template in the editor.
 */
 
 
-.body { 
+body { 
    
     /*
       background: url(../images/bg_home.jpg) no-repeat center center fixed; 
@@ -27,7 +27,7 @@ and open the template in the editor.
   */
   
  
-    background-image: url("../images/bg_home.jpg") ;
+    background-image: url("../images/bg_home2.png") ;
 
 
     background-repeat: no-repeat;
@@ -172,7 +172,7 @@ s_20{
         border-radius: 0px;
         height: 150px;
         top: 20px;
-        width: 100%;
+        width: 90%;
         padding-left: 5%;
         padding-right: 5%;
         
@@ -219,28 +219,70 @@ s_20{
     .menu_top_text{
       font-family: helvethaica_x_bd;
       margin-top: 100px;
-      margin-left: -90px;
+      margin-left: 0px;
+      margin-right: 0px;
       text-align: left;    
-      font-size: 1.1em;
+      font-size: 1.3em;
       font-weight: bold;
     } 
    
     .menu_top_right{
         
-     margin-right: 70px;
+      float: right;
+    }
+
+    .pic-show
+    {
+      
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 180px;
+
     }
     
     .navbar2 {
         background-image: url("../images/navbar.png");
-        background-image-size: 100% 230px;
-        background-size: 100% 230px;
+        background-image-size: 100% 16.95%;
+   
         border-radius: 0px;
         height: 230px;
-        top: 20px;
+        top: 0px;
         align-content: left;
         display: block;
-        
+          margin: auto;
+    width: 100%;
+    padding: 10px; 
 
+    }
+
+    .size-li
+    {
+      width: 30%;
+      padding-left: 0.15%;
+      padding-right: 0.15%;
+    }
+
+    .size-li-right
+    {
+      width: 29%;
+      padding-left: 0%;
+      padding-right: 0.5%;
+    }
+
+
+    .size-li-cen
+    {
+      width: 36%;
+      margin-left: -2%;
+      margin-right: 2%;
+    }
+
+    .navbar-show
+    {
+      padding-top: 0.5%;
+      width: 100%;
+      position: relative
+  
     }
     
     .conter2 {

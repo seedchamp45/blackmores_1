@@ -37,7 +37,7 @@
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif] -->
+    <![endif]-->
     <style>
         /*.r_bg{   
             background-image: url("images/rule/r_bg.png") ;
@@ -49,13 +49,13 @@
             -o-background-size: cover;
             background-size: cover;
         }*/
-/*        body { 
+        body { 
             background: url(images/rule/r_bg.png) no-repeat center top local; 
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
             background-size: cover;
-         }*/
+         }
          
          .bottom0.panel-group  {
              margin-bottom: 0;
@@ -165,16 +165,37 @@
                 /* overflow: auto; */
             }
 
-            
+            body { 
+   
+    /*
+      background: url(../images/bg_home.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+  height: 100%;
+  background-color: #060;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  */
+  
+ 
+    background-image: url("images/bg_home2.png") ;
 
-            .background-main
-            {
-                  background: url(images/bg_home2.png) no-repeat center top local; 
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-            }
+
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+}
     </style>
     
       <!-- The Boutique CSS: -->
@@ -187,11 +208,12 @@
   </head>
 <!--<body class="r_bg">-->
   <body >
-        <div class="background-main">
-        <div class="container conter2">
+        <div class="container conter2" style="  margin: auto;
+    width: 80%;
+    padding: 10px;">
             <!-- Static navbar -->
             <nav class="navbar navbar-default navbar2" role="navigation">
-              <div class="container menu_top_text">
+              <div class="menu_top_text">
                 <div class="navbar-header">
                   <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                     <span class="sr-only">Toggle navigation</span>
@@ -201,16 +223,18 @@
                   </button>
 
                 </div>
-                <div id="navbar" class=" navbar-collapse collapse">
-                  <ul class="nav navbar-nav">
-                    <li><a href="#" class="txt_menu">หน้าแรก</a></li>
-                    <li><a href="#" class="txt_menu">กติกาและของรางวัล</a></li>
-                     <li><a href="#" class="txt_menu">เลือกฮีโร่</a></li>
+
+                <div id="navbar" class=" navbar-collapse collapse navbar-show">
+                  <ul class="nav navbar-nav" style="width:35%;">
+                    <li class="size-li"><a href="#" class="txt_menu">หน้าแรก</a></li>
+                    <li class="size-li-cen"><a href="#" class="txt_menu">กติกาและของรางวัล</a></li>
+                     <li class="size-li"><a href="#" class="txt_menu">เลือกฮีโร่</a></li>
                   </ul>
-                  <ul class="nav navbar-nav navbar-right menu_top_right">
-                    <li><a href="#" class="txt_menu">โหวตภาพประกวด</a></li>
-                    <li><a href="#" class="txt_menu">ประกาศผู้โชคดี</a></li>
-                    <li><a href="#" class="txt_menu sendwork">ส่งผลงานนะ</a></li>
+
+                  <ul class="nav navbar-nav navbar-right menu_top_right" style="width: 35%;">
+                    <li class="size-li-right" style="width:36%;"><a href="#" class="txt_menu">โหวตภาพประกวด</a></li>
+                    <li class="size-li-right"><a href="#" class="txt_menu">ประกาศผู้โชคดี</a></li>
+                    <li class="size-li-right"><a href="#" class="txt_menu sendwork">ส่งผลงานนะ</a></li>
                   </ul>
                 </div><!--/.nav-collapse -->
               </div>
@@ -221,187 +245,18 @@
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-1 ">
 
                 </div>
-               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 ">
-                   <img src="./images/m_t_1.png" class="home_image_right img-responsive center-block"/>
+               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 col-lg-offset-1">
+                <img src="./images/m_t_1.png" class="home_image_right img-responsive center-block pic-show"/>
                </div>
 
                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 col-lg-offset-1">
                  <img src="./images/home_body_left.png" class=" img-responsive center-block"/>
               </div>
            </div>
-            <!--#include virtual="/page/index.html" -->
+         
          </div>
-      <!--
-        <div class="footer navbar-fixed-bottom " >
-            <div class="">
-                <div class="panel-group bottom0 bg_footer1" id="accordion" role="tablist" aria-multiselectable="true">
-                    <div class="panel panel-primary ">
-                      <div class="panel-heading bu_footer center-block" role="tab" id="headingOne" style="cursor: pointer" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                       <h4 class="panel-title">
-                          ccc
-                              
-                        </h4>
-                        
-                          
-                      </div>
-                      <div id="collapseOne" class="panel-collapse collapse notifications-scroll-area" role="tabpanel" aria-labelledby="headingOne">
-                        <div class="panel-body ">
-                            <div id="content">
-                               <div class="row">
-                                   <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1 ">
-
-                                   </div>
-                                   <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 ">
-                                       <row>
-                                           <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
-                                                <img src="images/main/m_join_t_1.png" class="img-responsive">
-                                           </div>
-                                           <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
-                                               <img src="images/main/m_join_i_1.png" class="img-responsive">
-                                           </div>
-                                       </row>
-                                       <row>
-                                           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
-                                               <ol class="ol_left">
-                                                  <li>
-                                                      <div class="txt_r r_body">
-                                                          คลิกที่หัวข้อ “เลือกฮีโร่”
-                                                      </div>
-                                                  </li>
-                                                   <li>
-                                                      <div class="txt_r r_body">
-                                                          เลือกประเภทอายุน้อยกว่า 8 ปี ( เกิดวันที่ 1 มี.ค. 2552 เป็นต้นไป )
-                                                      </div>
-                                                  </li>
-                                                    <li>
-                                                      <div class="txt_r r_body">
-                                                          เลือกดาวน์โหลดฮีโร่ที่ต้องการระบายสีส่งประกวด
-                                                      </div>
-                                                  </li>
-                                                  <li>
-                                                      <div class="txt_r r_body">
-                                                           พิมพ์ภาพที่เลือก แล้วนำมาระบายสีหรือแต่งเติม ตามความคิดสร้างสรรค์       
-                                                      </div>
-                                                  </li>
-                                                  <li>
-                                                      <div class="txt_r r_body">
-                                                          หลังเสร็จสมบูรณ์ ถ่ายรูปหรือสแกนผลงาน แล้วอัพโหลดที่หน้าส่งผลงาน
-                                                      </div>
-                                                  </li>
-                                              </ol>
-                                           </div>
-                                       </row>
-                                   </div>
-                                   <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1 ">
-
-                                   </div>
-                                   <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 ">
-                                       <row>
-                                           <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
-                                               <img src="images/main/m_join_t_2.png" class="img-responsive"> 
-                                           </div>
-                                           <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
-                                               <img src="images/main/m_join_i_2.png" class="img-responsive">
-                                           </div>  
-                                       </row>
-                                       <row>
-                                           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
-                                               <ol >
-                                                   <li>
-                                                       <div class="txt_r r_body">
-                                                           คลิกที่หัวข้อ “เลือกฮีโร่”
-                                                       </div>
-                                                   </li>
-                                                    <li>
-                                                       <div class="txt_r r_body">
-                                                          เลือกประเภทอายุ 8 -12 ป ( เกิดในระหว่างวันที่ 1 มี.ค. 2548 - 2 ก.พ. 2552 )
-                                                       </div>
-                                                   </li>
-                                                     <li>
-                                                       <div class="txt_r r_body">
-                                                           เลือกชื่อฮีโร่ และอ่านคำอธิบายลักษณะฮีโร่ที่ต้องการส่งประกวด
-                                                       </div>
-                                                   </li>
-                                                   <li>
-                                                       <div class="txt_r r_body">
-                                                            วาดภาพฮีโร่ตามความคิดสร้างสรรค์ให้มีลัษณะตามโจทย์      
-                                                       </div>
-                                                   </li>
-                                                   <li>
-                                                       <div class="txt_r r_body">
-                                                           หลังเสร็จสมบูรณ์  ถ่ายรูปหรือสแกนผลงาน แล้วอัพโหลดไฟล์ที่หน้าส่งผลงาน
-                                                       </div>
-                                                   </li>
-                                               </ol>
-                                           </div>
-                                       </row>
-                                   </div>
-                                </div>
-                                
-                                <div class="row">
-                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3"></div>
-                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 ">
-                                        <div class="box_txt">
-                                            <div>
-                                                <ol class="center-block">
-                                                    <li>
-                                                        <div class="txt_r r_body">
-                                                            คลิกเข้าไปที่หัวข้อ “ภาพส่งประกวด”
-                                                        </div>
-                                                    </li>
-                                                     <li>
-                                                        <div class="txt_r r_body">
-                                                           เลือกรุ่นอายุที่ต้องการโหวต
-                                                        </div>
-                                                    </li>
-                                                      <li>
-                                                        <div class="txt_r r_body">
-                                                            กด Vote ผลงานที่ถูกใจ โดย สามารถกดโหวตได้ผลงานละ 1 ครั้ง แต่สามารถโหวตกี่ผลงานก็ได้
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="txt_r r_body">
-                                                             ผู้ที่ร่วมโหวตมีสิทธิ์ลุ้นรับรางวัลพิเศษ      
-                                                        </div>
-                                                    </li>
-                                                </ol>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="bg_footer2">
-                  <!--<div class="panel-group bottom0" id="accordion" role="tablist" aria-multiselectable="true">
-                    <div class="panel panel-primary">
-                      <div class="panel-heading" role="tab" id="headingOne" style="cursor: pointer" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        <h4 class="panel-title">
-                                          <i class="fa fa-info"></i>&nbsp;&nbsp;Notifications 
-                                      </h4>
-                      </div>
-                      <div id="collapseOne" class="panel-collapse collapse notifications-scroll-area" role="tabpanel" aria-labelledby="headingOne">
-                        <div class="panel-body ">
-                         xxx
-                        </div>
-                      </div>
-                    </div>
-                  </div>-->
-             <!-- </div>
-        </div>-->
-    
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    
-   
-    <!-- IE10 viewport hack for Surface/des    <script src="js/bootstrap.min.js"></script>ktop Windows 8 bug -->
+ 
     <script src="js/ie10-viewport-bug-workaround.js"></script>
-    </div>
+
 
 </body></html>
