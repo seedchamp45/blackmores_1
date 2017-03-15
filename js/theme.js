@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
  $(document).ready(function(){
+
     $(".txt_menu").click(function(){
           $('#clear-foot').remove();
       // alert("click"+$(this).text());

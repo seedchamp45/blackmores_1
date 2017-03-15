@@ -25,7 +25,11 @@
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/theme.js"></script>  
-   
+    <script type="text/javascript">
+    $(window).load(function(){
+        $('#myModal').modal('show');
+    });
+</script>
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="js/ie-emulation-modes-warning.js"></script>
@@ -212,7 +216,9 @@
 
     .modal-body
     {
-      height: 400px;
+      width: 80%;
+      height: 45%;
+
     }
 
 
@@ -259,7 +265,7 @@
     
     /** bg_popup */
     .bg_popup{
-        background-image: url("images/popup.png") ;
+        background-image: url("images/popup-show.png") ;
          background-image-size: 100% 100%;
         background-repeat: no-repeat;
         background-position: left top;
@@ -326,13 +332,127 @@
     .navbar-top
     {
         background-image: url("images/navbar-1.png");
-        background-size: 100% ;
-        margin-top: 5%;
+         padding: 20px 30px 0 30px;
+            background-size: 100% 100% ;
+          margin-top: 10px;
         
     }
 
+    .menu_top_text-t
+    {
+      width: 100%;
+      height: 100%;
+    }
+
+
     .navbar-show-left
     {
+      padding-top: 70px;
+    }
+
+    .nav-nav-left-t
+    {
+      width: 100%;
+    }
+
+    .menu_top_right-t
+    {
+       width: 35%;
+      float: right;
+      margin-right: 2.5%;
+
+    }
+
+  .div-top-cen
+    {
+
+        width: 20%;
+        padding-right: 40%;
+        padding-left: 40%;
+        
+    }
+    .size-li-small
+    {
+      width: 11%;
+      text-align: center;
+    }
+
+      .size-li-big
+    {
+      width: 14%;
+      text-align: center;
+    }
+
+    .size-li-very
+    {
+      width: 25%;
+    }
+
+    @media (min-width: 768px){
+      .foot-nev
+      {
+        background-size: 150px 60px;
+        margin-left: 30%;
+        width: 40%;
+        margin-right: 30%;
+      }
+      .txt_menu
+      {
+        font-size: 7px;
+      }
+
+    }
+
+       @media (max-width: 768px){
+      .navbar-top
+      {
+           background-size: 0% 0% ;
+        height: 0px;
+      }
+    }
+
+    @media (min-width: 990px){
+      .foot-nev
+      {
+        background-size: 150px 60px;
+        margin-left: 30%;
+        width: 40%;
+        margin-right: 30%;
+      }
+      .txt_menu
+      {
+        font-size: 9px;
+      }
+
+    }
+
+    @media (min-width: 1080px){
+      .foot-nev
+      {
+        background-size: 150px 60px;
+        margin-left: 30%;
+        width: 40%;
+        margin-right: 30%;
+      }
+      .txt_menu
+      {
+        font-size: 10px;
+      }
+
+    }
+
+    .div-show-left-t
+    {
+        margin-top: 5%;
+        width: 35%;
+        margin-left: 10%;
+
+    }
+       .div-show-right-t
+    {
+        margin-top: 7%;
+        width: 35%;
+        margin-right: 10%;
 
     }
 
@@ -352,7 +472,7 @@
         <div class="container conter2" >
             <!-- Static navbar -->
             <nav class="navbar navbar-default navbar-top" role="navigation">
-              <div class="menu_top_text">
+              <div class="menu_top_text-t">
                 <div class="navbar-header">
                   <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                     <span class="sr-only">Toggle navigation</span>
@@ -364,17 +484,16 @@
                 </div>
 
 
-                <div id="navbar" class=" navbar-collapse collapse navbar-show-left">
-                  <ul class="nav navbar-nav nav-nav-left">
-                    <li class="size-li"><a href="#" class="txt_menu">หน้าแรก</a></li>
-                    <li class="size-li-cen"><a href="#" class="txt_menu">กติกาและของรางวัล</a></li>
-                     <li class="size-li"><a href="#" class="txt_menu">เลือกฮีโร่</a></li>
-                  </ul>
-
-                  <ul class="nav navbar-nav navbar-right menu_top_right" >
-                    <li class="size-li-right size-li-right-left"><a href="#" class="txt_menu text-four">โหวตภาพประกวด</a></li>
-                    <li class="size-li-right size-li-right-cen"><a href="#" class="txt_menu">ประกาศผู้โชคดี</a></li>
-                    <li class="size-li-right size-li-right-left"><a href="#" class="txt_menu sendwork">ส่งผลงานนะ</a></li>
+                <div id="navbar" class=" navbar-collapse collapse navbar-show-left-t" style="
+    padding-top: 40px;">
+                  <ul class="nav navbar-nav nav-nav-left-t">
+                    <li class="size-li-small"><a href="#" class="txt_menu">หน้าแรก</a></li>
+                    <li class="size-li-big"><a href="#" class="txt_menu">กติกาและของรางวัล</a></li>
+                     <li class="size-li-small"><a href="#" class="txt_menu">เลือกฮีโร่</a></li>
+                    <li class="size-li-very"><img src="./images/logo-navbar.png" style="width: 100%;"></li>
+                    <li class="size-li-big"><a href="#" class="txt_menu text-four">โหวตภาพประกวด</a></li>
+                    <li class="size-li-big"><a href="#" class="txt_menu">ประกาศผู้โชคดี</a></li>
+                    <li class="size-li-small"><a href="#" class="txt_menu sendwork">ส่งผลงานนะ</a></li>
                   </ul>
                 </div><!--/.nav-collapse -->
               </div>
@@ -386,12 +505,12 @@
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-1 ">
 
                 </div>
-               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 col-lg-offset-1 div-show-left">
-                <img src="./images/m_t_1.png" class="home_image_right img-responsive center-block pic-show-left left-pic"/>
+               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 col-lg-offset-1 div-show-left-t">
+                <img src="./images/m_t_1.png" style="width: 100%;" />
                </div>
 
-               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 col-lg-offset-1 div-show-right">
-                                 <img src="./images/home_body_left.png" class=" img-responsive center-block pic-show-right"/>
+               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 col-lg-offset-1 div-show-right-t">
+                                 <img src="./images/home_body_left.png" style="width: 100%;" />
               </div>
            </div>
 
@@ -402,7 +521,7 @@
            
             <div class="bg_footer2" id = "clear-foot" >
                  <div  class="foot-nev">
-                 <button type="button" style="opacity: 0; width: 100%; height: 100px;" data-toggle="modal" data-target="#myModal">Open Modal</button>
+                 <button type="button" style="opacity: 0; width: 200px; height: 100%; margin-top: -5%;" data-toggle="modal" data-target="#myModal">Open Modal</button>
                  </div>
              </div>
          </div>
@@ -415,138 +534,15 @@
       <!-- Modal content-->
       <div class="modal-content1">
           <div class="bg_popup">
-            <div class="modal-header1" style="height: 0px;">
+            <div class="modal-header1" style="height: 4%; padding-top: -5%;">
               
-                <button type="button" class="close2 center-block" data-dismiss="modal"><img src="images/bu_toggle_down_1.png" class="close2 img-responsive"></button>
+                <button type="button" class="close2 center-block" data-dismiss="modal"><img src="images/bu_toggle_down_1.png" class="close2 img-responsive" style="width: 50%; margin-left: 25%; margin-top:-5%;"></button>
             </div>
             <div class="modal-body">
-                 <div id="content">
-                    <div class="row">
-                        <div class="txt_body_popup">
-                            <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1 ">
+                
 
-                            </div>
-                            <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-                                <row>
-                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
-                                         <img src="images/main/m_join_t_1.png" class="img-responsive">
-                                    </div>
-                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
-                                        <img src="images/main/m_join_i_1.png" class="img-responsive">
-                                    </div>
-                                </row>
-                                <row>
-                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
-                                        <ol class="ol_left">
-                                           <li>
-                                               <div class="txt_r r_body italic">
-                                                   คลิกที่หัวข้อ</div> <div class="c_2 inline">“เลือกฮีโร่”</div>
-                                           </li>
-                                            <li>
-                                               <div class="txt_r r_body italic">
-                                                   เลือกประเภทอายุน้อยกว่า 8 ปี  </div> <div class="txt_r r_body_small">( เกิดวันที่ 1 มี.ค. 2552 เป็นต้นไป )</div>
-                                              
-                                           </li>
-                                             <li>
-                                               <div class="c_2 inline"> เลือกดาวน์โหลดฮีโร่ </div><div class="txt_r r_body italic" >ที่ต้องการระบายสีส่งประกวด
-                                               </div>
-                                           </li>
-                                           <li>
-                                               <div class="txt_r r_body italic">
-                                                    พิมพ์ภาพที่เลือก แล้วนำมาระบายสีหรือแต่งเติม ตามความคิดสร้างสรรค์       
-                                               </div>
-                                           </li>
-                                           <li>
-                                               <div class="txt_r r_body italic">
-                                                   หลังเสร็จสมบูรณ์ ถ่ายรูปหรือสแกนผลงาน แล้วอัพโหลดที่หน้าส่งผลงาน
-                                               </div>
-                                           </li>
-                                       </ol>
-                                    </div>
-                                </row>
-                            </div>
-                            
-                            <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 ">
-                                <row>
-                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
-                                        <img src="images/main/m_join_t_2.png" class="img-responsive"> 
-                                    </div>
-                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
-                                        <img src="images/main/m_join_i_2.png" class="img-responsive">
-                                    </div>  
-                                </row>
-                                <row>
-                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
-                                        <ol >
-                                            <li>
-                                                <div class="txt_r r_body italic">
-                                                    คลิกที่หัวข้อ </div><div class="c_2 inline">“เลือกฮีโร่”</div>
-                                                
-                                            </li>
-                                             <li>
-                                                <div class="txt_r r_body italic">
-                                                    เลือกประเภทอายุ 8 -12 ป </div> <div class="txt_r r_body_small">( เกิดในระหว่างวันที่ 1 มี.ค. 2548 - 2 ก.พ. 2552 )</div>
-                                            </li>
-                                              <li>
-                                                <div class="c_2 inline">เลือกชื่อฮีโร่ และอ่านคำอธิบายลักษณะฮีโร่</div><div class="txt_r r_body italic">ที่ต้องการส่งประกวด</div>
-                                            </li>
-                                            <li>
-                                                <div class="txt_r r_body italic">
-                                                     วาดภาพฮีโร่ตามความคิดสร้างสรรค์ให้มีลัษณะตามโจทย์      
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="txt_r r_body italic">
-                                                    หลังเสร็จสมบูรณ์  ถ่ายรูปหรือสแกนผลงาน แล้วอัพโหลดไฟล์ที่หน้าส่งผลงาน
-                                                </div>
-                                            </li>
-                                        </ol>
-                                    </div>
-                                </row>
-                            </div>
-                            <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1 ">
-
-                            </div>
-                        </div>
-                     </div>
-
-                     <div class="row">
-                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3"></div>
-                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 ">
-                             <div class="box_txt">
-                                 <br<br><br><br>
-                                 <div>
-                                     <ol class="center-block" style="width: 80%">
-                                         <li>
-                                             <div class="txt_r r_body3 italic">
-                                                 คลิกเข้าไปที่หัวข้อ </div><div class="c_2 inline">“ภาพส่งประกวด”</div>
-                                             
-                                         </li>
-                                          <li>
-                                             <div class="txt_r r_body3 italic">
-                                                เลือกรุ่นอายุที่ต้องการโหวต
-                                             </div>
-                                         </li>
-                                           <li>
-                                             <div class="txt_r r_body3 italic">
-                                                 กด Vote ผลงานที่ถูกใจ โดย </div><div class="c_2 inline">สามารถกดโหวตได้ผลงานละ 1 ครั้ง แต่สามารถโหวตกี่ผลงานก็ได้</div>
-                                           
-                                         </li>
-                                         <li>
-                                             <div class="txt_r r_body3 italic">
-                                                  ผู้ที่ร่วมโหวตมีสิทธิ์ลุ้นรับรางวัลพิเศษ      
-                                             </div>
-                                         </li>
-                                     </ol>
-                                 </div>
-                             </div>
-                         </div>
-                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3"></div>
-                     </div>
-                 </div>   
-                    
-
-
+                
+            </div>   
             </div>
             <!--<div class="modal-footer" style="height: 0px;">
             </div>-->

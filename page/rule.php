@@ -110,7 +110,7 @@
         <div class="col-xs-1 col-sm-3 col-md-3 col-lg-3 "></div>
         <div class="col-xs-10 col-sm-6 col-md-6 col-lg-6 ">
             
-             <br><br><br><br><br>
+             <br><br>
             <img src="images/rule/r_title.png" class="img-responsive center-block">
             <br><br>
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -132,7 +132,7 @@
                      <li>
                          <div class="txt_r r_body">ประกาศผลวันที่ 28 เมษายน 2560 ผ่านทาง www.blackmoresmystrongfamily.com ดังนี้</div>
                          <ul>
-                            <li><div class="txt_r r_body">- ผู้ผ่านเข้ารอบ รุ่นอายุ 8 – 12 ปี เข้าร่วม Workshop กับอ.ชลิต นาคพะวัน ในวันอาทิตย์ที่ 14 พฤษภาคม 2560
+                            <li><div class="txt_r r_body">- ผู้ผ่านเข้ารอบ ประเภทอายุ 8 – 12 ปี เข้าร่วม Workshop กับอ.ชลิต นาคพะวัน ในวันอาทิตย์ที่ 14 พฤษภาคม 2560
               ที่โรงเรียนสอนศิลปะ Chalit Art Project and Gallery เพื่อหาผู้ชนะเลิศ จำนวน 30 คน</div></li>
                            </ul>
                      </li>
@@ -144,7 +144,7 @@
                              </li>  
                                 <div class="txt_r r_body">- ผู้ชนะเลิศประเภทอายุ 8- 12 ปี จำนวน 5 รางวัล</div>
                             <li>  
-                                <div class="txt_r r_body">- ผู้ชนะ Popular Vote 10 รางวัล (รุ่นอายุละ 5 รางวัล)</div>
+                                <div class="txt_r r_body">- ผู้ชนะ Popular Vote 10 รางวัล (ประเภทอายุละ 5 รางวัล)</div>
                             </li>
                             <li>
                                 <div class="txt_r r_body"> - ผู้โชคดีที่ร่วมโหวต จำนวน 10 รางวัล</div>

@@ -112,7 +112,7 @@ s_20{
     
     .conter2 {
          top:100px;
-         height: 180px;
+         height: 20%;
     }
    .navbar-default {
       background-color: rgba(248, 248, 248, 0);
@@ -163,9 +163,12 @@ s_20{
     
     .conter2 {
          top:100px;
-         height: 270px;
+         height: 20%;
     }
-    
+    * {
+    margin:0;
+    padding:0;
+  }
     
     .navbar-default{
         
@@ -377,7 +380,7 @@ s_20{
     
     .conter2 {
          top:100px;
-         height: 270px;
+         height: 20%;
     }
     
     
@@ -496,7 +499,7 @@ s_20{
     
     .conter2 {
          top:100px;
-         height: 270px;
+         height: 20%;
     }
     
     
