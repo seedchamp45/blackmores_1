@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../favicon.ico">
 
-    <title>Blackmore Our Strong Family</title>
+    <title>Blackmore My Strong Family</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -304,6 +304,38 @@
           
     }
 
+        .foot-nev
+    {
+       background: url(images/bu_toggle_up.png) no-repeat center ;
+    }
+
+ 
+
+
+    @media (max-width: 768px){
+      .foot-nev
+      {
+        background-size: 150px 60px;
+        margin-left: 30%;
+        width: 40%;
+        margin-right: 30%;
+      }
+
+    }
+
+    .navbar-top
+    {
+        background-image: url("images/navbar-1.png");
+        background-size: 100% ;
+        margin-top: 5%;
+        
+    }
+
+    .navbar-show-left
+    {
+
+    }
+
     </style>
     
       <!-- The Boutique CSS: -->
@@ -317,11 +349,9 @@
 <!--<body class="r_bg">-->
   <body >
         <div class="main-body">
-        <div class="container conter2" style="  margin: auto;
-    width: 80%;
-    padding: 10px;">
+        <div class="container conter2" >
             <!-- Static navbar -->
-            <nav class="navbar navbar-default navbar2" role="navigation">
+            <nav class="navbar navbar-default navbar-top" role="navigation">
               <div class="menu_top_text">
                 <div class="navbar-header">
                   <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -333,17 +363,18 @@
 
                 </div>
 
-                <div id="navbar" class=" navbar-collapse collapse navbar-show">
-                  <ul class="nav navbar-nav" style="width:35%;">
+
+                <div id="navbar" class=" navbar-collapse collapse navbar-show-left">
+                  <ul class="nav navbar-nav nav-nav-left">
                     <li class="size-li"><a href="#" class="txt_menu">หน้าแรก</a></li>
                     <li class="size-li-cen"><a href="#" class="txt_menu">กติกาและของรางวัล</a></li>
                      <li class="size-li"><a href="#" class="txt_menu">เลือกฮีโร่</a></li>
                   </ul>
 
-                  <ul class="nav navbar-nav navbar-right menu_top_right" style="width: 35%;">
-                    <li class="size-li-right" style="width:36%;"><a href="#" class="txt_menu">โหวตภาพประกวด</a></li>
-                    <li class="size-li-right"><a href="#" class="txt_menu">ประกาศผู้โชคดี</a></li>
-                    <li class="size-li-right"><a href="#" class="txt_menu sendwork">ส่งผลงานนะ</a></li>
+                  <ul class="nav navbar-nav navbar-right menu_top_right" >
+                    <li class="size-li-right size-li-right-left"><a href="#" class="txt_menu text-four">โหวตภาพประกวด</a></li>
+                    <li class="size-li-right size-li-right-cen"><a href="#" class="txt_menu">ประกาศผู้โชคดี</a></li>
+                    <li class="size-li-right size-li-right-left"><a href="#" class="txt_menu sendwork">ส่งผลงานนะ</a></li>
                   </ul>
                 </div><!--/.nav-collapse -->
               </div>
@@ -355,14 +386,12 @@
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-1 ">
 
                 </div>
-               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 col-lg-offset-1">
-                <img src="./images/m_t_1.png" class="home_image_right img-responsive center-block pic-show-left" style="
-                    margin-top: 100px;"/>
+               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 col-lg-offset-1 div-show-left">
+                <img src="./images/m_t_1.png" class="home_image_right img-responsive center-block pic-show-left left-pic"/>
                </div>
 
-               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 col-lg-offset-1">
-                                 <img src="./images/home_body_left.png" class=" img-responsive center-block pic-show-right" style="
-                    margin-top: 0px;"/>
+               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 col-lg-offset-1 div-show-right">
+                                 <img src="./images/home_body_left.png" class=" img-responsive center-block pic-show-right"/>
               </div>
            </div>
 
@@ -372,7 +401,7 @@
          <div id = "add-foot">
            
             <div class="bg_footer2" id = "clear-foot" >
-                 <div style=" background: url(images/bu_toggle_up.png) no-repeat center ; margin-left: 40%; margin-right: 40%; margin-top: 20px; width: 20%; height: 100px;">
+                 <div  class="foot-nev">
                  <button type="button" style="opacity: 0; width: 100%; height: 100px;" data-toggle="modal" data-target="#myModal">Open Modal</button>
                  </div>
              </div>

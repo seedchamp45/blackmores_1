@@ -1,83 +1,7 @@
-<script>
-$(function(){
-    $(".select_image").click(function(){
-
-       // $("#name_pic").val("2");
-      load_data_image(this.value);
-        //vote_data_image(this.value);
-     });
-     
-    function load_data_image(id_image){
-        //ajax
-
-        $.ajax( 
-        { 
-            url:'page/load_data_image.php',
-            data:{'image_id': id_image},
-            type:'POST',
-            dataType: 'json',
-            success:calback,
-            error: ajaxError
-        });
-        //ดึงค่าสำเร็จ
-        function calback(result){
-           // ใส่ค่า
-
-    
-            $(".name_value").html(result.username);
-            $(".age_value").html(result.age);
-            $(".vote_value").html(result.vote);
-            $(".title_value").html(result.name);
-            $(".image_id_value").val(result.id);
-            //alert($(".image_id_value").html(result.id););
-           
-            $(".image_value").attr("src","page/upload/"+result.image);
-             //โชว์ popup
-            $($(".select_image").attr("data-target")).modal("show");
-            
-        }
-        
-        function ajaxError() {
-            alert("error");                          
-        }
-    }
-
-    $(".image_id_value").click(function(){
-      
-     
-      vote_data_image(this.value);
-        //vote_data_image(this.value);
-    });
-
-    function vote_data_image(id_image){
-        //ajax
-
-        $.ajax( 
-        { 
-            url:'http://blackmoresmystrongfamily.com/page/facebook_V_login/member_vote.php',
-            data:{'image_id': id_image},
-            type:'POST',
-            success: function(){
-
-            }
-        });
-    }
-
-
-
-    
-});
-
-
-
-
-</script>
-
-
 <?php
-include_once("facebook_V_login/db_config.php");
-include_once("facebook_V_login/facebook_config.php");
-
+include_once("db_config.php");
+include_once("facebook_config.php");
+ // $image_id = $_POST['image_id'];
   $user_token = $_SESSION['fb_access_token'];
   try {
     $response = $fb->get('/me?fields=id,name,email,birthday,gender,picture,cover,link',$user_token);
@@ -87,9 +11,16 @@ include_once("facebook_V_login/facebook_config.php");
       echo 'Facebook SDK returned an error: ' . $e->getMessage(); exit;
   }
   $user = $response->getGraphUser();
-
-   $oauth_id = $user["id"];
-
+  $profile = $user->getPicture();
+  $oauth_id = $user["id"];
+  $user_information  = array(
+    'name'    => $user["name"],
+    'email'   => $user["email"],
+    'gender'  => $user["gender"],
+    'picture' => $user['picture']['url'],
+    'link'    => $user["link"],
+    'cover'   => $user['cover']['source']
+  );
 
   $db_check = $db->query("SELECT * FROM image_upload where age < 8");
 
@@ -171,7 +102,6 @@ include_once("facebook_V_login/facebook_config.php");
 
 
   endif;
-}
   // $query_user = $db->query("SELECT * FROM facebook_users WHERE oauth_id=$oauth_id");
   // $user_data = mysqli_fetch_assoc($query_user);
 

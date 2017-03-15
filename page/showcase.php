@@ -150,10 +150,14 @@ button:hover, button:active, button:focus{background: #f3f3f3;outline: none;}
   /*gallery*/
 @media (min-width: 768px){
     .modal-dialog {
-        width: 1200px;
+        width: 80%;
        /* margin: 30px auto;*/
-       
     }
+
+    .check-width
+    {
+        width: 45%;
+      }
 }
 /*gallery*/
 .des_img{
@@ -166,10 +170,37 @@ button:hover, button:active, button:focus{background: #f3f3f3;outline: none;}
 }
 
 @media (min-width: 992px){
-    .modal-lg {
-        width: 1200px;
-    }
+  
+      .check-width
+    {
+        width: 40%;
+      }
 }
+
+@media (min-width: 1200px){
+  
+      .check-width
+    {
+        width: 30%;
+      }
+}
+
+@media (min-width: 1440px){
+  
+      .check-width
+    {
+        width: 25%;
+      }
+}
+
+@media (min-width: 1920px){
+  
+      .check-width
+    {
+        width: 20%;
+      }
+}
+
 .dashed_line{
     display: inline;
     border-bottom:  dashed 1px #333;
@@ -189,6 +220,8 @@ button:hover, button:active, button:focus{background: #f3f3f3;outline: none;}
     vertical-align: middle;
     float: none;
 }
+
+
 
 
 .modal-header {
@@ -531,6 +564,7 @@ abbr[title2] {
                 margin-right: -15%;
                 margin-left: -18%;
                 margin-top: 3%;
+                    margin: auto;
 }
 
 .panel-body {
@@ -558,7 +592,35 @@ ul.nav-tabs li {
             -o-background-size: cover;
             background-size: cover;
             margin-top: -300px;
-             background-size: 100% 2200px;
+             background-size: 100% 100%;
+
+            }
+
+            .bar-yellow
+            {
+              width: 300px; margin-top: -50px;
+            }
+
+            .bar-blue
+            {
+              width: 300px; margin-top: -50px; margin-left: -37px;
+            }
+
+         @media (max-width: 768px){
+                    .show-case-pic
+            {
+                margin-top: 300px;
+            }
+
+            .bar-yellow
+            {
+                width: 150px;
+            }
+            .bar-blue
+            {
+                width: 150px; margin-left: -37px;
+            }
+      
 
             }
 
@@ -578,11 +640,11 @@ ul.nav-tabs li {
                                 <a class="btn btn-primary " href="<?=htmlspecialchars($loginUrl);?>"><i class="fa fa-facebook" aria-hidden="true"></i> Login With Facebook </a>
                             </div>
                             <div class="<?php echo $class; ?>">
-                             <p align="center"><a class="btn btn-primary" href="page/facebook_v_login/logout.php"><i class="fa fa-facebook" aria-hidden="true"></i> Logout Facebook </a></p>
+                             <p align="center"><a class="btn btn-primary" href="page/facebook_V_login/logout.php"><i class="fa fa-facebook" aria-hidden="true"></i> Logout Facebook </a></p>
                              </div>
             </div>
         </div>
-        
+        <br><br><br><br><br><br>
         <div class="row bg_winner">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
               
@@ -593,12 +655,12 @@ ul.nav-tabs li {
                                 <!--  <ul class="nav nav-tabs ul-center center-block">-->
                                 <li  style=" float: left; margin: auto; display:inline-table;">
                                     <a href="#tab1default1" id="ageEight" data-toggle="tab" class="menu-link h_b">
-                                        <img src="images/gallery/bar_yellow.png" class="img-responsive" style="width: 300px; margin-top: -50px;">
+                                        <img src="images/gallery/bar_yellow.png" class="img-responsive bar-yellow">
                                     </a>
                                 </li>
                                 <li  style="float: right; margin: auto; display:inline-table;">
                                     <a href="#tab2default"  id="ageMoreEight" data-toggle="tab" class="menu-link h_b">
-                                      <img src="images/gallery/bar_blue.png" class="img-responsive" style="width: 300px; margin-top: -50px; margin-left: -37px;">
+                                      <img src="images/gallery/bar_blue.png" class="img-responsive bar-blue">
                                     </a>
                                 </li>
                             </ul>
@@ -630,7 +692,7 @@ ul.nav-tabs li {
 
 
     </div>
-   <img src="images/footer.png" style="width: 100%; height: 400px background-repeat: no-repeat; margin-bottom: -100px" />
+   <img src="images/footer.png" style="width: 100%; height: 400px background-repeat: no-repeat; margin-bottom: -200px" />
 <script type="text/javascript">
     var track_page = 1; //track user click as page number, righ now page number 1
     load_contents(track_page); //load content
@@ -718,11 +780,11 @@ ul.nav-tabs li {
 
                     <div class="row">
 
-                        <div class="col-xs-12 col-md-7 col-lg-7 vcenter">
-                            <img src="images/gallery/image_pop_detail.jpg" class="img-responsive center-block image_value" style="height: 500px; width: 100%; display: block;"/>
+                        <div class="col-xs-12 col-md-7 col-lg-7 vcenter" style="height: 40%; width: 40%; float: left;">
+                            <img src="images/gallery/image_pop_detail.jpg" class="img-responsive center-block image_value" style="height: 100%; width: 100%; float: left;"/>
                             
                         </div>
-                        <div class="col-xs-12 col-md-5 col-lg-4 vcenter">
+                        <div class="col-xs-12 col-md-5 col-lg-4 vcenter" style="height: 40%; width: 40%; float: right; margin-top: 0px;"">
 
                             <div style="height:3em;border:0px solid #000">  
                                 <div class="row ">
@@ -770,7 +832,7 @@ ul.nav-tabs li {
 
    </div>
 <!--         <button id="load_more_button"><img src="images/gallery/ajax-loader.gif"  class="animation_image" style="float:left;"> Load More</button> -->
-<br><br>
+
   
   </body>
 </html>

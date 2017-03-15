@@ -275,6 +275,23 @@
             .hero-check {
               width: 80%;
             }
+
+             .footer-pic
+        {
+            width: 100%; height: 400px;
+        }
+
+      @media (max-width: 768px){
+        .txt_r 
+            {
+                  font-size: 0.9em;
+            }
+
+         .footer-pic
+            {
+                width: 100%; height: 100px;
+            }
+        }
         </style>
     </head>
     <body>
@@ -787,7 +804,7 @@
             </div>
         </div>       
     </div> 
-      <img src="images/footer.png" style="width: 100%; height: 400px background-repeat: no-repeat;" />
+      <img src="images/footer.png" class="footer-pic" />
     </div>       
     <br>  <br>  <br> 
   

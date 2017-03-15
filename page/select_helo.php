@@ -76,6 +76,7 @@
                 margin-right: -15%;
                 margin-left: -15%;
                 margin-top: 3%;
+                margin: auto;
             }
 
 
@@ -321,6 +322,42 @@
 
             }
 
+            .show-case-pic
+            {
+                margin-top: 40px;
+            }
+
+            .bar-yellow
+            {
+                width: 300px; margin-top: -50px;
+            }
+
+            .bar-blue
+            {
+                width: 300px; margin-top: -50px; margin-left: -37px;
+            }
+
+            @media (max-width: 768px){
+                    .show-case-pic
+            {
+                margin-top: 300px;
+            }
+
+            .bar-yellow
+            {
+                width: 150px;
+            }
+            .bar-blue
+            {
+                width: 150px; margin-left: -37px;
+            }
+             .background-main-rule
+            {
+                height: 2800px;
+            }
+
+            }
+
 
             .panel-body {
                 padding: 30px;
@@ -348,9 +385,10 @@
         <div class="container">
             <div class="row ">
                 <div class="col-xs-12  col-sm-12 col-md-12 col-lg-12">
-                    <img src="images/helo/select_hello_title.png" class="img-responsive center-block" style="margin-top: 40px;">
+                    <img src="images/helo/select_hello_title.png" class="img-responsive center-block show-case-pic">
                 </div>
             </div>
+              <br><br>
              <div class="row bg_winner">
                 
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
@@ -360,12 +398,12 @@
                                     <!--  <ul class="nav nav-tabs ul-center center-block">-->
                                     <li style=" float: left; margin: auto; display:inline-table;"  >
                                         <a href="#tab1default" data-toggle="tab" class="menu-link h_b">
-                                            <img src="images/gallery/bar_yellow.png" class="img-responsive" style="width: 300px; margin-top: -50px;">
+                                            <img src="images/gallery/bar_yellow.png" class="img-responsive bar-yellow">
                                         </a>
                                     </li>
                                     <li  style="float: right; margin: auto; display:inline-table;">
                                         <a href="#tab2default" data-toggle="tab" class="menu-link h_b">
-                                          <img src="images/gallery/bar_blue.png" class="img-responsive" style="width: 300px; margin-top: -50px; margin-left: -37px;">
+                                          <img src="images/gallery/bar_blue.png" class="img-responsive bar-blue" >
                                         </a>
                                     </li>
                                 </ul>

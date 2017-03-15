@@ -75,9 +75,33 @@
             overflow: scroll;
             
         }
+
+        .footer-pic
+        {
+            width: 100%; height: 400px;
+        }
+
+        @media (max-width: 768px){
+        .txt_r 
+            {
+                  font-size: 0.9em;
+            }
+        .scrollview-text {
+            height: 500px;
+            margin-left: 5%;
+            overflow: scroll;
+            
+        }
+         .footer-pic
+            {
+                width: 100%; height: 100px;
+            }
+        }
            
           
         </style>
+
+
     </head>
     <body>
     <div class="background-main-rule">
@@ -263,7 +287,7 @@
     </div>
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     </div>
-    <img src="images/footer.png" style="width: 100%; height: 400px" />
+    <img src="images/footer.png" class="footer-pic" />
 
 </body>
 </html>
