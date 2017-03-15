@@ -137,26 +137,51 @@
             
             .txt_r{
                font-family: "db_helvethaica_x";
-          
-               display: block;
-            
+               
+              
+                display: inline;
             }
             
             
             .r_body{
                 color: #000;
-                font-size:1.8em;
+                font-size:1.5em;
                 font-weight: normal;
                 display: inline;
             }
+            .r_body3{
+                color: #000;
+                font-size:1.35em;
+                font-weight: normal;
+                display: inline;
+            }
+            
+            .r_body_small{
+                color: #000;
+                font-size:1.2em;
+                font-weight: normal;
+                display: inline;
+            }
+            
+            .c_2{
+                 font-family: "db_helvethaica_x";
+                font-size:1.3em;
+                font-weight: normal;
+                 color: #01a0b3; 
+                display: inline;
+                font-style:italic;
+            }
+            
+            
+            
              .box_txt{
                  background: url(images/main/m_bpx_txt.png) no-repeat center top local; 
-                 height: 100%;
+                 margin-top: 25px;
                 -webkit-background-size: cover;
                 -moz-background-size: cover;
                 -o-background-size: cover;
                 background-size: cover;
-             
+                 height: 50%;
             }
             
             .notifications-scroll-area {
@@ -229,9 +254,56 @@
     background-position: left top;
     background-attachment: scroll;
     background-size: 100% 90%;
-   
+   }
     
+    
+    /** bg_popup */
+    .bg_popup{
+        background-image: url("images/popup.png") ;
+         background-image-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: left top;
+        background-attachment: scroll;
+        background-size: 100% 90%;
+        height:100%;
+    }
+    
+    .txt_body_popup{
+        margin-top:100px;
+    }
+    
+    .italic{
+        font-style:italic;
+    }
+    
+  
+    .modal-content1 {
+    position: relative;
+    /* background-color: rgba(255, 255, 255, 0.03); */
+    t-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 0px solid rgba(153, 153, 153, 0);
+    border: 0px solid rgba(0,0,0,.2);
+    border-radius: 0px;
+    outline: 0;
+    -webkit-box-shadow: 0 3px 9px rgba(10, 9, 9, 0);
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0);
 }
+    .modal-header1 {
+        padding: 15px;
+        border-bottom: 0px solid #e5e5e5;
+    }   
+    .close2 {
+        
+        font-size: 21px;
+        font-weight: 1700;
+        line-height: 1;
+        color: #000;
+        text-shadow: 0 1px 0 #fff;
+        filter: alpha(opacity=20);
+          
+    }
+
     </style>
     
       <!-- The Boutique CSS: -->
@@ -289,7 +361,7 @@
                </div>
 
                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 col-lg-offset-1">
-                 <img src="./images/home_body_left.png" class=" img-responsive center-block pic-show-right" style="
+                                 <img src="./images/home_body_left.png" class=" img-responsive center-block pic-show-right" style="
                     margin-top: 0px;"/>
               </div>
            </div>
@@ -299,11 +371,11 @@
          </div>
          <div id = "add-foot">
            
-         <div class="bg_footer2" id = "clear-foot" >
-              <div style=" background: url(images/bu_toggle_up.png) no-repeat center ; margin-left: 40%; margin-right: 40%; margin-top: 20px; width: 20%; height: 100px;">
-              <button type="button" style="opacity: 0; width: 100%; height: 100px;" data-toggle="modal" data-target="#myModal">Open Modallllllllll</button>
-              </div>
-          </div>
+            <div class="bg_footer2" id = "clear-foot" >
+                 <div style=" background: url(images/bu_toggle_up.png) no-repeat center ; margin-left: 40%; margin-right: 40%; margin-top: 20px; width: 20%; height: 100px;">
+                 <button type="button" style="opacity: 0; width: 100%; height: 100px;" data-toggle="modal" data-target="#myModal">Open Modal</button>
+                 </div>
+             </div>
          </div>
           </div>
       
@@ -312,18 +384,145 @@
     <div class="modal-dialog">
     
       <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header" style="height: 0px;">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-        <div class="modal-body">
-          
-        </div>
-        <div class="modal-footer" style="height: 0px;">
+      <div class="modal-content1">
+          <div class="bg_popup">
+            <div class="modal-header1" style="height: 0px;">
+              
+                <button type="button" class="close2 center-block" data-dismiss="modal"><img src="images/bu_toggle_down_1.png" class="close2 img-responsive"></button>
+            </div>
+            <div class="modal-body">
+                 <div id="content">
+                    <div class="row">
+                        <div class="txt_body_popup">
+                            <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1 ">
 
-        </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+                                <row>
+                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
+                                         <img src="images/main/m_join_t_1.png" class="img-responsive">
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
+                                        <img src="images/main/m_join_i_1.png" class="img-responsive">
+                                    </div>
+                                </row>
+                                <row>
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+                                        <ol class="ol_left">
+                                           <li>
+                                               <div class="txt_r r_body italic">
+                                                   คลิกที่หัวข้อ</div> <div class="c_2 inline">“เลือกฮีโร่”</div>
+                                           </li>
+                                            <li>
+                                               <div class="txt_r r_body italic">
+                                                   เลือกประเภทอายุน้อยกว่า 8 ปี  </div> <div class="txt_r r_body_small">( เกิดวันที่ 1 มี.ค. 2552 เป็นต้นไป )</div>
+                                              
+                                           </li>
+                                             <li>
+                                               <div class="c_2 inline"> เลือกดาวน์โหลดฮีโร่ </div><div class="txt_r r_body italic" >ที่ต้องการระบายสีส่งประกวด
+                                               </div>
+                                           </li>
+                                           <li>
+                                               <div class="txt_r r_body italic">
+                                                    พิมพ์ภาพที่เลือก แล้วนำมาระบายสีหรือแต่งเติม ตามความคิดสร้างสรรค์       
+                                               </div>
+                                           </li>
+                                           <li>
+                                               <div class="txt_r r_body italic">
+                                                   หลังเสร็จสมบูรณ์ ถ่ายรูปหรือสแกนผลงาน แล้วอัพโหลดที่หน้าส่งผลงาน
+                                               </div>
+                                           </li>
+                                       </ol>
+                                    </div>
+                                </row>
+                            </div>
+                            
+                            <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 ">
+                                <row>
+                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
+                                        <img src="images/main/m_join_t_2.png" class="img-responsive"> 
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
+                                        <img src="images/main/m_join_i_2.png" class="img-responsive">
+                                    </div>  
+                                </row>
+                                <row>
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+                                        <ol >
+                                            <li>
+                                                <div class="txt_r r_body italic">
+                                                    คลิกที่หัวข้อ </div><div class="c_2 inline">“เลือกฮีโร่”</div>
+                                                
+                                            </li>
+                                             <li>
+                                                <div class="txt_r r_body italic">
+                                                    เลือกประเภทอายุ 8 -12 ป </div> <div class="txt_r r_body_small">( เกิดในระหว่างวันที่ 1 มี.ค. 2548 - 2 ก.พ. 2552 )</div>
+                                            </li>
+                                              <li>
+                                                <div class="c_2 inline">เลือกชื่อฮีโร่ และอ่านคำอธิบายลักษณะฮีโร่</div><div class="txt_r r_body italic">ที่ต้องการส่งประกวด</div>
+                                            </li>
+                                            <li>
+                                                <div class="txt_r r_body italic">
+                                                     วาดภาพฮีโร่ตามความคิดสร้างสรรค์ให้มีลัษณะตามโจทย์      
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="txt_r r_body italic">
+                                                    หลังเสร็จสมบูรณ์  ถ่ายรูปหรือสแกนผลงาน แล้วอัพโหลดไฟล์ที่หน้าส่งผลงาน
+                                                </div>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </row>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1 ">
+
+                            </div>
+                        </div>
+                     </div>
+
+                     <div class="row">
+                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3"></div>
+                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 ">
+                             <div class="box_txt">
+                                 <br<br><br><br>
+                                 <div>
+                                     <ol class="center-block" style="width: 80%">
+                                         <li>
+                                             <div class="txt_r r_body3 italic">
+                                                 คลิกเข้าไปที่หัวข้อ </div><div class="c_2 inline">“ภาพส่งประกวด”</div>
+                                             
+                                         </li>
+                                          <li>
+                                             <div class="txt_r r_body3 italic">
+                                                เลือกรุ่นอายุที่ต้องการโหวต
+                                             </div>
+                                         </li>
+                                           <li>
+                                             <div class="txt_r r_body3 italic">
+                                                 กด Vote ผลงานที่ถูกใจ โดย </div><div class="c_2 inline">สามารถกดโหวตได้ผลงานละ 1 ครั้ง แต่สามารถโหวตกี่ผลงานก็ได้</div>
+                                           
+                                         </li>
+                                         <li>
+                                             <div class="txt_r r_body3 italic">
+                                                  ผู้ที่ร่วมโหวตมีสิทธิ์ลุ้นรับรางวัลพิเศษ      
+                                             </div>
+                                         </li>
+                                     </ol>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3"></div>
+                     </div>
+                 </div>   
+                    
+
+
+            </div>
+            <!--<div class="modal-footer" style="height: 0px;">
+            </div>-->
+          </div>
       </div>
-      
     </div>
   </div>
   </div>
