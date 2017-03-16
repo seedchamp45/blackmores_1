@@ -38,7 +38,7 @@ $(function(){
             $(".vote_value").html(result.vote);
             $(".title_value").html(result.name);
             $(".image_id_value").val(result.id);
-           
+            $(".image_id_value").data('link', result.image);
             //alert($(".image_id_value").html(result.id););
            
             $(".image_value").attr("src","page/upload/"+result.image);
@@ -53,20 +53,27 @@ $(function(){
     }
 
     $(".image_id_value").click(function(){
+      let link = $(this).data('link');
+
       var e = {
         method: "feed",
         link: "http://blackmoresmystrongfamily.com",
-        picture: "http://w3lessons.info/logo_large.png",
+        picture: 'http://blackmoresmystrongfamily.com/page/upload/'+link,
         name: "Blackmore My Strong Family",
         caption: 'http://blackmoresmystrongfamily.com',
         description: "Blackmore My Strong Family - ออกแบบฮีโร่ โชว์สตรองให้โลกรู้"
         };
       FB.ui(e, function(t) {
-        vote_data_image(this.value);
+        var str = JSON.stringify(t);
+        var obj = JSON.parse(str);
+        if(obj.post_id != '')
+        {
+            
+        }
     
       })
         
-      //vote_data_image(this.value);
+      vote_data_image(this.value);
         //vote_data_image(this.value);
     });
 

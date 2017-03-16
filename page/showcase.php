@@ -782,7 +782,7 @@ ul.nav-tabs li {
 
     <div class="modal fade bs-example-modal-lg " tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content des_img">
+            <div class="modal-content des_img" style="height: 100%;">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 </div>
@@ -794,7 +794,7 @@ ul.nav-tabs li {
                             <img src="images/gallery/image_pop_detail.jpg" name = "share_pic" class="img-responsive center-block image_value" style="height: 100%; width: 100%; float: left;"/>
                             
                         </div>
-                        <div class="col-xs-12 col-md-5 col-lg-4 vcenter" style="height: 40%; width: 40%; float: right; margin-top: 0px;"">
+                        <div class="col-xs-12 col-md-5 col-lg-4 vcenter" style="height: 100%; width: 40%; float: right; margin-top: 0px;"">
 
                             <div style="height:3em;border:0px solid #000">  
                                 <div class="row ">
