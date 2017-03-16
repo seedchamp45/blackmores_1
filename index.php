@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" href="images/favicon.ico">
 
-    <title>Blackmore My Strong Family - ออกแบบฮีโร่ โชว์สตรองให้โลกรู้</title>
+    <title>Blackmores My Strong Family - ออกแบบฮีโร่ โชว์สตรองให้โลกรู้</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -392,17 +392,20 @@
     .size-li-small
     {
       width: 11%;
+      opacity: 0;
       text-align: center;
     }
 
       .size-li-big
     {
       width: 14%;
+      opacity: 0;
       text-align: center;
     }
 
     .size-li-very
     {
+
       width: 25%;
     }
 
@@ -439,7 +442,7 @@
       }
       .txt_menu
       {
-        font-size: 9px;
+        font-size: 12px;
       }
 
     }
@@ -454,7 +457,7 @@
       }
       .txt_menu
       {
-        font-size: 10px;
+        font-size: 12px;
       }
 
     }
