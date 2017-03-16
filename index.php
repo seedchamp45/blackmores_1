@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" href="images/favicon.ico">
 
-    <title>Blackmores My Strong Family - ออกแบบฮีโร่ โชว์สตรองให้โลกรู้1</title>
+    <title>Blackmores My Strong Family - ออกแบบฮีโร่ โชว์สตรองให้โลกรู้</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -254,7 +254,7 @@
    height: 0%;
 }
 
-            .main-body { 
+.main-body { 
    
     /*
       background: url(../images/bg_home.jpg) no-repeat center center fixed; 
@@ -485,59 +485,122 @@
         <!-- The Boutique plugin: -->
         <script src="js/jquery.boutique.min.js"></script>
         
-        
+         <link rel="stylesheet" href="css/mobile.css"
   </head>
 <!--<body class="r_bg">-->
   <body >
         <div class="main-body">
-        <div class="container conter2" >
-            <!-- Static navbar -->
-            <nav class="navbar navbar-default navbar-top" role="navigation">
-              <div class="menu_top_text-t">
-                <div class="navbar-header">
-                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                  </button>
+             <div class="visible-xs"> 
+                <div class="container conter2" >
+                    <!-- Static navbar -->
+                    <nav class="navbar navbar-default navbar-top" role="navigation">
+                      <div class="menu_top_text-t">
+                        <div class="navbar-header">
+                          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                          </button>
 
+                        </div>
+
+
+                        <div id="navbar" class=" navbar-collapse collapse navbar-show-left-t" style="
+            padding-top: 40px;">
+                          <ul class="nav navbar-nav nav-nav-left-t">
+                            <li class="size-li-small"><a href="#" class="txt_menu">หน้าแรก</a></li>
+                            <li class="size-li-big"><a href="#" class="txt_menu">กติกาและของรางวัล</a></li>
+                             <li class="size-li-small"><a href="#" class="txt_menu">เลือกฮีโร่</a></li>
+                            <li class="size-li-very"><img src="./images/logo-navbar.png" style="width: 100%;"></li>
+                            <li class="size-li-big"><a href="#" class="txt_menu text-four">โหวตภาพประกวด</a></li>
+                            <li class="size-li-big"><a href="#" class="txt_menu">ประกาศผู้โชคดี</a></li>
+                            <li class="size-li-small"><a href="#" class="txt_menu sendwork">ส่งผลงานนะ</a></li>
+                          </ul>
+                        </div><!--/.nav-collapse -->
+                      </div>
+                    </nav>
                 </div>
+            </div> 
+            
+            
+          <div class="hidden-xs">  
+            <div class="container conter2" >
+                <!-- Static navbar -->
+                <nav class="navbar navbar-default navbar-top" role="navigation">
+                  <div class="menu_top_text-t">
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+
+                    </div>
 
 
-                <div id="navbar" class=" navbar-collapse collapse navbar-show-left-t" style="
-    padding-top: 40px;">
-                  <ul class="nav navbar-nav nav-nav-left-t">
-                    <li class="size-li-small"><a href="#" class="txt_menu">หน้าแรก</a></li>
-                    <li class="size-li-big"><a href="#" class="txt_menu">กติกาและของรางวัล</a></li>
-                     <li class="size-li-small"><a href="#" class="txt_menu">เลือกฮีโร่</a></li>
-                    <li class="size-li-very"><img src="./images/logo-navbar.png" style="width: 100%;"></li>
-                    <li class="size-li-big"><a href="#" class="txt_menu text-four">โหวตภาพประกวด</a></li>
-                    <li class="size-li-big"><a href="#" class="txt_menu">ประกาศผู้โชคดี</a></li>
-                    <li class="size-li-small"><a href="#" class="txt_menu sendwork">ส่งผลงานนะ</a></li>
-                  </ul>
-                </div><!--/.nav-collapse -->
-              </div>
-            </nav>
-        </div>
+                    <div id="navbar" class=" navbar-collapse collapse navbar-show-left-t" style="
+        padding-top: 40px;">
+                      <ul class="nav navbar-nav nav-nav-left-t">
+                        <li class="size-li-small"><a href="#" class="txt_menu">หน้าแรก</a></li>
+                        <li class="size-li-big"><a href="#" class="txt_menu">กติกาและของรางวัล</a></li>
+                         <li class="size-li-small"><a href="#" class="txt_menu">เลือกฮีโร่</a></li>
+                        <li class="size-li-very"><img src="./images/logo-navbar.png" style="width: 100%;"></li>
+                        <li class="size-li-big"><a href="#" class="txt_menu text-four">โหวตภาพประกวด</a></li>
+                        <li class="size-li-big"><a href="#" class="txt_menu">ประกาศผู้โชคดี</a></li>
+                        <li class="size-li-small"><a href="#" class="txt_menu sendwork">ส่งผลงานนะ</a></li>
+                      </ul>
+                    </div><!--/.nav-collapse -->
+                  </div>
+                </nav>
+            </div>
+        </div>   
+            
+            
+            
+            
+            
+            
+            
+         <div id="content">
+            <div class="visible-xs">
+                <div class="row home_body scale_img">
+                    <div class="col-xs-12">
+                       <div class="col-xs-12"><img src="./images/mobile/header.png" class="img-responsive" /></div>
 
-        <div id="content">
-            <div class="row home_body">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-1 ">
-
-                </div>
-               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 col-lg-offset-1 div-show-left-t">
-                <img src="./images/m_t_1.png" style="width: 100%;" />
+                   </div>
+                   <div class="col-xs-12 ">
+                       <div class="col-xs-1"></div>
+                       <div class="col-xs-10"><img src="./images/mobile/text_img.png" class="img-responsive" /></div>
+                       <div class="col-xs-1"></div>
+                   </div>
+                     <div class="col-xs-12 ">
+                       <div class="col-xs-1"></div>
+                       <div class="col-xs-10"> <img src="./images/mobile/family.png" class="img-responsive" /></div>
+                       <div class="col-xs-1"></div>
+                   </div>   
                </div>
+            
+            </div>
+            <div class="hidden-xs">
+                <div class="row home_body scale_img">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-1 ">
 
-               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 col-lg-offset-1 div-show-right-t">
-                                 <img src="./images/home_body_left.png" style="width: 100%;" />
-              </div>
-           </div>
+                    </div>
+                   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 col-lg-offset-1 div-show-left-t">
+                    <img src="./images/m_t_1.png" style="width: 100%;" />
+                   </div>
 
-           
-         
-         </div>
+                   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 col-lg-offset-1 div-show-right-t">
+                                     <img src="./images/home_body_left.png" style="width: 100%;" />
+                  </div>
+               </div>
+             </div>
+            
+            
+        </div>  
+            
          <div id = "add-foot">
            
             <div class="bg_footer2" id = "clear-foot" >
