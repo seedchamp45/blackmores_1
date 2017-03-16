@@ -485,7 +485,7 @@
         <!-- The Boutique plugin: -->
         <script src="js/jquery.boutique.min.js"></script>
         
-         <link rel="stylesheet" href="css/mobile.css">
+        <link rel="stylesheet" href="css/mobile.css">
   </head>
 <!--<body class="r_bg">-->
   <body >
@@ -597,14 +597,15 @@
            
             <div class="bg_footer2" id = "clear-foot" >
                  <div  class="foot-nev">
-                     <button type="button" style="opacity: 0; width: 200px; height: 100%; margin-top: -5%;" data-toggle="modal" data-target="#myModal">Open Modal<br>Open Modal</button>
+                 <button type="button" style="opacity: 0; width: 200px; height: 100%; margin-top: -5%;" data-toggle="modal" data-target="#myModal">Open Modal</button>
                  </div>
              </div>
          </div>
-          </div>
+    </div>
       
 <!-- comment -->
   <div class="modal fade" id="myModal" role="dialog">
+    
     <div class="modal-dialog">
       <!-- Modal content-->
       <div class="modal-content1">
@@ -631,8 +632,6 @@
           </div>
       </div>
     </div>
-  </div>
-  </div>
 
 
 

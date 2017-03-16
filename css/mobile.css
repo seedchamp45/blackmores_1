@@ -7,7 +7,7 @@ and open the template in the editor.
     Created on : Mar 16, 2017, 11:19:55 AM
     Author     : axe
 */
- @media (max-width: 678px) and (min-width: 480px )  { 
+ @media (max-width: 768px) and (min-width: 480px )  { 
     .main-body{
          background-image: url("images/mobile/bg.png") ;
         background-image-size: 100% 100%;
@@ -235,12 +235,12 @@ and open the template in the editor.
     
  @media (max-width: 480px ) {
      .main-body{
-         background-image: url("images/mobile/bg.png") ;
+         background-image: url("../images/mobile/bg3.jpg") ;
         background-image-size: 100% 100%;
         background-repeat: no-repeat;
         background-position: left top;
         background-attachment: scroll;
-        background-size: 100% 90%;
+        background-size: 100% 100%;
      }
     /*moblie*/
        /*.test{
@@ -457,4 +457,61 @@ and open the template in the editor.
          font-size: 1.6em; 
      }
       /* rule page*/
+      
+      
+       /* send_work */
+      .form_input_type {
+        width: 320px;
+        background-size: 320px 100%;
+        margin-left: 20px;
+     }
+     
+     .form_input_type4 {
+        width: 320px;
+        background-size: 320px 100%;
+    }
+    
+    .bg_block {
+        background-image: url(../images/rule/r_block_bg.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center top;
+        margin-right: 5%;
+        margin-left: 5%;
+        margin-top: 3%;
+    }
+      /* send_work */
+      
+      
+      /*rule*/
+      .ol_left {
+            margin-left: -18px;
+        }
+        
+        .scrollview-text {
+            margin-left: 0%;
+            margin-right: -5%;
+            height: 1050px;
+            overflow: auto;
+        }
+        .r_title{
+                color: #1677BC;
+                font-size: 1.3em;
+                font-weight: bold;  
+            }
+            
+        .r_body{
+            color: #000;
+            font-size:1em;
+            font-weight: normal;
+            display: inline;
+        }
+        /*rule*/
+        /*hero*/
+      .iden {
+        padding-left: 0px; 
+      }
+     
+        
+       /*hero*/
 }

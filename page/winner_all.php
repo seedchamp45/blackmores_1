@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Case</title>
-  <meta charset="utf-8">
  
   
   <style type="text/css">
@@ -238,7 +236,7 @@
         }
 
 
-                      .background-main-rule
+        .background-main-rule
             {
              background: url(images/newBackground.png) no-repeat center top local; 
             -webkit-background-size: cover;
@@ -254,7 +252,10 @@
 </head>
 <body>
 <div class="background-main-rule">
- <br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="hidden-xs"><br><br><br><br><br><br> 
+    
+        <br><br><br><br><br><br><br><br><br><br><br>
+    </div>
  <div class="container">
     <div class="row">
             <div class="col-xs-12  col-sm-12 col-md-12 col-lg-12">
@@ -266,33 +267,50 @@
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
                 <div class="panel with-nav-tabs panel-default ">
                     <div class="no_border panel-heading" style="width: 100%; height: 100px;">
-                            <ul class="nav nav-tabs" style="width: 100%; height: 100px;">
-                                <li style="right:  -78; width: 18%;">
-                                    <a href="#tab1default" data-toggle="tab" class="menu-link h_b">
-                                         <img src="images/winner/bar_new_01.png" class="img-responsive" style="width: 100%;"> 
-                                    </a>
-                                 </li>
-                                <li style="right:  -39.5; width: 18%;">
-                                    <a href="#tab2default" data-toggle="tab" class="menu-link h_b">
-                                         <img src="images/winner/bar_new_02.png" class="img-responsive" style="width: 100%;"> 
-                                    </a>
-                                </li>
-                                <li style="width: 18%;">
-                                    <a href="#tab3default" data-toggle="tab" class="menu-link h_b">
-                                        <img src="images/winner/bar_new_03.png" class="img-responsive" style="width: 100%;"> 
-                                    </a>
-                                </li>
-                                 <li style="left: -39; width: 18%;">
-                                     <a href="#tab4default" data-toggle="tab" class="menu-link h_b">
-                                       <img src="images/winner/bar_new_04.png" class="img-responsive" style="width: 100%;"> 
-                                     </a>
-                                 </li>
-                                  <li style="left: -79; width: 18%;">
-                                     <a href="#tab5default" data-toggle="tab" class="menu-link h_b">
-                                       <img src="images/winner/bar_new_05.png" class="img-responsive" style="width: 100%;"> 
-                                     </a>
-                                 </li>
-                            </ul>
+                            <div class="visible-xs">
+                                <select  name="title_age" id="title_age" class="form-control form_input_type4 txt_input center-block">
+                                     <option value="" class="center-block txt_input" >---</option>
+                                     <option value="1" class="center-block txt_input">อายุไม่เกิน 8 ปี</option>
+                                     <option value="2" class="center-block txt_input">อายุระหว่าง 8 -12 ปี</option>
+                                     <option value="3" class="center-block txt_input">ผู้ผ่านเข้าไปเวิร์คช็อป</option>
+                                     <option value="4" class="center-block txt_input">รายชื่อผู้ชนะ Popuar Vote</option>
+                                     <option value="5" class="center-block txt_input">ผู้โชคดีจากการโหวต</option>
+                                 
+                                </select>
+                            </div> 
+                        
+                        
+                             <div class="hidden-xs">
+                                <ul class="nav nav-tabs" style="width: 100%; height: 100px;">
+                                    <li style="right:  -78; width: 18%;">
+                                        <a href="#tab1default" data-toggle="tab" class="menu-link h_b">
+                                             <img src="images/winner/bar_new_01.png" class="img-responsive" style="width: 100%;"> 
+                                        </a>
+                                     </li>
+                                    <li style="right:  -39.5; width: 18%;">
+                                        <a href="#tab2default" data-toggle="tab" class="menu-link h_b">
+                                             <img src="images/winner/bar_new_02.png" class="img-responsive" style="width: 100%;"> 
+                                        </a>
+                                    </li>
+                                    <li style="width: 18%;">
+                                        <a href="#tab3default" data-toggle="tab" class="menu-link h_b">
+                                            <img src="images/winner/bar_new_03.png" class="img-responsive" style="width: 100%;"> 
+                                        </a>
+                                    </li>
+                                     <li style="left: -39; width: 18%;">
+                                         <a href="#tab4default" data-toggle="tab" class="menu-link h_b">
+                                           <img src="images/winner/bar_new_04.png" class="img-responsive" style="width: 100%;"> 
+                                         </a>
+                                     </li>
+                                      <li style="left: -79; width: 18%;">
+                                         <a href="#tab5default" data-toggle="tab" class="menu-link h_b">
+                                           <img src="images/winner/bar_new_05.png" class="img-responsive" style="width: 100%;"> 
+                                         </a>
+                                     </li>
+                                </ul>
+                             </div>
+                        
+                           
                     </div>
                     <div class="panel-body">
                         <div class="tab-content">
@@ -337,7 +355,7 @@
  </div>
 
 <br/>
- <img src="images/footer.png" style="width: 100%; height: 200px background-repeat: no-repeat;" />
+ <img src="images/footer.png" style="width: 100%; height: 200px; background-repeat: no-repeat;" />
 </div>
 
 </body>
