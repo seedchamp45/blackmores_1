@@ -30,10 +30,26 @@
                 var i1 = res[1]-1;    
             }
 
+            $('.#').click(function(e) {
+              e.preventDefault();
+            });
+                $('.content_1').click(function(e) {
+              e.preventDefault();
+            });
+                    $('.content_3').click(function(e) {
+              e.preventDefault();
+            });
+                        $('.content_4').click(function(e) {
+              e.preventDefault();
+            });
+                            $('.content_5').click(function(e) {
+              e.preventDefault();
+            });
+
 			// Link-click callback function:
             function link_callback(anchor, instance){
                 
-                var cars = ["C BRIGHT.png", "CAPTAIN FISH.png","MULTI.png","POWER 9.png","KOALA KID.png"];
+                var cars = ["C BRIGHT.jpeg", "CAPTAIN FISH.jpeg","MULTI.jpeg","POWER 9.jpeg","KOALA KID.jpeg"];
                 var name = ["C Bright Power","Captain Fish","Multi Action","Power 9","Koala Kid"];
                 var res = anchor.split("_");
                 var i1 = res[1]-1;
@@ -51,6 +67,7 @@
             }
             
             function clickShow(id){
+
                 var arr =["Blackmores Microsite_Button-01.png","Blackmores Microsite_Button-02.png","Blackmores Microsite_Button-03.png","Blackmores Microsite_Button-04.png","Blackmores Microsite_Button-05.png"];
                 for(i=1 ;i<6 ;i++){
                     $("#detail_"+i).hide();
@@ -58,6 +75,7 @@
                 }
                 $("#detail_"+id).show();
                  $("#img_bu_"+id).attr('src', 'images/helo/'+"click/"+arr[id-1]);
+                 event.preventDefault();
             }
         </script>
         <!-- The Boutique CSS: -->
@@ -78,7 +96,11 @@
                 margin-top: 3%;
                 margin: auto;
             }
-
+            #alert_pic
+            {
+              height: 200px;
+              margin: auto;
+            }
 
             .txt_r{
                font-family: "db_helvethaica_x";
@@ -315,10 +337,10 @@
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
-            background-size: cover;
+            background-size: 100%;
             margin-top: -300px;
-            width: 100%;
-            height: 2200px;
+           
+                background-attachment: fixed;
 
             }
 
@@ -351,10 +373,7 @@
             {
                 width: 150px; margin-left: -37px;
             }
-             .background-main-rule
-            {
-                height: 2800px;
-            }
+
 
             }
 
@@ -424,15 +443,15 @@
                                                 <div class = "text-center">
                                                     <div class="txt_r r_body_inline text-center">อายุน้อยกว่า 8 ปี : ระบายสีฮีโร่ตามจินตนาการ</div>
                                                 </div>
-                                                <br> <br>
+                                            
                                                 <div class="row">
 
                                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
 
                                                        <!-- The Boutique HTML: -->
-                                                       <ul id="boutique" class="hero-check" style="height: 300px">
+                                                       <ul id="boutique" class="hero-check" style="height: 400px">
                                                                <li>
-                                                                       <a href="#content_1">
+                                                                       <a href="#content_1 ">
                                                                            <img src="images/helo/C BRIGHT.png"  id="img_src_1" class="img-responsive" width="485" height="450" data-target="#myModal">
                                                                        </a>
                                                                </li>
@@ -477,11 +496,12 @@
                                                         </div>
                                                     <!--1-->
                                                     
-                                                    
-                                                    
+                                             
+                                             
                                                     <div class="row">
 
                                                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-1 "></div>
+                                                        <br><br><br><br>
                                                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 ">
                                                         <!-- End of the Boutique HTML -->
                                                            <!--helo 1-->
@@ -523,7 +543,7 @@
                                                                 <div class="row">
                                                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
 
-                                                                        <a href="download/C BRIGHT.pdf"  download><img src="images/helo/bu_download.png" class="bu_download img-responsive center-block"></a>
+                                                                        <a href="download/C BRIGHT.jpg"  download><img src="images/helo/bu_download.png" class="bu_download img-responsive center-block"></a>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -567,7 +587,7 @@
                                                                 <div class="row">
                                                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
 
-                                                                        <a href="download/CAPTAIN FISH.pdf" download> <img src="images/helo/bu_download.png" class="bu_download img-responsive center-block"></a>
+                                                                        <a href="download/CAPTAIN FISH.jpg" download> <img src="images/helo/bu_download.png" class="bu_download img-responsive center-block"></a>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -611,7 +631,7 @@
                                                                 <div class="row">
                                                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
 
-                                                                        <a href="download/MULTI.pdf" download><img src="images/helo/bu_download.png" class="bu_download img-responsive center-block"></a>
+                                                                        <a href="download/MULTI.jpg" download><img src="images/helo/bu_download.png" class="bu_download img-responsive center-block"></a>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -655,7 +675,7 @@
                                                                 <div class="row">
                                                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
 
-                                                                        <a href="download/POWER 9.pdf" download><img src="images/helo/bu_download.png" class="bu_download img-responsive center-block"></a>
+                                                                        <a href="download/POWER 9.jpg" download><img src="images/helo/bu_download.png" class="bu_download img-responsive center-block"></a>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -699,7 +719,7 @@
                                                                 <div class="row">
                                                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
 
-                                                                        <a href="download/KOALA KID.pdf" download><img src="images/helo/bu_download.png" class="bu_download img-responsive center-block"></a>
+                                                                        <a href="download/KOALA KID.jpg" download><img src="images/helo/bu_download.png" class="bu_download img-responsive center-block"></a>
                                                                     </div>
                                                                 </div>
                                                             </div>

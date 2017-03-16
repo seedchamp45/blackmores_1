@@ -586,14 +586,22 @@ ul.nav-tabs li {
 
                       .background-main-rule
             {
-            background: url(images/newBackground.png) no-repeat left top local; 
+             background: url(images/newBackground.png) no-repeat center top local; 
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
-            background-size: cover;
+            background-size: 100%;
             margin-top: -300px;
-             background-size: 100% 100%;
+           
+                background-attachment: fixed;
 
+            }
+
+            .facebook-pic
+            {
+             background: url(images/facebook.png) no-repeat center top local; 
+              background-size: 100% 100%;
+    
             }
 
             .bar-yellow
@@ -636,15 +644,11 @@ ul.nav-tabs li {
         <div class="row">
             <div class="col-xs-12  col-sm-12 col-md-12 col-lg-12">
                 <img src="images/gallery/showcase.png" class="img-responsive center-block">
-                <div id = "loginFacebook" align="center" class = "<?php echo $classlogin; ?>">
-                                <a class="btn btn-primary " href="<?=htmlspecialchars($loginUrl);?>"><i class="fa fa-facebook" aria-hidden="true"></i> Login With Facebook </a>
-                            </div>
-                            <div class="<?php echo $class; ?>">
-                             <p align="center"><a class="btn btn-primary" href="page/facebook_V_login/logout.php"><i class="fa fa-facebook" aria-hidden="true"></i> Logout Facebook </a></p>
-                             </div>
+               
+                          
             </div>
         </div>
-        <br><br><br><br><br><br>
+        <br><br><br>
         <div class="row bg_winner">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
               
@@ -665,12 +669,18 @@ ul.nav-tabs li {
                                 </li>
                             </ul>
                         </div>
+                        <div class="facebook-pic" style="width: 20%; margin-left: 40%; padding-top: -50 px;">
+                         <div id = "loginFacebook" align="center" class = "<?php echo $classlogin; ?>">
+                                <a class="btn btn-primary " href="<?=htmlspecialchars($loginUrl);?>" style ="opacity: 0;"><i class="fa fa-facebook" aria-hidden="true"></i>Log in with facebook</a>
+                            </div>
+                        </div>
+
                         <div class="row ">
                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                <div class="text_title_gallery"><p class="text-center">  กด Vote ผลงานที่ถูกใจ  
-                                  <abbr title2="" >กดโหวตได้ผลงานละ 1 ครั้ง</abbr>
-                                   สามารถโหวตกี่ผลงานก็ได้ 
+                                <div class="text_title_gallery"><p style="margin-left: 28%; margin-top: 2%; float: left;">  วิธีการโหวต 
+                                  
                                   </p>
+                                  <img src="images/howtoplayy.png" style="width: 40%; float: right; margin-right: 20%;"/>
                                 </div> 
                             </div>
                         </div>
@@ -781,7 +791,7 @@ ul.nav-tabs li {
                     <div class="row">
 
                         <div class="col-xs-12 col-md-7 col-lg-7 vcenter" style="height: 40%; width: 40%; float: left;">
-                            <img src="images/gallery/image_pop_detail.jpg" class="img-responsive center-block image_value" style="height: 100%; width: 100%; float: left;"/>
+                            <img src="images/gallery/image_pop_detail.jpg" name = "share_pic" class="img-responsive center-block image_value" style="height: 100%; width: 100%; float: left;"/>
                             
                         </div>
                         <div class="col-xs-12 col-md-5 col-lg-4 vcenter" style="height: 40%; width: 40%; float: right; margin-top: 0px;"">
@@ -817,7 +827,7 @@ ul.nav-tabs li {
                                     </div>
                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 row_h_1"> 
                                         
-                                        <button type="submit" name="image_id_value " class="btn btn-default1  center-block txt_bu_gallery submit_vote image_id_value <?php echo $class; ?>" data-toggle="modal" data-target=".bs-example-modal-lg">โหวต</button></div>
+                                        <button type="submit" class="btn btn-default1  center-block txt_bu_gallery submit_vote image_id_value <?php echo $class; ?>" data-toggle="modal" data-target=".bs-example-modal-lg">โหวต</button></div>
                                         
                                 </div>
                             </div>

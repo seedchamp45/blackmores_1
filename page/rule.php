@@ -57,14 +57,14 @@
 
             .background-main-rule
             {
-            background: url(images/newBackground.png) no-repeat left top local; 
+             background: url(images/newBackground.png) no-repeat center top local; 
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
-            background-size: cover;
+            background-size: 100%;
             margin-top: -300px;
-    
-             background-size: 100% 2200px;
+           
+                background-attachment: fixed;
 
             }
 
