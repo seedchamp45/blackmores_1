@@ -597,7 +597,7 @@
            
             <div class="bg_footer2" id = "clear-foot" >
                  <div  class="foot-nev">
-                 <button type="button" style="opacity: 0; width: 200px; height: 100%; margin-top: -5%;" data-toggle="modal" data-target="#myModal">Open Modal</button>
+                     <button type="button" style="opacity: 0; width: 200px; height: 100%; margin-top: -5%;" data-toggle="modal" data-target="#myModal">Open Modal<br>Open Modal</button>
                  </div>
              </div>
          </div>
@@ -606,13 +606,19 @@
 <!-- comment -->
   <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
-    
       <!-- Modal content-->
       <div class="modal-content1">
           <div class="bg_popup">
             <div class="modal-header1" style="height: 4%; padding-top: -5%; background-color: transparent;">
               
-                <button type="button" class="close2 center-block" data-dismiss="modal"><img src="images/bu_toggle_down_1.png" class="close2 img-responsive" style="width: 50%; margin-left: 25%; margin-top:-5%;"></button>
+                <button type="button" class="close2 center-block" data-dismiss="modal">
+                    <div class="visible-xs">
+                        <img src="images/bu_toggle_down_1.png" class="close2 img-responsive" style="width: 50%; margin-left: 25%;">
+                    </div>
+                    <div class="hidden-xs">
+                         <img src="images/bu_toggle_down_1.png" class="close2 img-responsive" style="width: 50%; margin-left: 25%; margin-top:-5%;">
+                    </div>
+                </button>
             </div>
             <div class="modal-body">
                 

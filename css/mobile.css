@@ -8,23 +8,110 @@ and open the template in the editor.
     Author     : axe
 */
  @media (max-width: 678px) and (min-width: 480px )  { 
-    .navbar-default {
-        background-color: #36A1CA;
-       border-color: #36a1ca;
-    }  
+    .main-body{
+         background-image: url("images/mobile/bg.png") ;
+        background-image-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: left top;
+        background-attachment: scroll;
+        background-size: 100% 90%;
+     }
+    /*moblie*/
+       /*.test{
+           //background-color: #000;
+           width :500px;
+           height: 500px;
+       }*/
     
+    
+    .navbar-default {
+        background-color: rgba(54, 161, 202, 0);
+       border-color: rgba(54, 161, 202, 0);
+    }   
+    .navbar-default .navbar-toggle {
+        border-color: rgba(54, 161, 202, 0);
+    }
+    
+    .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+         background-color: rgba(54, 161, 202, 0);
+    }
+    
+    .m_bg_bar{
+        background-color: #36a1ca;
+    }
+    .navbar-toggle {
+        position: relative;
+        float: right;
+        padding: 0px 0px; 
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px; 
+        background-color: transparent;
+        background-image: none;
+        border: 0px solid transparent;
+        border-radius: 4px;
+    }
     .navbar-top {
        padding: 0px 30px 0 30px;
         margin-top: 0px;
     }
 
     .navbar-default .navbar-collapse, .navbar-default .navbar-form {
-        border-color: #36a1ca;
+        border-color: rgba(54, 161, 202, 0);;
     }
     .m_list_bg {
        background-color: #36A1CA;
 
    } 
+   
+   .img_family{
+       margin-left: 20px;
+   }
+   
+   .bg_footer2{
+         /*       background-color: #000;*/
+        width: 100%;
+        height:  180px;
+        background: url(../images/mobile/footer.png) no-repeat center top local; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        
+        background-size: 100% 100%;
+        background-position: 0px 50px;
+        background-repeat: no-repeat;
+    }
+ 
+    .bg_popup {
+        background-image: url(../images/mobile/bg_pop3.png);
+        background-image-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: left top;
+        background-attachment: scroll;
+        background-size: 100% 100%;
+        height: 100%;
+    }
+    
+    .modal-dialog {
+        margin-top: 0%;
+        width: 100%;
+        height: 100%;
+    }
+   
+    .close2 {
+        font-size: 21px;
+        font-weight: 1700;
+        line-height: 1;
+        color: #000;
+        text-shadow: 0 1px 0 rgba(255, 255, 255, 0);
+        background: rgba(240, 255, 255, 0.02);
+        border: 0;
+        filter: alpha(opacity=20);
+    }
+    .scale_img{
+        margin-right: 0px;
+        margin-left: 0px;  
+   }
     /*
     .navbar-top {
          background-image: url(images/navbar-1.png);
@@ -96,23 +183,14 @@ and open the template in the editor.
         margin-left: 0px;
     }
 
-    .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
-         background-color: #36a1ca;
-    }
+    
 
-    .navbar-default .navbar-toggle {
-        border-color: #36a1ca;
-    }
+   
 
     .show_img{
         width: 90%;
     }
 
-    
-    .scale_img{
-        margin-right: 0px;
-        margin-left: 0px;  
-   }
     /* rule page*/
     .bg_block_rule {
          background-image: url(../images/rule/r_block_bg.png);
@@ -230,17 +308,32 @@ and open the template in the editor.
         background-repeat: no-repeat;
     }
  
-    bg_popup {
-        background-image: url(images/popup-show.png);
+    .bg_popup {
+        background-image: url(../images/mobile/bg_pop3.png);
         background-image-size: 100% 100%;
         background-repeat: no-repeat;
         background-position: left top;
         background-attachment: scroll;
-        background-size: 100% 90%;
+        background-size: 100% 100%;
         height: 100%;
     }
     
+    .modal-dialog {
+        margin-top: 0%;
+        width: 100%;
+        height: 100%;
+    }
    
+    .close2 {
+        font-size: 21px;
+        font-weight: 1700;
+        line-height: 1;
+        color: #000;
+        text-shadow: 0 1px 0 rgba(255, 255, 255, 0);
+        background: rgba(240, 255, 255, 0.02);
+        border: 0;
+        filter: alpha(opacity=20);
+    }
     .scale_img{
         margin-right: 0px;
         margin-left: 0px;  
