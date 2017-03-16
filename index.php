@@ -485,7 +485,7 @@
         <!-- The Boutique plugin: -->
         <script src="js/jquery.boutique.min.js"></script>
         
-         <link rel="stylesheet" href="css/mobile.css"
+         <link rel="stylesheet" href="css/mobile.css">
   </head>
 <!--<body class="r_bg">-->
   <body >
