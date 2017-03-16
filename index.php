@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" href="images/favicon.ico">
 
-    <title>Blackmores My Strong Family - ออกแบบฮีโร่ โชว์สตรองให้โลกรู้</title>
+    <title>Blackmores My Strong Family - ออกแบบฮีโร่ โชว์สตรองให้โลกรู้1</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
