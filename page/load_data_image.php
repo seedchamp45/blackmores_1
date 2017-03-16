@@ -2,8 +2,8 @@
    $image_id = $_POST['image_id'];
     
     $servername = "localhost";
-    $username = "root";
-    $password = "";
+    $username = "rootBlackmores";
+    $password = "Champpseedd45";
     $dbname = "blackmores";
 
     // Create connection
@@ -15,11 +15,13 @@
       echo 'error';
     }
     
+
     $sql = "SELECT * FROM image_upload where image_id =".$image_id;
     
+
     $result = mysqli_query($conn,$sql);
     $rowdata = mysqli_fetch_assoc($result); 
-   
+    
     //print_r($rowdata);
      
     $image_id = $rowdata['image_id'];
@@ -27,13 +29,16 @@
     $age = $rowdata['age'];
     $username = $rowdata['username'];
     $image = $rowdata['image'];
+    $vote = $rowdata['vote'];
+
 
     $arr = array(
                     'id' => $image_id,
                     'name' => $name,
                     'age' => $age,
                     'username' => $username,
-                    'image' => $image
+                    'image' => $image,
+                    'vote' => $vote
                 );
        
     echo json_encode($arr);
