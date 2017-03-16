@@ -43,4 +43,16 @@
 
     });
 
+     $('.nav a').on('click', function(){ 
+            if($('.navbar-toggle').css('display') !='none'){
+                $(".navbar-toggle").trigger( "click" );
+            }
+        });
+  
+    
+    $(".send_work").click(function(){
+       
+          $("#content").load("page/send_work.php");
+             $('#clear-foot').remove();
+      });
 });

@@ -490,38 +490,30 @@
 <!--<body class="r_bg">-->
   <body >
         <div class="main-body">
-             <div class="visible-xs"> 
-                <div class="container conter2" >
-                    <!-- Static navbar -->
-                    <nav class="navbar navbar-default navbar-top" role="navigation">
-                      <div class="menu_top_text-t">
-                        <div class="navbar-header">
-                          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                          </button>
-
-                        </div>
-
-
-                        <div id="navbar" class=" navbar-collapse collapse navbar-show-left-t" style="
-            padding-top: 40px;">
-                          <ul class="nav navbar-nav nav-nav-left-t">
-                            <li class="size-li-small"><a href="#" class="txt_menu">หน้าแรก</a></li>
-                            <li class="size-li-big"><a href="#" class="txt_menu">กติกาและของรางวัล</a></li>
-                             <li class="size-li-small"><a href="#" class="txt_menu">เลือกฮีโร่</a></li>
-                            <li class="size-li-very"><img src="./images/logo-navbar.png" style="width: 100%;"></li>
-                            <li class="size-li-big"><a href="#" class="txt_menu text-four">โหวตภาพประกวด</a></li>
-                            <li class="size-li-big"><a href="#" class="txt_menu">ประกาศผู้โชคดี</a></li>
-                            <li class="size-li-small"><a href="#" class="txt_menu sendwork">ส่งผลงานนะ</a></li>
-                          </ul>
-                        </div><!--/.nav-collapse -->
-                      </div>
-                    </nav>
-                </div>
-            </div> 
+             <div class="visible-xs">  
+            <div class="container conter2" >
+                <!-- Static navbar -->
+                <nav class="navbar navbar-default " role="navigation">
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle collapsed txt_bu_m_mobile m_logo_on_bar" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                          <img src="images/mobile/menu.png" width="83px">
+                      </button>
+                    </div>
+                    <div id="navbar" class=" navbar-collapse collapse navbar-show-left-t">
+                      <ul class="nav navbar-nav m_bg_bar">
+                        <li><a href="#" class="txt_menu">หน้าแรก</a></li>
+                        <li><a href="#" class="txt_menu">กติกาและของรางวัล</a></li>
+                         <li><a href="#" class="txt_menu">เลือกฮีโร่</a></li>
+                        <li><a href="#" class="txt_menu text-four">โหวตภาพประกวด</a></li>
+                        <li><a href="#" class="txt_menu">ประกาศผู้โชคดี</a></li>
+                        <li><a href="#"><div class="send_work center-block"></div></li>
+                      </ul>
+                    </div><!--/.nav-collapse -->
+                  
+                </nav>
+            </div>
+        </div>  
+         
             
             
           <div class="hidden-xs">  
@@ -577,7 +569,7 @@
                    </div>
                      <div class="col-xs-12 ">
                        <div class="col-xs-1"></div>
-                       <div class="col-xs-10"> <img src="./images/mobile/family.png" class="img-responsive" /></div>
+                       <div class="col-xs-10"> <img src="./images/mobile/family.png" class="img-responsive img_family" /></div>
                        <div class="col-xs-1"></div>
                    </div>   
                </div>
