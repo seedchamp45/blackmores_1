@@ -169,16 +169,57 @@ button:hover, button:active, button:focus{background: #f3f3f3;outline: none;}
           background-size: 100% 100%;
 }
 
+@media screen and (min-device-width: 481px) and (max-device-width: 800px) { 
+    /* STYLES HERE */
+      .check-width
+    {
+        width: 120pc;
+        height: 120px;
+      }
+
+      .footer-pic
+    {
+      width: 100%; height: 100px background-repeat: no-repeat; margin-bottom: 0;
+    }
+}
+
 @media (min-width: 992px){
-  
+    .footer-pic
+    {
+      width: 100%; height: 200px background-repeat: no-repeat; margin-bottom: 0;
+    }
+
       .check-width
     {
         width: 40%;
       }
 }
 
+
+@media (min-width: 992px){
+
+    .footer-pic
+    {
+      width: 100%; height: 300px background-repeat: no-repeat; margin-bottom: 0;
+    }
+
+
+      .check-width
+    {
+        width: 40%;
+      }
+}
+
+
+
+
 @media (min-width: 1200px){
   
+      .footer-pic
+    {
+      width: 100%; height: 400px background-repeat: no-repeat; margin-bottom: 0;
+    }
+
       .check-width
     {
         width: 30%;
@@ -186,11 +227,17 @@ button:hover, button:active, button:focus{background: #f3f3f3;outline: none;}
 }
 
 @media (min-width: 1440px){
-  
+
+      .footer-pic
+    {
+      width: 100%; height: 500px background-repeat: no-repeat; margin-bottom: 0;
+    }
+
       .check-width
     {
         width: 25%;
       }
+
 }
 
 @media (min-width: 1920px){
@@ -200,6 +247,9 @@ button:hover, button:active, button:focus{background: #f3f3f3;outline: none;}
         width: 20%;
       }
 }
+
+
+
 
 .dashed_line{
     display: inline;
@@ -601,6 +651,7 @@ ul.nav-tabs li {
             {
              background: url(images/facebook.png) no-repeat center top local; 
               background-size: 100% 100%;
+              width: 20%; margin-left: 40%; padding-top: -50 px;
     
             }
 
@@ -632,6 +683,19 @@ ul.nav-tabs li {
 
             }
 
+                  @media screen and (min-device-width: 481px) and (max-device-width: 768px){
+                .screen-short
+                {
+                  margin-top: 300px !important;
+                }
+
+                .facebook-pic
+                {
+                  width: 100% !important;
+                }
+              }
+            
+
 </style>
 
 
@@ -639,8 +703,10 @@ ul.nav-tabs li {
 <body>
 <div class="background-main-rule">
 
-<br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="screen-short">
     <div class="container">
+  
         <div class="row">
             <div class="col-xs-12  col-sm-12 col-md-12 col-lg-12">
                 <img src="images/gallery/showcase.png" class="img-responsive center-block">
@@ -669,7 +735,7 @@ ul.nav-tabs li {
                                 </li>
                             </ul>
                         </div>
-                        <div class="facebook-pic" style="width: 20%; margin-left: 40%; padding-top: -50 px;">
+                        <div class="facebook-pic">
                          <div id = "loginFacebook" align="center" class = "<?php echo $classlogin; ?>">
                                 <a class="btn btn-primary " href="<?=htmlspecialchars($loginUrl);?>" style ="opacity: 0;"><i class="fa fa-facebook" aria-hidden="true"></i>Log in with facebook</a>
                             </div>
@@ -688,7 +754,9 @@ ul.nav-tabs li {
                     
                         <div class="panel-body">
                             <div class="tab-content prepareadd" id = "addDiv" style="margin-left: 20px;">
+
                               <div id="results" >
+
                                        <!--ดึงค่าออกมา -->
                                 </div>       
                                 
@@ -702,7 +770,10 @@ ul.nav-tabs li {
 
 
     </div>
-   <img src="images/footer.png" style="width: 100%; height: 400px background-repeat: no-repeat; margin-bottom: -200px" />
+
+        <img src="images/footer.png" style="width: 100%;" />
+
+
 <script type="text/javascript">
     var track_page = 1; //track user click as page number, righ now page number 1
     load_contents(track_page); //load content
@@ -836,6 +907,7 @@ ul.nav-tabs li {
                 </div>
             </div>
 
+        </div>
         </div>
     </div>
 <!--    <input type="text" class="form-control txt_input" id="name_pic" name= "name_pic" s> -->

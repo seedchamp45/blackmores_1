@@ -19,7 +19,7 @@
                 link_txt ="page/rule.php";
                break;
             
-             case "ส่งผลงานนะ":
+             case "ส่งผลงาน":
                  link_txt ="page/send_work.php";
                break;
                
@@ -43,7 +43,9 @@
 
     });
 
+
      $('.nav a').on('click', function(){ 
+
             if($('.navbar-toggle').css('display') !='none'){
                 $(".navbar-toggle").trigger( "click" );
             }
@@ -54,5 +56,7 @@
        
           $("#content").load("page/send_work.php");
              $('#clear-foot').remove();
+
       });
+
 });

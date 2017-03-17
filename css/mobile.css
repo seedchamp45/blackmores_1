@@ -23,14 +23,6 @@ and open the template in the editor.
            height: 500px;
        }*/
     
-    .txt_menu{
-        font-family: "helvethaica_x";
-        text-align: center;    
-        font-size: 1em;
-        color: #ffffff;
-        font-weight: bold;
-        font-style:italic;
-    }
     
     .navbar-default {
         background-color: rgba(54, 161, 202, 0);
@@ -359,13 +351,11 @@ and open the template in the editor.
         height: 0%;
      }
 
-      .txt_menu{
+    .txt_menu{
         font-family: "helvethaica_x";
         text-align: center;    
         font-size: 1em;
         color: #ffffff;
-        font-weight: bold;
-        font-style:italic;
     }
 
     .container {

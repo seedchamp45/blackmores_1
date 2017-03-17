@@ -302,6 +302,23 @@
              }
             
   </style>
+  
+  <script>
+      $( function() {
+        $( "#title_age" ).change(function() {
+        
+            
+            //$("#tab1default").removeClass("active");
+            $("#tab"+$( "#name_type" ).val()+"default").removeClass("in");
+            $("#tab"+$( "#name_type" ).val()+"default").removeClass("active");
+            
+            $("#tab"+$(this).val()+"default").addClass("in");
+            $("#tab"+$( this).val()+"default").addClass("active");
+            
+            $( "#name_type" ).val($(this).val());
+          });
+      });
+</script>
 </head>
 <body>
 <div class="background-main-rule">
@@ -323,7 +340,7 @@
                     <div class="no_border panel-heading" style="width: 100%; height: 100px;">
                             <div class="visible-xs">
                                 <select  name="title_age" id="title_age" class="form-control form_input_type4 txt_input center-block">
-                                     <option value="" class="center-block txt_input" >---</option>
+                                    
                                      <option value="1" class="center-block txt_input">อายุไม่เกิน 8 ปี</option>
                                      <option value="2" class="center-block txt_input">อายุระหว่าง 8 -12 ปี</option>
                                      <option value="3" class="center-block txt_input">ผู้ผ่านเข้าไปเวิร์คช็อป</option>
@@ -331,6 +348,7 @@
                                      <option value="5" class="center-block txt_input">ผู้โชคดีจากการโหวต</option>
                                  
                                 </select>
+                                <input type="hidden" id="name_type" value="1">
                             </div> 
                         
                         
@@ -375,26 +393,26 @@
                                 <div class="txt_body_winner_big text-center">"ประกาศรายชื่อผู้โชคดีวันที่ 17 พฤษภาคม 2560"</div>
                             </div>
                             <div class="tab-pane fade" id="tab2default">  
-                                <br><br>
+                                <div class="hidden-xs"> <br><br></div>
                                 <div class="txt_body_winner_title text-center">รางวัลประเภทอายุ 8 – 12 ปี</div><br><br><br>
                                 <div class="txt_body_winner text-center">รางวัลทุนการศึกษารางวัลละ 5,000 บาท  <br>พร้อมผลิตภัณฑ์เสริมอาหาร Blackmores<br> มูลค่ารางวัลละ 10,000 บาทสำหรับผู้ปกครอง 5 รางวัล <br>รวมมูลค่าทั้งสิ้น 75,000 บาท</div><br><br><br><br>
                                 <div class="txt_body_winner_big text-center">"ประกาศรายชื่อผู้โชคดีวันที่ 17 พฤษภาคม 2560"</div>
                             </div>
                             <div class="tab-pane fade" id="tab4default">  
-                                <br><br>
+                                <div class="hidden-xs"><br><br></div>
                                 <div class="txt_body_winner_title text-center">รางวัลผลงาน Popular Vote</div><br><br><br>
                                 <div class="txt_body_winner text-center"> รางวัลผลิตภัณฑ์เสริมอาหาร Blackmores <br>มูลค่ารางวัลละ 3,000 บาท 10 รางวัล <br>รวมมูลค่าทั้งสิ้น 30,000 บาท</div><br><br><br><br>
                                 <div class="txt_body_winner_big text-center">"ประกาศรายชื่อผู้โชคดีวันที่ 17 พฤษภาคม 2560"</div>
                             </div>
                             <div class="tab-pane fade" id="tab5default">
-                                 <br><br>
+                                <div class="hidden-xs"><br><br></div>
                                  <div class="txt_body_winner_title text-center">รางวัลผู้ที่เข้าร่วมโหวต</div><br><br><br>
                                 <div class="txt_body_winner text-center"> รางวัลผลิตภัณฑ์เสริมอาหาร Blackmores <br>มูลค่ารางวัลละ 2,000 บาท 10 รางวัล <br>รวมมูลค่าทั้งสิ้น 20,000 บาท</div><br><br><br><br>
                                 <div class="txt_body_winner_big text-center">"ประกาศรายชื่อผู้โชคดีวันที่ 17 พฤษภาคม 2560"</div>
                                     
                             </div>
                             <div class="tab-pane fade" id="tab3default"> 
-                                <br><br>
+                                <div class="hidden-xs"><br><br></div>
                                 <div class="txt_body_winner_title text-center">รางวัลผู้เข้าไปเวิร์คช็อป</div><br><br><br>
                                 <div class="txt_body_winner text-center"></div><br><br><br><br>
                                 <div class="txt_body_winner_big text-center">"ประกาศรายชื่อผู้โชคดีวันที่ 28 เมษายน 2560"</div>

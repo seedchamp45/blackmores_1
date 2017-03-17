@@ -1,5 +1,6 @@
 <html>
 <body>
+
              <div class="visible-xs">
                 <div class="row home_body scale_img">
                     <div class="col-xs-12">
@@ -33,5 +34,6 @@
                   </div>
                </div>
              </div>
+
 </body>
 </html> 

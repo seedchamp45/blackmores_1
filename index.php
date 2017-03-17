@@ -8,7 +8,9 @@
     <meta name="author" content="">
     <link rel="icon" href="images/favicon.ico">
 
+
     <title>Blackmores My Strong Family - ออกแบบฮีโร่ โชว์สตรองให้โลกรู้</title>
+
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -254,7 +256,9 @@
    height: 0%;
 }
 
+
 .main-body { 
+
    
     /*
       background: url(../images/bg_home.jpg) no-repeat center center fixed; 
@@ -279,6 +283,26 @@
     background-attachment: scroll;
     background-size: 100% 90%;
    }
+
+       .size-li-small
+    {
+      width: 11%;
+      opacity: 0;
+      text-align: center;
+    }
+
+      .size-li-big
+    {
+      width: 14%;
+      opacity: 0;
+      text-align: center;
+    }
+
+    .size-li-very
+    {
+
+      width: 25%;
+    }
     
     
     /** bg_popup */
@@ -389,25 +413,7 @@
         padding-left: 40%;
         
     }
-    .size-li-small
-    {
-      width: 11%;
-      opacity: 0;
-      text-align: center;
-    }
 
-      .size-li-big
-    {
-      width: 14%;
-      opacity: 0;
-      text-align: center;
-    }
-
-    .size-li-very
-    {
-
-      width: 25%;
-    }
 
     @media (min-width: 768px){
       .foot-nev
@@ -424,12 +430,35 @@
 
     }
 
-       @media (max-width: 768px){
+       @media screen and (min-device-width: 361px) and (max-device-width: 768px){
       .navbar-top
       {
            background-size: 0% 0% ;
         height: 0px;
       }
+
+             .size-li-small
+    {
+      width: 80% !important;
+      opacity: 1 !important;
+      margin: auto !important;
+      text-align: center;
+    }
+
+      .size-li-big
+    {
+      width: 80% !important;
+       opacity: 1 !important;
+            margin: auto !important;
+      text-align: center;
+    }
+
+    .size-li-very
+    {
+       opacity: 0 !important;
+            margin: auto !important;
+      width: 25%;
+    }
     }
 
     @media (min-width: 990px){
@@ -477,7 +506,6 @@
 
     }
 
-  
     </style>
     
       <!-- The Boutique CSS: -->
@@ -490,31 +518,31 @@
   </head>
 <!--<body class="r_bg">-->
   <body >
-      
         <div class="main-body">
              <div class="visible-xs">  
-                <div class="container conter2" >
-                    <!-- Static navbar -->
-                    <nav class="navbar navbar-default " role="navigation">
-                        <div class="navbar-header">
-                          <button type="button" class="navbar-toggle collapsed txt_bu_m_mobile m_logo_on_bar" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                              <img src="images/mobile/menu.png" width="83px">
-                          </button>
-                        </div>
-                        <div id="navbar" class=" navbar-collapse collapse navbar-show-left-t">
-                          <ul class="nav navbar-nav m_bg_bar">
-                            <li><a href="#" class="txt_menu">หน้าแรก</a></li>
-                            <li><a href="#" class="txt_menu">กติกาและของรางวัล</a></li>
-                             <li><a href="#" class="txt_menu">เลือกฮีโร่</a></li>
-                            <li><a href="#" class="txt_menu text-four">โหวตภาพประกวด</a></li>
-                            <li><a href="#" class="txt_menu">ประกาศผู้โชคดี</a></li>
-                            <li><a href="#"><div class="send_work center-block"></div></li>
-                          </ul>
-                        </div><!--/.nav-collapse -->
-
-                    </nav>
-                </div>
-            </div>  
+            <div class="container conter2" >
+                <!-- Static navbar -->
+                <nav class="navbar navbar-default " role="navigation">
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle collapsed txt_bu_m_mobile m_logo_on_bar" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                          <img src="images/mobile/menu.png" width="83px">
+                      </button>
+                    </div>
+                    <div id="navbar" class=" navbar-collapse collapse navbar-show-left-t">
+                      <ul class="nav navbar-nav nav-nav-left-t m_bg_bar">
+                    <li class="size-li-small"><a href="#" class="txt_menu">หน้าแรก</a></li>
+                    <li class="size-li-big"><a href="#" class="txt_menu">กติกาและของรางวัล</a></li>
+                     <li class="size-li-small"><a href="#" class="txt_menu">เลือกฮีโร่</a></li>
+                    <li class="size-li-very"><img src="./images/logo-navbar.png" style="width: 100%;"></li>
+                    <li class="size-li-big"><a href="#" class="txt_menu text-four">โหวตภาพประกวด</a></li>
+                    <li class="size-li-big"><a href="#" class="txt_menu">ประกาศผู้โชคดี</a></li>
+                    <li class="size-li-small"><a href="#" class="txt_menu">ส่งผลงาน</a></li>
+                  </ul>
+                    </div><!--/.nav-collapse -->
+                  
+                </nav>
+            </div>
+        </div>  
          
             
             
@@ -543,7 +571,7 @@
                         <li class="size-li-very"><img src="./images/logo-navbar.png" style="width: 100%;"></li>
                         <li class="size-li-big"><a href="#" class="txt_menu text-four">โหวตภาพประกวด</a></li>
                         <li class="size-li-big"><a href="#" class="txt_menu">ประกาศผู้โชคดี</a></li>
-                        <li class="size-li-small"><a href="#" class="txt_menu sendwork">ส่งผลงานนะ</a></li>
+                        <li class="size-li-small"><a href="#" class="txt_menu">ส่งผลงาน</a></li>
                       </ul>
                     </div><!--/.nav-collapse -->
                   </div>
@@ -586,54 +614,51 @@
                     <img src="./images/m_t_1.png" style="width: 100%;" />
                    </div>
 
-                   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 col-lg-offset-1 div-show-right-t">
-                                     <img src="./images/home_body_left.png" style="width: 100%;" />
-                  </div>
-               </div>
-             </div>
-            
-            
-        </div>  
-            
+  
+
+               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 col-lg-offset-1 div-show-right-t">
+                                 <img src="./images/home_body_left.png" style="width: 100%;" />
+              </div>
+           </div>
+
+
+           
+         
+         </div>
          <div id = "add-foot">
            
             <div class="bg_footer2" id = "clear-foot" >
                  <div  class="foot-nev">
-                 <button type="button" style="opacity: 0; width: 200px; height: 100%; margin-top: -5%;" data-toggle="modal" data-target="#myModal">Open Modal</button>
+                 <button type="button" style="opacity: 0; width: 100%; height: 100%; margin-top: -5%;" data-toggle="modal" data-target="#myModal">Open Modal</button>
                  </div>
              </div>
          </div>
-    </div>
+          </div>
       
 <!-- comment -->
   <div class="modal fade" id="myModal" role="dialog">
-    
     <div class="modal-dialog">
+    
       <!-- Modal content-->
       <div class="modal-content1">
           <div class="bg_popup">
             <div class="modal-header1" style="height: 4%; padding-top: -5%; background-color: transparent;">
               
-                <button type="button" class="close2 center-block" data-dismiss="modal">
-                    <div class="visible-xs">
-                        <img src="images/bu_toggle_down_1.png" class="close2 img-responsive" style="width: 50%; margin-left: 25%;">
-                    </div>
-                    <div class="hidden-xs">
-                         <img src="images/bu_toggle_down_1.png" class="close2 img-responsive" style="width: 50%; margin-left: 25%; margin-top:-5%;">
-                    </div>
-                </button>
+                <button type="button" class="close2 center-block" data-dismiss="modal"><img src="images/bu_toggle_down_1.png" class="close2 img-responsive" style="width: 50%; margin-left: 25%; margin-top:-5%;"></button>
             </div>
             <div class="modal-body">
                 
 
                 
             </div>   
-          </div>
+            </div>
             <!--<div class="modal-footer" style="height: 0px;">
             </div>-->
-       </div>
+          </div>
       </div>
-</div>
+    </div>
+  </div>
+  </div>
 
 
 

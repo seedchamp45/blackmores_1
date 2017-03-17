@@ -63,7 +63,9 @@
             -o-background-size: cover;
             background-size: 100%;
             margin-top: -300px;
+
            background-attachment: fixed;
+
 
             }
 
@@ -71,7 +73,9 @@
             margin-left: -25%;
             margin-right: -25%;
             height: 1050px;
+
             overflow: auto;
+
             
         }
 
@@ -88,7 +92,9 @@
         .scrollview-text {
             height: 500px;
             margin-left: 5%;
+
             overflow: auto;
+
             
         }
          .footer-pic
@@ -96,6 +102,7 @@
                 width: 100%; height: 100px;
             }
         }
+
         .ol_left {
             margin-left: 2px;
         }
@@ -110,6 +117,7 @@
     <div class="row bg_block">
         <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 "></div>
         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 ">
+
             
              <br><br>
             <img src="images/rule/r_title.png" class="img-responsive center-block">
@@ -281,12 +289,14 @@
                     <br><br><br><br><br><br><br><br>
             
         </div>
+
          <br> <br><br><br><br><br><br><br><br>
         <div class="col-xs-1 col-sm-3 col-md-3 col-lg-3"></div>
         
         
     </div>
         <br><div class="hidden-xs"><br><br><br><br><br><br><br><br><br><br><br></div>
+
     </div>
     <img src="images/footer.png" class="footer-pic" />
 

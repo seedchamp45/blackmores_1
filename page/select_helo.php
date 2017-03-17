@@ -1,6 +1,13 @@
 
 <html>
     <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+       
+      
+                
         <script>
          
             // Calling Boutique on your HTML element when the document is ready:
@@ -71,13 +78,17 @@
                  event.preventDefault();
             }
         </script>
-       
+        <!-- The Boutique CSS: -->
+        <link rel="stylesheet" href="css/boutique.css">
+
+        <!-- The Boutique plugin: -->
+        <script src="js/jquery.boutique.min.js"></script>
                 
         <style>
             .bg_winner{
                 /*background-image: url("images/winner/bg_winner.png");*/
                     background: url(images/gallery/bg_winner.png) ; 
-                 background-repeat: no-repeat;
+        background-repeat: no-repeat;
                 background-size: 100% 100%;
                 background-position: center top;
                 margin-right: -15%;
@@ -148,18 +159,8 @@
                 height: 5em;
                 width: 80%;
             }
-             @media (min-width: 480px){
-                 .iden{
-                    padding-left: 0px; 
-                 }
-                 .r_body_inline{
-                    color: #000;
-                    font-size:2em;
-                   display: inline;
-                }
-             }
             
-             
+            
             @media (min-width: 768px){
                .heg_txt{
                  height: 4em;
@@ -332,12 +333,12 @@
 
              .background-main-rule
             {
-                background: url(images/newBackground.png) no-repeat center top local; 
-                -webkit-background-size: cover;
-                -moz-background-size: cover;
-                -o-background-size: cover;
-                background-size: 100%;
-                margin-top: -300px;
+            background: url(images/newBackground.png) no-repeat center top local; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: 100%;
+            margin-top: -300px;
            
                 background-attachment: fixed;
 
@@ -392,55 +393,26 @@
               width: 80%;
             }
             
-            @media (max-width: 480px){
-                 .iden{
-                    padding-left: 0px; 
-                 }
-                 .r_body_inline{
-                    color: #000;
-                    font-size:2em;
-                   display: inline;
-                }
-                .show-case-pic {
-                    margin-top: 10px;
-                }
-                .r_body_inline {
-                    color: #000;
-                    font-size: 1.4em;
-                    display: inline;
-                }
-                
-                .modal-dialog {
-                    margin-top: 0%;
-                    width: 90%;
-                    height: 100%;
-                }
-                
             
-                .r_body{
-                    color: #000;
-                    font-size: 1.8em;
-                    font-weight: normal;
+            .bu_download{
+            }
+
+              @media screen and (min-device-width: 360px) and (max-device-width: 768px){
+                .screen-short
+                {
+                  margin-top: 100px !important;
                 }
+              }
 
 
-
-                .r_body_inline{
-                    color: #000;
-                    font-size:2.2em;
-                   display: inline;
-                }
-             }
-            
             
         </style>
     </head>
     <body>
-        
         <div class="background-main-rule">
-             <div class="visible-xs"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
-             <div class="hidden-xs"><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
+        <br>  <br>  <br>  <br>  <br>  <br>  <br>
         <div class="container">
+        <div class="screen-short">
             <div class="row ">
                 <div class="col-xs-12  col-sm-12 col-md-12 col-lg-12">
                     <img src="images/helo/select_hello_title.png" class="img-responsive center-block show-case-pic">
@@ -490,7 +462,7 @@
                                                        <!-- The Boutique HTML: -->
                                                        <ul id="boutique" class="hero-check" style="height: 400px">
                                                                <li>
-                                                                       <a href="#content_1">
+                                                                       <a href="#content_1 ">
                                                                            <img src="images/helo/C BRIGHT.png"  id="img_src_1" class="img-responsive" width="485" height="450" data-target="#myModal">
                                                                        </a>
                                                                </li>
@@ -526,7 +498,7 @@
                                                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                                                 <h4 class="modal-title" id="myModalLabel"><img id ="select_hero" class="img-responsive center-block" src="images/helo/txt_c bright power.png"></h4>
                                                               </div>
-                                                              <div class="modal-body center-block">
+                                                              <div class="modal-body">
                                                                   <img id ="alert_pic" src="images/helo/C BRIGHT.png"  class="img-responsive center-block" >
                                                               </div>
                                                             
@@ -539,9 +511,9 @@
                                              
                                                     <div class="row">
 
-                                                        <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1"></div>
+                                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-1 "></div>
                                                         <br><br><br><br>
-                                                        <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 ">
+                                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 ">
                                                         <!-- End of the Boutique HTML -->
                                                            <!--helo 1-->
                                                             <div id="content1" class="content">
@@ -553,20 +525,13 @@
                                                                 <br>
                                                                 <div class="row">
                                                                     <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 ">
-                                                                        <div class="visible-xs">
-                                                                           <div class="txt_r r_title text-center" >ลักษณะ</div>
+                                                                        <div class = "iden">
+                                                                            <div class="txt_r r_title text-center" >ลักษณะ</div>
                                                                             <div class="txt_r r_body text-center">ฮีโร่สาวผิวสุขภาพดี ขาวกระจ่างใสมีออร่า สวยสะกดทุกสายตา</div>
-                                                                        </div>
-                                                                        <div class="hidden-xs">  
-                                                                            <div class = "iden">
-
-                                                                                <div class="txt_r r_title text-center" >ลักษณะ</div>
-                                                                                <div class="txt_r r_body text-center">ฮีโร่สาวผิวสุขภาพดี ขาวกระจ่างใสมีออร่า สวยสะกดทุกสายตา</div>
-                                                                            </div>
                                                                         </div>
 
                                                                     </div>
-                                                                    <div class="hidden-xs col-sm-12 col-md-1 col-lg-1 ">
+                                                                    <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1 ">
                                                                         <div class="ruler_center center-block"></div>
                                                                     </div>
 
@@ -575,7 +540,7 @@
                                                                        <div class="txt_r r_body text-center">มีภูมิคุ้มกันพิเศษป้องกันไข้หวัดในทุกสภาพอากาศ</div>
                                                                     </div>
 
-                                                                    <div class="hidden-xs col-sm-12 col-md-1 col-lg-1 ">
+                                                                    <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1 ">
                                                                          <div class="ruler_center center-block"></div>
                                                                     </div>
                                                                     <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 ">
@@ -605,18 +570,13 @@
                                                                 <br>
                                                                 <div class="row">
                                                                     <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 ">
-                                                                        <div class="visible-xs">
+                                                                        <div class = "iden">
                                                                             <div class="txt_r r_title text-center">ลักษณะ</div>
                                                                             <div class="txt_r r_body text-center">ฮีโร่หนุ่มหล่อเจ้าแห่งท้องทะเล รูปร่างปราดเปรียว คล่องแคล่ว ว่องไว</div>
                                                                         </div>
-                                                                         <div class="hidden-xs">
-                                                                            <div class = "iden">
-                                                                                <div class="txt_r r_title text-center">ลักษณะ</div>
-                                                                                <div class="txt_r r_body text-center">ฮีโร่หนุ่มหล่อเจ้าแห่งท้องทะเล รูปร่างปราดเปรียว คล่องแคล่ว ว่องไว</div>
-                                                                            </div>
-                                                                         </div>       
+
                                                                     </div>
-                                                                    <div class="hidden-xs col-sm-12 col-md-1 col-lg-1 ">
+                                                                    <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1 ">
                                                                         <div class="ruler_center center-block"></div>
                                                                     </div>
 
@@ -625,7 +585,7 @@
                                                                         <div class="txt_r r_body text-center">เป็นคนสมองดี คิดอะไรได้รวดเร็ว <br>เฉลียวฉลาด วางแผนเก่ง <br>แก้ปัญหาเฉพาะหน้าได้ดี</div>
                                                                     </div>
 
-                                                                    <div class="hidden-xs col-sm-12 col-md-1 col-lg-1 ">
+                                                                    <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1 ">
                                                                          <div class="ruler_center center-block"></div>
                                                                     </div>
                                                                     <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 ">
@@ -654,20 +614,13 @@
                                                                 <br>
                                                                 <div class="row">
                                                                     <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 ">
-                                                                        <div class="visible-xs">
+                                                                        <div class = "iden">
                                                                             <div class="txt_r r_title text-center">ลักษณะ</div>
                                                                             <div class="txt_r r_body text-center">ฮีโร่คู่รักจอมพลัง มีความแข็งแรงเป็นเลิศ</div>
                                                                         </div>
-                                                                         <div class="hidden-xs"> 
-                                                                             <div class = "iden">
-                                                                                <div class="txt_r r_title text-center">ลักษณะ</div>
-                                                                                <div class="txt_r r_body text-center">ฮีโร่คู่รักจอมพลัง มีความแข็งแรงเป็นเลิศ</div>
-                                                                             </div>
-                                                                         </div>
-                                                                       
 
                                                                     </div>
-                                                                    <div class="hidden-xs col-sm-12 col-md-1 col-lg-1 ">
+                                                                    <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1 ">
                                                                         <div class="ruler_center center-block"></div>
                                                                     </div>
 
@@ -676,7 +629,7 @@
                                                                         <div class="txt_r r_body text-center">คู่รักสุดฟิต รักการออกกำลังกายเป็นชีวิตจิตใจ <br>มีพละกำลังมหาศาล ยกของหนักได้อย่างง่ายดาย</div>
                                                                     </div>
 
-                                                                    <div class="hidden-xs col-sm-12 col-md-1 col-lg-1 ">
+                                                                    <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1 ">
                                                                          <div class="ruler_center center-block"></div>
                                                                     </div>
                                                                     <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 ">
@@ -705,20 +658,13 @@
                                                                 <br>
                                                                 <div class="row">
                                                                     <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 ">
-                                                                        <div class="visible-xs">
-                                                                             <div class="txt_r r_title text-center">ลักษณะ</div>
+                                                                        <div class = "iden">
+                                                                            <div class="txt_r r_title text-center">ลักษณะ</div>
                                                                             <div class="txt_r r_body text-center">ฮีโร่คุณแม่ยังสาว ร่างกายแข็งแกร่งทุกสัดส่วน อ่อนโยน จิตใจดี รักความยุติธรรม ชอบช่วยเหลือผู้อื่น โดยเฉพาะเด็กๆ</div>
                                                                         </div>
-                                                                        
-                                                                         <div class="hidden-xs">    
-                                                                            <div class = "iden">
-                                                                                <div class="txt_r r_title text-center">ลักษณะ</div>
-                                                                                <div class="txt_r r_body text-center">ฮีโร่คุณแม่ยังสาว ร่างกายแข็งแกร่งทุกสัดส่วน อ่อนโยน จิตใจดี รักความยุติธรรม ชอบช่วยเหลือผู้อื่น โดยเฉพาะเด็กๆ</div>
-                                                                            </div>
-                                                                         </div>
 
                                                                     </div>
-                                                                    <div class="hidden-xs col-sm-12 col-md-1 col-lg-1 ">
+                                                                    <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1 ">
                                                                         <div class="ruler_center center-block"></div>
                                                                     </div>
 
@@ -727,7 +673,7 @@
                                                                        <div class="txt_r r_body text-center">ทำกิจกรรมหลายอย่างพร้อมกันได้อย่างรวดเร็ว</div>
                                                                     </div>
 
-                                                                    <div class="hidden-xs col-sm-12 col-md-1 col-lg-1 ">
+                                                                    <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1 ">
                                                                          <div class="ruler_center center-block"></div>
                                                                     </div>
                                                                     <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 ">
@@ -756,19 +702,13 @@
                                                                 <br>
                                                                 <div class="row">
                                                                     <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 ">
-                                                                        
-                                                                        <div class="visible-xs"> 
-                                                                                <div class="txt_r r_title text-center">ลักษณะ</div>
-                                                                                <div class="txt_r r_body text-center">ฮีโร่เด็กน้อย ตัวเล็กแต่ใจใหญ่ มีนิสัยร่าเริง ซุกซุน กระฉับกระเฉง</div>
+                                                                        <div class = "iden">
+                                                                            <div class="txt_r r_title text-center">ลักษณะ</div>
+                                                                            <div class="txt_r r_body text-center">ฮีโร่เด็กน้อย ตัวเล็กแต่ใจใหญ่ มีนิสัยร่าเริง ซุกซุน กระฉับกระเฉง</div>
                                                                         </div>
-                                                                        <div class="hidden-xs"> 
-                                                                            <div class = "iden">
-                                                                                <div class="txt_r r_title text-center">ลักษณะ</div>
-                                                                                <div class="txt_r r_body text-center">ฮีโร่เด็กน้อย ตัวเล็กแต่ใจใหญ่ มีนิสัยร่าเริง ซุกซุน กระฉับกระเฉง</div>
-                                                                            </div>
-                                                                        </div>
+
                                                                     </div>
-                                                                    <div class="hidden-xs col-sm-12 col-md-1 col-lg-1 ">
+                                                                    <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1 ">
                                                                         <div class="ruler_center center-block"></div>
                                                                     </div>
 
@@ -777,7 +717,7 @@
                                                                        <div class="txt_r r_body text-center">ฉลาดหลักแหลม วิ่งเร็วเหมือนสายฟ้า และมีพลังกระโดดสูง</div>
                                                                     </div>
 
-                                                                    <div class="hidden-xs col-sm-12 col-md-1 col-lg-1 ">
+                                                                    <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1 ">
                                                                          <div class="ruler_center center-block"></div>
                                                                     </div>
                                                                     <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 ">
@@ -796,7 +736,7 @@
                                                             </div>
                                                             <!--helo 5-->
                                                         </div>
-                                                        <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1"></div>
+                                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-1 "></div>
                                                     </div>
                                                    
                                                 </div>
@@ -978,16 +918,13 @@
                     </div>
                 </div>             
             </div>
-        </div>       
+        </div> 
+        </div>      
     </div> 
-        <div class="visible-xs">   
-            <img src="images/footer.png" style="width: 100%; height: 200px" />
-        </div>     
-         <div class="hidden-xs">      
         <img src="images/footer.png" style="width: 100%; height: 400px" />
-        </div>  
     </div>       
-  
+    <br>  <br>  <br> 
+
       
     </body>
 </html>
