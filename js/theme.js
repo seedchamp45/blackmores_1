@@ -38,6 +38,14 @@
             case "เลือกฮีโร่":
                 link_txt ="page/select_helo.php";
                 break;    
+                
+            case "อายุน้อยกว่า 8 ปี":
+                link_txt ="page/select_hero1.php";
+                break; 
+                
+            case "อายุ 8 - 12 ปี":
+                link_txt ="page/select_hero2.php";
+                break;    
        }
          $("#content").load(link_txt);
 
