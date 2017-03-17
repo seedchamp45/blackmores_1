@@ -58,16 +58,17 @@
 
         .bg_winner{
             /*background-image: url("images/winner/bg_winner.png");*/
-                background: url(images/gallery/bg_winner.png) ; 
+            background: url(images/gallery/bg_winner.png) ; 
           -webkit-background-size: cover;
           -moz-background-size: cover;
           -o-background-size: cover;
 
-           background-size:     cover;                     
+           background-size: 80% 100%;                     
            background-repeat:   no-repeat;
            margin-top: 20px;
-           width: 100%;
-           height: 600px;
+          background-position: center;
+          width: 100%;
+          height: 600px;
         }
 
 
@@ -467,16 +468,17 @@
             </div>    
        </div>
    </div>
- </div>
-
-<br/>
+   <br/>
          <div class="visible-xs">   
             <img src="images/footer.png" style="width: 100%; height: 200px" />
         </div>     
          <div class="hidden-xs">      
         <img src="images/footer.png" style="width: 100%; height: 400px" />
         </div>  
-</div>
+ </div>
+
+
+
 
 </body>
 </html>

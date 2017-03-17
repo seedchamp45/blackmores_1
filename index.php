@@ -479,7 +479,7 @@
     @media (min-width: 1080px){
       .foot-nev
       {
-        background-size: 150px 60px;
+        background-size: 200px 60px;
         margin-left: 30%;
         width: 40%;
         margin-right: 30%;
@@ -493,9 +493,9 @@
 
     .div-show-left-t
     {
-        margin-top: 5%;
+        margin-top: 10% !important;
         width: 35%;
-        margin-left: 10%;
+        margin-left: 5% !important;
 
     }
        .div-show-right-t

@@ -176,7 +176,7 @@
                 }
                 
                 .bg_winner{
-                  height: 1600px;
+                  height: 120%;
                    
                  }
                    
@@ -187,8 +187,7 @@
                    -o-background-size: cover;
                    background-size: 100% 100%;
 
-                   width: 100%;  
-                   height:20%;
+                 
                 }
                 
                  .heg1_txt{
@@ -206,6 +205,10 @@
                     font-size: 1.5em;
                     font-weight: normal;
                 }
+                  .bg_winner{
+                  height: 140%;
+                   
+                 }
             }
             
              @media (min-width: 992px){
@@ -233,11 +236,14 @@
                    -o-background-size: cover;
                    background-size: 100% 100%;
 
-                   width: 100%;  
-                   height:30%;
+             
                 }
             }
             @media (min-width: 1200px){
+              .select_hero
+              {
+                padding-top: 10%;
+              }
                  .heg_txt{
                     height: 5.3em;
                 } 
@@ -246,6 +252,10 @@
                     margin-top: 50px;
 
                 } 
+                       .bg_winner{
+                  height: 160%;
+                   
+                 }
                 
                 .r_title1{
                      color: #F99F00;
@@ -266,8 +276,8 @@
                    -o-background-size: cover;
                    background-size: 100% 100%;
 
-                   width: 100%;  
-                   height:40%;
+                   /*width: 100%;  
+                   height:40%;*/
                 }
             }
             .c_h{
@@ -331,7 +341,7 @@
 
              .background-main-rule
             {
-                background: url(images/newBackground.png) no-repeat center top local; 
+                background: url(images/background2.png) no-repeat center top local; 
                 -webkit-background-size: cover;
                 -moz-background-size: cover;
                 -o-background-size: cover;
@@ -881,8 +891,8 @@
                                                         </div>
                                                     </div>
                                                     <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 ">
-                                                         <div class="bg_select_8_12">
-                                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+                                                         <div>
+                                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 bg_select_8_12 ">
                                                                 <div id ="detail_1" class = "detail_1 text-center heg1_txt">
                                                                     <div class="txt_r r_title_inline text-uppercase"><img class="center-block select_hero img-responsive" src="images/helo/txt_C Bright Power.png"></div>
                                                                     <dl class="dl-horizontal">
