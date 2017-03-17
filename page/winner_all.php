@@ -330,26 +330,35 @@
  <div class="container">
     <div class="row">
             <div class="col-xs-12  col-sm-12 col-md-12 col-lg-12">
-                <img src="images/winner/winner.png" class="img-responsive center-block">
+                <div class="visible-xs">
+                     <img src="images/winner/winner.png" class="img-responsive center-block" width="70%" height="70%">
+                 </div>
+                <div class="hidden-xs">
+                     <img src="images/winner/winner.png" class="img-responsive center-block">
+                 </div>
             </div>
-        </div>
+    </div>
+     <div class="row">
+            <div class="col-xs-12  col-sm-12 col-md-12 col-lg-12">
+                <div class="visible-xs">
+                  <select  name="title_age" id="title_age" class="form-control form_input_type4 txt_input center-block">
+                       <option value="1" class="center-block txt_input">ประเภทอายุไม่เกิน 8 ปี</option>
+                       <option value="2" class="center-block txt_input">ประเภทอายุระหว่าง 8 -12 ปี</option>
+                       <option value="3" class="center-block txt_input">ผู้ผ่านเข้าไปเวิร์คช็อป</option>
+                       <option value="4" class="center-block txt_input">รายชื่อผู้ชนะ Popuar Vote</option>
+                       <option value="5" class="center-block txt_input">ผู้โชคดีจากการโหวต</option>
+                  </select>
+                </div>
+            </div>
+     </div>
+        <input type="hidden" id="name_type" value="1">
+    </div> 
    <div class="row ">
        <div class="bg_winner">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
                 <div class="panel with-nav-tabs panel-default ">
                     <div class="no_border panel-heading" style="width: 100%; height: 100px;">
-                            <div class="visible-xs">
-                                <select  name="title_age" id="title_age" class="form-control form_input_type4 txt_input center-block">
-                                    
-                                     <option value="1" class="center-block txt_input">อายุไม่เกิน 8 ปี</option>
-                                     <option value="2" class="center-block txt_input">อายุระหว่าง 8 -12 ปี</option>
-                                     <option value="3" class="center-block txt_input">ผู้ผ่านเข้าไปเวิร์คช็อป</option>
-                                     <option value="4" class="center-block txt_input">รายชื่อผู้ชนะ Popuar Vote</option>
-                                     <option value="5" class="center-block txt_input">ผู้โชคดีจากการโหวต</option>
-                                 
-                                </select>
-                                <input type="hidden" id="name_type" value="1">
-                            </div> 
+                           
                         
                         
                              <div class="hidden-xs">

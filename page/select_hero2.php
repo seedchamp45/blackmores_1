@@ -177,9 +177,7 @@
             
              
             @media (min-width: 768px){
-               .heg_txt{
-                 height: 4em;
-                }
+               
                 .r_body1{
                     color: #000;
                     font-size: 1em;
@@ -374,20 +372,123 @@
             }
 
             @media (max-width: 768px){
-                    .show-case-pic
-            {
-                margin-top: 300px;
-            }
+                .show-case-pic
+                {
+                    margin-top: 300px;
+                }
 
-            .bar-yellow
-            {
-                width: 150px;
-            }
-            .bar-blue
-            {
-                width: 150px; margin-left: -37px;
-            }
+                .bar-yellow
+                {
+                    width: 150px;
+                }
+                .bar-blue
+                {
+                    width: 150px; margin-left: -37px;
+                }
+                .iden{
+                    padding-left: 0px; 
+                 }
+                 .r_body_inline{
+                    color: #000;
+                    font-size:2em;
+                   display: inline;
+                }
+                .show-case-pic {
+                    margin-top: 10px;
+                }
+                
+                .r_body_inline {
+                    color: #000;
+                    font-size: 1.4em;
+                    display: inline;
+                }
+                
+                .r_body_italic {
+                    font-family: "db_helvethaica_x";
+                    color: #0075C9;
+                    font-size: 2em;
+                    font-style:italic;
+                    font-weight: bold;
+                }
+                
+                .modal-dialog {
+                    margin-top: 0%;
+                    width: 90%;
+                    height: 100%;
+                }
+                
+            
+                .r_body{
+                    color: #000;
+                    font-size: 1.8em;
+                    font-weight: normal;
+                }
 
+
+
+                .r_body_inline{
+                    color: #000;
+                    font-size:1.2em;
+                   display: inline;
+                }
+                
+                .background-main-rule
+                {
+                    background: url(images/mobile/bg_mobile.png) no-repeat center top local; 
+                    -webkit-background-size: cover;
+                    -moz-background-size: cover;
+                    -o-background-size: cover;
+                    background-size: 100%;
+                    margin-top: -300px;
+
+                    background-attachment: fixed;
+
+                }
+                
+                .main-body {
+                    background: url(images/mobile/bg_mobile.png) no-repeat center top local;
+                    background-image-size: 100% 100%;
+                    background-repeat: no-repeat;
+                    background-position: left top;
+                    background-attachment: scroll;
+                    background-size: 100% 100%;
+                }
+                
+                .r_title1_blue{
+                    color: #4e9bda;
+                    font-size: 2.3em;
+                    font-weight: bold;
+                    
+                }
+                
+                .r_title1_yellow{
+                    color: #ffb41f;
+                    font-size: 2.3em;
+                    font-weight: bold;
+                }
+                
+                .r_title1_pink{
+                    color: #ec6893;
+                    font-size: 2.3em;
+                    font-weight: bold;
+                }
+                
+                .r_title1_blue2{
+                    color: #2b3990;
+                    font-size: 2.3em;
+                    font-weight: bold;
+                }
+            
+                .r_title1_Orange{
+                    color: #fb8022;
+                    font-size: 2.3em;
+                    font-weight: bold;
+                }
+                 .r_body1{
+                    color: #000;
+                    font-size: 2em;
+                    font-weight: normal;
+                }
 
             }
 
@@ -476,20 +577,7 @@
                     background-attachment: scroll;
                     background-size: 100% 100%;
                 }
-            }
-            
-            .bg_block_hero2
-              {
-                    background: url(images/mobile/bg_block_hero2.png) no-repeat center top local; 
-                    -webkit-background-size: cover;
-                    -moz-background-size: cover;
-                    -o-background-size: cover;
-                    width: 100%;
-                    height: 100%;
-                    top: 20px;
-
-                }
-            @media (max-width: 480px){
+                
                 .r_title1_blue{
                     color: #4e9bda;
                     font-size: 1.3em;
@@ -527,6 +615,17 @@
                 }
                 
             }
+            
+            .bg_block_hero2
+              {
+                    background: url(images/mobile/bg_block_hero2.png) no-repeat center top local; 
+                    -webkit-background-size: cover;
+                    -moz-background-size: cover;
+                    -o-background-size: cover;
+                    height: 100%;
+                    top: 20px;
+
+                }
             
         </style>
     </head>
@@ -574,6 +673,7 @@
                                                     <div class="c_h">พลังคลื่นปลาทะเล</div>
                                                 </dt> 
                                             </div>
+                                         <br>
                                      </div>
                                    <!--2-->
                                     <div class="row">
@@ -598,6 +698,7 @@
                                                     <div class="c_h">โล่วิเศษ ช่วยป้องกันไข้หวัด<br> เกราะคอลลาเจน ช่วยคุ้มกัน พลังความกระจ่างใสของผิว</div>
                                                 </dt> 
                                             </div>
+                                        <br>
                                      </div>
                                    <!--3-->
                                     <div class="row">
@@ -622,6 +723,7 @@
                                                     <div class="c_h">ขวดนม เพิ่มพลังให้คนรอบข้าง</div>
                                                 </dt> 
                                             </div>
+                                        <br>
                                      </div>
                                    <!--4-->
                                     <div class="row">
@@ -637,7 +739,7 @@
                                                     <div class="c_h">ความสามารถพิเศษ</div>
                                                 </dt>        
                                                 <dt class="txt_r r_body1 text-center heg_txt">
-                                                    <div class="c_h">คู่รักสุดฟิต รักการออกกำลังกายเป็นชีวิตจิตใจ มีพละกำลังมหาศาล ยกของหนักได้อย่างง่ายดาย</div><br>
+                                                    <div class="c_h">คู่รักสุดฟิต รักการออกกำลังกายเป็นชีวิตจิตใจ<br> มีพละกำลังมหาศาล ยกของหนักได้อย่างง่ายดาย</div><br>
                                                 </dt>    
                                                 <dt class="txt_r r_title1_blue2 text-center yellow heg_txt">
                                                     <div class="c_h">อาวุธประจำกาย</div>
@@ -646,6 +748,7 @@
                                                     <div class="c_h">เข็มขัดวิเศษ สามารถปรับเพิ่มพลังได้ตามที่ต้องการ</div>
                                                 </dt> 
                                             </div>
+                                        <br>
                                      </div>
                                    <!--5-->
                                     <div class="row">
@@ -670,6 +773,7 @@
                                                     <div class="c_h">ปืนวิเศษ สามารถยิงพลัง</div>
                                                 </dt> 
                                             </div>
+                                        <br>
                                      </div>
                                  </div>
                             </div>
