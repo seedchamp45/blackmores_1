@@ -643,10 +643,18 @@
       <!-- Modal content-->
       <div class="modal-content1">
           <div class="bg_popup">
-            <div class="modal-header1" style="height: 4%; padding-top: -5%; background-color: transparent;">
-              
-                <button type="button" class="close2 center-block" data-dismiss="modal"><img src="images/bu_toggle_down_1.png" class="close2 img-responsive" style="width: 50%; margin-left: 25%; margin-top:4%;"></button>
-            </div>
+                <div class="visible-xs">
+                    <div class="modal-header1" style="height: 10%; padding-top: -5%; background-color: transparent;">
+
+                        <button type="button" class="close2 center-block" data-dismiss="modal"><img src="images/bu_toggle_down_1.png" class="close2 img-responsive" style="width: 50%; margin-left: 25%; margin-top:4%;"></button>
+                    </div>
+                </div>
+                <div class="hidden-xs">
+                    <div class="modal-header1" style="height: 4%; padding-top: -5%; background-color: transparent;">
+
+                        <button type="button" class="close2 center-block" data-dismiss="modal"><img src="images/bu_toggle_down_1.png" class="close2 img-responsive" style="width: 50%; margin-left: 25%; margin-top:4%;"></button>
+                    </div>
+                </div>
             <div class="modal-body">
                 
 

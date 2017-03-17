@@ -64,9 +64,9 @@
           -o-background-size: cover;
 
            background-size:     cover;                     
-            background-repeat:   no-repeat;
-      
-            width: 100%;
+           background-repeat:   no-repeat;
+           margin-top: 20px;
+           width: 100%;
            height: 600px;
         }
 
@@ -286,19 +286,42 @@
 
                     .txt_body_winner_big{
                         font-family: "db_helvethaica_x";
-                        color: #0075C9;
+                        color: black;
                         font-weight: bold;  
                         font-size: 1.2em;
                     }
 
                     .txt_body_winner_title{
                         font-family: "db_helvethaica_x";
-                        color: #FCF344;
+                        color: #0075C9;
                         font-weight: bold;  
                         font-style:italic;
-                        font-size: 2em;
+                        font-size: 1.8em;
                         text-shadow: 0 0 3px #000000;
                     }
+                    .r_body_italic {
+                    font-family: "db_helvethaica_x";
+                    color: #0075C9;
+                    font-size: 2em;
+                    font-style:italic;
+                    font-weight: bold;
+                }
+                .bg_winner{
+            /*background-image: url("images/winner/bg_winner.png");*/
+                    background: url(images/mobile/bg_winner.png) ; 
+                    -webkit-background-size: cover;
+                    -moz-background-size: cover;
+                    -o-background-size: cover;
+
+                     background-size: 100% 90%;                     
+                     background-repeat:   no-repeat;
+                     margin-top: 20px;
+                     width: 90%;
+                     height: 80%;
+                     display: block;
+                    margin-right: auto;
+                    margin-left: auto;
+                }
              }
             
   </style>
@@ -322,7 +345,7 @@
 </head>
 <body>
 <div class="background-main-rule">
-     <div class="visible-xs"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
+     <div class="visible-xs"><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
     <div class="hidden-xs"><br><br><br><br><br><br> 
     
         <br><br><br><br><br><br><br><br><br><br><br>
@@ -332,16 +355,24 @@
             <div class="col-xs-12  col-sm-12 col-md-12 col-lg-12">
                 <div class="visible-xs">
                      <img src="images/winner/winner.png" class="img-responsive center-block" width="70%" height="70%">
+                     <br>
                  </div>
                 <div class="hidden-xs">
-                     <img src="images/winner/winner.png" class="img-responsive center-block">
+                    <img src="images/winner/winner.png" class="img-responsive center-block"><br>
                  </div>
             </div>
     </div>
+     <div class="visible-xs">
+        <div class="row">
+           <div class="col-xs-12  col-sm-12 col-md-12 col-lg-12">
+               <p class="r_body_italic text-center"> เลือกผลประกาศผู้โชคดี </p>
+           </div>
+        </div>
+     </div>
      <div class="row">
             <div class="col-xs-12  col-sm-12 col-md-12 col-lg-12">
                 <div class="visible-xs">
-                  <select  name="title_age" id="title_age" class="form-control form_input_type4 txt_input center-block">
+                  <select  name="title_age" id="title_age" class="form-control form_input_type4 txt_input center-block" width="70%" height="70%">
                        <option value="1" class="center-block txt_input">ประเภทอายุไม่เกิน 8 ปี</option>
                        <option value="2" class="center-block txt_input">ประเภทอายุระหว่าง 8 -12 ปี</option>
                        <option value="3" class="center-block txt_input">ผู้ผ่านเข้าไปเวิร์คช็อป</option>
@@ -357,11 +388,12 @@
        <div class="bg_winner">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
                 <div class="panel with-nav-tabs panel-default ">
-                    <div class="no_border panel-heading" style="width: 100%; height: 100px;">
+                     <div class="hidden-xs">
+                        <div class="no_border panel-heading" style="width: 100%; height: 100px;">
                            
                         
                         
-                             <div class="hidden-xs">
+                            
                                 <ul class="nav nav-tabs" style="width: 100%; height: 100px;">
                                     <li style="right:  -78; width: 18%;">
                                         <a href="#tab1default" data-toggle="tab" class="menu-link h_b">
@@ -389,16 +421,18 @@
                                          </a>
                                      </li>
                                 </ul>
-                             </div>
-                        
-                           
+                             </div>  
                     </div>
+                     <div class="visible-xs">
+                         <div class="no_border panel-heading" style="width: 100%; height: 20px;"></div>
+                     </div>
+                   
                     <div class="panel-body">
                         <div class="tab-content">
                             <div class="tab-pane fade in active" id="tab1default">
                                
                                 <div class="txt_body_winner_title text-center">รางวัลประเภทอายุน้อยกว่า 8 ปี</div><br><br><br>
-                                <div class="txt_body_winner text-center"> รางวัลทุนการศึกษารางวัลละ 3,000 บาท  <br>พร้อมผลิตภัณฑ์เสริมอาหาร Blackmores <br>มูลค่ารางวัลละ 10,000 บาท สำหรับผู้ปกครอง 5 รางวัล <br>รวมมูลค่าทั้งสิ้น 65,000 บาท</div><br><br><br><br>
+                                <div class="txt_body_winner text-center"> รางวัลทุนการศึกษารางวัลละ 3,000 บาท พร้อม<br>ผลิตภัณฑ์เสริมอาหาร Blackmores <br>มูลค่ารางวัลละ 10,000 บาท สำหรับผู้ปกครอง 5 รางวัล <br>รวมมูลค่าทั้งสิ้น 65,000 บาท</div><br><br><br><br>
                                 <div class="txt_body_winner_big text-center">"ประกาศรายชื่อผู้โชคดีวันที่ 17 พฤษภาคม 2560"</div>
                             </div>
                             <div class="tab-pane fade" id="tab2default">  
