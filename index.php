@@ -477,6 +477,7 @@
 
     }
 
+  
     </style>
     
       <!-- The Boutique CSS: -->
@@ -489,30 +490,34 @@
   </head>
 <!--<body class="r_bg">-->
   <body >
+      <div class="visible-xs"> xsxsxsxs </div>
+      <div class="visible-sm> smsmsmsm </div>
+       <div class="visible-lg"> lglglg </div>
+        <div class="visible-md"> mdmdmd </div>
         <div class="main-body">
              <div class="visible-xs">  
-            <div class="container conter2" >
-                <!-- Static navbar -->
-                <nav class="navbar navbar-default " role="navigation">
-                    <div class="navbar-header">
-                      <button type="button" class="navbar-toggle collapsed txt_bu_m_mobile m_logo_on_bar" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                          <img src="images/mobile/menu.png" width="83px">
-                      </button>
-                    </div>
-                    <div id="navbar" class=" navbar-collapse collapse navbar-show-left-t">
-                      <ul class="nav navbar-nav m_bg_bar">
-                        <li><a href="#" class="txt_menu">หน้าแรก</a></li>
-                        <li><a href="#" class="txt_menu">กติกาและของรางวัล</a></li>
-                         <li><a href="#" class="txt_menu">เลือกฮีโร่</a></li>
-                        <li><a href="#" class="txt_menu text-four">โหวตภาพประกวด</a></li>
-                        <li><a href="#" class="txt_menu">ประกาศผู้โชคดี</a></li>
-                        <li><a href="#"><div class="send_work center-block"></div></li>
-                      </ul>
-                    </div><!--/.nav-collapse -->
-                  
-                </nav>
-            </div>
-        </div>  
+                <div class="container conter2" >
+                    <!-- Static navbar -->
+                    <nav class="navbar navbar-default " role="navigation">
+                        <div class="navbar-header">
+                          <button type="button" class="navbar-toggle collapsed txt_bu_m_mobile m_logo_on_bar" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                              <img src="images/mobile/menu.png" width="83px">
+                          </button>
+                        </div>
+                        <div id="navbar" class=" navbar-collapse collapse navbar-show-left-t">
+                          <ul class="nav navbar-nav m_bg_bar">
+                            <li><a href="#" class="txt_menu">หน้าแรก</a></li>
+                            <li><a href="#" class="txt_menu">กติกาและของรางวัล</a></li>
+                             <li><a href="#" class="txt_menu">เลือกฮีโร่</a></li>
+                            <li><a href="#" class="txt_menu text-four">โหวตภาพประกวด</a></li>
+                            <li><a href="#" class="txt_menu">ประกาศผู้โชคดี</a></li>
+                            <li><a href="#"><div class="send_work center-block"></div></li>
+                          </ul>
+                        </div><!--/.nav-collapse -->
+
+                    </nav>
+                </div>
+            </div>  
          
             
             
@@ -626,12 +631,12 @@
 
                 
             </div>   
-            </div>
+          </div>
             <!--<div class="modal-footer" style="height: 0px;">
             </div>-->
-          </div>
+       </div>
       </div>
-    </div>
+</div>
 
 
 

@@ -248,10 +248,64 @@
                 background-attachment: fixed;
 
             }
+            
+             @media (max-width: 768px ) {
+           
+                 .txt_body_winner{
+                        font-family: "db_helvethaica_x";
+                        color: #58595B;
+                        font-weight: bold;  
+                        font-size: 1.4em;
+                    }
+
+                    .txt_body_winner_big{
+                        font-family: "db_helvethaica_x";
+                        color: #0075C9;
+                        font-weight: bold;  
+                        font-size: 1.6em;
+                    }
+
+                    .txt_body_winner_title{
+                        font-family: "db_helvethaica_x";
+                        color: #FCF344;
+                        font-weight: bold;  
+                        font-style:italic;
+                        font-size: 2.6em;
+                        text-shadow: 0 0 3px #000000;
+                    }
+            
+             }
+             
+             @media (max-width: 480px ) {
+                .txt_body_winner{
+                        font-family: "db_helvethaica_x";
+                        color: #58595B;
+                        font-weight: bold;  
+                        font-size: 1.0em;
+                    }
+
+                    .txt_body_winner_big{
+                        font-family: "db_helvethaica_x";
+                        color: #0075C9;
+                        font-weight: bold;  
+                        font-size: 1.2em;
+                    }
+
+                    .txt_body_winner_title{
+                        font-family: "db_helvethaica_x";
+                        color: #FCF344;
+                        font-weight: bold;  
+                        font-style:italic;
+                        font-size: 2em;
+                        text-shadow: 0 0 3px #000000;
+                    }
+             }
+            
   </style>
 </head>
 <body>
 <div class="background-main-rule">
+     <div class="visible-xs"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
     <div class="hidden-xs"><br><br><br><br><br><br> 
     
         <br><br><br><br><br><br><br><br><br><br><br>
@@ -355,7 +409,12 @@
  </div>
 
 <br/>
- <img src="images/footer.png" style="width: 100%; height: 200px; background-repeat: no-repeat;" />
+         <div class="visible-xs">   
+            <img src="images/footer.png" style="width: 100%; height: 200px" />
+        </div>     
+         <div class="hidden-xs">      
+        <img src="images/footer.png" style="width: 100%; height: 400px" />
+        </div>  
 </div>
 
 </body>
