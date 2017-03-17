@@ -490,10 +490,7 @@
   </head>
 <!--<body class="r_bg">-->
   <body >
-      <div class="visible-xs"> xsxsxsxs </div>
-      <div class="visible-sm> smsmsmsm </div>
-       <div class="visible-lg"> lglglg </div>
-        <div class="visible-md"> mdmdmd </div>
+      
         <div class="main-body">
              <div class="visible-xs">  
                 <div class="container conter2" >
