@@ -20,14 +20,14 @@
                     
                 $( "#title_hero" ).change(function() {
 
-                alert(" "+$(this).val());
+               
                 //$("#content1").removeClass("active");
                 $("#content"+$( "#name_type" ).val()).removeClass("in");
                 $("#content"+$( "#name_type" ).val()).removeClass("active");
-                alert("2222222 ");
+              
                 $("#content"+$(this).val()).addClass("in");
                 $("#content"+$( this).val()).addClass("active");
-                alert("3333 ");
+               
                 $( "#name_type" ).val($(this).val());
              });    
             });

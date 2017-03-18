@@ -537,7 +537,7 @@
                             <li><a href="rule" class="txt_menu">กติกาและของรางวัล</a></li>
                           
                            <li class="dropdown">
-                               <a href=" " class="dropdown-toggle" data-toggle="dropdown">เลือกฮีโร่ <b class="caret"></b></a>
+                               <a href=" " class="dropdown-toggle" data-toggle="dropdown"><div class="text-center">เลือกฮีโร่</a> <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     <li><a href="select_hero1" class="txt_menu">อายุน้อยกว่า 8 ปี</a></li>
                                     <li><a href="select_hero2" class="txt_menu">อายุ 8 - 12 ปี</a></li>
@@ -546,7 +546,7 @@
                             
                             <li><a href="showcase" class="txt_menu text-four">โหวตภาพประกวด</a></li>
                             <li><a href="winner_all" class="txt_menu">ประกาศผู้โชคดี</a></li>
-                            <li><a href="send_work"><div class="send_work center-block"></div></li>
+                            <li><a href="send_work" class="txt_menu"><div class="send_work center-block"></div></li>
                         </ul>
                     </div><!--/.nav-collapse -->
                   

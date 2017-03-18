@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
  $(document).ready(function(){
-   //  alert("xxx");
+   
      
     var getUrlParameter = function getUrlParameter(sParam) {
         var sPageURL = decodeURIComponent(window.location.search.substring(1)),
@@ -28,11 +28,9 @@
     if(getUrl){
            
         var targetUrl = getUrl;
-         //alert("=1234 "+getUrl);
-       // alert("=1235 "+targetUrl);
         var targetTitle = "test3";
         window.history.pushState({url: "" + targetUrl + ""}, targetTitle, targetUrl);
-        // alert("=== "+getUrlParameter('targetUrl'));
+     
        select_page(targetUrl);
     }
     //set url
@@ -83,8 +81,7 @@
      
      
    $(".txt_menu").click(function(){
-          
-      // alert("click"+$(this).text());
+       
       var link_txt;
        switch($(this).text()){
             case "หน้าแรก":
@@ -124,6 +121,10 @@
                 link_txt ="page/select_hero2.php";
             break;    
        }
+      
+       if($(this).text()==""){
+            link_txt ="page/send_work.php";
+       }
          $("#content").load(link_txt);
 
     });
@@ -159,7 +160,6 @@
      /** url < (--) >**/
 
     $('.txt_menu').on('click', function(){ 
-
            if($('.navbar-toggle').css('display') !='none'){
                 $(".navbar-collapse.in").collapse('hide');
                // $(".navbar-collapse").toggle('in');
@@ -169,11 +169,10 @@
        });
   
     
-    $(".send_work").click(function(){
-       
-          $("#content").load("page/send_work.php");
-             $('#clear-foot').remove();
+    /*$(".send_work").click(function(){
+          //$("#content").load("page/send_work.php");
+           //  $('#clear-foot').remove();
 
-      });
+      });*/
 
 });
