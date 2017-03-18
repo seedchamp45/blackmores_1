@@ -57,7 +57,7 @@
             $("#menu-nav a[href='" + url + "']").fadeTo(500, 0.3);
         };
 
-        $('#menu-nav .menu_bar1 a').click(function(e){
+        $('#menu-nav  a').click(function(e){
             e.preventDefault();
             var targetUrl = $(this).attr('href'),
                 targetTitle = $(this).attr('title');
