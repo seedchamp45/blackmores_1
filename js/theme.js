@@ -57,8 +57,7 @@
             $("#menu-nav a[href='" + url + "']").fadeTo(500, 0.3);
         };
 
-        $('#menu-nav a').click(function(e){
-            alert("------------");
+        $('#menu-nav .menu_bar1 a').click(function(e){
             e.preventDefault();
             var targetUrl = $(this).attr('href'),
                 targetTitle = $(this).attr('title');
@@ -75,12 +74,12 @@
         };
      /** url < (--) >**/
 
-     $('.nav a').on('click', function(){ 
+        $('.nav a').on('click', function(){ 
 
-            if($('.navbar-toggle').css('display') !='none'){
-                $(".navbar-toggle").trigger( "click" );
-            }
-        });
+               if($('.navbar-toggle').css('display') !='none'){
+                   $(".navbar-toggle").trigger( "click" );
+               }
+           });
   
     
     $(".send_work").click(function(){

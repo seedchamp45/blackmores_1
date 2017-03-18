@@ -106,7 +106,19 @@
         .ol_left {
             margin-left: 2px;
         }
-          
+        
+        @media (max-width: 480px ) {
+            .bg_block{
+                 background: url(images/mobile/bg_rule.png) no-repeat center top local; 
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: 100%;
+                margin-top: -300px;
+
+                background-attachment: fixed;
+            }
+        }
         </style>
 
  <link rel="stylesheet" href="css/mobile.css">

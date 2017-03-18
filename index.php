@@ -505,6 +505,8 @@
         margin-right: 10%;
 
     }
+    
+    
 
     </style>
     
@@ -530,14 +532,22 @@
                     </div>
                     <div id="navbar" class=" navbar-collapse collapse navbar-show-left-t">
                         <ul class="nav navbar-nav  m_bg_bar" id="menu-nav">
-                            <li><a href="หน้าแรก.php" class="txt_menu">หน้าแรก</a></li>
-                            <li><a href="#" class="txt_menu">กติกาและของรางวัล</a></li>
-                             <li><a href="#" class="txt_menu">เลือกฮีโร่</a></li>
-                             <li><a href="#" class="txt_menu">อายุน้อยกว่า 8 ปี</a></li>
-                             <li><a href="#" class="txt_menu">อายุ 8 - 12 ปี</a></li>
-                            <li><a href="#" class="txt_menu text-four">โหวตภาพประกวด</a></li>
-                            <li><a href="#" class="txt_menu">ประกาศผู้โชคดี</a></li>
-                            <li><a href="#"><div class="send_work center-block"></div></li>
+                            <li class="menu_bar1"><a href="หน้าแรก.php" class="txt_menu">หน้าแรก</a></li>
+                            <li class="menu_bar1"><a href="#" class="txt_menu">กติกาและของรางวัล</a></li>
+                          
+                           <li class="dropdown txt_menu">
+                               <a href="#" class="dropdown-toggle" data-toggle="dropdown">เลือกฮีโร่ <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li class="divider"></li>
+                                    <li><a href="#" class="txt_menu">อายุน้อยกว่า 8 ปี</a></li>
+                                    <li><a href="#" class="txt_menu">อายุ 8 - 12 ปี</a></li>
+                                    <li><a href="#">Dropdown Link 3</a></li>
+                                </ul>
+                           </li>
+                            
+                            <li class="menu_bar1"><a href="#" class="txt_menu text-four">โหวตภาพประกวด</a></li>
+                            <li class="menu_bar1"><a href="#" class="txt_menu">ประกาศผู้โชคดี</a></li>
+                            <li class="menu_bar1"<a href="#"><div class="send_work center-block"></div></li>
                         </ul>
                     </div><!--/.nav-collapse -->
                   
@@ -579,13 +589,6 @@
                 </nav>
             </div>
         </div>   
-            
-            
-            
-            
-            
-            
-            
          <div id="content">
             <div class="visible-xs">
                 <div class="row home_body scale_img">

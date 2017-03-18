@@ -235,7 +235,7 @@ and open the template in the editor.
     
  @media (max-width: 480px ) {
      .main-body{
-         background-image: url("../images/mobile/bg3.jpg") ;
+         background-image: url("../images/mobile/bg4.jpg") ;
         background-image-size: 100% 100%;
         background-repeat: no-repeat;
         background-position: left top;
@@ -471,6 +471,15 @@ and open the template in the editor.
         background-size: 320px 100%;
     }
     
+    .form_input_type_mobile{
+        width: 100%;
+        background-size: 100% 100%;
+    }
+    .image-upload_moblie{
+          margin-top: 10px;
+    }
+
+    
     .bg_block {
         background-image: url(../images/rule/r_block_bg.png);
         background-repeat: no-repeat;
@@ -511,7 +520,9 @@ and open the template in the editor.
       .iden {
         padding-left: 0px; 
       }
-     
+    
+    
+        
         
        /*hero*/
 }
