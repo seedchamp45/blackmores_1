@@ -663,8 +663,8 @@
                 
             </div>   
             </div>
-            <!--<div class="modal-footer" style="height: 0px;">
-            </div>-->
+            <div class="modal-footer" style="height: 0px;">
+            </div>
           </div>
       </div>
     </div>
