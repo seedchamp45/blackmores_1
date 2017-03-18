@@ -7,7 +7,7 @@
             
             var url = window.location.protocol + "//" + window.location.host +"/"+pathArray[1]+"/index.php?page="+pathArray[2];
            window.location= url;
-           alert(url);
+           
         </script>
          <!---- ---->
     </head>
