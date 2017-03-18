@@ -119,6 +119,7 @@
                 background-attachment: fixed;
             }
         }
+        
         </style>
 
  <link rel="stylesheet" href="css/mobile.css">
