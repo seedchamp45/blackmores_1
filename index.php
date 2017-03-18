@@ -532,22 +532,21 @@
                     </div>
                     <div id="navbar" class=" navbar-collapse collapse navbar-show-left-t">
                         <ul class="nav navbar-nav  m_bg_bar" id="menu-nav">
-                            <li><a href="หน้าแรก.php" class="txt_menu">หน้าแรก</a></li>
-                            <li><a href="#" class="txt_menu">กติกาและของรางวัล</a></li>
+                            <li><img src="./images/mobile/header.png" class="img-responsive center-block" width="80%"></li>
+                            <li><a href="index" class="txt_menu">หน้าแรก</a></li>
+                            <li><a href="rule" class="txt_menu">กติกาและของรางวัล</a></li>
                           
-                           <li class="dropdown txt_menu">
-                               <a href="#" class="dropdown-toggle" data-toggle="dropdown">เลือกฮีโร่ <b class="caret"></b></a>
+                           <li class="dropdown">
+                               <a href=" " class="dropdown-toggle" data-toggle="dropdown">เลือกฮีโร่ <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
-                                    <li class="divider"></li>
-                                    <li><a href="#" class="txt_menu">อายุน้อยกว่า 8 ปี</a></li>
-                                    <li><a href="#" class="txt_menu">อายุ 8 - 12 ปี</a></li>
-                                    <li><a href="#">Dropdown Link 3</a></li>
+                                    <li><a href="select_hero1" class="txt_menu">อายุน้อยกว่า 8 ปี</a></li>
+                                    <li><a href="select_hero2" class="txt_menu">อายุ 8 - 12 ปี</a></li>
                                 </ul>
                            </li>
                             
-                            <li><a href="#" class="txt_menu text-four">โหวตภาพประกวด</a></li>
-                            <li><a href="#" class="txt_menu">ประกาศผู้โชคดี</a></li>
-                            <li><a href="#"><div class="send_work center-block"></div></li>
+                            <li><a href="showcase" class="txt_menu text-four">โหวตภาพประกวด</a></li>
+                            <li><a href="winner_all" class="txt_menu">ประกาศผู้โชคดี</a></li>
+                            <li><a href="send_work"><div class="send_work center-block"></div></li>
                         </ul>
                     </div><!--/.nav-collapse -->
                   
@@ -576,13 +575,13 @@
                     <div id="navbar" class=" navbar-collapse collapse navbar-show-left-t" style="
         padding-top: 40px;">
                       <ul class="nav navbar-nav nav-nav-left-t" id="menu-nav">
-                        <li class="size-li-small"><a href="หน้าแรก.php" class="txt_menu">หน้าแรก</a></li>
-                        <li class="size-li-big"><a href="กติกาและของรางวัล.php" class="txt_menu">กติกาและของรางวัล</a></li>
-                        <li class="size-li-small"><a href="#" class="txt_menu">เลือกฮีโร่</a></li>
-                        <li class="size-li-very"><img src="./images/logo-navbar.png" style="width: 100%;"></li>
-                        <li class="size-li-big"><a href="#" class="txt_menu text-four">โหวตภาพประกวด</a></li>
-                        <li class="size-li-big"><a href="#" class="txt_menu">ประกาศผู้โชคดี</a></li>
-                        <li class="size-li-small"><a href="#" class="txt_menu">ส่งผลงาน</a></li>
+                        <li class="size-li-small"><a href="index" class="txt_menu">หน้าแรก</a></li>
+                        <li class="size-li-big"><a href="rule" class="txt_menu">กติกาและของรางวัล</a></li>
+                        <li class="size-li-small"><a href="select_hero" class="txt_menu">เลือกฮีโร่</a></li>
+                        <li class="size-li-very"><img src="./images/logo-navbar" style="width: 100%;"></li>
+                        <li class="size-li-big"><a href="showcase" class="txt_menu text-four">โหวตภาพประกวด</a></li>
+                        <li class="size-li-big"><a href="winner_all" class="txt_menu">ประกาศผู้โชคดี</a></li>
+                        <li class="size-li-small"><a href="send_work" class="txt_menu">ส่งผลงาน</a></li>
                       </ul>
                     </div><!--/.nav-collapse -->
                   </div>

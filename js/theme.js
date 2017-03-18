@@ -39,7 +39,6 @@
      
      function select_page(name){
          switch(name){
-           
             case  "index.php":
                  $("#add-foot").append('    <div class="bg_footer2" id = "clear-foot" > <div style=" background: url(images/bu_toggle_up.png) no-repeat center ; margin-left: 40%; margin-right: 40%; margin-top: 20px; width: 20%; height: 100px;"> <button type="button" style="opacity: 0; width: 100%; height: 100px;" data-toggle="modal" data-target="#myModal">Open Modallllllllll</button> </div> </div>');
                 link_txt ="page/index.php";
@@ -83,56 +82,56 @@
      
      
      
-    $(".txt_menu").click(function(){
-          $('#clear-foot').remove();
+   $(".txt_menu").click(function(){
+          
       // alert("click"+$(this).text());
       var link_txt;
-       
        switch($(this).text()){
             case "หน้าแรก":
                  $("#add-foot").append('    <div class="bg_footer2" id = "clear-foot" > <div style=" background: url(images/bu_toggle_up.png) no-repeat center ; margin-left: 40%; margin-right: 40%; margin-top: 20px; width: 20%; height: 100px;"> <button type="button" style="opacity: 0; width: 100%; height: 100px;" data-toggle="modal" data-target="#myModal">Open Modallllllllll</button> </div> </div>');
                 link_txt ="page/index.php";
-               break;
+            break;
+            
             case "กติกาและของรางวัล":
                 link_txt ="page/rule.php";
-               break;
+            break;
             
-             case "ส่งผลงาน":
+            case "ส่งผลงาน":
                  link_txt ="page/send_work.php";
-               break;
+            break;
                
             case "โหวตภาพประกวด":
                 link_txt ="page/showcase.php";
-               break;
+            break;
              
             case "ประกาศผู้โชคดี":
                 link_txt ="page/winner_all.php";
-               break;
+            break;
                
             case "ร่วมกิจกรรม":
                 link_txt ="page/activity.php";
-                break;
+            break;
                 
             case "เลือกฮีโร่":
                 link_txt ="page/select_helo.php";
-                break;    
+            break;    
                 
             case "อายุน้อยกว่า 8 ปี":
                 link_txt ="page/select_hero1.php";
-                break; 
+            break; 
                 
             case "อายุ 8 - 12 ปี":
                 link_txt ="page/select_hero2.php";
-                break;    
+            break;    
        }
          $("#content").load(link_txt);
 
     });
     
-    /** url < (--) >**/
-       
+    
+        /** url < (--) >**/
 
-        $('#menu-nav  a').click(function(e){
+        /*$('#menu-nav  a').click(function(e){
             e.preventDefault();
             var targetUrl = $(this).attr('href')+".php",
                 targetTitle = $(this).attr('title');
@@ -141,19 +140,33 @@
 
             window.history.pushState({url: "" + targetUrl + ""}, targetTitle, targetUrl);
            
+        });*/
+                                                                             
+        $('.txt_menu').click(function(e){
+            e.preventDefault();
+            var targetUrl = $(this).attr('href')+".php",
+             targetTitle = $(this).attr('title');
+            //$("#menu-nav a[href='" + window.location.pathname + "']").fadeTo(500, 1.0);
+            
+            window.history.pushState({url: "" + targetUrl + ""}, targetTitle, targetUrl);
+           
         });
-
+        
+        /*
         window.onpopstate = function(e) {
             $("#menu-nav a").fadeTo('fast', 1.0);
-        };
+        };*/
      /** url < (--) >**/
 
-        $('.nav a').on('click', function(){ 
+    $('.txt_menu').on('click', function(){ 
 
-               if($('.navbar-toggle').css('display') !='none'){
-                   $(".navbar-toggle").trigger( "click" );
-               }
-           });
+           if($('.navbar-toggle').css('display') !='none'){
+                $(".navbar-collapse.in").collapse('hide');
+               // $(".navbar-collapse").toggle('in');
+             //$('.navbar-toggle').collapse('hide');
+             // $(".navbar-toggle").trigger( "click" );
+           }
+       });
   
     
     $(".send_work").click(function(){

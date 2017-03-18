@@ -242,6 +242,10 @@ and open the template in the editor.
         background-attachment: scroll;
         background-size: 100% 100%;
      }
+     
+     .navbar-default-blue{
+         background-color: rgb(56, 162, 202);
+     }
     /*moblie*/
        /*.test{
            //background-color: #000;
