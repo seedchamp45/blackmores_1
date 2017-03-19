@@ -10,9 +10,9 @@ $(function(){
      });
 
     $(".select_image_face").click(function(){
-
+      load_data_image(this.value);
        // $("#name_pic").val("2");
-      alert("กรุณา log in ผ่าน facebook เพื่อโหวต");
+      //alert("กรุณา log in ผ่าน facebook เพื่อโหวต");
         //vote_data_image(this.value);
      });
      
@@ -136,33 +136,27 @@ if(!isset($_SESSION['fb_access_token'])) :
     $image_id = $rowdata['image_id'];
   //echo '<li> <img src="./images/home_body_left.png" class=" img-responsive center-block"/> '.$id.') <strong>'.$name.'</strong> : '.$message.'</li>';  
 
-    echo'<div class="col-xs-12 col-sm-12 col-md-6 col-lg-3" >
+    echo'<div class="col-xs-6 col-sm-6 col-md-6 col-lg-3" >
             <div class="thumbnail">
-            <img src="page/upload/'. $pic .'" value = "page/upload/'. $pic .'" class=" img-responsive center-block" style="height: 200px; width: 100%; display: block;"/>
+            <img src="page/upload/'. $pic .'" value = "page/upload/'. $pic .'" class=" img-responsive center-block" style="height: 139px; width: 200px; display: block;"/>
               <div class="caption " >
-                   <div class="row thumbnail_gallery">
-                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-right">
-                         <br>
+                   <div class="row thumbnail_gallery style="height: 45px;"">
+                      <br>
+                       <div class="col-xs-5  col-sm-5 col-md-5 col-lg-5 text-left block_txt_gallery" style = "width: 100%;">
+                          <div class="txt_gallery_detail">'. $username .' '. $age .' ปี</div> 
                        </div>
-                       <div class="col-xs-12  col-sm-5 col-md-5 col-lg-5 text-left block_txt_gallery">
-                          <div class="txt_gallery_detail">'. $username .'</div> 
+                        <br>
+                        <div class="col-xs-12 col-sm-4 col-md-4  col-lg-4 text-right block_txt_gallery" style = "width: 100%;">
+                            <div class="txt_gallery_detail inline" value="'. $rowdata['image_id'].'" style = "float:left;"><img src="images/gallery/star_0.png" class="img-responsive img_inline" style = "float:left;"> <div class="vote_gallery">' .$vote .' โหวต</div> </div> 
                        </div>
-                        <div class="col-xs-12  col-sm-3 col-md-3 col-lg-3 block_txt_gallery">
-                           <div class="txt_gallery_detail">'. $age .' ปี</div> 
-                       </div>
-                        <div class="col-xs-12 col-sm-4 col-md-4  col-lg-4 text-right block_txt_gallery">
-                            <div class="txt_gallery_detail inline" value="'. $rowdata['image_id'].'"><img src="images/gallery/star_0.png" class="img-responsive img_inline"> <div class="vote_gallery">' .$vote .' โหวต</div> </div> 
-                       </div>
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-right">
-                         <br>
-                       </div>
+                      
                    </div>
-
+                   <br>
               </div>
 
-            <div class="center-block text-center row_h_1">
+            <div class="center-block text-center row_h_1" style= "margin:0px; padding:0px; float:center;">
                 
-                    <button type="submit" id="select_image" class="btn btn-default1  center-block txt_bu_gallery select_image_face"  data-target=".bs-example-modal-lg" value="'. $rowdata['image_id'].'">โหวตเลย</button>
+                    <button type="submit" id="select_image" class="btn btn-default1  center-block txt_bu_gallery select_image"  data-target=".bs-example-modal-lg" value="'. $rowdata['image_id'].'" style = "margin:auto; padding:auto; width:100px; float:center;">โหวตเลย</button>
                </div>
         </div>
        </div>';
@@ -193,65 +187,54 @@ else :
     $user_check_count = mysqli_num_rows($user_check);
 
   if($user_check_count) :
-          echo'<div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 check-width" >
+          echo'<div class="col-xs-6 col-sm-6 col-md-6 col-lg-3" >
             <div class="thumbnail">
-            <img src="page/upload/'. $pic .'"  value = "page/upload/'. $pic .'" class=" img-responsive center-block" style="height: 200px; width: 100%; display: block;"/>
+            <img src="page/upload/'. $pic .'" value = "page/upload/'. $pic .'" class=" img-responsive center-block" style="height: 139px; width: 200px; display: block;"/>
               <div class="caption " >
-                   <div class="row thumbnail_gallery">
-                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-right">
-                         <br>
-                       </div>
-                       <div class="col-xs-12  col-sm-5 col-md-5 col-lg-5 text-left block_txt_gallery">
-                          <div class="txt_gallery_detail">'. $username .'</div> 
-                       </div>
-                        <div class="col-xs-12  col-sm-3 col-md-3 col-lg-3 block_txt_gallery">
-                           <div class="txt_gallery_detail">'. $age .' ปี</div> 
-                       </div>
-                        <div class="col-xs-12 col-sm-4 col-md-4  col-lg-4 text-right block_txt_gallery">
-                            <div class="txt_gallery_detail inline" value="'. $rowdata['image_id'].'"><img src="images/gallery/star_0.png" class="img-responsive img_inline"> <div class="vote_gallery">' .$vote .' โหวต</div> </div> 
-                       </div>
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-right">
-                         <br>
-                       </div>
-                   </div>
+                   <div class="row thumbnail_gallery style="height: 45px;"">
 
+                      <br>
+                       <div class="col-xs-5  col-sm-5 col-md-5 col-lg-5 text-left block_txt_gallery" style = "width: 100%;">
+                          <div class="txt_gallery_detail">'. $username .' '. $age .' ปี</div> 
+                       </div>
+                        <br>
+                        <div class="col-xs-12 col-sm-4 col-md-4  col-lg-4 text-right block_txt_gallery" style = "width: 100%;">
+                            <div class="txt_gallery_detail inline" value="'. $rowdata['image_id'].'" style = "float:left;"><img src="images/gallery/star_0.png" class="img-responsive img_inline" style = "float:left;"> <div class="vote_gallery">' .$vote .' โหวต</div> </div> 
+                       </div>
+                      
+                   </div>
+                   <br>
               </div>
 
-            <div class="center-block text-center row_h_1">
+            <div class="center-block text-center row_h_1" style= "margin:0px; padding:0px; float:center; ">
                 
-                    <button type="submit" id="" class="btn btn-default1  center-block txt_bu_gallery" name = "page/upload/'. $pic .'" style = "opacity: 0;" data-target=".bs-example-modal-lg" value="'. $rowdata['image_id'].'">โหวตเลย</button>
+                    <button type="submit" id="" class="btn btn-default1  center-block txt_bu_gallery" name = "page/upload/'. $pic .'" style = "opacity: 0;" data-target=".bs-example-modal-lg" value="'. $rowdata['image_id'].'" style = "margin:auto; padding:auto; width:100px; float:center;">โหวตเลย</button>
                </div>
         </div>
        </div>';
   else :
         
-    echo'<div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 check-width" >
+    echo'<div class="col-xs-6 col-sm-6 col-md-6 col-lg-3" >
             <div class="thumbnail">
-            <img src="page/upload/'. $pic .'" value = "page/upload/'. $pic .'" class=" img-responsive center-block" style="height: 200px; width: 100%; display: block;"/>
+            <img src="page/upload/'. $pic .'" value = "page/upload/'. $pic .'" class=" img-responsive center-block" style="height: 139px; width: 200px; display: block;"/>
               <div class="caption " >
-                   <div class="row thumbnail_gallery">
-                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-right">
-                         <br>
+                   <div class="row thumbnail_gallery style="height: 45px;"">
+                      <br>
+                       <div class="col-xs-5  col-sm-5 col-md-5 col-lg-5 text-left block_txt_gallery" style = "width: 100%;">
+                          <div class="txt_gallery_detail">'. $username .' '. $age .' ปี</div> 
                        </div>
-                       <div class="col-xs-12  col-sm-5 col-md-5 col-lg-5 text-left block_txt_gallery">
-                          <div class="txt_gallery_detail">'. $username .'</div> 
+                        <br>
+                        <div class="col-xs-12 col-sm-4 col-md-4  col-lg-4 text-right block_txt_gallery" style = "width: 100%;">
+                            <div class="txt_gallery_detail inline" value="'. $rowdata['image_id'].'" style = "float:left;"><img src="images/gallery/star_0.png" class="img-responsive img_inline" style = "float:left;"> <div class="vote_gallery">' .$vote .' โหวต</div> </div> 
                        </div>
-                        <div class="col-xs-12  col-sm-3 col-md-3 col-lg-3 block_txt_gallery">
-                           <div class="txt_gallery_detail">'. $age .' ปี</div> 
-                       </div>
-                        <div class="col-xs-12 col-sm-4 col-md-4  col-lg-4 text-right block_txt_gallery">
-                            <div class="txt_gallery_detail inline" value="'. $rowdata['image_id'].'"><img src="images/gallery/star_0.png" class="img-responsive img_inline"> <div class="vote_gallery">' .$vote .' โหวต</div> </div> 
-                       </div>
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-right">
-                         <br>
-                       </div>
+                      
                    </div>
-
+                   <br>
               </div>
 
-            <div class="center-block text-center row_h_1">
+            <div class="center-block text-center row_h_1" style= "margin:0px; padding:0px; float:center;">
                 
-                    <button type="submit" id="select_image" class="btn btn-default1  center-block txt_bu_gallery select_image"  data-target=".bs-example-modal-lg" value="'. $rowdata['image_id'].'">โหวตเลย</button>
+                    <button type="submit" id="select_image" class="btn btn-default1  center-block txt_bu_gallery select_image"  data-target=".bs-example-modal-lg" value="'. $rowdata['image_id'].'" style = "margin:auto; padding:auto; width:100px; float:center;">โหวตเลย</button>
                </div>
         </div>
        </div>';

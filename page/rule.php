@@ -81,7 +81,7 @@
 
         .footer-pic
         {
-            width: 100%; height: 400px;
+            width: 100%; 
         }
 
         @media (max-width: 768px){
@@ -99,7 +99,7 @@
         }
          .footer-pic
             {
-                width: 100%; height: 100px;
+                width: 100%;
             }
         }
 

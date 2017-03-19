@@ -176,7 +176,7 @@
                 }
                 
                 .bg_winner{
-                  height: 120%;
+                  height: 170%;
                    
                  }
                    
@@ -206,12 +206,16 @@
                     font-weight: normal;
                 }
                   .bg_winner{
-                  height: 140%;
+                  height: 150%;
                    
                  }
             }
             
              @media (min-width: 992px){
+              .cheack-pic-and-label
+              {
+                margin-top: 50px;
+              }
                .heg_txt{
                  height: 4.2em;
                 }
@@ -572,7 +576,7 @@
 
                                                         <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1"></div>
                                                         <br><br><br><br>
-                                                        <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 ">
+                                                        <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 cheack-pic-and-label">
                                                         <!-- End of the Boutique HTML -->
                                                            <!--helo 1-->
                                                             <div id="content1" class="content">
@@ -617,7 +621,7 @@
                                                                  </div>
                                                                 <br>
                                                                 <br>
-                                                                <div class="row">
+                                                                <div class="row cheack-pic-and-label">
                                                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
 
                                                                         <a href="download/C BRIGHT.jpg"  download><img src="images/helo/bu_download.png" class="bu_download img-responsive center-block"></a>
@@ -1026,6 +1030,7 @@
             </div>
         </div>       
     </div> 
+     <img src="images/footer.png" style="width: 100%;" />
        <!-- <div class="visible-xs">   
             <img src="images/footer.png" style="width: 100%; height: 200px" />
         </div>     

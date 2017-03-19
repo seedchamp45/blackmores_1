@@ -469,12 +469,10 @@
        </div>
    </div>
    <br/>
-         <div class="visible-xs">   
-            <img src="images/footer.png" style="width: 100%; height: 200px" />
-        </div>     
-         <div class="hidden-xs">      
-        <img src="images/footer.png" style="width: 100%; height: 400px" />
-        </div>  
+
+            <img src="images/footer.png" style="width: 100%;" />
+       
+
  </div>
 
 

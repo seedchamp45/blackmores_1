@@ -626,6 +626,13 @@
                     top: 20px;
 
                 }
+        .scrollview-text {
+            height: 600px;
+
+            overflow: auto;
+
+            
+        }
             
         </style>
     </head>
@@ -641,12 +648,14 @@
                         <br>
                     </div>
                 </div>
+               
                 <div class="row">
                     <div class="col-xs-1"></div>
                     <div class="col-xs-10">     
                         <img src="images/mobile/pop_txt_8_12.png" class="img-responsive center-block" width="90%" height="90%">
                         <div class="row">
                             <div class="bg_block_hero2">
+                             <div class="scrollview-text">
                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
                                    <br>
                                      
@@ -780,10 +789,12 @@
                         </div>
                     </div>
                     <div class="col-xs-1"></div>
+
+                </div>
                 </div>
                  
             </div>
-            
+             <img src="images/footer.png" style="width: 100%;" />
         </div> 
   
       

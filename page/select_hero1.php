@@ -714,6 +714,7 @@
         </div> --> 
                 </div>     
             </div>
+             <img src="images/footer.png" style="width: 100%;" />
         </div>
   
       

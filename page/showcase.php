@@ -513,15 +513,15 @@ button:hover, button:active, button:focus{background: #f3f3f3;outline: none;}
 }
 
 .thumbnail_gallery{
-    padding-left: 4px;
-    padding-right: 4px;
+    padding-left: 1px;
+    padding-right:1px;
     margin-left: 0px;
     margin-right: 0px;
 }
 
 .block_txt_gallery{                                                  
     padding-left: 2px;
-    padding-right: 5px;
+    padding-right: 2px;
 }
 
 
@@ -617,6 +617,15 @@ abbr[title2] {
                     margin: auto;
 }
 
+.vote-label
+{
+  margin-left: 28%; margin-top: 2%; float: left;
+}
+
+.pic-vote-label
+{
+  width: 40%; float: right; margin-right: 20%;
+}
 .panel-body {
     padding: 30px;
 }
@@ -683,7 +692,19 @@ ul.nav-tabs li {
 
             }
 
-                  @media screen and (min-device-width: 481px) and (max-device-width: 768px){
+                  @media screen and (min-device-width: 361px) and (max-device-width: 768px){
+
+                .pic-vote-label
+                {
+                  width: 100% !important;
+                  float: center !important;
+                  margin: auto;
+                }
+                .vote-label
+{
+ margin: auto;
+}
+
                 .screen-short
                 {
                   margin-top: 300px !important;
@@ -691,8 +712,27 @@ ul.nav-tabs li {
 
                 .facebook-pic
                 {
-                  width: 100% !important;
+                      margin: auto;
+                   width: 50%;
+                    height: 35px;
                 }
+
+                .bar-yellow
+                {
+                  margin-top: 0px;
+                }
+                .bar-blue
+                {
+                  margin-top: 0px;
+                }
+                .check-screen
+                {
+                  padding-right: 0px;
+
+                  padding-left  : 0px !important;
+                  padding-top: 20px;
+                }
+
               }
             
 
@@ -702,8 +742,8 @@ ul.nav-tabs li {
 </head>
 <body>
 <div class="background-main-rule">
+    <div id="check-width-br"></div>
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <div class="screen-short">
     <div class="container">
   
@@ -743,16 +783,16 @@ ul.nav-tabs li {
 
                         <div class="row ">
                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                <div class="text_title_gallery"><p style="margin-left: 28%; margin-top: 2%; float: left;">  วิธีการโหวต 
+                                <div class="text_title_gallery"><p class="vote-label" ">  วิธีการโหวต 
                                   
                                   </p>
-                                  <img src="images/howtoplayy.png" style="width: 40%; float: right; margin-right: 20%;"/>
+                                  <img src="images/howtoplayy.png" class="pic-vote-label" />
                                 </div> 
                             </div>
                         </div>
                     
                     
-                        <div class="panel-body">
+                        <div class="panel-body check-screen">
                             <div class="tab-content prepareadd" id = "addDiv" style="margin-left: 20px;">
 
                               <div id="results" >
@@ -775,6 +815,25 @@ ul.nav-tabs li {
 
 
 <script type="text/javascript">
+  $(document).ready(function() {
+    // Optimalisation: Store the references outside the event handler:
+    var $window = $(window);
+    var $pane = $('#pane1');
+
+    function checkWidth() {
+        var windowsize = $window.width();
+        if (windowsize > 990) {
+          $('#check-width-br').append('<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>');
+       
+            //if the window is greater than 440px wide then turn on jScrollPane..
+          
+        }
+    }
+    // Execute on load
+    checkWidth();
+    // Bind event listener
+    $(window).resize(checkWidth);
+});
     var track_page = 1; //track user click as page number, righ now page number 1
     load_contents(track_page); //load content
 
@@ -861,7 +920,7 @@ ul.nav-tabs li {
 
                     <div class="row">
 
-                        <div class="col-xs-12 col-md-7 col-lg-7 vcenter" style="height: 40%; width: 40%; float: left;">
+                        <div class="col-xs-12 col-md-7 col-lg-7 vcenter" style="width: 55%; float: left;">
                             <img src="images/gallery/image_pop_detail.jpg" name = "share_pic" class="img-responsive center-block image_value" style="height: 100%; width: 100%; float: left;"/>
                             
                         </div>

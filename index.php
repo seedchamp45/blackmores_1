@@ -314,6 +314,7 @@
         background-attachment: scroll;
         background-size: 100% 90%;
         height:100%;
+        margin-top: 20px !important;
     }
     
     .txt_body_popup{
@@ -361,6 +362,11 @@
 
 
     @media (max-width: 768px){
+      .bg_popup
+      {
+        margin-top: 0px !important;
+        margin-left: 0px !important;
+      }
       .foot-nev
       {
         background-size: 150px 60px;
@@ -476,6 +482,16 @@
 
     }
 
+    @media (min-width: 1440px)
+    {
+            .pic-nav
+      {
+        width: 100%;
+        margin-top: 0px !important;
+      }
+
+    }
+
     @media (min-width: 1080px){
       .foot-nev
       {
@@ -487,6 +503,11 @@
       .txt_menu
       {
         font-size: 12px;
+      }
+      .pic-nav
+      {
+        width: 100%;
+        margin-top: -20px;
       }
 
     }
@@ -502,7 +523,7 @@
     {
         margin-top: 7%;
         width: 35%;
-        margin-right: 10%;
+        margin-right: 1%;
 
     }
     
@@ -578,10 +599,11 @@
                         <li class="size-li-small"><a href="index" class="txt_menu">หน้าแรก</a></li>
                         <li class="size-li-big"><a href="rule" class="txt_menu">กติกาและของรางวัล</a></li>
                         <li class="size-li-small"><a href="select_hero" class="txt_menu">เลือกฮีโร่</a></li>
-                        <li class="size-li-very"><img src="./images/logo-navbar" style="width: 100%;"></li>
+                        <li class="size-li-very"><img src="./images/logo-navbar.png" class = "pic-nav"></li>
                         <li class="size-li-big"><a href="showcase" class="txt_menu text-four">โหวตภาพประกวด</a></li>
                         <li class="size-li-big"><a href="winner_all" class="txt_menu">ประกาศผู้โชคดี</a></li>
-                        <li class="size-li-small"><a href="send_work" class="txt_menu">ส่งผลงาน</a></li>
+                        <li class="size-li-small"><a href="send_work" class="txt_menu">ส่งผลงาน</a>
+                        </li>
                       </ul>
                     </div><!--/.nav-collapse -->
                   </div>
@@ -640,7 +662,7 @@
       
 <!-- comment -->
   <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
+    <div class="modal-dialog" style="padding: auto; margin: auto;">
     
       <!-- Modal content-->
       <div class="modal-content1">

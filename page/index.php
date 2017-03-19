@@ -1,10 +1,10 @@
 <html>
 <body>
 
-             <div class="visible-xs">
+            <div class="visible-xs">
                 <div class="row home_body scale_img">
                     <div class="col-xs-12">
-                       <div class="col-xs-12"><img src="./images/mobile/header.png" class="img-responsive" /></div>
+                        <div class="col-xs-12"><img src="./images/mobile/header.png" class="img-responsive"/></div>
 
                    </div>
                    <div class="col-xs-12 ">
@@ -29,11 +29,22 @@
                     <img src="./images/m_t_1.png" style="width: 100%;" />
                    </div>
 
-                   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 col-lg-offset-1 div-show-right-t">
-                                     <img src="./images/home_body_left.png" style="width: 100%;" />
-                  </div>
-               </div>
+  
+
+               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 col-lg-offset-1 div-show-right-t">
+                                 <img src="./images/home_body_left.png" style="width: 100%;" />
+              </div>
+           </div>
+           </div>
+                <div id = "add-foot">
+           
+            <div class="bg_footer2" id = "clear-foot" >
+                 <div  class="foot-nev">
+                 <button type="button" style="opacity: 0; width: 100%; height: 100%; margin-top: -5%;" data-toggle="modal" data-target="#myModal">Open Modal</button>
+                 </div>
              </div>
+         </div>
+          </div>
 
 </body>
 </html> 
