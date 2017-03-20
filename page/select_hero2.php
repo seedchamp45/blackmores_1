@@ -351,7 +351,22 @@
                 -o-background-size: cover;
                 background-size: 100%;
                 margin-top: -300px;
-           
+
+                background-attachment: fixed;
+
+            }
+
+                        @media (min-width: 320px){
+                .background-main-rule
+            {
+                background: url(images/newBackground.png) no-repeat center top local !important; 
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: 100% 150% !important; 
+                margin-top: -300px;
+                                      overflow-x: hidden;
+overflow-y: scroll;
                 background-attachment: fixed;
 
             }
@@ -438,7 +453,7 @@
                     -webkit-background-size: cover;
                     -moz-background-size: cover;
                     -o-background-size: cover;
-                    background-size: 100%;
+                    /*background-size: 100%;*/
                     margin-top: -300px;
 
                     background-attachment: fixed;
@@ -627,8 +642,8 @@
 
                 }
         .scrollview-text {
-            height: 600px;
-
+            height: 500px;
+            margin-top: 20px;
             overflow: auto;
 
             
@@ -660,7 +675,34 @@
                                    <br>
                                      
                                     <!--1-->
-                                     <div class="row">
+                    
+                                   <!--2-->
+                                    <div class="row">
+                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+                                                <img src="images/mobile/icon/CB.png" class="img-responsive center-block show-case-pic" width="50%" height="50%"><br>
+                                                <dt class="txt_r r_title1_yellow text-center yellow heg_txt">
+                                                    <div class="c_h">ลักษณะ<br></div>
+                                                </dt>       
+                                                 <dt class="txt_r r_body1 text-center heg_txt">
+                                                    <div class="c_h">ฮีโร่สาวผิวสุขภาพดี ขาวกระจ่างใสมีออร่า<br> สวยสะกด</div><br>
+                                                </dt> 
+                                                <dt class="txt_r r_title1_yellow text-center yellow heg_txt">
+                                                    <div class="c_h">ความสามารถพิเศษ</div>
+                                                </dt>        
+                                                <dt class="txt_r r_body1 text-center heg_txt">
+                                                    <div class="c_h">มีภูมิคุ้มกันพิเศษป้องกัน ไข้หวัดในทุกสภาพอากาศ</div><br>
+                                                </dt>    
+                                                <dt class="txt_r r_title1_yellow text-center yellow heg_txt">
+                                                    <div class="c_h">อาวุธประจำกาย</div>
+                                                </dt>   
+                                                <dt class="txt_r r_body1 text-center heg_txt">
+                                                    <div class="c_h">โล่วิเศษ ช่วยป้องกันไข้หวัด<br> เกราะคอลลาเจน ช่วยคุ้มกัน พลังความกระจ่างใสของผิว</div>
+                                                </dt> 
+                                            </div>
+                                        <br>
+                                     </div>
+
+                                                    <div class="row">
                                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
                                                 <img src="images/mobile/icon/CPF.png" class="img-responsive center-block show-case-pic" width="50%" height="50%"><br>
                                                 <dt class="txt_r r_title1_blue text-center yellow heg_txt">
@@ -683,31 +725,6 @@
                                                 </dt> 
                                             </div>
                                          <br>
-                                     </div>
-                                   <!--2-->
-                                    <div class="row">
-                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
-                                                <img src="images/mobile/icon/CB.png" class="img-responsive center-block show-case-pic" width="50%" height="50%"><br>
-                                                <dt class="txt_r r_title1_yellow text-center yellow heg_txt">
-                                                    <div class="c_h">ลักษณะ<br></div>
-                                                </dt>       
-                                                 <dt class="txt_r r_body1 text-center heg_txt">
-                                                    <div class="c_h">ฮีโร่สาวผิวสุขภาพดี ขาวกระจ่างใสมีออร่า<br> สวยสะกด</div><br>
-                                                </dt> 
-                                                <dt class="txt_r r_title1_yellow text-center yellow heg_txt">
-                                                    <div class="c_h">ความสามารถพิเศษ</div>
-                                                </dt>        
-                                                <dt class="txt_r r_body1 text-center heg_txt">
-                                                    <div class="c_h">มีภูมิคุ้มกันพิเศษป้องกัน ไข้หวัดในทุกสภา</div><br>
-                                                </dt>    
-                                                <dt class="txt_r r_title1_yellow text-center yellow heg_txt">
-                                                    <div class="c_h">อาวุธประจำกาย</div>
-                                                </dt>   
-                                                <dt class="txt_r r_body1 text-center heg_txt">
-                                                    <div class="c_h">โล่วิเศษ ช่วยป้องกันไข้หวัด<br> เกราะคอลลาเจน ช่วยคุ้มกัน พลังความกระจ่างใสของผิว</div>
-                                                </dt> 
-                                            </div>
-                                        <br>
                                      </div>
                                    <!--3-->
                                     <div class="row">

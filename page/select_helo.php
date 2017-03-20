@@ -353,6 +353,7 @@
                 margin-top: -300px;
            
                 background-attachment: fixed;
+               
 
             }
 

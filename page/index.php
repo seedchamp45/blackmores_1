@@ -4,7 +4,7 @@
             <div class="visible-xs">
                 <div class="row home_body scale_img">
                     <div class="col-xs-12">
-                        <div class="col-xs-12"><img src="./images/mobile/header.png" class="img-responsive"/></div>
+                        <div class="col-xs-12"><img src="./images/mobile/header-t.png" class="img-responsive"/></div>
 
                    </div>
                    <div class="col-xs-12 ">

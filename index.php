@@ -114,7 +114,7 @@
             }
             
             .bu_footer{
-                width: 80%;
+                width: 100%;
                 height:  100%;
 
                 background: url(images/main/m_b_footer.png) no-repeat center top local; 
@@ -422,6 +422,11 @@
 
 
     @media (min-width: 768px){
+         .pic-nav
+      {
+        width: 100%;
+        margin-top: -3%;
+      }
       .foot-nev
       {
         background-size: 150px 60px;
@@ -594,15 +599,15 @@
 
 
                     <div id="navbar" class=" navbar-collapse collapse navbar-show-left-t" style="
-        padding-top: 40px;">
+        padding-top: 0px;">
                       <ul class="nav navbar-nav nav-nav-left-t" id="menu-nav">
-                        <li class="size-li-small"><a href="index" class="txt_menu">หน้าแรก</a></li>
-                        <li class="size-li-big"><a href="rule" class="txt_menu">กติกาและของรางวัล</a></li>
-                        <li class="size-li-small"><a href="select_hero" class="txt_menu">เลือกฮีโร่</a></li>
-                        <li class="size-li-very"><img src="./images/logo-navbar.png" class = "pic-nav"></li>
-                        <li class="size-li-big"><a href="showcase" class="txt_menu text-four">โหวตภาพประกวด</a></li>
-                        <li class="size-li-big"><a href="winner_all" class="txt_menu">ประกาศผู้โชคดี</a></li>
-                        <li class="size-li-small"><a href="send_work" class="txt_menu">ส่งผลงาน</a>
+                        <li class="size-li-small" ><a href="index" class="txt_menu" style="margin-top: 10px;">หน้าแรก</a></li>
+                        <li class="size-li-big" ><a href="rule" class="txt_menu" style="padding-top: 60px;">กติกาและของรางวัล</a></li>
+                        <li class="size-li-small" ><a href="select_hero" class="txt_menu" style="margin-top: 40px;">เลือกฮีโร่</a></li>
+                        <li class="size-li-very"><img src="./images/logo-navbar.png" class = "pic-nav" style="padding-top: 40px;"></li>
+                        <li class="size-li-big"><a href="showcase" class="txt_menu text-four" style="margin-top: 40px;">โหวตภาพประกวด</a></li>
+                        <li class="size-li-big"><a href="winner_all" class="txt_menu" style="margin-top: 40px;">ประกาศผู้โชคดี</a></li>
+                        <li class="size-li-small" ><a href="send_work" class="txt_menu" style="margin-top: 40px;">ส่งผลงาน</a>
                         </li>
                       </ul>
                     </div><!--/.nav-collapse -->
@@ -614,17 +619,17 @@
             <div class="visible-xs">
                 <div class="row home_body scale_img">
                     <div class="col-xs-12">
-                        <div class="col-xs-12"><img src="./images/mobile/header.png" class="img-responsive"/></div>
+                        <div class="col-xs-12"><img src="./images/mobile/header-t.png" class="img-responsive" style="display: block; margin: 0 auto;" /></div>
 
                    </div>
                    <div class="col-xs-12 ">
                        <div class="col-xs-1"></div>
-                       <div class="col-xs-10"><img src="./images/mobile/text_img.png" class="img-responsive" /></div>
+                       <div class="col-xs-10"><img src="./images/mobile/text_img.png" class="img-responsive" style="display: block; margin: 0 auto;"  /></div>
                        <div class="col-xs-1"></div>
                    </div>
                      <div class="col-xs-12 ">
                        <div class="col-xs-1"></div>
-                       <div class="col-xs-10"> <img src="./images/mobile/family.png" class="img-responsive img_family" /></div>
+                       <div class="col-xs-10"> <img src="./images/mobile/family.png" class="img-responsive img_family" style="display: block;" /></div>
                        <div class="col-xs-1"></div>
                    </div>   
                </div>
@@ -654,7 +659,7 @@
            
             <div class="bg_footer2" id = "clear-foot" >
                  <div  class="foot-nev">
-                 <button type="button" style="opacity: 0; width: 100%; height: 100%; margin-top: -5%;" data-toggle="modal" data-target="#myModal">Open Modal</button>
+                 <button type="button" data-toggle="modal" class="button-toggle" data-target="#myModal" style="width: 100%; opacity: 0; margin-top: 0; height: 100; "></button>
                  </div>
              </div>
          </div>
@@ -668,15 +673,15 @@
       <div class="modal-content1">
           <div class="bg_popup">
                 <div class="visible-xs">
-                    <div class="modal-header1" style="height: 10%; padding-top: -5%; background-color: transparent;">
+                    <div class="modal-header1" style="height: 6%; padding-top: 0%; background-color: transparent;">
 
-                        <button type="button" class="close2 center-block" data-dismiss="modal"><img src="images/bu_toggle_down_1.png" class="close2 img-responsive" style="width: 50%; margin-left: 25%; margin-top:4%;"></button>
+                        <button type="button" class="close2 center-block" data-dismiss="modal" style="background: transparent; border: 0;"><img src="images/bu_toggle_down_1.png" class="close2 img-responsive" style="width: 50%; margin-left: 25%; margin-top:6%;"></button>
                     </div>
                 </div>
                 <div class="hidden-xs">
                     <div class="modal-header1" style="height: 4%; padding-top: -5%; background-color: transparent;">
 
-                        <button type="button" class="close2 center-block" data-dismiss="modal"><img src="images/bu_toggle_down_1.png" class="close2 img-responsive" style="width: 50%; margin-left: 25%; margin-top:4%;"></button>
+                        <button type="button" class="close2 center-block" data-dismiss="modal" style="background: transparent; border: 0; margin-top: 4px;"><img src="images/bu_toggle_down_1.png" class="close2 img-responsive" style="width: 50%; margin-left: 25%; margin-top:0%;"></button>
                     </div>
                 </div>
             <div class="modal-body">

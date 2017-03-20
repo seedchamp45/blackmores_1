@@ -245,11 +245,6 @@
             }
             }   
 
-            body
-            {
-              background-size: 0px;
-            }
-
       
         </style>
         <script>
@@ -391,10 +386,10 @@
                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 ">
 
                                <!--disabled-->
-                      <!--   <div class="form-group" style="opacity: 0px;">
+                        <div class="form-group" style="opacity: 0px;">
                         
-                            <input type="text" class="form-control txt_input form_input_type_mobile" id="name_pic-t" name="name_pic-t"  style="opacity: 0px;" >
-                        </div> -->
+                            <input type="text" class="form-control txt_input form_input_type_mobile" id="name_pic-t" name="name_pic-t"  >
+                        </div>
                        </div>
                    </div>
                    <div class="row">
@@ -430,13 +425,12 @@
                            <div class="image-upload visible-xs"  style="margin-top: 0px; padding-left: 100;">
                              
                                 
-                         <!--       <label for="file-input"> -->
+                               <label for="file-input">
                                  <img src="images/send/bu_upload.png" style="float: center;" />
-                        <!--        </label> -->
+                               </label>
 
-                             
+                             <input id="file-input" type="file" accept="image/*" name="fileToUpload" id="fileToUpload" onchange="loadFile(event)"/>
                            </div>
-                           <input id="file-input" type="file" accept="image/*" name="fileToUpload" id="fileToUpload" onchange="loadFile(event)" style="margin-top: -50px;padding-bottom: 50px; margin-left: 90; opacity: 0;" />
 
                        </div>
                    </div>
@@ -569,16 +563,12 @@
                                       document.getElementById('name_pic-t').value = event.target.files[0].name;
                                      };
 
-                                    
+                                     
 
                                      var angle = 0;
                                                                        $('.rotate').on('click', function() {
-                                                               angle += 45;
+                                                               angle += 90;
                                                                $('#output-s').css('transform','rotate(' + angle + 'deg)');
-                                                                       });
-                                                                        $('.rotate').on('click', function() {
-                                                               angle += 45;
-                                                               $('#output-t').css('transform','rotate(' + angle + 'deg)');
                                                                        });
                                      </script>
 
@@ -588,13 +578,13 @@
                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 ">
                            <div class="image-upload hidden-xs">
                                <img src="images/send/rotate.png" class="img-responsive rotate" style = "margin-top: 20 px; width:50;">  
-                              <!--  <label for="file-input"> -->
+                               <label for="file-input">
                                  <img src="images/send/bu_upload.png"/>
-                          <!--      </label> -->
+                               </label>
 
-                             
+                             <input id="file-input" type="file" accept="image/*" name="fileToUpload" id="fileToUpload" onchange="loadFile(event)"/>
                            </div>
-                           <input id="file-input" type="file" accept="image/*" name="fileToUpload" id="fileToUpload" onchange="loadFile(event)" style="margin-top: -50px; margin-left: 50px; opacity: 0;" />
+
 
                        </div>
                    </div>

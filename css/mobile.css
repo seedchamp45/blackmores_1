@@ -9,12 +9,12 @@ and open the template in the editor.
 */
  @media (max-width: 768px) and (min-width: 480px )  { 
     .main-body{
-         background-image: url("images/mobile/bg.png") ;
+         background-image: url("../images/mobile/bg.jpg") ;
         background-image-size: 100% 100%;
         background-repeat: no-repeat;
         background-position: left top;
         background-attachment: scroll;
-        background-size: 100% 90%;
+        background-size: 100% 100%;
      }
     /*moblie*/
        /*.test{
@@ -22,7 +22,10 @@ and open the template in the editor.
            width :500px;
            height: 500px;
        }*/
-    
+      .button-toggle
+     {
+        opacity: 0; width: 100%; height: 100%; margin-top: -5%;
+     }
     
     .navbar-default {
         background-color: rgba(54, 161, 202, 0);
@@ -77,7 +80,7 @@ and open the template in the editor.
         -moz-background-size: cover;
         -o-background-size: cover;
         
-        background-size: 100% 100%;
+        background-size: 100% 150%;
         background-position: 0px 50px;
         background-repeat: no-repeat;
     }
@@ -89,7 +92,8 @@ and open the template in the editor.
         background-position: left top;
         background-attachment: scroll;
         background-size: 100% 100%;
-        height: 100%;
+        height: 150%;
+
     }
     
     .modal-dialog {
@@ -235,16 +239,21 @@ and open the template in the editor.
     
  @media (max-width: 480px ) {
      .main-body{
-         background-image: url("../images/mobile/bg4.jpg") ;
+         background-image: url("../images/mobile/bg.jpg") ;
         background-image-size: 100% 100%;
         background-repeat: no-repeat;
         background-position: left top;
         background-attachment: scroll;
-        background-size: 100% 100%;
+        background-size: 100% 90%;
      }
      
      .navbar-default-blue{
          background-color: rgb(56, 162, 202);
+     }
+
+     .button-toggle
+     {
+        opacity: 0; width: 100%; height: 100%; margin-top: -50%;
      }
     /*moblie*/
        /*.test{
@@ -301,7 +310,7 @@ and open the template in the editor.
    .bg_footer2{
          /*       background-color: #000;*/
         width: 100%;
-        height:  180px;
+        margin-top: -60px;
         background: url(../images/mobile/footer.png) no-repeat center top local; 
         -webkit-background-size: cover;
         -moz-background-size: cover;

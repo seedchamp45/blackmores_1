@@ -243,9 +243,10 @@
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
-            background-size: 100%;
-            margin-top: -300px;
-           
+            background-size: 100% 100%;
+            margin-top: 0px;
+           width: 100%;
+           margin-top: -100px;
                 background-attachment: fixed;
 
             }
@@ -310,21 +311,25 @@
                 .bg_winner{
             /*background-image: url("images/winner/bg_winner.png");*/
                     background: url(images/mobile/bg_winner.png) ; 
-                    -webkit-background-size: cover;
-                    -moz-background-size: cover;
-                    -o-background-size: cover;
+                   
 
                      background-size: 100% 90%;                     
                      background-repeat:   no-repeat;
                      margin-top: 20px;
-                     width: 90%;
+                     width: 100%;
                      height: 80%;
-                     display: block;
-                    margin-right: auto;
-                    margin-left: auto;
+                     
                 }
              }
-            
+
+             body
+             {
+              background-size: 0% 0%;
+             }
+
+
+
+
   </style>
   
   <script>
@@ -345,12 +350,10 @@
 </script>
 </head>
 <body>
+  
 <div class="background-main-rule">
-     <div class="visible-xs"><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
-    <div class="hidden-xs"><br><br><br><br><br><br> 
-    
-        <br><br><br><br><br><br><br><br><br><br><br>
-    </div>
+   <div class="visible-xs"><br><br><br><br><br></div>
+             <div class="hidden-xs"><br><br><br><br><br><br><br></div>
  <div class="container">
     <div class="row">
             <div class="col-xs-12  col-sm-12 col-md-12 col-lg-12">

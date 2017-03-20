@@ -164,6 +164,25 @@
                 height: 5em;
                 width: 80%;
             }
+
+              @media (min-width: 320px){
+                .background-main-rule
+            {
+                background: url(images/newBackground.png) no-repeat center top local !important; 
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: 100% 150% !important; 
+                margin-top: -300px;
+                                      overflow-x: hidden;
+overflow-y: scroll;
+                background-attachment: fixed;
+
+            }
+
+
+           
+             }
              @media (min-width: 480px){
                  .iden{
                     padding-left: 0px; 
@@ -352,9 +371,10 @@
                 -webkit-background-size: cover;
                 -moz-background-size: cover;
                 -o-background-size: cover;
-                background-size: 100%;
+                background-size: 100% 100%;
                 margin-top: -300px;
-           
+                                      overflow-x: hidden;
+overflow-y: scroll;
                 background-attachment: fixed;
 
             }
@@ -658,32 +678,30 @@
                                                     <!--helo 4-->
 
                                                      <!--helo 5-->
-
-                                                        <div class="tab-content">
-                                                            <div id="content5" class="tab-pane fade" >
+                                                <div class="tab-content">
+                                                        <div id="content5" class="tab-pane fade" >
                                                                 <div class="row">
                                                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
                                                                       <div class="txt_r r_title_helo text-center text-uppercase"><img class="center-block select_hero img-responsive" src="images/helo/txt_Koala Kid.png"></div>
                                                                    </div>
                                                                 </div>
-                                                               <br>
-                                                               <div class="row">
-                                                                   <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 ">
+                                                                <br>
+                                                                <div class="row">
+                                                                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 ">
+                                                                        <img src="./download/KoalaKid.jpg" class="img-responsive center-block">
+                                                                    </div>
+                                                                 </div>
+                                                                <br>
+                                                                <br>
+                                                                    <div class="row">
+                                                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
 
-
-
-                                                                   </div>
+                                                                            <a href="download/POWER 9.jpg" download><img src="images/helo/bu_download.png" class="bu_download img-responsive center-block" width="60%" height="60%"></a>
+                                                                        </div>
+                                                                    </div>
                                                                 </div>
-                                                               <br>
-                                                               <br>
-                                                               <div class="row">
-                                                                   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+                                                            </div>
 
-                                                                       <a href="download/KOALA KID.jpg" download><img src="images/helo/bu_download.png" class="bu_download img-responsive center-block" width="60%" height="60%"></a>
-                                                                   </div>
-                                                               </div>
-                                                           </div>
-                                                        </div>
 
                                                     <!--helo 5-->
                                                 </div>

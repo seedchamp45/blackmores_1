@@ -61,11 +61,11 @@
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
-            background-size: 100%;
+            background-size: 100% 100%;
             margin-top: -300px;
 
            background-attachment: fixed;
-
+            
 
             }
 
@@ -92,7 +92,7 @@
         .scrollview-text {
             height: 500px;
             margin-left: 5%;
-
+                width: 100%;
             overflow: auto;
 
             
@@ -106,6 +106,11 @@
         .ol_left {
             margin-left: 2px;
         }
+                   .ol_left
+            {
+                list-style-type:none;
+                padding-left: 20px;
+            }
         
         @media (max-width: 480px ) {
             .bg_block{
@@ -117,6 +122,10 @@
                 margin-top: -300px;
 
                 background-attachment: fixed;
+            }
+            .ol_left
+            {
+                padding-left: 20px;
             }
         }
         
