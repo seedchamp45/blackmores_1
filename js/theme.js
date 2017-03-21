@@ -162,15 +162,38 @@
      /** url < (--) >**/
 
     $('.txt_menu').on('click', function(){ 
+        alert("txt_menu");
            if($('.navbar-toggle').css('display') !='none'){
+             
                 $(".navbar-collapse.in").collapse('hide');
                // $(".navbar-collapse").toggle('in');
              //$('.navbar-toggle').collapse('hide');
              // $(".navbar-toggle").trigger( "click" );
            }
        });
-  
+       
+    $("#bar_mobile").click(function(){
+     $(".actionBox").css({ 'margin-top': '-60px' });  
+    });
     
+     $("#close_mobile").click(function(){
+       // alert("00");
+       
+         if($('.navbar-toggle').css('display') !='none'){
+              $(".actionBox").css({ 'margin-top': '0px' });  
+                if($('.navbar-header .navbar-toggle').css('display') !='none'){
+                   $(".navbar-header .navbar-toggle").trigger( "click" );
+               }
+               // $(".navbar-collapse").toggle('in');
+             //$('.navbar-toggle').collapse('hide');
+             // $(".navbar-toggle").trigger( "click" );
+           }
+               // $(".navbar-collapse").toggle('in');
+             //$('.navbar-toggle').collapse('hide');
+             // $(".navbar-toggle").trigger( "click" );
+        
+     
+    });
     /*$(".send_work").click(function(){
           //$("#content").load("page/send_work.php");
            //  $('#clear-foot').remove();

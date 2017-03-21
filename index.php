@@ -532,10 +532,43 @@
 
     }
     
-    
+     #menu {
+                /*background: hsla(1,0%,100%,.9);*/
+                
+        position: relative;
+        top: 0;
+        right: 0;
+        left: 0;
+        min-height: 100%;
+       /*padding-top: 80px;*/
+      }
+    .navbar-inner{
+            border:0;
+            background: transparent url('images/mobile/bar_bg.png') no-repeat center center;
+            background-size:cover;
+         }
+    .bar1 ul
+    {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        display: inline;
+    }
+    .image_ul{
+        height: 100%;
+    }
+  
+     .txt_menu1{
+        font-family: "db_helvethaica_x" !important;
+        color: #1677BC;
+         font-size: 1.5em;
+         font-weight: bold;
+        display: block;
+
+     }
+
 
     </style>
-    
       <!-- The Boutique CSS: -->
         <link rel="stylesheet" href="css/boutique.css">
 
@@ -543,6 +576,7 @@
         <script src="js/jquery.boutique.min.js"></script>
         
         <link rel="stylesheet" href="css/mobile.css">
+        
   </head>
 <!--<body class="r_bg">-->
   <body >
@@ -552,29 +586,61 @@
                 <!-- Static navbar -->
                 <nav class="navbar navbar-default " role="navigation">
                     <div class="navbar-header">
-                      <button type="button" class="navbar-toggle collapsed txt_bu_m_mobile m_logo_on_bar" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                      <button type="button" class="navbar-toggle collapsed txt_bu_m_mobile m_logo_on_bar" data-toggle="collapse" data-target="#menu" aria-expanded="false" aria-controls="navbar" id="bar_mobile">
                           <img src="images/mobile/menu.png" width="53px">
                       </button>
                     </div>
-                    <div id="navbar" class=" navbar-collapse collapse navbar-show-left-t">
-                        <ul class="nav navbar-nav  m_bg_bar" id="menu-nav">
-                            <li><img src="./images/mobile/header.png" class="img-responsive center-block" width="80%"></li>
-                            <li><a href="index" class="txt_menu">หน้าแรก</a></li>
-                            <li><a href="rule" class="txt_menu">กติกาและของรางวัล</a></li>
-                          
-                           <li class="dropdown">
-                               <a href=" " class="dropdown-toggle" data-toggle="dropdown"><div class="text-center">เลือกฮีโร่</a> <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="select_hero1" class="txt_menu">อายุน้อยกว่า 8 ปี</a></li>
-                                    <li><a href="select_hero2" class="txt_menu">อายุ 8 - 12 ปี</a></li>
-                                </ul>
-                           </li>
-                            
-                            <li><a href="showcase" class="txt_menu text-four">โหวตภาพประกวด</a></li>
-                            <li><a href="winner_all" class="txt_menu">ประกาศผู้โชคดี</a></li>
-                            <li><a href="send_work" class="txt_menu"><div class="send_work center-block"></div></li>
-                        </ul>
-                    </div><!--/.nav-collapse -->
+                    <div id="menu" class="navbar-inner panel panel-default panel-collapse collapse bg_bar">
+
+                        <div class="actionBox">
+                            <ul class="nav navbar-nav image_ul">
+                                <li style="height:30%">
+                                        <row>
+                                            
+                                            <div class="col-xs-9"><img src="images/mobile/close.png" id="close_mobile" class="img-responsive left-box" margin-left: 85%;width: 20%"></div>
+                                              </row>
+                                              <row>
+                                            <div class="col-xs-12">
+                                                    <div class=" center-block">
+                                                        <img src="images/mobile/header.png" class="img-responsive" >
+                                                    </div>
+                                            </div>
+                                         </row>
+                                    
+                                 </li>
+                                
+
+                              <li style="height:10%">
+                                  <a href="index" class="txt_menu1 text-center">หน้าแรก</a>
+                                  <img src="images/mobile/line_hero.png" class="center-block" width="80%">
+                              </li>
+                              <li  style="height:10%">
+                                  <a href="rule" class="txt_menu1 text-center">กติกาและของรางวัล</a>
+                                <img src="images/mobile/line_hero.png" class="center-block" width="80%">
+                              </li>
+                             <li class="dropdown">
+                                 <a href="#" class="txt_menu1 dropdown-toggle  text-center" data-toggle="dropdown">เลือกฮีโร่ <b class="caret"></b></a>
+                                  <ul class="dropdown-menu">
+                                          <li class="txt_menu1 text-center"><a href="#">อายุน้อยกว่า 8 ปี</a></li>
+                                          <li class="txt_menu1 text-center"><a href="#">อายุ 8 -12 ปี</a></li>
+                                  </ul>
+                                 <img src="images/mobile/line_hero.png" class="center-block" width="80%">
+                              </li>
+
+                              <li  style="height:10%">
+                                  <a href="showcase" class="txt_menu1 text-center">โหวตภาพประกวด</a>
+                                  <img src="images/mobile/line_hero.png" class="center-block" width="80%">
+                              </li>
+                              <li  style="height:10%">
+                                  <a href="winner_all" class="txt_menu1 text-center">ประกาศผู้โชคดี</a>
+                                  <br>
+                              </li>
+                              <li  style="height:40%"><img src="images/mobile/send_work.png" class="img-responsive center-block" style="width:40%"></li>
+                              <!--<li  style="height:30%"><a href="send_work" class="txt_menu"><div class="center-block"></div></li>-->
+                            </ul>
+                          </div>
+
+                     </div><!--/.nav-collapse -->
                   
                 </nav>
             </div>
