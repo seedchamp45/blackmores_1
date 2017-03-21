@@ -558,7 +558,7 @@
         height: 100%;
     }
   
-     .txt_menu1{
+     .txt_m{
         font-family: "db_helvethaica_x" !important;
         color: #1677BC;
          font-size: 1.5em;
@@ -611,28 +611,28 @@
                                 
 
                               <li style="height:10%">
-                                  <a href="index" class="txt_menu1 text-center">หน้าแรก</a>
+                                  <a href="index" class="txt_menu txt_m text-center">หน้าแรก</a>
                                   <img src="images/mobile/line_hero.png" class="center-block" width="80%">
                               </li>
                               <li  style="height:10%">
-                                  <a href="rule" class="txt_menu1 text-center">กติกาและของรางวัล</a>
+                                  <a href="rule" class="txt_menu txt_m text-center">กติกาและของรางวัล</a>
                                 <img src="images/mobile/line_hero.png" class="center-block" width="80%">
                               </li>
                              <li class="dropdown">
-                                 <a href="#" class="txt_menu1 dropdown-toggle  text-center" data-toggle="dropdown">เลือกฮีโร่ <b class="caret"></b></a>
+                                 <a href="#" class="txt_menu  dropdown-toggle  text-center" data-toggle="dropdown">เลือกฮีโร่ <b class="caret"></b></a>
                                   <ul class="dropdown-menu">
-                                          <li class="txt_menu1 text-center"><a href="#">อายุน้อยกว่า 8 ปี</a></li>
-                                          <li class="txt_menu1 text-center"><a href="#">อายุ 8 -12 ปี</a></li>
+                                          <li class="txt_menu txt_m text-center"><a href="#">อายุน้อยกว่า 8 ปี</a></li>
+                                          <li class="txt_menu txt_m text-center"><a href="#">อายุ 8 -12 ปี</a></li>
                                   </ul>
                                  <img src="images/mobile/line_hero.png" class="center-block" width="80%">
                               </li>
 
                               <li  style="height:10%">
-                                  <a href="showcase" class="txt_menu1 text-center">โหวตภาพประกวด</a>
+                                  <a href="showcase" class="txt_menu txt_m text-center">โหวตภาพประกวด</a>
                                   <img src="images/mobile/line_hero.png" class="center-block" width="80%">
                               </li>
                               <li  style="height:10%">
-                                  <a href="winner_all" class="txt_menu1 text-center">ประกาศผู้โชคดี</a>
+                                  <a href="winner_all" class="txt_menu txt_m text-center">ประกาศผู้โชคดี</a>
                                   <br>
                               </li>
                               <li  style="height:40%"><img src="images/mobile/send_work.png" class="img-responsive center-block" style="width:40%"></li>

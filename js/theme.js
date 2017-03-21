@@ -84,7 +84,6 @@
    $(".txt_menu").click(function(){
        
       var link_txt;
-
        switch($(this).text()){
             case "หน้าแรก":
                  $("#add-foot").append('<div class="bg_footer2" id = "clear-foot" > <div style=" background: url(images/bu_toggle_up.png) no-repeat center ; margin-left: 40%; margin-right: 40%; margin-top: 20px; width: 20%; height: 100px;"> <button type="button" style="opacity: 0; width: 100%; height: 100px;" data-toggle="modal" data-target="#myModal">Open Modallllllllll</button> </div> </div>');
@@ -177,22 +176,21 @@
     });
     
      $("#close_mobile").click(function(){
-       // alert("00");
-       
-         if($('.navbar-toggle').css('display') !='none'){
-              $(".actionBox").css({ 'margin-top': '0px' });  
-                if($('.navbar-header .navbar-toggle').css('display') !='none'){
-                   $(".navbar-header .navbar-toggle").trigger( "click" );
-               }
-               // $(".navbar-collapse").toggle('in');
-             //$('.navbar-toggle').collapse('hide');
-             // $(".navbar-toggle").trigger( "click" );
-           }
-               // $(".navbar-collapse").toggle('in');
-             //$('.navbar-toggle').collapse('hide');
-             // $(".navbar-toggle").trigger( "click" );
-        
-     
+        if($('.navbar-toggle').css('display') !='none'){
+             $(".actionBox").css({ 'margin-top': '0px' });  
+               if($('.navbar-header .navbar-toggle').css('display') !='none'){
+                  $(".navbar-header .navbar-toggle").trigger( "click" );
+              }
+          }   
+    });
+    
+    $(".txt_m").click(function(){
+        if($('.navbar-toggle').css('display') !='none'){
+             $(".actionBox").css({ 'margin-top': '0px' });  
+               if($('.navbar-header .navbar-toggle').css('display') !='none'){
+                  $(".navbar-header .navbar-toggle").trigger( "click" );
+              }
+          }   
     });
     /*$(".send_work").click(function(){
           //$("#content").load("page/send_work.php");
