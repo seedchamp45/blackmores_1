@@ -162,7 +162,7 @@
      /** url < (--) >**/
 
     $('.txt_menu').on('click', function(){ 
-        alert("txt_menu");
+       
            if($('.navbar-toggle').css('display') !='none'){
              
                 $(".navbar-collapse.in").collapse('hide');
