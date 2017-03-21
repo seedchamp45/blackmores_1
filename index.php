@@ -597,7 +597,7 @@
                                 <li style="height:30%">
                                         <row>
                                             
-                                            <div class="col-xs-9"><img src="images/mobile/close.png" id="close_mobile" class="img-responsive left-box" margin-left: 85%;width: 20%"></div>
+                                            <div class="col-xs-9"><img src="images/mobile/close.png" id="close_mobile" class="img-responsive left-box" style="margin-left: 85%;width: 20%"></div>
                                               </row>
                                               <row>
                                             <div class="col-xs-12">
