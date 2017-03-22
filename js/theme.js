@@ -21,6 +21,15 @@
         }
     }
     
+    $('.bu2').on('click', function(){
+            
+            $('#myModal').delay(200).fadeOut(10);
+
+            setTimeout(function(){
+              $('#myModal').modal("hide");
+            }, 1500);
+
+        });
     //set url
      
     var getUrl= getUrlParameter('page');
@@ -74,6 +83,7 @@
                 link_txt ="page/select_hero2.php";
                 break;    
        }
+      
          $("#content").load(link_txt);
      }
      
@@ -126,9 +136,13 @@
        if($(this).text()==""){
             link_txt ="page/send_work.php";
        }
+       
+       
          $("#content").load(link_txt);
 
     });
+    
+        
     
     
         /** url < (--) >**/

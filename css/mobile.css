@@ -8,6 +8,31 @@ and open the template in the editor.
     Author     : axe
 */
  @media (max-width: 768px) and (min-width: 480px )  { 
+      .link1{
+            background-color: #000;
+            width: 120px;
+            height: 70px;
+            margin-left: 26%;
+            margin-top: 22.5%;
+            opacity: 0;
+        }
+
+        .link2{
+            background-color: #000;
+            width: 120px;
+            height: 70px;
+            margin-left: 30%;
+            margin-top: 47%;
+            opacity: 0;
+        }
+        .link3{
+            background-color: #000;
+            width: 150px;
+            height: 70px;
+            margin-left: 30%;
+            margin-top: 40.5%;
+            opacity: 0;
+        }
     .main-body{
          background-image: url("../images/mobile/bg.jpg") ;
         background-image-size: 100% 100%;
@@ -255,6 +280,32 @@ and open the template in the editor.
      {
         opacity: 0; width: 100%; height: 100%; margin-top: -50%;
      }
+     
+       .link1{
+            background-color: #000;
+              width: 120px;
+            height: 70px;
+            margin-left: 26%;
+            margin-top: 15.5%;
+            opacity: 0;
+        }
+
+        .link2{
+            background-color: #000;
+            width: 120px;
+            height: 70px;
+            margin-left: 30%;
+            margin-top: 30%;
+            opacity: 0;
+        }
+        .link3{
+            background-color: #000;
+           width: 130px;
+            height: 70px;
+            margin-left: 30%;
+            margin-top: 25.5%;
+            opacity: 0;
+        }
     /*moblie*/
        /*.test{
            //background-color: #000;

@@ -38,13 +38,11 @@
            </div>
                 <div id = "add-foot">
            
-            <div class="bg_footer2" id = "clear-foot" >
+                    <div class="bg_footer2" id = "clear-foot" >
                  <div  class="foot-nev">
-                 <button type="button" style="opacity: 0; width: 100%; height: 100%; margin-top: -5%;" data-toggle="modal" data-target="#myModal">Open Modal</button>
+                 <button type="button" style="opacity: 0; width: 100%; height: 80%; margin-top: -30.5%;" data-toggle="modal" data-target="#myModal">Open Modal</button>
                  </div>
              </div>
          </div>
-          </div>
-
 </body>
 </html> 

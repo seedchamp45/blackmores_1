@@ -416,13 +416,7 @@ button:hover, button:active, button:focus{background: #f3f3f3;outline: none;}
 
 
 
-.panel {
-    margin-bottom: 20px;
-    border: 0px solid transparent;
-    border-radius: 4px;
-    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
-    box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
-}
+
 /*
 .full_bg{
     position: fixed;
@@ -439,14 +433,7 @@ button:hover, button:active, button:focus{background: #f3f3f3;outline: none;}
     background-size: cover;
 }*/
 
-.panel {
-    margin-bottom: 20px;
-    background-color: rgba(255, 255, 255, 0);
-    border: 1px solid transparent;
-    border-radius: 4px;
-    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
-    box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
-}
+
 
 .panel-default > .panel-heading {
     color: #333;

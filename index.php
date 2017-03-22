@@ -374,6 +374,7 @@
         width: 40%;
         margin-right: 30%;
       }
+      
 
     }
 
@@ -438,6 +439,31 @@
       {
         font-size: 7px;
       }
+       .link1{
+         background-color: #000;
+            width: 100px;
+            height: 50px;
+            margin-left: 26%;
+            margin-top: 11.5%;
+            opacity: 0;
+        }
+
+        .link2{
+            background-color: #000;
+            width: 100px;
+            height: 50px;
+            margin-left: 65%;
+            margin-top: -5%;
+            opacity: 0;
+        }
+        .link3{
+            background-color: #000;
+            width: 160px;
+            height: 90px;
+            margin-left: 40%;
+            margin-top: 15.5%;
+            opacity: 0;
+        }
 
     }
 
@@ -448,7 +474,7 @@
         height: 0px;
       }
 
-             .size-li-small
+    .size-li-small
     {
       width: 80% !important;
       opacity: 1 !important;
@@ -470,6 +496,7 @@
             margin: auto !important;
       width: 25%;
     }
+    
     }
 
     @media (min-width: 990px){
@@ -484,6 +511,32 @@
       {
         font-size: 12px;
       }
+      
+        .link1{
+          background-color: #000;
+           width: 100px;
+          height: 50px;
+          margin-left: 26%;
+          margin-top: 12.5%;
+          opacity: 0;
+         }
+
+        .link2{
+            background-color: #000;
+             width: 100px;
+             height: 50px;
+            margin-left: 65%;
+             margin-top: -5%;
+             opacity: 0;
+        }
+        .link3{
+            background-color: #000;
+            width: 160px;
+            height: 90px;
+            margin-left: 40%;
+            margin-top: 17.5%;
+            opacity: 0;
+        }
 
     }
 
@@ -493,6 +546,31 @@
       {
         width: 100%;
         margin-top: 0px !important;
+      }
+      .link1{
+         background-color: #000;
+          width: 100px;
+          height: 50px;
+          margin-left: 26%;
+          margin-top: 11.5%;
+           opacity: 0;
+      }
+
+      .link2{
+          background-color: #000;
+           width: 100px;
+           height: 50px;
+          margin-left: 65%;
+           margin-top: -5%;
+           opacity: 0;
+      }
+      .link3{
+          background-color: #000;
+          width: 160px;
+          height: 90px;
+          margin-left: 40%;
+          margin-top: 15.5%;
+          opacity: 0;
       }
 
     }
@@ -514,7 +592,32 @@
         width: 100%;
         margin-top: -20px;
       }
+      
+        .link1{
+         background-color: #000;
+            width: 100px;
+            height: 50px;
+            margin-left: 26%;
+            margin-top: 11.5%;
+            opacity: 0;
+        }
 
+        .link2{
+            background-color: #000;
+            width: 100px;
+            height: 50px;
+            margin-left: 65%;
+            margin-top: -5%;
+            opacity: 0;
+        }
+        .link3{
+            background-color: #000;
+            width: 160px;
+            height: 90px;
+            margin-left: 40%;
+            margin-top: 15.5%;
+            opacity: 0;
+        }
     }
 
     .div-show-left-t
@@ -561,13 +664,27 @@
      .txt_m{
         font-family: "db_helvethaica_x" !important;
         color: #1677BC;
-         font-size: 1.5em;
+         font-size: 1.5em !important;
          font-weight: bold;
         display: block;
 
      }
+     
+      .txt_m1{
+        font-family: "db_helvethaica_x" !important;
+        color: #1677BC;
+         font-size: 1.5em !important;
+         font-weight: bold;
+        display: block;
 
-
+     }
+     .modal-footer {
+        padding: 15px;
+        text-align: right;
+        border-top: 0px solid #e5e5e5;
+    }
+    
+    
     </style>
       <!-- The Boutique CSS: -->
         <link rel="stylesheet" href="css/boutique.css">
@@ -619,10 +736,10 @@
                                 <img src="images/mobile/line_hero.png" class="center-block" width="80%">
                               </li>
                              <li class="dropdown">
-                                 <a href="#" class="txt_menu  dropdown-toggle  text-center" data-toggle="dropdown">เลือกฮีโร่ <b class="caret"></b></a>
+                                 <a href="#" class="dropdown-toggle  text-center txt_m1" data-toggle="dropdown">เลือกฮีโร่ <b class="caret"></b></a>
                                   <ul class="dropdown-menu">
-                                          <li class="txt_menu txt_m text-center"><a href="#">อายุน้อยกว่า 8 ปี</a></li>
-                                          <li class="txt_menu txt_m text-center"><a href="#">อายุ 8 -12 ปี</a></li>
+                                          <li><a href="select_hero1" class="txt_menu txt_m text-center">อายุน้อยกว่า 8 ปี</a></li>
+                                          <li><a href="select_hero2" class="txt_menu txt_m text-center">อายุ 8 - 12 ปี</a></li>
                                   </ul>
                                  <img src="images/mobile/line_hero.png" class="center-block" width="80%">
                               </li>
@@ -635,7 +752,7 @@
                                   <a href="winner_all" class="txt_menu txt_m text-center">ประกาศผู้โชคดี</a>
                                   <br>
                               </li>
-                              <li  style="height:40%"><img src="images/mobile/send_work.png" class="img-responsive center-block" style="width:40%"></li>
+                              <li  style="height:40%"><a href="send_work" class="txt_menu txt_m"><img src="images/mobile/send_work.png" class="img-responsive center-block" style="width:40%"></a></li>
                               <!--<li  style="height:30%"><a href="send_work" class="txt_menu"><div class="center-block"></div></li>-->
                             </ul>
                           </div>
@@ -667,7 +784,7 @@
                     <div id="navbar" class=" navbar-collapse collapse navbar-show-left-t" style="
         padding-top: 0px;">
                       <ul class="nav navbar-nav nav-nav-left-t" id="menu-nav">
-                        <li class="size-li-small" ><a href="index" class="txt_menu" style="margin-top: 10px;">หน้าแรก</a></li>
+                        <li class="size-li-small" ><a href="index" class="txt_menu" style="margin-top: 50px;">หน้าแรก</a></li>
                         <li class="size-li-big" ><a href="rule" class="txt_menu" style="padding-top: 60px;">กติกาและของรางวัล</a></li>
                         <li class="size-li-small" ><a href="select_hero" class="txt_menu" style="margin-top: 40px;">เลือกฮีโร่</a></li>
                         <li class="size-li-very"><img src="./images/logo-navbar.png" class = "pic-nav" style="padding-top: 40px;"></li>
@@ -725,7 +842,7 @@
            
             <div class="bg_footer2" id = "clear-foot" >
                  <div  class="foot-nev">
-                 <button type="button" data-toggle="modal" class="button-toggle" data-target="#myModal" style="width: 100%; opacity: 0; margin-top: 0; height: 100; "></button>
+                 <button type="button" data-toggle="modal" class="button-toggle"  data-target="#myModal" style="width: 100%; opacity: 0; margin-top: 0; height: 100; "></button>
                  </div>
              </div>
          </div>
@@ -741,14 +858,21 @@
                 <div class="visible-xs">
                     <div class="modal-header1" style="height: 6%; padding-top: 0%; background-color: transparent;">
 
-                        <button type="button" class="close2 center-block" data-dismiss="modal" style="background: transparent; border: 0;"><img src="images/bu_toggle_down_1.png" class="close2 img-responsive" style="width: 50%; margin-left: 25%; margin-top:6%;"></button>
+                        <button type="button" class="close2 center-block" data-dismiss="modal" style="background: transparent; border: 0;"><img src="images/bu_toggle_down_1.png" class="close2 img-responsive" style="width: 50%; margin-left: 25%; margin-top:6%;opacity: 0;"></button>
                     </div>
+                    <a href="select_hero" class="txt_menu bu2" ><div class="link1"></div></a>
+                    <a href="select_hero" class="txt_menu bu2" ><div class="link2"></div></a>
+                     <a href="showcase" class="txt_menu bu2" ><div class="link3"></div></a>
                 </div>
                 <div class="hidden-xs">
+                   
                     <div class="modal-header1" style="height: 4%; padding-top: -5%; background-color: transparent;">
-
+                     
                         <button type="button" class="close2 center-block" data-dismiss="modal" style="background: transparent; border: 0; margin-top: 4px;"><img src="images/bu_toggle_down_1.png" class="close2 img-responsive" style="width: 50%; margin-left: 25%; margin-top:0%;"></button>
                     </div>
+                    <a href="select_hero" class="txt_menu bu2" ><div class="link1"></div></a>
+                    <a href="select_hero" class="txt_menu bu2" ><div class="link2"></div></a>
+                     <a href="showcase" class="txt_menu bu2" ><div class="link3"></div></a>
                 </div>
             <div class="modal-body">
                 
