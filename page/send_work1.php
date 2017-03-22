@@ -249,19 +249,26 @@
             {
               background-size: 0px;
             }
-            
-             .birth{
+
+            .birth{
                 display: inline;
                 display: inline;
                 width: 100px;
             }
+            
+          
+   
 
-      
         </style>
         <script>
          $(document).ready(function(){
                 
-             $("#day_birth").on('change', function() {
+           $("#age_18").click(function(){
+             $("#title_age").val("1");
+             changeAge("1");
+           });
+
+            $("#day_birth").on('change', function() {
              changeBirth();
            });
             $("#month_birth").on('change', function() {
@@ -271,11 +278,6 @@
              changeBirth();
            });
            
-           $("#age_18").click(function(){
-             $("#title_age").val("1");
-             changeAge("1");
-           });
-
            $("#age_more_18").click(function(){
              $("#title_age").val("2");
               changeAge("2");
@@ -303,6 +305,8 @@
                     name_child: {
                         required: true,
                     },
+                     
+                    
                     birthday: {
                         required: true,
                     },
@@ -326,6 +330,9 @@
                     telephone: {
                         required:"กรุณากรอกเบอร์โทร",
                     },
+                    day_birth:"กรุณากรอกวันเกิด",   
+                    month_birth:"กรุณากรอกเดือนเกิด" ,  
+                    year_birth:"กรุณากรอกปีเกิด",   
                     email: "กรุณากรอกอีเมล์",
                     birthday:"กรุณากรอกวันเกิด",
                     name_pic:"กรุณาอัปโหลดรูปภาพ",
@@ -357,14 +364,15 @@
                 }
             }
             
-            function changeBirth(){
-                if($("#day_birth").val() != "" && $("#month_birth").val() != "" && $("#year_birth").val() != "" ){
-                     //alert("xxxxxxxxxxxxxxx");
-                     $("#birthday").val($("#month_birth").val()+'/'+$("#day_birth").val()+'/'+$("#year_birth").val());
-               }else{
+           function changeBirth(){
+              if($("#day_birth").val() != "" && $("#month_birth").val() != "" && $("#year_birth").val() != "" ){
+                   //alert("xxxxxxxxxxxxxxx");
+                   $("#birthday").val($("#month_birth").val()+'/'+$("#day_birth").val()+'/'+$("#year_birth").val());
+             }else{
                      $("#birthday").val("");
                }
-            }
+           }
+            
          });
         </script>
        
@@ -373,180 +381,7 @@
 <body>
 <div class = "background-main-rule">
     <div style="padding: 40px;">
-    <div class="visible-xs">
-        <br><br><br><br><br><br><br><br><br><br><br><br>
-       <div class="row">
-           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
-               <img src="images/send/txt_sent.png" class="img-responsive center-block">
-           </div>
-       </div>
-        <form action="page/upload.php" method="post" enctype="multipart/form-data" class="form-horizontal" id="contact-form" >
-
-           <div class="row">
-             
-               <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 ">
-                    <label for="exampleInputPassword1" class="text_title_small_work" style=" margin-left: -15;">1. ประเภทของผู้สมัคร</label>
-                   
-                   <div class="row">
-                        <select  name="title_age" id="title_age" class="form-control form_input_type_mobile txt_input center-block">
-                            <option value="" class="center-block txt_input" >---</option>
-                            <option value="1" class="center-block txt_input">อายุไม่เกิน 8 ปี</option>
-                            <option value="2" class="center-block txt_input">อายุระหว่าง 8 -12 ปี</option>
-                        </select>
-                         <div class="form-group" style="margin-left: 50px;">
-                            <input type="hidden" name="title_age"  id="title_age" value="" >
-                        </div>
-                   </div>
-                   <div class="row">
-                       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
-                          
-                           <label for="exampleInputPassword1" class="text_title_small_work" style=" margin-left: -15;">2. อัพโหลดผลงาน</label><br>
-                       </div>
-                   </div>
-                    <div class="row">
-                       <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 ">
-
-                               <!--disabled-->
-                      <!--   <div class="form-group" style="opacity: 0px;">
-                        
-                            <input type="text" class="form-control txt_input form_input_type_mobile" id="name_pic-t" name="name_pic-t"  style="opacity: 0px;" >
-                        </div> -->
-                       </div>
-                   </div>
-                   <div class="row">
-                       <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 ">
-                           <div class="line-tabs">
-                               
-                               <div class="bg_upload" style="margin: 20;">
-                                    <img class="img-responsive" id = "output-s" style="width: 250px; height: 200px;">
-                               </div>
-                                </div>
-
-
-                   <!--                <script>
-                                       var loadFile = function(event) {
-                                       var outputs = document.getElementById('output-t');
-                                       outputs.src = URL.createObjectURL(event.target.files[0]);
-
-
-                                      document.getElementById('name_pic').value = event.target.files[0].name;
-                                     };
-
-                                     var angle = 0;
-                                                                       $('.rotate').on('click', function() {
-                                                               angle += 45;
-                                                               $('#output').css('transform','rotate(' + angle + 'deg)');
-                                                                       });
-                                     </script> -->
-
-                           </div>
-                      
-
-                       <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 ">
-                           <div class="image-upload visible-xs"  style="margin-top: 0px; padding-left: 100;">
-                             
-                                
-                         <!--       <label for="file-input"> -->
-                                 <img src="images/send/bu_upload.png" style="float: center;" />
-                        <!--        </label> -->
-
-                             
-                           </div>
-                           <input id="file-input" type="file" accept="image/*" name="fileToUpload" id="fileToUpload" onchange="loadFile(event)" style="margin-top: -50px;padding-bottom: 50px; margin-left: 90; opacity: 0;" />
-
-                       </div>
-                   </div>
-
-                   
-               </div>
-               <div class="hidden-xs col-sm-1 col-md-1 col-lg-1 ">
-                   <div class="ruler_center" ></div>
-               </div>
-               <div class="col-xs-12 col-sm-11 col-md-5 col-lg-5 ">
-                   
-                           <div class=form-inline">
-                               <div class="form-group">
-                                   <label for="exampleInputPassword1" class="text_title_small_work">3. ชื่อ- นามสกุล ( ผู้ปกครอง )</label><br>
-                                   <input type="text" class="form-control txt_input form_input_type_mobile" name="name_parent" id="name_parent" placeholder="Superhero  Blackmore">
-                               </div>
-                           </div>
-
-                           <div class=form-inline">
-                               <div class="form-group">
-                                   <label for="exampleInputPassword1" class="text_title_small_work">4. ชื่อ- นามสกุล ( เด็ก )</label><br>
-                                 <input type="text" class="form-control txt_input form_input_type_mobile" name="name_child" id="name_child" placeholder="Superhero  Blackmore">
-                               </div>
-                           </div>
-
-                            <div class=form-inline">
-                               <div class="form-group">
-                                   <label for="exampleInputPassword1" class="text_title_small_work">5. เดือน/วัน/ปีเกิด ( เด็ก )</label><br>
-                                  <select  name="day_birth" id="day_birth" class="form-control form_input_type4 txt_input birth">
-                                     <option value="" class="center-block txt_input" >วัน</option>
-                                     <?php
-                                         for($i=1 ; $i<=31 ;$i++){
-                                             echo '<option value="'.$i.'" class="center-block txt_input">'.$i.'</option>';
-                                         }
-                                     ?>
-                                    </select>
-
-                                     <select  name="month_birth" id="month_birth" class="form-control form_input_type4 txt_input birth">
-                                     <option value="" class="center-block txt_input" >เดือน</option>
-                                     <?php
-                                         for($i=1 ; $i<=12 ;$i++){
-                                             echo '<option value="'.$i.'" class="center-block txt_input">'.$i.'</option>';
-                                         }
-                                     ?>
-                                    </select>
-
-                                     <select  name="year_birth" id="year_birth" class="form-control form_input_type4 txt_input birth">
-                                     <option value="" class="center-block txt_input" >ปี</option>
-                                     <?php
-                                         for($i=2547 ; $i<=2559 ;$i++){
-                                             echo '<option value="'.$i.'" class="center-block txt_input">'.$i.'</option>';
-                                         }
-                                     ?>
-                                    </select>
-                                   <input type="hidden"  id="birthday" class="form-control txt_input form_input_type_mobile" name="birthday" placeholder="ดด/วว/ปป"> 
-                                   <!--<input type="text" class="form-control txt_input form_input_type" name="" id="username" placeholder="Superhero - Blackmore">-->
-                               </div>
-                           </div>
-
-                           <div class="form-group">
-                             <label for="exampleInputPassword1" class="text_title_small_work">6. เบอร์โทรศัพท์</label>
-                             <input type="text" class="form-control txt_input  form_input_type_mobile" id="telephone" name= "telephone" placeholder="08x-xxx-xxxxx">
-                           </div>
-
-
-                           <div class="form-group">
-                              <label for="exampleInputEmail1" class="text_title_small_work">7. อีเมล์</label>
-                              <input type="email" class="form-control txt_input  form_input_type_mobile" name="email" id="email" placeholder="Superhero@Blackmores.com">
-                            </div>
-
-                            <div class="form-group">
-                               <label for="exampleInputPassword1" class="text_title_small_work">8. อีโร่ที่ส่งเข้าประกวด</label>
-
-                                   <select  name="categorywork" id="categorywork" class="form-control form_input_type_mobile txt_input">
-                                    <option value="" class="center-block txt_input" >---</option>
-                                    <option value="CaptianFish" class="center-block txt_input">Captian Fish</option>
-                                    <option value="BrightPower" class="center-block txt_input">Bright Power</option>
-                                    <option value="PowerNine" class="center-block txt_input">Power 9</option>
-                                    <option value="MultiAction" class="center-block txt_input">Multi Action</option>
-                                    <option value="KoalaKid" class="center-block txt_input">Koala Kid</option>
-                                   </select>
-
-                           </div>
-               </div>     
-           </div>
-          <div class="row"> 
-               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 center-block">
-                   <br/><br/><br/>
-                   <button type="submit" class="btn btn-default1 center-block " id = "submitButton" value="Upload Image" name="submit">ตกลง</button>
-                </div>
-          </div>
-        </form>
-
-    </div>
+    
     
     <!-- desktop-->
     <div class="hidden-xs">
@@ -676,8 +511,38 @@
                             <div class=form-inline">
                                <div class="form-group">
                                    <label for="exampleInputPassword1" class="text_title_small_work">เดือน/วัน/ปีเกิด ( เด็ก )</label><br>
-                                   <input type="text"  id="datepicker-s" class="form-control txt_input form_input_type2" name="birthday" placeholder="ดด/วว/ปป"> 
-                                   <!--<input type="text" class="form-control txt_input form_input_type" name="" id="username" placeholder="Superhero - Blackmore">-->
+                                    
+                                 
+                                    <select  name="day_birth" id="day_birth" class="form-control form_input_type4 txt_input birth">
+                                     <option value="" class="center-block txt_input" >วัน</option>
+                                     <?php
+                                         for($i=1 ; $i<=31 ;$i++){
+                                             echo '<option value="'.$i.'" class="center-block txt_input">'.$i.'</option>';
+                                         }
+                                     ?>
+                                    </select>
+
+                                     <select  name="month_birth" id="month_birth" class="form-control form_input_type4 txt_input birth">
+                                     <option value="" class="center-block txt_input" >เดือน</option>
+                                     <?php
+                                         for($i=1 ; $i<=12 ;$i++){
+                                             echo '<option value="'.$i.'" class="center-block txt_input">'.$i.'</option>';
+                                         }
+                                     ?>
+                                    </select>
+
+                                     <select  name="year_birth" id="year_birth" class="form-control form_input_type4 txt_input birth">
+                                     <option value="" class="center-block txt_input" >ปี</option>
+                                     <?php
+                                         for($i=2547 ; $i<=2559 ;$i++){
+                                             echo '<option value="'.$i.'" class="center-block txt_input">'.$i.'</option>';
+                                         }
+                                     ?>
+                                    </select>
+                                   
+                                   
+                                   <input type="hidden"  id="birthday" class="form-control txt_input form_input_type2" name="birthday" placeholder="ดด/วว/ปป"> 
+                                
                                </div>
                            </div>
 

@@ -32,7 +32,7 @@
   
 
                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 col-lg-offset-1 div-show-right-t">
-                                 <img src="./images/home_body_left.png" style="width: 100%;" />
+                   <img src="./images/home_body_left.png" style="width: 100%;" />
               </div>
            </div>
            </div>
@@ -40,7 +40,13 @@
            
                     <div class="bg_footer2" id = "clear-foot" >
                  <div  class="foot-nev">
-                 <button type="button" style="opacity: 0; width: 100%; height: 80%; margin-top: -30.5%;" data-toggle="modal" data-target="#myModal">Open Modal</button>
+                     
+                    <div class="visible-xs">
+                        <button type="button" style="opacity: 0; width: 100%; height: 80%; margin-top: -55%;" data-toggle="modal" data-target="#myModal">Open Modal</button>
+                    </div>
+                    <div class="hidden-xs">
+                        <button type="button" style="opacity: 0; width: 100%; height: 80%; margin-top: -5%;" data-toggle="modal" data-target="#myModal">Open Modal</button>
+                    </div>
                  </div>
              </div>
          </div>

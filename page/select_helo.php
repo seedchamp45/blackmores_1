@@ -16,7 +16,7 @@
                         autoplay: false
                     });
             });
-            
+           
             function move_callback(anchor, instance, framenumber){
                 var res = anchor.split("_");
                 var i1 = res[1]-1;    

@@ -36,7 +36,7 @@
     <!--[if lt IE 9]><script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="js/ie-emulation-modes-warning.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     
     <script>
@@ -790,7 +790,7 @@
                         <li class="size-li-very"><img src="./images/logo-navbar.png" class = "pic-nav" style="padding-top: 40px;"></li>
                         <li class="size-li-big"><a href="showcase" class="txt_menu text-four" style="margin-top: 40px;">โหวตภาพประกวด</a></li>
                         <li class="size-li-big"><a href="winner_all" class="txt_menu" style="margin-top: 40px;">ประกาศผู้โชคดี</a></li>
-                        <li class="size-li-small" ><a href="send_work" class="txt_menu" style="margin-top: 40px;">ส่งผลงาน</a>
+                        <li class="size-li-small"><a href="send_work" class="txt_menu" style="margin-top: 40px;">ส่งผลงาน1</a>
                         </li>
                       </ul>
                     </div><!--/.nav-collapse -->
@@ -860,9 +860,9 @@
 
                         <button type="button" class="close2 center-block" data-dismiss="modal" style="background: transparent; border: 0;"><img src="images/bu_toggle_down_1.png" class="close2 img-responsive" style="width: 50%; margin-left: 25%; margin-top:6%;opacity: 0;"></button>
                     </div>
-                    <a href="select_hero" class="txt_menu bu2" ><div class="link1"></div></a>
-                    <a href="select_hero" class="txt_menu bu2" ><div class="link2"></div></a>
-                     <a href="showcase" class="txt_menu bu2" ><div class="link3"></div></a>
+                    <a href="#" class="bu2" ><div class="link1"></div></a>
+                    <a href="#" class="bu3" ><div class="link2"></div></a>
+                     <a href="#" class="bu4" ><div class="link3"></div></a>
                 </div>
                 <div class="hidden-xs">
                    
@@ -870,9 +870,9 @@
                      
                         <button type="button" class="close2 center-block" data-dismiss="modal" style="background: transparent; border: 0; margin-top: 4px;"><img src="images/bu_toggle_down_1.png" class="close2 img-responsive" style="width: 50%; margin-left: 25%; margin-top:0%;"></button>
                     </div>
-                    <a href="select_hero" class="txt_menu bu2" ><div class="link1"></div></a>
-                    <a href="select_hero" class="txt_menu bu2" ><div class="link2"></div></a>
-                     <a href="showcase" class="txt_menu bu2" ><div class="link3"></div></a>
+                    <a href="#" class="bu1" ><div class="link1"></div></a>
+                    <a href="#" class="bu1" ><div class="link2"></div></a>
+                     <a href="#" class="bu4" ><div class="link3"></div></a>
                 </div>
             <div class="modal-body">
                 

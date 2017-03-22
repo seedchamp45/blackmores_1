@@ -1,65 +1,25 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
-        <title>TODO supply a title</title>
-        
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script>
-          var c = document.getElementById("myCanvas");
-var ctx = c.getContext("2d");
-ctx.fillStyle = "#FF0000";
-ctx.fillRect(0,0,150,75);
-
-// Converts image to canvas; returns new canvas element
-    function convertImageToCanvas(image) {
-        var canvas = document.createElement("canvas");
-        canvas.width = image.width;
-        canvas.height = image.height;
-        canvas.getContext("2d").drawImage(image, 0, 0);
-
-        return canvas;
-    }
-
-
-    // Converts canvas to an image
-    function convertCanvasToImage(canvas) {
-        var image = new Image();
-        image.src = canvas.toDataURL("image/png");
-        return image;
-    }
-
-document.getElementById('mydownload').onclick= function(){
-
-    var image = convertCanvasToImage(document.getElementById("myCanvas"));
-    var anchor = document.createElement('a');
-
-    console.log(anchor);
-    anchor.setAttribute('href', image.src);
-    anchor.setAttribute('download', 'image.png');
-    anchor.click();
-}
-
-document.getElementById('sendEmail').onclick= function(){
-
-    var image = convertCanvasToImage(document.getElementById("myCanvas"));
-
-    window.open('mailto:test@example.com?subject=subject&body=you cann send only txt from javscript in email ', '_blank');
-}
+    <meta charset="utf-8"/>
+        <script type="text/javascript">
+            window.onload = function () {
+                var img = document.getElementById('embedImage');
+                var button = document.getElementById('saveImage');
+                img.src = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUA'+
+                'AAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO'+
+                '9TXL0Y4OHwAAAABJRU5ErkJggg==';
+                img.onload = function () {
+                    button.removeAttribute('disabled');
+                };
+                button.onclick = function () {
+                    window.location.href = img.src.replace('image/png', 'image/octet-stream');
+                };
+            };
         </script>
     </head>
     <body>
-       <canvas id="myCanvas" width="200" height="100" style="border:1px solid #c3c3c3;">
-Your browser does not support the HTML5 canvas tag.
-</canvas>
-
-
-<button id='mydownload'>Download Image</button>
-<button id='sendEmail'>Send Email</button>
+        <img id="embedImage" alt="Red dot"/>
+        <input id="saveImage" type="button" value="save image" disabled="disabled"/>
     </body>
 </html>
