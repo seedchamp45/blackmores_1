@@ -613,7 +613,7 @@
         .link3{
             background-color: #000;
             width: 160px;
-            height: 90px;
+            height: 120px;
             margin-left: 40%;
             margin-top: 15.5%;
             opacity: 0;
@@ -790,7 +790,7 @@
                         <li class="size-li-very"><img src="./images/logo-navbar.png" class = "pic-nav" style="padding-top: 40px;"></li>
                         <li class="size-li-big"><a href="showcase" class="txt_menu text-four" style="margin-top: 40px;">โหวตภาพประกวด</a></li>
                         <li class="size-li-big"><a href="winner_all" class="txt_menu" style="margin-top: 40px;">ประกาศผู้โชคดี</a></li>
-                        <li class="size-li-small"><a href="send_work" class="txt_menu" style="margin-top: 40px;">ส่งผลงาน1</a>
+                        <li class="size-li-small"><a href="send_work" class="txt_menu" style="margin-top: 20px;height: 130px;padding-left: 10px;left: -12;">ส่งผลงาน1</a>
                         </li>
                       </ul>
                     </div><!--/.nav-collapse -->

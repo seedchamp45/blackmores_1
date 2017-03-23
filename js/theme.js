@@ -157,7 +157,6 @@
    
    $(".txt_menu").click(function(){
     
-        alert($(this).text());
       var link_txt;
        switch($(this).text()){
             case "หน้าแรก":
@@ -204,6 +203,11 @@
              case "ส่งผลงาน1":
                  link_txt ="page/send_work1.php";
             break;
+            
+            case "ส่งผลงาน1":
+                 link_txt ="page/send_work1.php";
+            break;
+         
             
        }
       
