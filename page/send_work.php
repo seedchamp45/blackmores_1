@@ -443,13 +443,14 @@
                       
 
                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 ">
-                           <div class="image-upload visible-xs"  style="margin-top: 0px; padding-left: 100;">
-                             
+                           <div class="image-upload visible-xs"  style="margin-top: 0px; padding-left: 70;">
+                               
+                                 <img src="images/send/rotate.png" class="img-responsive rotate" style = "margin-top: 20 px; width:50;">  
                                 
                          <!--       <label for="file-input"> -->
-                                 <img src="images/send/bu_upload.png" style="float: center;" />
+                                 <img src="images/send/bu_upload.png"  />
                         <!--        </label> -->
-
+                              
                              
                            </div>
                            <input id="file-input" type="file" accept="image/*" name="fileToUpload" id="fileToUpload" onchange="loadFile(event)" style="margin-top: -50px;padding-bottom: 50px; margin-left: 90; opacity: 0;" />

@@ -37,7 +37,7 @@
     //set url
      
      function select_page(name){
-       alert("name");
+       //alert("name");
          switch(name){
             case  "index.php":
                  $("#add-foot").append('    <div class="bg_footer2" id = "clear-foot" > <div style=" background: url(images/bu_toggle_up.png) no-repeat center ; margin-left: 40%; margin-right: 40%; margin-top: 20px; width: 20%; height: 100px;"> <button type="button" style="opacity: 0; width: 100%; height: 100px;" data-toggle="modal" data-target="#myModal">Open Modallllllllll</button> </div> </div>');
@@ -158,6 +158,7 @@
    $(".txt_menu").click(function(){
     
       var link_txt;
+      //alert($(this).text());
        switch($(this).text()){
             case "หน้าแรก":
                  $("#add-foot").append('<div class="bg_footer2" id = "clear-foot" > <div style=" background: url(images/bu_toggle_up.png) no-repeat center ; margin-left: 40%; margin-right: 40%; margin-top: 20px; width: 20%; height: 100px;"> <button type="button" style="opacity: 0; width: 100%; height: 100px;" data-toggle="modal" data-target="#myModal">Open Modallllllllll</button> </div> </div>');
@@ -200,13 +201,11 @@
             break;
             
             
-             case "ส่งผลงาน1":
-                 link_txt ="page/send_work1.php";
+            case "ส่งผลงาน1":
+                link_txt ="page/send_work1.php";
             break;
             
-            case "ส่งผลงาน1":
-                 link_txt ="page/send_work1.php";
-            break;
+           
          
             
        }
@@ -220,6 +219,7 @@
        }else if($(this).attr('href')=="select_hero2"){
             link_txt ="page/select_hero2.php";
        }else if($(this).text()==""){
+          // alert("+++++");
             link_txt ="page/send_work.php";
        }
       
