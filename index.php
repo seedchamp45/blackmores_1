@@ -807,7 +807,9 @@
                    </div>
                    <div class="col-xs-12 ">
                        <div class="col-xs-1"></div>
-                       <div class="col-xs-10"><img src="./images/mobile/text_img.png" class="img-responsive" style="display: block; margin: 0 auto;"  /></div>
+                       <div class="col-xs-10"><img src="./images/mobile/text_img.png" class="img-responsive" style="display: block; margin: 0 auto;"  /> <br>
+                         
+                       </div>
                        <div class="col-xs-1"></div>
                    </div>
                      <div class="col-xs-12 ">
@@ -825,9 +827,11 @@
                     </div>
                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 col-lg-offset-1 div-show-left-t">
                     <img src="./images/m_t_1.png" style="width: 100%;" />
+                    <a href="" data-toggle="modal" class="button-toggle" data-target="#myModal">
+                        <img src="images/bu_toggle_up.png" class="close2 img-responsive" style="width: 50%; margin-left: 25%; margin-top:6%;opacity: 1;">
+                    </a>
+                        
                    </div>
-
-  
 
                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 col-lg-offset-1 div-show-right-t">
                                  <img src="./images/home_body_left.png" style="width: 100%;" />
@@ -841,9 +845,11 @@
          <div id = "add-foot">
            
             <div class="bg_footer2" id = "clear-foot" >
-                 <div  class="foot-nev">
-                 <button type="button" data-toggle="modal" class="button-toggle"  data-target="#myModal" style="width: 100%; opacity: 0; margin-top: 0; height: 100; "></button>
-                 </div>
+                <div class="visible-xs">
+                    <div  class="foot-nev">
+                     <button type="button" data-toggle="modal" class="button-toggle"  data-target="#myModal" style="width: 100%; opacity: 0; margin-top: 0; height: 100; "></button>
+                     </div>
+                </div>
              </div>
          </div>
           </div>
@@ -885,7 +891,6 @@
           </div>
       </div>
     </div>
-  </div>
   </div>
 
 
